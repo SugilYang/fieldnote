@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{제목}} | 현장노트</title>
+<meta name="description" content="{{요약 한 문장, 80~120자}}">
+<link rel="canonical" href="{{BASE_URL}}posts/{{파일명}}">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="in">
+  <a class="logo" href="../index.html">현장<span>노트</span></a>
+  <nav><a href="../index.html#license">자격증</a><a href="../index.html#safety">산업안전</a><a href="../index.html#tools">장비·공구</a><a href="../index.html#trend">산업 트렌드</a><a href="../index.html#life">현장 생활</a></nav>
+</div></header>
+
+<article>
+  <div class="hero-box c-{{섹션ID}}">{{섹션 이모지}}</div>
+  <div class="wrap">
+    <span class="cat">{{섹션 이모지}} {{섹션 이름}}</span>
+    <h1>{{제목}}</h1>
+    <div class="meta">{{YYYY.MM.DD}} · 읽는 시간 {{N}}분</div>
+
+    <div class="summary">
+      <b>이 글의 핵심 요약</b>
+      <ul>
+        <li>{{요약 1}}</li>
+        <li>{{요약 2}}</li>
+        <li>{{요약 3}}</li>
+      </ul>
+    </div>
+
+    <div class="toc"><b>목차</b>
+      <ol>
+        <li><a href="#s1">{{소제목 1}}</a></li>
+        <!-- 소제목 개수만큼 -->
+      </ol>
+    </div>
+
+    <h2 id="s1">1. {{소제목 1}}</h2>
+    <p>{{본문}}</p>
+    <!-- 본문 구성 요소: <table>, <ul class="check">, <div class="warn">(주의 사항) 중 2가지 이상 사용 -->
+
+    <div class="ad">광고 영역 (애드센스 승인 후 표시)</div>
+
+    <!-- 나머지 소제목들 -->
+
+    <div class="key">
+      <h3>✔ 핵심 정리</h3>
+      <ul class="check">
+        <li>{{정리 1}}</li>
+        <li>{{정리 2}}</li>
+        <li>{{정리 3}}</li>
+      </ul>
+    </div>
+
+    <div class="ad">광고 영역 (애드센스 승인 후 표시)</div>
+
+    <h2>함께 보면 좋은 글</h2>
+    <div class="related">
+      <!-- posts.json에 있는 기존 글 중 관련 글 최대 3개. 없으면 이 h2와 div를 통째로 뺀다 -->
+      <a href="{{파일명}}"><small>{{섹션 이름}}</small>{{제목}}</a>
+    </div>
+
+    <p class="note">※ {{확인 안내 문구}}</p>
+  </div>
+</article>
+<footer>© 2026 현장노트</footer>
+</body>
+</html>

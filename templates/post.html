@@ -5,22 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{제목}} | 현장노트</title>
 <meta name="description" content="{{요약 한 문장, 80~120자}}">
+<meta name="author" content="황제효도르">
 <link rel="canonical" href="{{BASE_URL}}posts/{{파일명}}">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 <header class="site"><div class="in">
   <a class="logo" href="../index.html">현장<span>노트</span></a>
-  <nav><a href="../index.html#license">자격증</a><a href="../index.html#safety">산업안전</a><a href="../index.html#tools">장비·공구</a><a href="../index.html#trend">산업 트렌드</a><a href="../index.html#life">현장 생활</a></nav>
+  <nav><a href="../index.html#license">자격증</a><a href="../index.html#safety">산업안전</a><a href="../index.html#case">사고사례</a><a href="../index.html#tools">장비·공구</a><a href="../index.html#trend">산업 트렌드</a><a href="../index.html#life">현장 생활</a></nav>
 </div></header>
 
-<article>
-  <div class="hero-box c-{{섹션ID}}">{{섹션 이모지}}</div>
-  <div class="wrap">
+<article class="c-{{섹션ID}}">
+  <div class="post-hero">
+    <div class="icon">{{섹션 이모지}}</div>
     <span class="cat">{{섹션 이모지}} {{섹션 이름}}</span>
     <h1>{{제목}}</h1>
-    <div class="meta">{{YYYY.MM.DD}} · 읽는 시간 {{N}}분</div>
-
+    <div class="meta">{{YYYY.MM.DD}} · 황제효도르 · 읽는 시간 {{N}}분</div>
+  </div>
+  <div class="wrap">
     <div class="summary">
       <b>이 글의 핵심 요약</b>
       <ul>
@@ -41,7 +43,7 @@
     <p>{{본문}}</p>
     <!-- 본문 구성 요소: <table>, <ul class="check">, <div class="warn">(주의 사항) 중 2가지 이상 사용 -->
 
-    <div class="ad">광고 영역 (애드센스 승인 후 표시)</div>
+    <div class="ad"></div>
 
     <!-- 나머지 소제목들 -->
 
@@ -54,7 +56,7 @@
       </ul>
     </div>
 
-    <div class="ad">광고 영역 (애드센스 승인 후 표시)</div>
+    <div class="ad"></div>
 
     <h2>함께 보면 좋은 글</h2>
     <div class="related">
@@ -63,8 +65,13 @@
     </div>
 
     <p class="note">※ {{확인 안내 문구}}</p>
+
+    <div class="author"><div class="av">효</div><div><b>황제효도르</b> · 현장노트 운영자<br>제조 현장에서 일하며 배운 것들을 쉽게 정리해요.</div></div>
   </div>
 </article>
-<footer>© 2026 현장노트</footer>
+<footer>
+  <div><a href="../about.html">소개</a>·<a href="../contact.html">문의</a>·<a href="../privacy.html">개인정보처리방침</a></div>
+  <div style="margin-top:8px">© 2026 현장노트 · 운영 황제효도르</div>
+</footer>
 </body>
 </html>

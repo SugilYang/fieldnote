@@ -3,33 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>현장노트 | 자격증·산업안전·장비 현장 실무 가이드</title>
-<meta name="description" content="현장에서 일하는 사람을 위한 실무 노트. 자격증, 산업안전, 장비·공구, 산업 트렌드, 현장 생활 정보를 매일 정리해요.">
+<title>현장노트 | 자격증·산업안전·사고사례·장비 현장 실무 가이드</title>
+<meta name="description" content="현장에서 일하는 사람을 위한 실무 노트. 자격증, 산업안전, 사고사례 분석, 장비·공구, 산업 트렌드, 현장 생활 정보를 매일 정리해요.">
+<link rel="canonical" href="https://sugilyang.github.io/fieldnote/">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<header class="site"><div class="in"><a class="logo" href="index.html">현장<span>노트</span></a></div></header>
+<header class="site"><div class="in">
+  <a class="logo" href="index.html">현장<span>노트</span></a>
+  <nav><a href="about.html">소개</a><a href="contact.html">문의</a></nav>
+</div></header>
 <main class="home">
-  <div class="intro"><h1>현장노트</h1><p>현장에서 일하는 사람을 위한 실무 노트, 매일 새로 올라와요.</p></div>
+  <div class="banner">
+    <h1>현장에서 일하는 사람을 위한<br>실무 노트</h1>
+    <p>자격증 · 산업안전 · 사고사례 분석 · 장비·공구 · 산업 트렌드 · 현장 생활, 매일 새 글이 올라와요.</p>
+  </div>
   <div class="tabs" id="tabs"></div>
   <div class="grid" id="grid"></div>
 </main>
-<footer>© 2026 현장노트</footer>
+<footer>
+  <div><a href="about.html">소개</a>·<a href="contact.html">문의</a>·<a href="privacy.html">개인정보처리방침</a></div>
+  <div style="margin-top:8px">© 2026 현장노트 · 운영 황제효도르</div>
+</footer>
 <script>
-const SECTIONS = {all:['전체',''], license:['자격증','📜'], safety:['산업안전','🦺'], tools:['장비·공구','🔧'], trend:['산업 트렌드','🔋'], life:['현장 생활','💼']};
+const SECTIONS = {all:['전체',''], license:['자격증','📜'], safety:['산업안전','🦺'], case:['사고사례 분석','🚨'], tools:['장비·공구','🔧'], trend:['산업 트렌드','🔋'], life:['현장 생활','💼']};
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 let posts = [];
 
+function card(p, big) {
+  const [name, icon] = SECTIONS[p.section] || ['', ''];
+  return `<a class="card c-${esc(p.section)}${big ? ' big' : ''}" href="posts/${esc(p.file)}"><div class="hero-box">${icon}</div>
+    <div class="t"><small>${name} · ${esc(p.date)}</small><b>${esc(p.title)}</b><p>${esc(p.summary)}</p></div></a>`;
+}
+
 function render() {
   const cur = SECTIONS[location.hash.slice(1)] ? location.hash.slice(1) : 'all';
-  document.getElementById('tabs').innerHTML = Object.entries(SECTIONS).map(([id, [name]]) =>
-    `<button class="${id === cur ? 'on' : ''}" onclick="location.hash='${id}'">${name}</button>`).join('');
+  document.getElementById('tabs').innerHTML = Object.entries(SECTIONS).map(([id, [name, icon]]) =>
+    `<button class="${id === cur ? 'on' : ''}" onclick="location.hash='${id}'">${icon} ${name}</button>`).join('');
   const list = posts.filter(p => cur === 'all' || p.section === cur);
-  document.getElementById('grid').innerHTML = list.length ? list.map(p => {
-    const [name, icon] = SECTIONS[p.section] || ['', ''];
-    return `<a class="card" href="posts/${esc(p.file)}"><div class="hero-box c-${esc(p.section)}">${icon}</div>
-      <div class="t"><small>${name} · ${esc(p.date)}</small><b>${esc(p.title)}</b><p>${esc(p.summary)}</p></div></a>`;
-  }).join('') : '<p class="empty">아직 글이 없어요.</p>';
+  document.getElementById('grid').innerHTML = list.length
+    ? list.map((p, i) => card(p, i === 0)).join('')
+    : '<p class="empty">아직 글이 없어요.</p>';
 }
 
 fetch('posts.json').then(r => r.json()).then(d => {

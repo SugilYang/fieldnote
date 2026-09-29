@@ -32,7 +32,7 @@ let posts = [];
 
 function card(p, big) {
   const [name, icon] = SECTIONS[p.section] || ['', ''];
-  return `<a class="card c-${esc(p.section)}${big ? ' big' : ''}" href="posts/${esc(p.file)}"><div class="hero-box">${icon}</div>
+  return `<a class="card c-${esc(p.section)}${big ? ' big' : ''}" href="posts/${esc(p.file)}"><div class="hero-box">${p.image ? `<img src="${esc(p.image)}" alt="" loading="lazy">` : icon}</div>
     <div class="t"><small>${name} · ${esc(p.date)}</small><b>${esc(p.title)}</b><p>${esc(p.summary)}</p></div></a>`;
 }
 

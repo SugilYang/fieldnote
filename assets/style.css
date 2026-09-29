@@ -86,3 +86,11 @@ th,td{border:1px solid var(--line);padding:11px 12px;text-align:left;vertical-al
 @media (max-width:600px){.grid{grid-template-columns:1fr}nav{display:none}.banner{padding:32px 22px}.banner h1 br{display:none}.banner h1{font-size:26px}
   article,.page{margin-top:0;border-radius:0}.post-hero{padding:32px 20px 26px;min-height:240px}.post-hero .icon{font-size:52px;right:18px;top:18px}.post-hero h1{font-size:25px}
   .wrap,.page{padding-left:20px;padding-right:20px}.wrap{font-size:16px}h2{font-size:20px}.related{grid-template-columns:1fr}}
+
+/* 사진 */
+.post-hero.photo{background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.72) 100%),var(--photo) center/cover no-repeat;min-height:380px}
+.post-hero.photo::before,.post-hero.photo .icon{display:none}
+.credit,.figcaption .credit{font-size:12px;color:var(--sub);margin:10px 0 0;text-align:right}
+.credit a,figcaption a{color:var(--sub)}
+.hero-box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media (max-width:600px){.post-hero.photo{min-height:300px}}

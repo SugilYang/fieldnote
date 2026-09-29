@@ -16,7 +16,7 @@
 </div></header>
 
 <article class="c-{{섹션ID}}">
-  <div class="post-hero">
+  <div class="post-hero" data-photo="{{대표 사진 영문 검색어 2~3단어}}">
     <div class="icon">{{섹션 이모지}}</div>
     <span class="cat">{{섹션 이모지}} {{섹션 이름}}</span>
     <h1>{{제목}}</h1>
@@ -41,6 +41,8 @@
 
     <h2 id="s1">1. {{소제목 1}}</h2>
     <p>{{본문}}</p>
+    <figure data-photo="{{본문 사진 영문 검색어}}"><figcaption>{{사진 설명 한 문장}}</figcaption></figure>
+    <!-- 본문 사진은 글 전체에 2장. 배포 시 Unsplash에서 자동으로 채워진다 -->
     <!-- 본문 구성 요소: <table>, <ul class="check">, <div class="warn">(주의 사항) 중 2가지 이상 사용 -->
 
     <div class="ad"></div>

@@ -19,7 +19,7 @@
 2. `posts.json`을 읽고 이미 쓴 제목들을 확인한다. **같거나 비슷한 주제는 쓰지 않는다.**
 3. 섹션 6개 각각 주제 1개를 정한다. 사람들이 실제로 검색할 만한 구체적인 주제로 정한다.
    (좋음: "산업안전기사 필기 과목별 공부 순서" / 나쁨: "안전은 중요하다")
-4. `templates/post.html` 구조를 그대로 따라 글을 쓴다. 파일명은 `posts/YYYY-MM-DD-영문-슬러그.html`.
+4. `templates/post.html` 구조를 그대로 따라 글을 쓴다. 파일명은 `posts/YYYY-MM-DD-영문-슬러그.html`. `og:` 태그의 `{{ }}`도 제목·요약·파일명으로 채운다(og:image는 그대로 둔다. 배포 봇이 채운다).
    `<article class="c-섹션ID">`로 섹션 색이 정해진다. 템플릿의 `{{ }}` 자리를 모두 채우고 주석은 지운다.
 5. `posts.json` 배열에 새 글 6개를 추가한다: `file`, `section`, `title`, `summary`(1문장), `date`(YYYY-MM-DD).
 6. `sitemap.xml`에 새 글 6개의 `<url>`을 추가한다(`lastmod`는 오늘 날짜).

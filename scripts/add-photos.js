@@ -44,6 +44,7 @@ async function search(query) {
         html = html.replace(hero[0], `<div class="post-hero photo" style="--photo:url('${p.url}')">`);
         html = html.replace('<div class="wrap">', `<div class="wrap">\n    <p class="credit">${p.credit}</p>`);
         if (entry) entry.image = p.thumb;
+        html = html.replace(/<meta property="og:image" content="[^"]*">/, `<meta property="og:image" content="${p.url}">`);
       } else {
         html = html.replace(hero[0], '<div class="post-hero">');
       }

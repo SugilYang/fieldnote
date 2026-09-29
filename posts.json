@@ -53,5 +53,47 @@
     "summary": "야간 근무 후 귀가 요령, 카페인 중단 시각, 나눠 자기 전략, 교대 전환 때 몸 맞추는 법을 정리했어요.",
     "date": "2026-09-29",
     "image": "https://images.unsplash.com/photo-1603726477468-da922b12b8ce?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8YmxhY2tvdXQlMjBjdXJ0YWluJTIwYmVkcm9vbSUyMGRheXRpbWV8ZW58MXwwfHx8MTc5MDY1NzMwMHww&ixlib=rb-4.1.0&w=600&q=70&auto=format&fit=crop"
+  },
+  {
+    "file": "2026-09-30-electrician-craftsman-exam-guide.html",
+    "section": "license",
+    "title": "전기기능사 필기·실기 준비법: 직장인이 3개월 안에 따는 현실적인 계획",
+    "summary": "시험 구성과 합격 기준, 필기 과목별 공부법, 작업형 실기의 실격 사유와 연습 요령, 취득 후 활용처를 정리했어요.",
+    "date": "2026-09-30"
+  },
+  {
+    "file": "2026-09-30-risk-assessment-procedure-guide.html",
+    "section": "safety",
+    "title": "위험성평가 절차 5단계: 현장 반장이 직접 하는 방법과 서식 작성 요령",
+    "summary": "5단계 절차, 최초·수시·정기·상시 평가 시기, 체크리스트법과 3단계 판단법, 감소대책 순서와 기록·공유 요령을 정리했어요.",
+    "date": "2026-09-30"
+  },
+  {
+    "file": "2026-09-30-portable-ladder-fall-accident-analysis.html",
+    "section": "case",
+    "title": "이동식 사다리 추락 사고: 2m도 안 되는 높이에서 왜 크게 다칠까",
+    "summary": "A형 사다리 추락의 대표 상황 5가지, 직접·근본 원인, 높이별 안전 기준(1.2m·2m·3.5m)과 예방 체크리스트, 법적 의무를 정리했어요.",
+    "date": "2026-09-30"
+  },
+  {
+    "file": "2026-09-30-vernier-caliper-reading-and-usage.html",
+    "section": "tools",
+    "title": "버니어캘리퍼스 읽는 법과 측정 요령: 0.05mm 눈금부터 디지털까지",
+    "summary": "4가지 측정 부위, 아날로그 눈금 읽는 법, 오차를 줄이는 측정 자세, 디지털 캘리퍼스 주의점, 마이크로미터와의 비교, 관리·교정을 정리했어요.",
+    "date": "2026-09-30"
+  },
+  {
+    "file": "2026-09-30-smart-factory-automation-jobs.html",
+    "section": "trend",
+    "title": "스마트팩토리와 자동화, 현장 직무는 어떻게 바뀌나: 오퍼레이터가 준비할 것",
+    "summary": "PLC·로봇·MES·AMR·예지보전이 무엇인지, 생산직·보전직·품질직 업무가 어떻게 바뀌는지, 새로운 안전 위험과 준비할 기술·자격을 정리했어요.",
+    "date": "2026-09-30"
+  },
+  {
+    "file": "2026-09-30-safety-shoes-choosing-and-care.html",
+    "section": "life",
+    "title": "안전화 고르는 법과 관리: 종류·사이즈·교체 시기까지 한 번에 정리",
+    "summary": "안전화 종류와 인증 표시, 작업 환경별 선택 기준, 발에 맞는 사이즈 고르는 법, 냄새·습기 관리와 교체 신호를 정리했어요.",
+    "date": "2026-09-30"
   }
 ]

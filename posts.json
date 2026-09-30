@@ -106,28 +106,32 @@
     "section": "license",
     "title": "위험물기능사 준비법: 필기 암기 요령과 실기 필답형 대비, 취득 후 쓰임새",
     "summary": "시험 구성과 합격 기준, 제1류~제6류 위험물 암기 요령, 필답형 실기 대비법, 위험물안전관리자 선임 등 활용처를 정리했어요.",
-    "date": "2026-10-01"
+    "date": "2026-10-01",
+    "image": "https://images.unsplash.com/photo-1685483749753-0dab7e144794?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y2hlbWljYWwlMjBkcnVtcyUyMHN0b3JhZ2UlMjB3YXJlaG91c2V8ZW58MXwwfHx8MTc5MDc5MTM5N3ww&ixlib=rb-4.1.0&w=600&q=70&auto=format&fit=crop"
   },
   {
     "file": "2026-10-01-confined-space-work-procedure.html",
     "section": "safety",
     "title": "밀폐공간 작업 안전 절차: 산소농도 기준, 출입 전 측정, 감시인 배치까지",
     "summary": "밀폐공간의 범위, 적정공기 기준, 출입 전·중·후 절차, 감시인과 송기마스크, 구조 원칙과 밀폐공간 작업 프로그램을 정리했어요.",
-    "date": "2026-10-01"
+    "date": "2026-10-01",
+    "image": "https://images.unsplash.com/photo-1762706420189-56bea7fd9940?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8bWFuaG9sZSUyMGNvbmZpbmVkJTIwc3BhY2UlMjBlbnRyeXxlbnwxfDB8fHwxNzkwNzkxMzk0fDA&ixlib=rb-4.1.0&w=600&q=70&auto=format&fit=crop"
   },
   {
     "file": "2026-10-01-conveyor-entanglement-accident-analysis.html",
     "section": "case",
     "title": "컨베이어 끼임 사고: 멈춘 줄 알았던 설비에 왜 손이 들어가나",
     "summary": "컨베이어 끼임의 대표 상황 5가지, 직접·근본 원인, 잠금·표지와 물림점 덮개·비상정지 등 예방 체크리스트와 법적 의무를 정리했어요.",
-    "date": "2026-10-01"
+    "date": "2026-10-01",
+    "image": "https://images.unsplash.com/photo-1701328778019-e95dedbf5346?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y29udmV5b3IlMjBiZWx0JTIwcm9sbGVycyUyMGZhY3Rvcnl8ZW58MXwwfHx8MTc5MDc5MTM5NXww&ixlib=rb-4.1.0&w=600&q=70&auto=format&fit=crop"
   },
   {
     "file": "2026-10-01-digital-multimeter-usage-guide.html",
     "section": "tools",
     "title": "디지털 멀티미터(테스터기) 사용법: 전압·저항·통전 측정과 안전하게 쓰는 요령",
     "summary": "다이얼 기호와 단자 읽는 법, 전압·저항·통전·전류 측정 순서, 클램프미터, CAT 등급·퓨즈 같은 안전 요소와 흔한 실수를 정리했어요.",
-    "date": "2026-10-01"
+    "date": "2026-10-01",
+    "image": "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZGlnaXRhbCUyMG11bHRpbWV0ZXIlMjBwcm9iZXMlMjBjaXJjdWl0fGVufDF8MHx8fDE3OTA3OTEzOTZ8MA&ixlib=rb-4.1.0&w=600&q=70&auto=format&fit=crop"
   },
   {
     "file": "2026-10-01-semiconductor-8-process-overview.html",
@@ -141,6 +145,7 @@
     "section": "life",
     "title": "현장 직장인 허리 통증 예방: 무거운 물건 바르게 드는 법과 근무 중 스트레칭",
     "summary": "허리를 다치는 동작의 특징, 안전하게 드는 6단계, 무게 기준과 보조 장비, 작업대 높이, 1분 스트레칭, 병원에 가야 할 신호를 정리했어요.",
-    "date": "2026-10-01"
+    "date": "2026-10-01",
+    "image": "https://images.unsplash.com/photo-1576669801820-a9ab287ac2d1?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8d29ya2VyJTIwbGlmdGluZyUyMGJveCUyMHdhcmVob3VzZXxlbnwxfDB8fHwxNzkwNzkxMzk4fDA&ixlib=rb-4.1.0&w=600&q=70&auto=format&fit=crop"
   }
 ]

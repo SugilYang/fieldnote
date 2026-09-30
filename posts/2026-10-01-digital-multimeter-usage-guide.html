@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>디지털 멀티미터(테스터기) 사용법: 전압·저항·통전 측정과 안전하게 쓰는 요령 | 현장노트</title>
+<meta name="description" content="멀티미터의 다이얼 기호 읽는 법, 전압·저항·통전·전류 측정 순서, 리드선 꽂는 위치, CAT 등급과 퓨즈 같은 안전 요소, 현장에서 자주 하는 실수와 관리법을 정리했어요.">
+<meta name="author" content="황제효도르">
+<link rel="canonical" href="https://sugilyang.github.io/fieldnote/posts/2026-10-01-digital-multimeter-usage-guide.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="현장노트">
+<meta property="og:title" content="디지털 멀티미터(테스터기) 사용법: 전압·저항·통전 측정과 안전하게 쓰는 요령">
+<meta property="og:description" content="멀티미터의 다이얼 기호 읽는 법, 전압·저항·통전·전류 측정 순서, 리드선 꽂는 위치, CAT 등급과 퓨즈 같은 안전 요소, 현장에서 자주 하는 실수와 관리법을 정리했어요.">
+<meta property="og:url" content="https://sugilyang.github.io/fieldnote/posts/2026-10-01-digital-multimeter-usage-guide.html">
+<meta property="og:image" content="https://sugilyang.github.io/fieldnote/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMS58YZHEH"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-GMS58YZHEH');</script>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="in">
+  <a class="logo" href="../index.html">현장<span>노트</span></a>
+  <nav><a href="../index.html#license">자격증</a><a href="../index.html#safety">산업안전</a><a href="../index.html#case">사고사례</a><a href="../index.html#tools">장비·공구</a><a href="../index.html#trend">산업 트렌드</a><a href="../index.html#life">현장 생활</a></nav>
+</div></header>
+
+<article class="c-tools">
+  <div class="post-hero" data-photo="digital multimeter probes circuit">
+    <div class="icon">🔧</div>
+    <span class="cat">🔧 장비·공구</span>
+    <h1>디지털 멀티미터(테스터기) 사용법: 전압·저항·통전 측정과 안전하게 쓰는 요령</h1>
+    <div class="meta">2026.10.01 · 황제효도르 · 읽는 시간 8분</div>
+  </div>
+  <div class="wrap">
+    <div class="summary">
+      <b>이 글의 핵심 요약</b>
+      <ul>
+        <li>멀티미터는 전압·저항·통전·전류를 하나로 재는 공구예요. 현장에서 가장 많이 쓰는 건 교류 전압과 통전 확인이에요.</li>
+        <li>측정 순서는 "다이얼 → 리드선 위치 → 측정"이고, 전류 측정 후 리드선을 전압 단자로 되돌리지 않는 실수가 가장 흔해요.</li>
+        <li>저항·통전은 반드시 전원을 끄고 재고, 전압은 CAT 등급이 맞는 멀티미터로 한 손 원칙을 지켜요.</li>
+      </ul>
+    </div>
+
+    <div class="toc"><b>목차</b>
+      <ol>
+        <li><a href="#s1">멀티미터로 무엇을 잴 수 있나</a></li>
+        <li><a href="#s2">다이얼 기호와 리드선 단자 읽는 법</a></li>
+        <li><a href="#s3">전압 측정: 현장에서 가장 많이 쓰는 기능</a></li>
+        <li><a href="#s4">저항·통전·다이오드 측정</a></li>
+        <li><a href="#s5">전류 측정과 클램프미터</a></li>
+        <li><a href="#s6">안전 요소와 관리: CAT 등급, 퓨즈, 배터리</a></li>
+      </ol>
+    </div>
+
+    <h2 id="s1">1. 멀티미터로 무엇을 잴 수 있나</h2>
+    <p>멀티미터는 현장에서 흔히 "테스터기"라고 부르는 측정기예요. 설비 보전, 전기 작업, 제어반 점검에서 가장 먼저 꺼내는 공구죠. 이름 그대로 여러 가지를 재요.</p>
+    <table>
+      <tr><th>기능</th><th>기호</th><th>현장에서 쓰는 상황</th></tr>
+      <tr><td>교류 전압</td><td>V~ 또는 VAC</td><td>콘센트, 제어반 입력 전원, 모터 단자 전압 확인</td></tr>
+      <tr><td>직류 전압</td><td>V⎓ 또는 VDC</td><td>배터리, 센서 전원(24V), PLC 입출력 신호 확인</td></tr>
+      <tr><td>저항</td><td>Ω</td><td>히터·코일 단선 확인, 접점 저항, 센서 저항 확인</td></tr>
+      <tr><td>통전(도통)</td><td>소리 기호 •)))</td><td>배선 끊김 확인, 퓨즈 확인, 스위치 접점 확인</td></tr>
+      <tr><td>전류</td><td>A~ / A⎓</td><td>부하 전류 확인 (보통 클램프미터를 더 많이 씀)</td></tr>
+      <tr><td>다이오드</td><td>다이오드 기호 ▶|</td><td>정류 다이오드, LED 방향과 상태 확인</td></tr>
+    </table>
+    <p>이 중 현장에서 열에 아홉은 <b>교류 전압 확인</b>과 <b>통전 확인</b>이에요. 설비가 안 돌면 "전원이 들어오나"를 확인하고, "선이 끊겼나"를 확인하는 게 첫 단계니까요. 이 두 가지만 정확히 할 줄 알아도 멀티미터를 쓸 줄 안다고 할 수 있어요.</p>
+
+    <figure data-photo="multimeter dial selector close up"><figcaption>다이얼의 기호를 먼저 읽고, 리드선이 어느 단자에 꽂혀 있는지 확인하는 게 측정의 시작이에요</figcaption></figure>
+
+    <h2 id="s2">2. 다이얼 기호와 리드선 단자 읽는 법</h2>
+    <p>멀티미터 앞면에는 회전 다이얼과 리드선을 꽂는 단자가 있어요. 단자는 보통 3~4개예요.</p>
+    <ul class="check">
+      <li><b>COM</b>: 검정 리드선을 꽂는 공통 단자. 어떤 측정이든 검정은 여기예요.</li>
+      <li><b>VΩmA</b> (또는 V/Ω): 빨강 리드선의 기본 자리. 전압, 저항, 통전, 작은 전류를 잴 때 써요.</li>
+      <li><b>10A</b> (또는 20A): 큰 전류를 잴 때만 빨강 리드선을 여기로 옮겨요.</li>
+    </ul>
+    <p>다이얼에는 위 표의 기호가 있고, 오래된 수동 레인지 모델은 기호마다 200, 2000처럼 범위 숫자가 있어요. 요즘 자동 레인지(오토레인지) 모델은 기호만 고르면 범위를 알아서 맞춰요. 처음 사는 분은 오토레인지 모델이 실수가 적어요.</p>
+    <p>수동 레인지 모델에서 범위를 고를 때는 <b>예상 값보다 한 단계 큰 범위</b>를 골라요. 220V를 재는데 200V 범위를 고르면 "1" 또는 "OL"(오버로드)이 뜨고, 20V 범위를 고르면 멀티미터가 손상될 수 있어요. 모르면 가장 큰 범위에서 시작해 낮춰 가요.</p>
+
+    <div class="ad"></div>
+
+    <h2 id="s3">3. 전압 측정: 현장에서 가장 많이 쓰는 기능</h2>
+    <p>전압은 <b>회로에 전원이 들어온 상태에서, 두 지점 사이에 병렬로</b> 재요. 순서는 이래요.</p>
+    <ul class="check">
+      <li>1. 검정 리드는 COM, 빨강 리드는 VΩ 단자에 꽂혀 있는지 확인해요.</li>
+      <li>2. 다이얼을 교류(V~)인지 직류(V⎓)인지 맞게 돌려요. 콘센트·제어반 입력은 교류, 24V 센서 전원·배터리는 직류예요.</li>
+      <li>3. 리드 끝을 측정 지점 두 곳에 대요. 교류는 극성이 없고, 직류는 빨강을 +에 대야 값이 양수로 나와요(반대로 대면 -로 표시될 뿐 고장은 아니에요).</li>
+      <li>4. 화면 값을 읽어요. 220V 콘센트는 보통 210~230V 사이, 24V 전원은 23~25V 사이면 정상 범위예요.</li>
+    </ul>
+    <p>전압 측정에서 중요한 건 <b>안전</b>이에요. 리드 끝의 금속 부분을 손으로 잡지 않고, 리드 두 개가 서로 닿아 단락되지 않게 해요. 제어반 안에서 잴 때는 리드 끝이 옆 단자에 닿지 않도록 짧은 팁이나 절연 캡을 씌운 리드를 써요. 가능하면 <b>한 손 원칙</b>(다른 한 손은 주머니에)을 지켜서 심장을 지나는 전류 경로를 만들지 않아요.</p>
+    <p>전압이 0으로 나오면 "전원이 없다"로 단정하지 말고, 리드선이 제대로 꽂혀 있는지, 다이얼이 전압 위치인지, 멀티미터 배터리가 살아 있는지 먼저 확인해요. 살아 있는 콘센트에서 한 번 재 보면 멀티미터 자체가 정상인지 알 수 있어요.</p>
+
+    <h2 id="s4">4. 저항·통전·다이오드 측정</h2>
+    <p>저항과 통전은 <b>반드시 전원을 끄고</b> 재요. 멀티미터가 자체 배터리로 작은 전류를 흘려서 재는 방식이라, 회로에 전압이 걸려 있으면 잘못된 값이 나오거나 멀티미터가 망가져요. 전원을 끄고 잠금·표지를 한 뒤, 전압 모드로 0V인 것을 확인하고 나서 저항 모드로 바꾸는 게 안전한 순서예요.</p>
+    <p><b>통전(도통) 확인</b>은 다이얼을 소리 기호에 두고 두 지점에 리드를 대요. "삐" 소리가 나면 연결되어 있는 거예요. 퓨즈 확인, 케이블 단선 확인, 스위치가 눌렸을 때 접점이 붙는지 확인할 때 써요. 소리가 나는 기준은 제품마다 다르지만 보통 수십 옴 이하일 때예요.</p>
+    <p><b>저항 측정</b>은 히터, 모터 코일, 센서처럼 정해진 저항값이 있는 부품의 상태를 볼 때 써요. OL(무한대)이 뜨면 끊어진 것이고, 0에 가까우면 단락이에요. 코일 저항은 제조사 사양과 비교해요. 재기 전에 부품을 회로에서 분리하거나 한쪽 선을 빼야 다른 경로를 통한 값이 섞이지 않아요.</p>
+    <p><b>다이오드 측정</b>은 다이오드 기호에 두고 빨강을 애노드(+), 검정을 캐소드(-)에 대면 0.5~0.7V 정도가 나오고, 반대로 대면 OL이 나오면 정상이에요. 양쪽 다 OL이면 끊어진 것, 양쪽 다 0 근처면 단락이에요.</p>
+
+    <figure data-photo="clamp meter measuring cable current"><figcaption>전류는 회로를 끊지 않아도 되는 클램프미터로 재는 게 현장에서는 더 안전하고 빨라요</figcaption></figure>
+
+    <h2 id="s5">5. 전류 측정과 클램프미터</h2>
+    <p>멀티미터로 전류를 재려면 <b>회로를 끊고 멀티미터를 직렬로</b> 끼워야 해요. 빨강 리드를 10A 단자로 옮기고, 다이얼을 A에 두고, 끊은 두 지점 사이에 리드를 대요. 절차가 번거롭고 위험해서 현장에서는 잘 쓰지 않아요.</p>
+    <p>대신 <b>클램프미터</b>를 써요. 집게를 벌려 전선 한 가닥을 감싸면 회로를 끊지 않고 전류를 읽을 수 있어요. 모터 부하 전류 확인, 3상 불평형 확인, 과부하 원인 찾기에 필수예요. 주의할 점은 전선 <b>한 가닥만</b> 물려야 한다는 거예요. 케이블 전체(왕복선)를 물리면 전류가 서로 상쇄돼서 0에 가깝게 나와요.</p>
+    <div class="warn">
+      <b>⚠️ 전류 측정에서 가장 흔한 사고</b>
+      <ul>
+        <li>전류를 잰 뒤 빨강 리드를 10A 단자에 그대로 두고 전압을 재는 것. 10A 단자는 저항이 거의 0이라 콘센트에 대는 순간 단락이 되어 퓨즈가 끊어지거나 불꽃이 튀어요. 전류 측정 후에는 반드시 리드를 VΩ 단자로 되돌리세요.</li>
+        <li>멀티미터 전류 범위(보통 10A)보다 큰 전류를 재려는 것. 퓨즈가 끊어져요. 큰 전류는 클램프미터로 재요.</li>
+      </ul>
+    </div>
+
+    <h2 id="s6">6. 안전 요소와 관리: CAT 등급, 퓨즈, 배터리</h2>
+    <p><b>CAT 등급</b>은 멀티미터가 어떤 전기 환경까지 견디는지를 나타내요. CAT II는 콘센트에 꽂는 기기 수준, CAT III는 분전반·배전반·고정 설비 배선, CAT IV는 인입 전원 쪽이에요. 제어반이나 분전반에서 재려면 <b>CAT III 600V 이상</b>인 제품을 써요. 등급이 낮은 멀티미터를 배전반에서 쓰면 과전압 시 내부에서 폭발할 수 있어요. 등급은 제품 앞면이나 단자 옆에 적혀 있어요.</p>
+    <ul class="check">
+      <li>리드선 피복이 벗겨지거나 갈라진 것은 바로 바꿔요. 감전의 주된 원인이에요.</li>
+      <li>퓨즈가 끊어지면 같은 규격(전압·전류·차단 용량)의 퓨즈로 교체해요. 다른 퓨즈를 넣으면 보호 기능을 잃어요.</li>
+      <li>배터리가 약해지면 값이 흔들리거나 낮게 나와요. 배터리 표시가 뜨면 바로 교체해요.</li>
+      <li>측정 후 다이얼은 OFF나 교류 전압 위치에 두고 보관해요. 저항 위치로 보관하면 실수로 전압을 재게 돼요.</li>
+      <li>떨어뜨리거나 물에 젖으면 살아 있는 전원에서 확인하기 전에 통전 확인부터 해요.</li>
+    </ul>
+    <p>멀티미터는 값싼 제품도 많지만, 배전반이나 설비 전원에서 쓰는 용도라면 CAT 등급과 퓨즈가 제대로 갖춰진 제품을 고르세요. 측정기 하나가 감전과 아크 화상을 막는 장비이기도 해요.</p>
+
+    <div class="key">
+      <h3>✔ 핵심 정리</h3>
+      <ul class="check">
+        <li>검정은 COM, 빨강은 VΩ. 전류 측정 뒤에는 빨강을 반드시 VΩ로 되돌려요.</li>
+        <li>전압은 전원 켠 채 병렬로, 저항·통전은 전원 끄고 0V 확인 후에.</li>
+        <li>수동 레인지는 예상보다 한 단계 큰 범위부터. 오토레인지가 실수가 적어요.</li>
+        <li>전류는 클램프미터로, 전선 한 가닥만 물려요.</li>
+        <li>분전반·제어반 작업은 CAT III 600V 이상, 한 손 원칙, 리드선 상태 확인.</li>
+      </ul>
+    </div>
+
+    <div class="ad"></div>
+
+    <h2>함께 보면 좋은 글</h2>
+    <div class="related">
+      <a href="2026-09-30-electrician-craftsman-exam-guide.html"><small>자격증</small>전기기능사 필기·실기 준비법: 직장인이 3개월 안에 따는 현실적인 계획</a>
+      <a href="2026-09-30-vernier-caliper-reading-and-usage.html"><small>장비·공구</small>버니어캘리퍼스 읽는 법과 측정 요령: 0.05mm 눈금부터 디지털까지</a>
+    </div>
+
+    <p class="note">※ 제품별 사양과 사용법은 제조사 설명서를 우선으로 확인하세요.</p>
+
+    <div class="author"><div class="av">효</div><div><b>황제효도르</b> · 현장노트 운영자<br>제조 현장에서 일하며 배운 것들을 쉽게 정리해요.</div></div>
+  </div>
+</article>
+<footer>
+  <div><a href="../about.html">소개</a>·<a href="../contact.html">문의</a>·<a href="../privacy.html">개인정보처리방침</a></div>
+  <div style="margin-top:8px">© 2026 현장노트 · 운영 황제효도르</div>
+</footer>
+</body>
+</html>

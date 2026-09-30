@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>반도체 8대 공정 한눈에 보기: 웨이퍼부터 패키징까지, 현장 직무는 어디에 있나 | 현장노트</title>
+<meta name="description" content="반도체 8대 공정(웨이퍼 제조·산화·포토·식각·증착·금속배선·EDS·패키징)이 각각 무엇을 하는지, 전공정과 후공정의 차이, 클린룸 근무 환경과 오퍼레이터·설비 엔지니어 직무를 취업 준비자 눈높이로 설명했어요.">
+<meta name="author" content="황제효도르">
+<link rel="canonical" href="https://sugilyang.github.io/fieldnote/posts/2026-10-01-semiconductor-8-process-overview.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="현장노트">
+<meta property="og:title" content="반도체 8대 공정 한눈에 보기: 웨이퍼부터 패키징까지, 현장 직무는 어디에 있나">
+<meta property="og:description" content="반도체 8대 공정(웨이퍼 제조·산화·포토·식각·증착·금속배선·EDS·패키징)이 각각 무엇을 하는지, 전공정과 후공정의 차이, 클린룸 근무 환경과 오퍼레이터·설비 엔지니어 직무를 취업 준비자 눈높이로 설명했어요.">
+<meta property="og:url" content="https://sugilyang.github.io/fieldnote/posts/2026-10-01-semiconductor-8-process-overview.html">
+<meta property="og:image" content="https://sugilyang.github.io/fieldnote/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMS58YZHEH"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-GMS58YZHEH');</script>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="in">
+  <a class="logo" href="../index.html">현장<span>노트</span></a>
+  <nav><a href="../index.html#license">자격증</a><a href="../index.html#safety">산업안전</a><a href="../index.html#case">사고사례</a><a href="../index.html#tools">장비·공구</a><a href="../index.html#trend">산업 트렌드</a><a href="../index.html#life">현장 생활</a></nav>
+</div></header>
+
+<article class="c-trend">
+  <div class="post-hero" data-photo="semiconductor wafer cleanroom">
+    <div class="icon">🔋</div>
+    <span class="cat">🔋 산업 트렌드</span>
+    <h1>반도체 8대 공정 한눈에 보기: 웨이퍼부터 패키징까지, 현장 직무는 어디에 있나</h1>
+    <div class="meta">2026.10.01 · 황제효도르 · 읽는 시간 8분</div>
+  </div>
+  <div class="wrap">
+    <div class="summary">
+      <b>이 글의 핵심 요약</b>
+      <ul>
+        <li>반도체는 둥근 웨이퍼 위에 회로를 수십 번 겹쳐 새긴 뒤, 잘라서 포장하는 과정으로 만들어요. 이걸 8대 공정으로 나눠 불러요.</li>
+        <li>회로를 새기는 전공정(산화·포토·식각·증착·배선)과 잘라서 포장하는 후공정(EDS·패키징)은 현장 환경과 직무가 꽤 달라요.</li>
+        <li>현장 직무는 크게 설비 오퍼레이터, 설비 엔지니어(유지보수), 공정 엔지니어, 품질로 나뉘고, 대부분 클린룸에서 교대로 일해요.</li>
+      </ul>
+    </div>
+
+    <div class="toc"><b>목차</b>
+      <ol>
+        <li><a href="#s1">반도체 공장, 무엇을 만드는 곳인가</a></li>
+        <li><a href="#s2">8대 공정 한눈에 보기</a></li>
+        <li><a href="#s3">전공정: 웨이퍼 위에 회로를 쌓는 다섯 단계</a></li>
+        <li><a href="#s4">후공정: 검사하고 자르고 포장하기</a></li>
+        <li><a href="#s5">클린룸 근무 환경: 방진복, 교대, 화학물질</a></li>
+        <li><a href="#s6">현장 직무와 준비할 것</a></li>
+      </ol>
+    </div>
+
+    <h2 id="s1">1. 반도체 공장, 무엇을 만드는 곳인가</h2>
+    <p>반도체 공장(팹)은 손톱만 한 칩 안에 수십억 개의 스위치(트랜지스터)를 새겨 넣는 곳이에요. 스마트폰의 두뇌, 메모리, 자동차 제어 칩이 여기서 나와요. 국내에는 대형 팹이 여러 곳 있고, 새 팹도 계속 지어지고 있어서 설비 오퍼레이터와 유지보수 인력 수요가 꾸준해요.</p>
+    <p>반도체 공장이 다른 제조업과 다른 점은 <b>먼지 한 톨이 불량이 된다</b>는 거예요. 회로 선 폭이 머리카락 굵기의 수천분의 일이라, 먼지가 앉으면 그 자리의 회로가 끊겨요. 그래서 공기 중 먼지를 극도로 줄인 클린룸에서, 머리부터 발끝까지 방진복을 입고 일해요.</p>
+    <p>이 글은 반도체 공장에 취업하려는 분, 또는 이미 다니면서 "내가 하는 공정이 전체에서 어디쯤인지" 궁금한 분을 위해 썼어요. 전문 용어는 최대한 풀어서 설명할게요.</p>
+
+    <figure data-photo="silicon wafer close up"><figcaption>둥근 웨이퍼 한 장에 수백 개의 칩이 격자 모양으로 새겨져요</figcaption></figure>
+
+    <h2 id="s2">2. 8대 공정 한눈에 보기</h2>
+    <table>
+      <tr><th>순서</th><th>공정</th><th>하는 일</th><th>구분</th></tr>
+      <tr><td>1</td><td>웨이퍼 제조</td><td>규소 덩어리를 얇고 둥근 판으로 만들고 표면을 거울처럼 연마</td><td>소재</td></tr>
+      <tr><td>2</td><td>산화</td><td>웨이퍼 표면에 얇은 산화막(절연막)을 입힘</td><td rowspan="5">전공정</td></tr>
+      <tr><td>3</td><td>포토(노광)</td><td>감광액을 바르고 빛으로 회로 패턴을 찍음</td></tr>
+      <tr><td>4</td><td>식각</td><td>패턴대로 필요 없는 부분을 깎아냄</td></tr>
+      <tr><td>5</td><td>증착·이온주입</td><td>얇은 막을 쌓거나 불순물을 넣어 전기 특성을 만듦</td></tr>
+      <tr><td>6</td><td>금속배선</td><td>금속으로 소자들을 연결하는 전선을 만듦</td></tr>
+      <tr><td>7</td><td>EDS(웨이퍼 테스트)</td><td>웨이퍼 상태에서 칩마다 전기 검사, 불량 표시</td><td rowspan="2">후공정</td></tr>
+      <tr><td>8</td><td>패키징</td><td>웨이퍼를 칩 단위로 자르고 기판에 붙여 포장, 최종 검사</td></tr>
+    </table>
+    <p>핵심은 <b>2번부터 6번까지가 한 번으로 끝나지 않는다</b>는 거예요. 산화·포토·식각·증착·배선을 층마다 반복해서 수십 층을 쌓아요. 그래서 웨이퍼 한 장이 팹에 들어가 나오기까지 보통 두세 달이 걸려요.</p>
+
+    <div class="ad"></div>
+
+    <h2 id="s3">3. 전공정: 웨이퍼 위에 회로를 쌓는 다섯 단계</h2>
+    <p><b>산화</b>는 웨이퍼를 고온 노(퍼니스)에 넣어 표면에 산화막을 만드는 공정이에요. 이 막이 전기를 막는 절연층이자 다음 공정의 보호막이 돼요. 설비는 큰 오븐처럼 생겼고, 온도와 가스 유량이 핵심 관리 항목이에요.</p>
+    <p><b>포토(노광)</b>는 8대 공정 중 가장 정밀하고 비싼 공정이에요. 웨이퍼에 빛에 반응하는 감광액을 얇게 바르고, 회로 도면이 그려진 마스크를 통해 빛을 쏘아 패턴을 새겨요. 사진을 인화하는 원리와 비슷해요. 노광 장비 한 대가 수백억 원에서 수천억 원에 이르고, 클린룸 중에서도 가장 깨끗하고 노란 조명(감광액이 반응하지 않는 파장)을 쓰는 구역이에요.</p>
+    <p><b>식각</b>은 포토로 찍은 패턴을 따라 필요 없는 부분을 깎아내는 공정이에요. 액체 약품으로 깎는 습식과 플라즈마 가스로 깎는 건식이 있어요. 요즘 미세 공정은 대부분 건식이에요. 식각 설비는 진공 챔버 안에서 돌아가고, 유해가스 배관과 진공 펌프 관리가 현장 업무의 큰 부분이에요.</p>
+    <p><b>증착과 이온주입</b>은 웨이퍼 위에 얇은 막을 쌓거나(증착), 원하는 자리에 불순물 원자를 쏘아 넣어 전기 특성을 만드는(이온주입) 공정이에요. 증착은 화학 기상 증착(CVD), 물리 기상 증착(PVD) 같은 방식이 있고, 나노미터 두께를 균일하게 쌓는 게 핵심이에요.</p>
+    <p><b>금속배선</b>은 만들어진 소자들을 알루미늄이나 구리 같은 금속으로 연결하는 공정이에요. 수십억 개의 트랜지스터를 층층이 이어 주는 전선을 만드는 거예요. 배선 층도 여러 층이라 증착·포토·식각이 또 반복돼요.</p>
+
+    <figure data-photo="cleanroom engineer bunny suit"><figcaption>팹 안에서는 방진복(버니 슈트)을 입고 하루 몇 시간씩 일해요. 적응이 필요한 환경이에요</figcaption></figure>
+
+    <h2 id="s4">4. 후공정: 검사하고 자르고 포장하기</h2>
+    <p><b>EDS(웨이퍼 테스트)</b>는 회로가 완성된 웨이퍼를 자르기 전에, 칩 하나하나에 탐침(프로브)을 대고 전기 신호를 넣어 정상인지 검사하는 공정이에요. 불량 칩은 표시해 두고 다음 공정에서 버려요. 수율(양품 비율)이 여기서 숫자로 나오기 때문에 팹 전체가 이 결과를 주시해요.</p>
+    <p><b>패키징</b>은 웨이퍼를 칩 단위로 자르고(다이싱), 기판에 붙이고(다이 어태치), 칩과 기판을 가는 금속선이나 범프로 연결하고(본딩), 수지로 감싸서(몰딩) 우리가 아는 검은색 칩 모양으로 만드는 공정이에요. 마지막으로 온도·전기 검사를 거쳐 출하돼요.</p>
+    <p>후공정은 전공정보다 클린룸 등급이 낮은 경우가 많고, 설비가 비교적 작으며, 협력사나 전문 패키징 업체에서 하는 비중도 커요. 최근에는 칩을 여러 개 쌓거나 옆으로 붙이는 첨단 패키징이 중요해지면서 후공정 인력 수요도 늘고 있어요.</p>
+
+    <h2 id="s5">5. 클린룸 근무 환경: 방진복, 교대, 화학물질</h2>
+    <ul class="check">
+      <li><b>방진복 착용:</b> 속옷 위에 방진복, 방진화, 마스크, 장갑, 후드까지 입어요. 입고 벗는 데 시간이 걸리고, 화장·향수·개인 소지품 반입이 제한돼요.</li>
+      <li><b>에어샤워:</b> 클린룸에 들어갈 때 강한 바람으로 먼지를 털어내는 방을 지나요.</li>
+      <li><b>교대 근무:</b> 팹은 24시간 멈추지 않아요. 대부분 4조 3교대 또는 4조 2교대예요.</li>
+      <li><b>온습도 일정:</b> 클린룸은 온도와 습도가 일정하게 유지돼서 계절감이 없어요. 건조해서 피부와 목이 마르기 쉬워요.</li>
+      <li><b>화학물질·가스:</b> 식각·세정에 쓰는 산과 알칼리, 공정 가스가 있어요. 배관은 이중으로 되어 있고 가스 감지기가 곳곳에 있지만, 물질안전보건자료(MSDS) 교육과 비상 대피 절차를 첫날부터 익혀야 해요.</li>
+      <li><b>자동 반송:</b> 웨이퍼는 천장 레일을 따라 움직이는 자동 반송 장치(OHT)로 이동해요. 사람은 설비를 관리하고 이상을 처리해요.</li>
+    </ul>
+    <div class="warn">
+      <b>⚠️ 면접이나 배치 전에 확인하면 좋은 것</b>
+      <ul>
+        <li>전공정인지 후공정인지, 어느 공정 설비를 맡는지. 포토·식각·증착은 각각 설비와 일이 달라요.</li>
+        <li>클린룸 등급과 방진복 착용 시간. 하루 몇 시간을 안에서 보내는지 물어보세요.</li>
+        <li>교대 형태와 야간 비율. 수면 관리가 필요한 환경이에요.</li>
+      </ul>
+    </div>
+
+    <h2 id="s6">6. 현장 직무와 준비할 것</h2>
+    <p>반도체 현장 직무는 크게 네 가지예요. <b>설비 오퍼레이터</b>는 담당 설비의 가동 상태를 모니터링하고, 웨이퍼 투입·회수, 알람 1차 조치, 간단한 부품 교체를 해요. <b>설비 엔지니어(유지보수)</b>는 설비 고장 수리, 예방 정비(PM), 부품 교체를 맡고, 진공·가스·전기·기계 지식이 필요해요. <b>공정 엔지니어</b>는 공정 조건(레시피)을 관리하고 수율을 올리는 일을 해요. <b>품질·측정</b>은 웨이퍼의 막 두께, 선폭, 결함을 측정 장비로 확인해요.</p>
+    <p>고졸·전문대졸 현장직으로 들어가면 보통 오퍼레이터나 설비 유지보수로 시작해요. 준비하면 좋은 것은 이래요.</p>
+    <ul class="check">
+      <li>전기기능사, 생산자동화기능사, 설비보전기능사 같은 설비 관련 자격증</li>
+      <li>진공 기초(펌프, 게이지), 가스 안전, PLC 기초 지식</li>
+      <li>반도체 공정 기초 강의(온라인, 지자체 교육센터, 협회 과정)로 8대 공정 용어 익히기</li>
+      <li>교대 근무와 클린룸 환경에 대한 이해와 각오</li>
+    </ul>
+    <p>반도체 산업은 경기에 따라 채용 규모가 오르내리지만, 설비를 관리할 사람은 항상 필요해요. 8대 공정의 흐름을 알고 내 설비가 어디에 있는지 이해하면, 어느 공정에 배치되어도 내가 하는 일의 의미를 알 수 있어요.</p>
+
+    <div class="key">
+      <h3>✔ 핵심 정리</h3>
+      <ul class="check">
+        <li>8대 공정: 웨이퍼 제조 → 산화 → 포토 → 식각 → 증착·이온주입 → 금속배선 → EDS → 패키징.</li>
+        <li>전공정(2~6번)은 층마다 반복돼요. 웨이퍼 한 장이 나오는 데 두세 달.</li>
+        <li>포토는 가장 정밀하고 비싼 공정, 식각·증착은 진공·가스 관리가 현장 업무의 핵심.</li>
+        <li>클린룸은 방진복·교대·건조·화학물질 환경. 면접 전에 공정과 교대 형태를 확인해요.</li>
+        <li>현장 직무는 오퍼레이터·설비 엔지니어·공정·품질. 설비 자격증과 진공·가스·PLC 기초가 도움 돼요.</li>
+      </ul>
+    </div>
+
+    <div class="ad"></div>
+
+    <h2>함께 보면 좋은 글</h2>
+    <div class="related">
+      <a href="2026-09-29-battery-manufacturing-process-overview.html"><small>산업 트렌드</small>2차전지 생산 공정 3단계: 전극·조립·화성, 현장에서는 무슨 일을 하나</a>
+      <a href="2026-09-30-smart-factory-automation-jobs.html"><small>산업 트렌드</small>스마트팩토리와 자동화, 현장 직무는 어떻게 바뀌나: 오퍼레이터가 준비할 것</a>
+      <a href="2026-09-29-shift-work-sleep-management.html"><small>현장 생활</small>교대근무 수면 관리: 야간 근무 후 푹 자는 7가지 방법</a>
+    </div>
+
+    <p class="note">※ 이 글은 작성일 기준의 일반적인 설명이며 투자 조언이 아니에요.</p>
+
+    <div class="author"><div class="av">효</div><div><b>황제효도르</b> · 현장노트 운영자<br>제조 현장에서 일하며 배운 것들을 쉽게 정리해요.</div></div>
+  </div>
+</article>
+<footer>
+  <div><a href="../about.html">소개</a>·<a href="../contact.html">문의</a>·<a href="../privacy.html">개인정보처리방침</a></div>
+  <div style="margin-top:8px">© 2026 현장노트 · 운영 황제효도르</div>
+</footer>
+</body>
+</html>

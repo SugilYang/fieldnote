@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>감전 사고 유형 분석: 전동공구·분전반·용접기에서 왜 감전되고 어떻게 막나 | 현장노트</title>
+<meta name="description" content="현장 감전 사고의 대표 상황 5가지, 직접 원인과 관리·설비·절차의 근본 원인, 누전차단기·접지·절연 보호구·정전작업 절차 같은 예방 체크리스트와 관련 법적 의무를 정리했어요.">
+<meta name="author" content="황제효도르">
+<link rel="canonical" href="https://sugilyang.github.io/fieldnote/posts/2026-10-02-electric-shock-accident-analysis.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="현장노트">
+<meta property="og:title" content="감전 사고 유형 분석: 전동공구·분전반·용접기에서 왜 감전되고 어떻게 막나">
+<meta property="og:description" content="현장 감전 사고의 대표 상황 5가지, 직접 원인과 관리·설비·절차의 근본 원인, 누전차단기·접지·절연 보호구·정전작업 절차 같은 예방 체크리스트와 관련 법적 의무를 정리했어요.">
+<meta property="og:url" content="https://sugilyang.github.io/fieldnote/posts/2026-10-02-electric-shock-accident-analysis.html">
+<meta property="og:image" content="https://sugilyang.github.io/fieldnote/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMS58YZHEH"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-GMS58YZHEH');</script>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="in">
+  <a class="logo" href="../index.html">현장<span>노트</span></a>
+  <nav><a href="../index.html#license">자격증</a><a href="../index.html#safety">산업안전</a><a href="../index.html#case">사고사례</a><a href="../index.html#tools">장비·공구</a><a href="../index.html#trend">산업 트렌드</a><a href="../index.html#life">현장 생활</a></nav>
+</div></header>
+
+<article class="c-case">
+  <div class="post-hero" data-photo="electrical panel warning sign">
+    <div class="icon">🚨</div>
+    <span class="cat">🚨 사고사례 분석</span>
+    <h1>감전 사고 유형 분석: 전동공구·분전반·용접기에서 왜 감전되고 어떻게 막나</h1>
+    <div class="meta">2026.10.02 · 황제효도르 · 읽는 시간 7분</div>
+  </div>
+  <div class="wrap">
+    <div class="summary">
+      <b>이 글의 핵심 요약</b>
+      <ul>
+        <li>현장 감전은 고압 설비보다 220V·380V 저압에서 더 많이 일어나요. "저압이니까 괜찮다"는 생각이 가장 위험해요.</li>
+        <li>대표 상황은 피복 벗겨진 전동공구, 젖은 손·바닥, 분전반 활선 작업, 용접기 홀더 접촉, 정전 확인 없는 작업이에요.</li>
+        <li>누전차단기, 접지, 절연 보호구, 정전·검전·잠금 절차가 예방의 네 기둥이에요.</li>
+      </ul>
+    </div>
+
+    <div class="toc"><b>목차</b>
+      <ol>
+        <li><a href="#s1">감전은 왜 저압에서 더 많이 일어나나</a></li>
+        <li><a href="#s2">어떤 상황에서 일어나는가: 대표 유형 5가지</a></li>
+        <li><a href="#s3">직접 원인: 그 순간 무엇이 빠졌나</a></li>
+        <li><a href="#s4">근본 원인: 관리·설비·절차의 빈틈</a></li>
+        <li><a href="#s5">예방 대책 체크리스트</a></li>
+        <li><a href="#s6">관련 법적 의무</a></li>
+      </ol>
+    </div>
+
+    <h2 id="s1">1. 감전은 왜 저압에서 더 많이 일어나나</h2>
+    <p>감전 사고라고 하면 송전탑이나 변전소를 떠올리지만, 제조·건설 현장의 감전 재해는 대부분 <b>220V·380V 저압</b>에서 일어나요. 이유는 간단해요. 저압은 어디에나 있고, 누구나 만지고, "저압이니까"라며 방심하기 때문이에요. 고압 설비는 자격자만 접근하고 절차가 엄격하지만, 저압 콘센트와 전동공구는 모두가 쓰니까요.</p>
+    <p>사람 몸에 흐르는 전류가 수십 밀리암페어만 되어도 근육이 굳어 손을 뗄 수 없게 되고, 심장 박동이 흐트러질 수 있어요. 220V는 이 전류를 충분히 흘릴 수 있어요. 특히 손이 젖어 있거나 땀이 나면 피부 저항이 크게 떨어져서 같은 전압에서도 훨씬 많은 전류가 흘러요. 여름철과 습한 현장에서 감전이 늘어나는 이유예요.</p>
+    <p>이 글은 특정 사건이 아니라 반복되는 패턴을 유형화한 거예요. "어디서 전기가 몸으로 들어오는가"를 알면 막을 수 있어요.</p>
+
+    <figure data-photo="damaged power cord frayed wire"><figcaption>피복이 벗겨진 전원선은 가장 흔한 감전 경로예요. 테이프로 감아 쓰는 건 수리가 아니에요</figcaption></figure>
+
+    <h2 id="s2">2. 어떤 상황에서 일어나는가: 대표 유형 5가지</h2>
+    <table>
+      <tr><th>유형</th><th>전형적인 상황</th><th>전기가 들어오는 경로</th></tr>
+      <tr><td>전동공구·이동 전선</td><td>피복이 벗겨진 그라인더·드릴 전선, 손상된 연장선을 젖은 바닥에서 사용</td><td>손 → 몸 → 발(바닥)</td></tr>
+      <tr><td>분전반·제어반 활선 작업</td><td>전원을 끄지 않고 차단기 교체, 단자 조임, 배선 추가 작업</td><td>손 → 몸 → 반대 손 또는 발</td></tr>
+      <tr><td>교류아크용접기</td><td>용접 홀더나 용접봉 끝이 땀에 젖은 몸에 닿음, 자동전격방지기 없음</td><td>홀더 → 손·몸 → 모재</td></tr>
+      <tr><td>정전 확인 없는 작업</td><td>차단기를 내렸다고 생각했는데 다른 회로였거나, 다른 사람이 다시 올림</td><td>작업 부위 → 손 → 몸</td></tr>
+      <tr><td>설비 외함 누전</td><td>접지가 안 된 설비의 금속 외함에 누전이 생겨 만지는 순간 감전</td><td>외함 → 손 → 몸 → 발</td></tr>
+    </table>
+    <p>다섯 유형의 공통점은 <b>"전기가 흐를 수 있는 상태에서 몸이 전기 경로가 됐다"</b>는 거예요. 전원이 확실히 끊겨 있었거나, 전기가 몸 대신 접지선으로 빠져나갔거나, 누전차단기가 즉시 끊었다면 일어나지 않았을 사고예요.</p>
+
+    <div class="ad"></div>
+
+    <h2 id="s3">3. 직접 원인: 그 순간 무엇이 빠졌나</h2>
+    <ul class="check">
+      <li>전선 피복이 벗겨진 공구를 "조금 더 쓰자"며 테이프로 감아 썼어요.</li>
+      <li>젖은 손이나 젖은 장갑으로 플러그를 꽂고 공구를 잡았어요.</li>
+      <li>차단기를 내리지 않고 "잠깐이면 된다"며 활선 상태에서 단자를 만졌어요.</li>
+      <li>차단기를 내렸지만 검전기로 전압이 없는지 확인하지 않았어요. 다른 회로였어요.</li>
+      <li>차단기에 잠금·표지를 하지 않아서, 다른 사람이 "왜 꺼져 있지?" 하고 올렸어요.</li>
+      <li>용접 중 땀에 젖은 상태로 홀더의 노출된 금속부에 몸이 닿았어요.</li>
+      <li>절연장갑 대신 면장갑이나 맨손으로 전기 작업을 했어요.</li>
+    </ul>
+    <p>"부주의"로 정리되기 쉽지만, 같은 행동이 어느 현장에서나 반복된다면 그것을 사고로 이어지게 둔 구조가 있어요.</p>
+
+    <h2 id="s4">4. 근본 원인: 관리·설비·절차의 빈틈</h2>
+    <p><b>관리 측면</b>에서는 전기 작업을 "전기 아는 사람이면 누구나" 하게 두는 것이 문제예요. 분전반 내부 작업은 자격과 교육을 갖춘 사람이 해야 하는데, 급하다는 이유로 생산직이 차단기를 교체하는 일이 생겨요. 이동 전선과 전동공구를 점검하는 체계가 없고, 손상된 공구를 반납·교체하는 절차가 없는 것도 관리의 빈틈이에요.</p>
+    <p><b>설비 측면</b>에서는 누전차단기가 없는 콘센트, 접지가 안 된 설비 외함, 자동전격방지기가 없는 교류아크용접기, 절연이 벗겨진 배선, 물기 많은 곳에 설치된 일반 콘센트가 문제예요. 누전차단기는 있는데 고장 난 채 방치되거나, 자주 떨어진다고 우회해 놓은 경우도 많아요.</p>
+    <p><b>절차 측면</b>에서는 정전 작업 절차(차단 → 잠금·표지 → 검전 → 접지)가 문서로만 있고 현장에서 확인되지 않아요. 검전기가 없거나 배터리가 죽어 있고, 잠금 장치가 지급되지 않아요. 작업 전 전동공구 점검표가 형식적으로 서명만 되는 것도 절차의 빈틈이에요.</p>
+
+    <figure data-photo="voltage tester checking panel"><figcaption>차단기를 내린 뒤에도 검전기로 전압이 없는지 확인하는 것이 정전 작업의 핵심이에요</figcaption></figure>
+
+    <h2 id="s5">5. 예방 대책 체크리스트</h2>
+    <p><b>관리자·안전 담당자</b></p>
+    <ul class="check">
+      <li>이동식 전기기계·기구를 쓰는 콘센트에는 누전차단기를 설치하고, 월 1회 시험 버튼으로 동작을 확인해요.</li>
+      <li>금속 외함이 있는 설비는 접지하고, 접지선이 끊기거나 풀리지 않았는지 정기 점검해요.</li>
+      <li>교류아크용접기에는 자동전격방지기를 설치하고 동작을 확인해요.</li>
+      <li>전동공구와 연장선을 등록하고 월 1회 피복·플러그·접지선 상태를 점검해요. 손상된 것은 즉시 회수해요.</li>
+      <li>전기 작업은 자격·교육을 갖춘 사람만 하도록 정하고, 정전 작업 절차와 잠금·표지 장치를 지급해요.</li>
+      <li>물기 있는 장소의 콘센트는 방수형으로 바꾸고, 가능하면 위치를 옮겨요.</li>
+    </ul>
+    <p><b>작업자</b></p>
+    <ul class="check">
+      <li>공구를 쓰기 전 전선 피복, 플러그, 스위치를 눈으로 확인해요. 손상되면 쓰지 말고 반납해요.</li>
+      <li>젖은 손, 젖은 장갑, 젖은 바닥에서 전기 공구를 쓰지 않아요. 바닥이 젖었으면 절연 매트나 마른 발판을 깔아요.</li>
+      <li>전기 작업은 전원 차단 → 내 자물쇠로 잠금과 표지 → 검전기로 무전압 확인 → 작업. 이 순서를 생략하지 않아요.</li>
+      <li>활선 근처에서 꼭 작업해야 하면 절연장갑, 절연 공구, 절연 매트를 쓰고 한 손 원칙을 지켜요.</li>
+      <li>용접 중에는 홀더의 절연 부분만 잡고, 땀에 젖은 몸이 홀더나 봉에 닿지 않게 해요. 쉬는 시간에는 용접기 전원을 꺼요.</li>
+      <li>동료가 감전되어 붙어 있으면 맨손으로 잡지 말고, 먼저 전원을 끊거나 마른 나무·절연 막대로 떼어내요.</li>
+    </ul>
+    <div class="warn">
+      <b>⚠️ 이런 말이 들리면 사고 직전이에요</b>
+      <ul>
+        <li>"220V는 찌릿하고 마는 거야." → 젖은 손이면 치명적일 수 있어요.</li>
+        <li>"누전차단기가 자꾸 떨어져서 빼 놨어." → 누전이 있다는 신호예요. 원인을 찾아야지 차단기를 빼면 안 돼요.</li>
+        <li>"차단기 내렸으니까 바로 작업하자." → 검전과 잠금 없이는 내린 게 아니에요.</li>
+      </ul>
+    </div>
+
+    <h2 id="s6">6. 관련 법적 의무</h2>
+    <p>산업안전보건기준에 관한 규칙은 감전 예방에 대해 대략 다음을 요구해요. 조문과 세부 내용은 개정될 수 있으니 안전보건공단 자료로 확인하세요.</p>
+    <ul class="check">
+      <li>전기기계·기구의 충전부에 접촉하지 않도록 덮개, 절연, 격리 조치를 해요.</li>
+      <li>이동식·휴대용 전기기계·기구, 물기 있는 장소의 전기기계·기구에는 감전 방지용 누전차단기를 설치해요.</li>
+      <li>전기기계·기구의 금속 외함, 금속 배관 등에 접지를 해요.</li>
+      <li>교류아크용접기는 자동전격방지기를 설치해요.</li>
+      <li>정전 작업 시 전로를 차단하고, 잠금·표지를 하며, 검전기로 충전 여부를 확인하고, 필요 시 단락 접지를 해요. 작업 후 재통전 절차도 정해요.</li>
+      <li>충전 전로 작업이나 근접 작업 시 절연 보호구 착용, 절연 용구 사용, 접근 한계 거리를 지켜요.</li>
+      <li>전기 작업 종사자에게 특별교육을 실시해요. 전압이 일정 기준 이상인 정전·활선 작업은 특별교육 대상이에요.</li>
+    </ul>
+    <p>이 의무들은 사고 뒤 책임을 따지는 기준이기도 하지만, 그보다 먼저 실제로 사고를 막는 방법이에요. 누전차단기와 접지는 전기가 몸 대신 흘러갈 길을 만드는 것이고, 정전·검전·잠금 절차는 전기가 아예 흐르지 않게 하는 거예요. 이 두 가지가 갖춰진 현장에서는 감전 사고가 거의 일어나지 않아요.</p>
+
+    <div class="key">
+      <h3>✔ 핵심 정리</h3>
+      <ul class="check">
+        <li>감전은 저압에서 더 많이 일어나요. 젖은 손·바닥이 위험을 몇 배로 키워요.</li>
+        <li>설비 대책: 누전차단기(월 1회 시험), 접지, 자동전격방지기, 손상 공구 즉시 회수.</li>
+        <li>절차 대책: 차단 → 잠금·표지 → 검전 → 작업. 하나라도 빠지면 정전 작업이 아니에요.</li>
+        <li>절연장갑·절연 공구·한 손 원칙, 용접 홀더는 절연부만 잡기.</li>
+        <li>감전된 동료는 맨손으로 잡지 말고 전원부터 끊어요.</li>
+      </ul>
+    </div>
+
+    <div class="ad"></div>
+
+    <h2>함께 보면 좋은 글</h2>
+    <div class="related">
+      <a href="2026-10-01-digital-multimeter-usage-guide.html"><small>장비·공구</small>디지털 멀티미터(테스터기) 사용법: 전압·저항·통전 측정과 안전하게 쓰는 요령</a>
+      <a href="2026-10-01-conveyor-entanglement-accident-analysis.html"><small>사고사례 분석</small>컨베이어 끼임 사고: 멈춘 줄 알았던 설비에 왜 손이 들어가나</a>
+      <a href="2026-09-30-electrician-craftsman-exam-guide.html"><small>자격증</small>전기기능사 필기·실기 준비법: 직장인이 3개월 안에 따는 현실적인 계획</a>
+    </div>
+
+    <p class="note">※ 이 글은 사고 유형별 일반적인 원인과 예방 대책을 설명한 것으로, 특정 사건이나 사업장을 지칭하지 않아요. 자세한 재해 사례는 안전보건공단(kosha.or.kr) 자료를 참고하세요.</p>
+
+    <div class="author"><div class="av">효</div><div><b>황제효도르</b> · 현장노트 운영자<br>제조 현장에서 일하며 배운 것들을 쉽게 정리해요.</div></div>
+  </div>
+</article>
+<footer>
+  <div><a href="../about.html">소개</a>·<a href="../contact.html">문의</a>·<a href="../privacy.html">개인정보처리방침</a></div>
+  <div style="margin-top:8px">© 2026 현장노트 · 운영 황제효도르</div>
+</footer>
+</body>
+</html>

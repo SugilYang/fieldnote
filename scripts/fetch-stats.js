@@ -3,7 +3,7 @@
 const fs = require('fs');
 const crypto = require('crypto');
 
-const SA = process.env.GA_SERVICE_ACCOUNT, PROP = process.env.GA_PROPERTY_ID;
+const SA = process.env.GA_SERVICE_ACCOUNT, PROP = process.env.GA_PROPERTY_ID || '556486591';
 if (!SA || !PROP) { console.log('GA 시크릿 없음 — 통계 건너뜀'); process.exit(0); }
 const sa = JSON.parse(SA);
 const START = '2026-09-29'; // 블로그 개설일

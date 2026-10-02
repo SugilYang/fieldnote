@@ -26,12 +26,19 @@ jobs:
         env:
           UNSPLASH_KEY: ${{ secrets.UNSPLASH_KEY }}
         run: node scripts/add-photos.js
-      - name: 사진 채운 글 커밋
+      - name: 방문자 통계 (GA)
+        env:
+          GA_SERVICE_ACCOUNT: ${{ secrets.GA_SERVICE_ACCOUNT }}
+          GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
+        run: node scripts/fetch-stats.js
+      - name: 검색 색인
+        run: node scripts/build-index.js
+      - name: 변경 내용 커밋
         run: |
           git config user.name "fieldnote-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add posts posts.json
-          if ! git diff --cached --quiet; then git commit -m "사진 삽입 [skip ci]" && git push; fi
+          git add posts posts.json stats.json search.json
+          if ! git diff --cached --quiet; then git commit -m "사진·통계·색인 갱신 [skip ci]" && git push; fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

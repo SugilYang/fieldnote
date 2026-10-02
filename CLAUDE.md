@@ -58,4 +58,4 @@
 - "함께 보면 좋은 글"은 `posts.json`의 기존 글 중 관련 있는 것으로만 링크한다. 없는 글을 링크하지 않는다.
 
 ## 수정하지 말 것
-`index.html`, `about.html`, `contact.html`, `privacy.html`, `assets/style.css`, `templates/post.html`, `.github/`는 운영자가 요청할 때만 수정한다.
+`index.html`, `about.html`, `contact.html`, `privacy.html`, `assets/`, `scripts/`, `templates/post.html`, `.github/`, `stats.json`, `search.json`은 운영자가 요청할 때만 수정한다.

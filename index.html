@@ -23,46 +23,93 @@
 <body>
 <header class="site"><div class="in">
   <a class="logo" href="index.html">현장<span>노트</span></a>
+  <form class="search" onsubmit="return false"><input id="q" type="search" placeholder="글 검색" autocomplete="off"><span>🔍</span></form>
   <nav><a href="about.html">소개</a><a href="contact.html">문의</a></nav>
 </div></header>
 <main class="home">
   <div class="banner">
-    <h1>현장에서 일하는 사람을 위한<br>실무 노트</h1>
+    <h1>현장에서 일하는 사람을 위한 <br>실무 노트</h1>
     <p>자격증 · 산업안전 · 사고사례 분석 · 장비·공구 · 산업 트렌드 · 현장 생활, 매일 새 글이 올라와요.</p>
   </div>
   <div class="tabs" id="tabs"></div>
-  <div class="grid" id="grid"></div>
+  <div class="layout">
+    <section>
+      <p class="result" id="result"></p>
+      <div class="grid" id="grid"></div>
+      <div class="pager" id="pager"></div>
+    </section>
+    <aside class="side">
+      <div class="box profile"><div class="av">효</div><b>황제효도르</b><p>제조 현장에서 일하며 배운 것들을 쉽게 정리해요.</p><div class="stats" id="stats"></div></div>
+      <div class="box"><h3>카테고리</h3><ul class="cats" id="cats"></ul></div>
+      <div class="box"><h3 id="popTitle">인기 글</h3><ol class="pop" id="pop"></ol></div>
+    </aside>
+  </div>
 </main>
+<a class="top" id="top" href="#" aria-label="맨 위로">↑</a>
 <footer>
   <div><a href="about.html">소개</a>·<a href="contact.html">문의</a>·<a href="privacy.html">개인정보처리방침</a></div>
   <div style="margin-top:8px">© 2026 현장노트 · 운영 황제효도르</div>
 </footer>
 <script>
 const SECTIONS = {all:['전체',''], license:['자격증','📜'], safety:['산업안전','🦺'], case:['사고사례 분석','🚨'], tools:['장비·공구','🔧'], trend:['산업 트렌드','🔋'], life:['현장 생활','💼']};
+const PER = 12;
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-let posts = [];
+const $ = id => document.getElementById(id);
+let posts = [], stats = null, page = 1;
 
 function card(p, big) {
   const [name, icon] = SECTIONS[p.section] || ['', ''];
+  const views = stats?.pages?.['posts/' + p.file];
   return `<a class="card c-${esc(p.section)}${big ? ' big' : ''}" href="posts/${esc(p.file)}"><div class="hero-box">${p.image ? `<img src="${esc(p.image)}" alt="" loading="lazy">` : icon}</div>
-    <div class="t"><small>${name} · ${esc(p.date)}</small><b>${esc(p.title)}</b><p>${esc(p.summary)}</p></div></a>`;
+    <div class="t"><small>${name} · ${esc(p.date)}${views ? ` · 조회 ${views.toLocaleString()}` : ''}</small><b>${esc(p.title)}</b><p>${esc(p.summary)}</p></div></a>`;
 }
 
 function render() {
   const cur = SECTIONS[location.hash.slice(1)] ? location.hash.slice(1) : 'all';
-  document.getElementById('tabs').innerHTML = Object.entries(SECTIONS).map(([id, [name, icon]]) =>
+  const q = $('q').value.trim().toLowerCase();
+  $('tabs').innerHTML = Object.entries(SECTIONS).map(([id, [name, icon]]) =>
     `<button class="${id === cur ? 'on' : ''}" onclick="location.hash='${id}'">${icon} ${name}</button>`).join('');
-  const list = posts.filter(p => cur === 'all' || p.section === cur);
-  document.getElementById('grid').innerHTML = list.length
-    ? list.map((p, i) => card(p, i === 0)).join('')
-    : '<p class="empty">아직 글이 없어요.</p>';
+  let list = posts.filter(p => cur === 'all' || p.section === cur);
+  if (q) list = list.filter(p => (p.title + ' ' + p.summary + ' ' + (p.text || '')).toLowerCase().includes(q));
+  $('result').textContent = q ? `"${q}" 검색 결과 ${list.length}건` : '';
+  const pages = Math.max(1, Math.ceil(list.length / PER));
+  if (page > pages) page = pages;
+  const slice = list.slice((page - 1) * PER, page * PER);
+  $('grid').innerHTML = slice.length ? slice.map((p, i) => card(p, i === 0 && page === 1 && !q)).join('') : '<p class="empty">글이 없어요.</p>';
+  $('pager').innerHTML = pages > 1 ? Array.from({length: pages}, (_, i) =>
+    `<button class="${i + 1 === page ? 'on' : ''}" onclick="page=${i + 1};render();scrollTo({top:0,behavior:'smooth'})">${i + 1}</button>`).join('') : '';
 }
 
-fetch('posts.json').then(r => r.json()).then(d => {
-  posts = d.sort((a, b) => b.date.localeCompare(a.date));
-  render();
+function renderSide() {
+  const counts = {};
+  posts.forEach(p => counts[p.section] = (counts[p.section] || 0) + 1);
+  $('cats').innerHTML = Object.entries(SECTIONS).map(([id, [name, icon]]) =>
+    `<li><a href="#${id}">${icon} ${name}</a><span>${id === 'all' ? posts.length : counts[id] || 0}</span></li>`).join('');
+  let pop;
+  if (stats?.pages) {
+    pop = posts.map(p => [p, stats.pages['posts/' + p.file] || 0]).filter(x => x[1] > 0).sort((a, b) => b[1] - a[1]).slice(0, 5).map(x => x[0]);
+  }
+  if (!pop || pop.length < 3) { pop = posts.slice(0, 5); $('popTitle').textContent = '최신 글'; }
+  $('pop').innerHTML = pop.map(p => `<li><a href="posts/${esc(p.file)}">${esc(p.title)}</a></li>`).join('');
+  if (stats) $('stats').innerHTML = `<div><b>${(stats.yesterday || 0).toLocaleString()}</b><span>어제</span></div><div><b>${(stats.total || 0).toLocaleString()}</b><span>전체 방문</span></div><div><b>${posts.length}</b><span>글</span></div>`;
+  else $('stats').innerHTML = `<div><b>${posts.length}</b><span>글</span></div>`;
+}
+
+Promise.all([
+  fetch('posts.json').then(r => r.json()),
+  fetch('stats.json').then(r => r.ok ? r.json() : null).catch(() => null),
+]).then(([d, s]) => {
+  posts = d.sort((a, b) => b.date.localeCompare(a.date)); stats = s;
+  renderSide(); render();
 });
-window.addEventListener('hashchange', render);
+let idx = null;
+$('q').addEventListener('input', async () => {
+  if (!idx) { idx = await fetch('search.json').then(r => r.ok ? r.json() : {}).catch(() => ({})); posts.forEach(p => p.text = idx[p.file] || ''); }
+  page = 1; render();
+});
+window.addEventListener('hashchange', () => { page = 1; render(); });
+window.addEventListener('scroll', () => $('top').classList.toggle('show', scrollY > 400));
+$('top').onclick = e => { e.preventDefault(); scrollTo({top: 0, behavior: 'smooth'}); };
 </script>
 </body>
 </html>

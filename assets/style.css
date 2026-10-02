@@ -94,3 +94,45 @@ th,td{border:1px solid var(--line);padding:11px 12px;text-align:left;vertical-al
 .credit a,figcaption a{color:var(--sub)}
 .hero-box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 @media (max-width:600px){.post-hero.photo{min-height:300px}}
+
+/* 검색 */
+.search{position:relative;flex:1;max-width:320px;margin:0 16px}
+.search input{width:100%;border:1px solid var(--line);background:var(--bg);color:var(--text);border-radius:24px;padding:8px 36px 8px 14px;font:inherit;font-size:14px;outline:none}
+.search input:focus{border-color:var(--accent)}
+.search span{position:absolute;right:12px;top:50%;transform:translateY(-50%);font-size:14px;pointer-events:none}
+.result{color:var(--sub);font-size:14px;margin:0 0 12px}
+
+/* 메인 2단 */
+.layout{display:grid;grid-template-columns:1fr 280px;gap:28px;align-items:start}
+.layout .grid{grid-template-columns:repeat(2,1fr)}
+.side{position:sticky;top:76px;display:flex;flex-direction:column;gap:16px}
+.box{background:var(--card);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow)}
+.box h3{margin:0 0 12px;font-size:15px;font-weight:800}
+.profile{text-align:center}.profile .av{width:56px;height:56px;border-radius:50%;margin:0 auto 10px;background:linear-gradient(135deg,#f59e0b,#b45309);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:22px}
+.profile b{font-size:16px}.profile p{margin:6px 0 14px;font-size:13px;color:var(--sub)}
+.stats{display:flex;justify-content:center;gap:4px;border-top:1px solid var(--line);padding-top:12px}
+.stats div{flex:1}.stats b{display:block;font-size:18px}.stats span{font-size:11px;color:var(--sub)}
+.cats{list-style:none;margin:0;padding:0}.cats li{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line);font-size:14px}
+.cats li:last-child{border:0}.cats a{text-decoration:none;font-weight:600}.cats a:hover{color:var(--accent)}.cats span{color:var(--sub);font-size:13px}
+.pop{margin:0;padding-left:20px;font-size:14px}.pop li{margin:6px 0;line-height:1.45}.pop a{text-decoration:none;font-weight:500}.pop a:hover{color:var(--accent)}
+.pager{display:flex;justify-content:center;gap:6px;margin-top:28px}
+.pager button{min-width:36px;height:36px;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:8px;font:inherit;font-weight:600;cursor:pointer}
+.pager button.on{background:var(--text);color:var(--bg);border-color:var(--text)}
+
+/* 맨 위로 */
+.top{position:fixed;right:20px;bottom:24px;width:44px;height:44px;border-radius:50%;background:var(--text);color:var(--bg);display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:800;box-shadow:var(--shadow-h);opacity:0;pointer-events:none;transition:.2s;z-index:20}
+.top.show{opacity:1;pointer-events:auto}
+
+/* 글: 공유·이전다음 */
+.share{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:20px 0 0;font-size:13px}
+.share span{color:var(--sub);font-weight:600;margin-right:4px}
+.share a,.share button{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:20px;padding:5px 12px;font:inherit;font-size:13px;font-weight:600;text-decoration:none;cursor:pointer}
+.share a:hover,.share button:hover{border-color:var(--accent)}.share .kakao{background:#fee500;border-color:#fee500;color:#191919}
+.prevnext{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:36px}
+.prevnext a{border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;font-weight:700;font-size:15px;line-height:1.4;transition:.15s}
+.prevnext a:hover{border-color:var(--accent);box-shadow:var(--shadow)}
+.prevnext small{display:block;color:var(--accent);font-weight:700;font-size:12px;margin-bottom:4px}
+.prevnext .p{text-align:right}
+
+@media (max-width:820px){.layout{grid-template-columns:1fr}.layout .grid{grid-template-columns:repeat(2,1fr)}.side{position:static}.search{max-width:none;margin:0 10px}}
+@media (max-width:600px){.layout .grid{grid-template-columns:1fr}.prevnext{grid-template-columns:1fr}.prevnext .p{text-align:left}.search input{padding:7px 32px 7px 12px}}

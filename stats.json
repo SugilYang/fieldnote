@@ -1,13 +1,17 @@
 {
   "updated": "2026-10-02",
   "yesterday": 0,
-  "total": 5,
+  "total": 6,
   "pages": {
+    "posts/2026-09-30-risk-assessment-procedure-guide.html": 4,
+    "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 3,
     "posts/2026-09-30-electrician-craftsman-exam-guide.html": 2,
-    "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 2,
-    "posts/2026-09-30-risk-assessment-procedure-guide.html": 2,
     "posts/2026-09-29-battery-manufacturing-process-overview.html": 1,
     "posts/2026-09-30-safety-shoes-choosing-and-care.html": 1,
-    "posts/2026-10-01-semiconductor-8-process-overview.html": 1
+    "posts/2026-10-01-conveyor-entanglement-accident-analysis.html": 1,
+    "posts/2026-10-01-semiconductor-8-process-overview.html": 1,
+    "posts/2026-10-02-drill-driver-impact-hammer-comparison.html": 1,
+    "posts/2026-10-02-ppe-selection-and-wearing-guide.html": 1,
+    "posts/2026-10-02-welding-craftsman-exam-guide.html": 1
   }
 }

@@ -7,14 +7,16 @@
   // 공유 버튼
   const share = document.createElement('div');
   share.className = 'share';
+  const canShare = !!navigator.share;
   share.innerHTML = `<span>공유</span>
-    <a href="https://sharer.kakao.com/talk/friends/picker/link?url=${encodeURIComponent(url)}" target="_blank" rel="noopener" title="카카오톡" class="kakao">💬 카카오톡</a>
+    ${canShare ? '<button type="button" id="nativeShare" class="kakao">💬 카카오톡·문자로 공유</button>' : ''}
     <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}" target="_blank" rel="noopener" title="페이스북">f 페이스북</a>
     <a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}" target="_blank" rel="noopener" title="X">𝕏</a>
     <button type="button" id="copyLink">🔗 링크 복사</button>`;
   document.querySelector('.wrap')?.prepend(share);
+  if (canShare) document.getElementById('nativeShare').onclick = () => navigator.share({ title, url }).catch(() => {});
   document.getElementById('copyLink').onclick = async e => {
-    try { await navigator.clipboard.writeText(url); e.target.textContent = '✔ 복사됨'; setTimeout(() => e.target.textContent = '🔗 링크 복사', 1500); } catch {}
+    try { await navigator.clipboard.writeText(url); e.target.textContent = '✔ 복사됨 — 카카오톡에 붙여넣기'; setTimeout(() => e.target.textContent = '🔗 링크 복사', 2500); } catch {}
   };
 
   // 맨 위로

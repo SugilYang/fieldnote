@@ -195,5 +195,47 @@
     "summary": "3겹 레이어링과 소재 고르기, 손·발·머리 보온, 작업 중 체온 관리, 저체온증·동상 신호와 대처, 사업장 조치를 정리했어요.",
     "date": "2026-10-02",
     "image": "https://images.unsplash.com/photo-1617314522792-6d97e1e488a4?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y29uc3RydWN0aW9uJTIwd29ya2VyJTIwd2ludGVyJTIwamFja2V0JTIwc25vd3xlbnwxfDB8fHwxNzkwODc3Nzg5fDA&ixlib=rb-4.1.0&w=600&q=70&auto=format&fit=crop"
+  },
+  {
+    "file": "2026-10-05-excavator-operator-license-guide.html",
+    "section": "license",
+    "title": "굴착기운전기능사 준비법: 필기 1주, 실기 굴착·주행 코스에서 실격 안 당하는 요령",
+    "summary": "시험 구성과 합격 기준, 필기 1주 계획, 실기 굴착 작업과 코스 주행의 채점·실격 기준, 학원 연습 요령, 면허 발급과 3톤 미만 교육을 정리했어요.",
+    "date": "2026-10-05"
+  },
+  {
+    "file": "2026-10-05-toolbox-meeting-tbm-guide.html",
+    "section": "safety",
+    "title": "작업 전 TBM(툴박스 미팅) 제대로 하는 법: 10분 구성, 진행 순서, 기록 요령",
+    "summary": "TBM이 형식이 되는 이유, 효과를 내는 조건, 10분 표준 구성과 순서, 위험 예지 훈련과 지적 확인, 기록 방법과 위험성평가·법정 교육 연결을 정리했어요.",
+    "date": "2026-10-05"
+  },
+  {
+    "file": "2026-10-05-welding-spark-fire-accident-analysis.html",
+    "section": "case",
+    "title": "용접·절단 불티 화재 사고: 작은 불꽃이 어떻게 공장을 태우나, 원인과 예방",
+    "summary": "불티 화재의 대표 상황 5가지, 직접·근본 원인, 가연물 제거·방염포·소화기·화재감시자·잔불 확인 등 예방 체크리스트와 법적 의무를 정리했어요.",
+    "date": "2026-10-05"
+  },
+  {
+    "file": "2026-10-05-angle-grinder-safe-use-guide.html",
+    "section": "tools",
+    "title": "핸드그라인더 안전 사용법: 디스크 고르기, 킥백 막기, 안전커버와 교체 요령",
+    "summary": "디스크 종류와 용도, 규격·회전수 맞추기, 킥백의 원리와 막는 자세, 안전커버·보조 손잡이·보호구, 디스크 교체와 점검 요령을 정리했어요.",
+    "date": "2026-10-05"
+  },
+  {
+    "file": "2026-10-05-collaborative-robot-overview.html",
+    "section": "trend",
+    "title": "협동로봇, 현장에 어떻게 들어오나: 산업용 로봇과의 차이, 적용 작업, 안전 기준",
+    "summary": "협동로봇과 산업용 로봇의 차이, 팔레타이징·머신텐딩·용접 등 대표 적용 작업, 힘·속도 제한과 위험성평가 같은 안전 기준, 직무 변화와 준비할 것을 정리했어요.",
+    "date": "2026-10-05"
+  },
+  {
+    "file": "2026-10-05-hand-skin-care-work-gloves.html",
+    "section": "life",
+    "title": "현장 직장인 손 관리: 거칠어진 손, 갈라짐, 접촉성 피부염 막는 장갑 선택과 습관",
+    "summary": "손 피부가 상하는 원인, 작업별 장갑 소재 고르기, 장갑 속 땀 관리, 손 씻기와 보습 순서, 갈라짐·굳은살 관리, 접촉성 피부염 신호를 정리했어요.",
+    "date": "2026-10-05"
   }
 ]

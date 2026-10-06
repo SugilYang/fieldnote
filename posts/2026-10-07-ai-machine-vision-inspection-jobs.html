@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 비전 검사는 품질 검사 직무를 어떻게 바꾸나: 머신비전 구조, 적용 범위, 검사원이 준비할 것 | 현장노트</title>
+<meta name="description" content="머신비전 검사 시스템의 구성(조명·카메라·렌즈·소프트웨어), 규칙 기반과 AI(딥러닝) 검사의 차이, 잘 맞는 검사와 아직 어려운 검사, 도입 시 검사원·설비·품질 직무의 변화, 현장 직장인이 준비할 것을 정리했어요.">
+<meta name="author" content="황제효도르">
+<link rel="canonical" href="https://sugilyang.github.io/fieldnote/posts/2026-10-07-ai-machine-vision-inspection-jobs.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="현장노트">
+<meta property="og:title" content="AI 비전 검사는 품질 검사 직무를 어떻게 바꾸나: 머신비전 구조, 적용 범위, 검사원이 준비할 것">
+<meta property="og:description" content="머신비전 검사 시스템의 구성(조명·카메라·렌즈·소프트웨어), 규칙 기반과 AI(딥러닝) 검사의 차이, 잘 맞는 검사와 아직 어려운 검사, 도입 시 검사원·설비·품질 직무의 변화, 현장 직장인이 준비할 것을 정리했어요.">
+<meta property="og:url" content="https://sugilyang.github.io/fieldnote/posts/2026-10-07-ai-machine-vision-inspection-jobs.html">
+<meta property="og:image" content="https://sugilyang.github.io/fieldnote/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMS58YZHEH"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-GMS58YZHEH');</script>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/post.js" defer></script>
+</head>
+<body>
+<header class="site"><div class="in">
+  <a class="logo" href="../index.html">현장<span>노트</span></a>
+  <nav><a href="../index.html#license">자격증</a><a href="../index.html#safety">산업안전</a><a href="../index.html#case">사고사례</a><a href="../index.html#tools">장비·공구</a><a href="../index.html#trend">산업 트렌드</a><a href="../index.html#life">현장 생활</a></nav>
+</div></header>
+
+<article class="c-trend">
+  <div class="post-hero" data-photo="machine vision camera inspection line">
+    <div class="icon">🔋</div>
+    <span class="cat">🔋 산업 트렌드</span>
+    <h1>AI 비전 검사는 품질 검사 직무를 어떻게 바꾸나: 머신비전 구조, 적용 범위, 검사원이 준비할 것</h1>
+    <div class="meta">2026.10.07 · 황제효도르 · 읽는 시간 8분</div>
+  </div>
+  <div class="wrap">
+    <div class="summary">
+      <b>이 글의 핵심 요약</b>
+      <ul>
+        <li>비전 검사는 카메라로 제품을 찍어 소프트웨어가 양품·불량을 판정하는 시스템이에요. 사람 눈의 피로와 판정 편차를 없애려고 도입돼요.</li>
+        <li>규칙 기반 검사는 치수·유무·위치처럼 "정의할 수 있는 것"에, AI(딥러닝) 검사는 스크래치·얼룩·찍힘처럼 "말로 정의하기 어려운 것"에 강해요.</li>
+        <li>검사원의 일은 "보는 것"에서 "AI가 틀린 것을 잡고, 불량 데이터를 가르치고, 조명·카메라 상태를 관리하는 것"으로 옮겨 가요.</li>
+      </ul>
+    </div>
+
+    <div class="toc"><b>목차</b>
+      <ol>
+        <li><a href="#s1">사람 눈 검사의 한계, 비전 검사가 들어오는 이유</a></li>
+        <li><a href="#s2">머신비전 시스템의 구성: 조명·카메라·렌즈·소프트웨어</a></li>
+        <li><a href="#s3">규칙 기반 검사와 AI 검사의 차이</a></li>
+        <li><a href="#s4">잘 맞는 검사와 아직 어려운 검사</a></li>
+        <li><a href="#s5">도입 현장에서 직무는 어떻게 바뀌나</a></li>
+        <li><a href="#s6">현장 직장인이 준비할 것</a></li>
+      </ol>
+    </div>
+
+    <h2 id="s1">1. 사람 눈 검사의 한계, 비전 검사가 들어오는 이유</h2>
+    <p>외관 검사는 제조 현장에서 가장 많은 사람이 하는 일 중 하나예요. 라인 끝에서 제품을 집어 돌려 보고, 스크래치·찍힘·이물·변색·누락을 찾아 양품과 불량을 나눠요. 그런데 사람 눈은 한계가 있어요. 두 시간이 지나면 집중력이 떨어지고, 같은 불량을 아침과 저녁에 다르게 판정하고, 검사원마다 기준이 달라요. 작은 결함은 조명과 각도에 따라 보였다 안 보였다 해요.</p>
+    <p>비전 검사는 이 문제를 카메라와 소프트웨어로 풀어요. 같은 조명, 같은 각도, 같은 기준으로 하루 수만 개를 똑같이 봐요. 판정 결과가 데이터로 남아 어느 설비, 어느 시간에 불량이 늘었는지 바로 알 수 있어요. 고객사가 "전수 검사 데이터"를 요구하는 업종(자동차 부품, 전자, 배터리, 반도체)에서는 거의 필수가 됐어요.</p>
+    <p>최근 몇 년 사이 달라진 건 <b>AI(딥러닝)</b>가 들어온 거예요. 예전 비전 검사는 "이 위치에 구멍이 있는가", "이 치수가 범위 안인가"처럼 규칙으로 정의할 수 있는 것만 했어요. AI는 "이런 게 스크래치다"를 사진 수백 장으로 배워서, 말로 정의하기 어려운 외관 결함도 잡아요. 그래서 사람이 하던 외관 검사 자리에 AI 비전이 들어오기 시작했어요.</p>
+
+    <figure data-photo="industrial camera lens lighting inspection"><figcaption>비전 검사의 성패는 소프트웨어보다 조명과 카메라 세팅에서 갈려요. 결함이 사진에 찍혀야 AI도 볼 수 있어요</figcaption></figure>
+
+    <h2 id="s2">2. 머신비전 시스템의 구성: 조명·카메라·렌즈·소프트웨어</h2>
+    <table>
+      <tr><th>구성 요소</th><th>역할</th><th>현장에서 관리할 것</th></tr>
+      <tr><td>조명</td><td>결함이 사진에 드러나게 함. 링·바·돔·백라이트·동축 등 종류가 많음</td><td>조명 밝기 저하(LED 노화), 오염, 위치 틀어짐. 비전 문제의 절반은 조명</td></tr>
+      <tr><td>카메라</td><td>제품을 찍음. 해상도(화소), 컬러/흑백, 라인스캔/에어리어스캔</td><td>렌즈 오염, 초점 틀어짐, 고정 볼트 풀림, 케이블 접촉</td></tr>
+      <tr><td>렌즈</td><td>시야 범위와 배율, 왜곡을 정함. 텔레센트릭 렌즈는 치수 측정용</td><td>먼지·기름 오염, 조리개·초점 링 움직임</td></tr>
+      <tr><td>트리거·센서</td><td>제품이 정위치에 왔을 때 촬영 신호를 줌</td><td>센서 오염, 타이밍 어긋남(흔들린 사진)</td></tr>
+      <tr><td>소프트웨어</td><td>사진을 분석해 판정. 규칙 기반 또는 AI 모델</td><td>판정 기준(임계값) 관리, 모델 재학습, 결과 데이터 확인</td></tr>
+      <tr><td>배출 장치</td><td>불량으로 판정된 제품을 라인에서 빼냄</td><td>배출 타이밍, 에어·푸셔 작동 확인</td></tr>
+    </table>
+    <p>현장에서 꼭 기억할 것은 <b>"비전은 조명이 8할"</b>이라는 말이에요. 아무리 좋은 AI도 사진에 결함이 안 찍히면 못 잡아요. 조명이 어두워지거나 각도가 틀어지면 어제까지 잡던 불량을 오늘 놓쳐요. 그래서 비전 검사 설비의 일상 관리는 조명과 렌즈 상태 확인이 중심이에요.</p>
+
+    <div class="ad"></div>
+
+    <h2 id="s3">3. 규칙 기반 검사와 AI 검사의 차이</h2>
+    <table>
+      <tr><th>구분</th><th>규칙 기반(전통 머신비전)</th><th>AI(딥러닝) 비전</th></tr>
+      <tr><td>판정 방식</td><td>사람이 규칙을 정함. "이 영역 밝기가 X 이하면 불량", "치수가 범위 밖이면 불량"</td><td>양품·불량 사진을 수백~수천 장 보여 주고 모델이 특징을 스스로 배움</td></tr>
+      <tr><td>잘하는 것</td><td>치수 측정, 유무·위치·개수 확인, 바코드·문자 읽기, 정형화된 패턴</td><td>스크래치·찍힘·얼룩·이물·변형처럼 모양이 제각각인 외관 결함</td></tr>
+      <tr><td>약한 것</td><td>모양이 매번 다른 결함, 조명·배경 변화</td><td>학습하지 않은 새 불량, 데이터가 적은 희귀 불량, "왜 불량인지" 설명</td></tr>
+      <tr><td>도입 작업</td><td>엔지니어가 규칙과 임계값을 세팅</td><td>불량 사진 수집·라벨링(이게 어떤 불량인지 표시)·학습·검증</td></tr>
+      <tr><td>운영 중 관리</td><td>임계값 조정</td><td>오판정 사례 수집 → 재학습. 데이터 관리가 핵심</td></tr>
+    </table>
+    <p>실제 현장은 둘을 섞어 써요. 치수와 유무는 규칙으로, 외관 결함은 AI로 보는 식이에요. AI 검사에서 가장 중요한 건 <b>좋은 학습 데이터</b>예요. 어떤 사진이 불량이고 어떤 종류인지 정확히 표시(라벨링)된 데이터가 많을수록 잘 잡아요. 이 라벨링을 누가 가장 잘할까요? 그 제품의 불량을 매일 보던 검사원이에요.</p>
+
+    <h2 id="s4">4. 잘 맞는 검사와 아직 어려운 검사</h2>
+    <p><b>잘 맞는 검사</b></p>
+    <ul class="check">
+      <li>조명과 위치를 고정할 수 있는 평평한 제품의 표면 결함 (필름, 시트, 전극, 판재, 라벨)</li>
+      <li>부품 유무·방향·개수 확인 (커넥터 핀, 나사 체결, 라벨 부착, 포장 내용물)</li>
+      <li>치수·위치 측정 (구멍 위치, 간격, 외형 치수)</li>
+      <li>용접 비드·납땜 상태처럼 패턴이 일정한 외관</li>
+      <li>바코드·문자·날짜 인쇄 확인</li>
+    </ul>
+    <p><b>아직 어려운 검사</b></p>
+    <ul class="check">
+      <li>광택·투명·굴곡이 심한 제품 (반사 때문에 조명 세팅이 어려움)</li>
+      <li>"괜찮은 정도"가 애매한 결함 (미세 얼룩, 색 차이). 양품·불량 경계를 사람도 못 정하면 AI도 못 해요.</li>
+      <li>희귀 불량 (연 몇 건이라 학습 데이터가 없음)</li>
+      <li>촉감·소리·무게처럼 사진에 안 찍히는 특성</li>
+      <li>제품 종류가 자주 바뀌어 매번 재학습이 필요한 다품종 소량 라인</li>
+    </ul>
+    <p>그래서 AI 비전을 도입해도 사람 검사가 완전히 없어지지 않아요. AI가 "불량 의심"으로 걸러낸 것을 사람이 최종 확인하거나, AI가 못 보는 항목을 사람이 보거나, 신제품 초기에는 사람이 검사하며 데이터를 모으는 식으로 역할이 나뉘어요.</p>
+
+    <figure data-photo="quality inspector monitor defect images"><figcaption>AI 비전 도입 후 검사원은 화면에서 오판정을 잡고 불량 사진을 분류하는 "데이터 관리자"가 돼요</figcaption></figure>
+
+    <h2 id="s5">5. 도입 현장에서 직무는 어떻게 바뀌나</h2>
+    <table>
+      <tr><th>구분</th><th>도입 전</th><th>도입 후</th></tr>
+      <tr><td>검사원</td><td>제품을 하나씩 눈으로 보고 판정</td><td>AI 판정 결과 모니터링, 불량 의심품 최종 확인, 오판정 사례 수집·라벨링, 조명·렌즈 상태 점검</td></tr>
+      <tr><td>품질 담당</td><td>검사 기준서 관리, 샘플링 검사, 불량률 집계</td><td>판정 기준(임계값) 관리, 재학습 주기 결정, 검사 데이터로 불량 원인 공정 추적</td></tr>
+      <tr><td>설비 보전</td><td>기계·전기 설비 중심</td><td>카메라·조명·센서·PC 점검 추가, 통신 장애 대응</td></tr>
+      <tr><td>생산 오퍼레이터</td><td>생산 집중</td><td>비전 알람 1차 대응(제품 위치 틀어짐, 조명 오류), 배출품 처리</td></tr>
+    </table>
+    <p>핵심은 검사원이 <b>"보는 사람"에서 "가르치고 관리하는 사람"</b>이 되는 거예요. AI가 양품을 불량으로 잡으면(과검출) 생산이 멈추고, 불량을 양품으로 보내면(미검출) 고객 불만이 와요. 이 둘을 줄이는 일은 제품을 가장 잘 아는 검사원이 오판정 사례를 모아 다시 가르칠 때 가장 잘 돼요. 이 역할을 맡은 사람은 현장에서 "비전 담당"으로 자리가 생겨요.</p>
+
+    <h2 id="s6">6. 현장 직장인이 준비할 것</h2>
+    <ul class="check">
+      <li><b>불량 유형을 말로 정리하기:</b> 내가 보는 불량을 "종류, 위치, 크기, 원인 공정"으로 분류해 둔 사람은 AI 학습 데이터를 만드는 데 바로 투입돼요.</li>
+      <li><b>조명·카메라 기본 이해:</b> 어떤 조명이 어떤 결함을 드러내는지, 초점과 노출이 뭔지 정도만 알아도 비전 설비 일상 관리가 가능해요. 비전 장비 업체의 무료 세미나와 온라인 자료가 많아요.</li>
+      <li><b>판정 화면 읽기:</b> 비전 소프트웨어의 결과 화면(양품률, 불량 종류별 건수, 오판정 목록)을 매일 보고 "왜 오늘 과검출이 늘었나"를 생각하는 습관.</li>
+      <li><b>엑셀로 데이터 다루기:</b> 검사 결과를 표로 정리하고 경향을 보는 능력이 품질 직무로 가는 길이에요.</li>
+      <li><b>관련 자격·교육:</b> 품질경영기사·산업기사, 비전 장비 제조사 교육 수료, 기초 통계(SPC) 교육이 도움이 돼요.</li>
+    </ul>
+    <p>AI 비전은 검사원을 없애는 게 아니라, 검사원이 알고 있는 "불량에 대한 지식"을 시스템에 옮기는 일이에요. 그 지식을 가장 많이 가진 사람이 옮기는 일을 맡게 돼요. 지금 라인 끝에서 제품을 보고 있다면, 오늘 본 불량을 종류별로 적어 두는 것부터 시작해 보세요.</p>
+
+    <div class="key">
+      <h3>✔ 핵심 정리</h3>
+      <ul class="check">
+        <li>비전 검사는 조명·카메라·렌즈·트리거·소프트웨어·배출 장치로 구성. 조명이 8할이에요.</li>
+        <li>규칙 기반은 치수·유무·위치, AI는 모양이 제각각인 외관 결함. 현장은 둘을 섞어 써요.</li>
+        <li>광택·투명 제품, 애매한 경계, 희귀 불량, 다품종은 아직 사람이 필요해요.</li>
+        <li>검사원은 보는 사람 → 오판정 잡고 라벨링하고 조명·렌즈 관리하는 사람으로.</li>
+        <li>준비: 불량 유형 정리, 조명·카메라 기초, 판정 화면 읽기, 엑셀, 품질 자격.</li>
+      </ul>
+    </div>
+
+    <div class="ad"></div>
+
+    <h2>함께 보면 좋은 글</h2>
+    <div class="related">
+      <a href="2026-09-30-smart-factory-automation-jobs.html"><small>산업 트렌드</small>스마트팩토리와 자동화, 현장 직무는 어떻게 바뀌나: 오퍼레이터가 준비할 것</a>
+      <a href="2026-10-05-collaborative-robot-overview.html"><small>산업 트렌드</small>협동로봇, 현장에 어떻게 들어오나: 산업용 로봇과의 차이, 적용 작업, 안전 기준</a>
+      <a href="2026-10-01-semiconductor-8-process-overview.html"><small>산업 트렌드</small>반도체 8대 공정 한눈에 보기: 웨이퍼부터 패키징까지, 현장 직무는 어디에 있나</a>
+    </div>
+
+    <p class="note">※ 이 글은 작성일 기준의 일반적인 설명이며 투자 조언이 아니에요.</p>
+
+    <div class="author"><div class="av">효</div><div><b>황제효도르</b> · 현장노트 운영자<br>제조 현장에서 일하며 배운 것들을 쉽게 정리해요.</div></div>
+  </div>
+</article>
+<footer>
+  <div><a href="../about.html">소개</a>·<a href="../contact.html">문의</a>·<a href="../privacy.html">개인정보처리방침</a></div>
+  <div style="margin-top:8px">© 2026 현장노트 · 운영 황제효도르</div>
+</footer>
+</body>
+</html>

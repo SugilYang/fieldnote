@@ -339,5 +339,47 @@
     "summary": "오염 종류별 세탁법, 세탁 전 처리와 세제·물 온도, 반사띠·방염복·제전복 주의점, 건조·보관·교체 시기, 가족 옷과 분리 세탁과 회사 세탁 요청 기준을 정리했어요.",
     "date": "2026-10-07",
     "image": "https://images.unsplash.com/photo-1561053720-76cd73ff22c3?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8d29yayUyMGphY2tldCUyMGhhbmdpbmclMjBsYXVuZHJ5fGVufDF8MHx8fDE3OTEzMDk3NjZ8MA&ixlib=rb-4.1.0&w=600&q=70&auto=format&fit=crop"
+  },
+  {
+    "file": "2026-10-08-gas-craftsman-exam-guide.html",
+    "section": "license",
+    "title": "가스기능사 준비법: 고압가스 종류별 성질 암기, 필답형·작업형 실기 대비, 안전관리자 선임까지",
+    "summary": "시험 구성과 합격 기준, 가연성·독성·조연성 가스 성질과 용기 색·폭발 범위 암기 요령, 필기 4주 계획, 필답형+동영상 실기 대비법, 가스안전관리자 선임과 다음 자격을 정리했어요.",
+    "date": "2026-10-08"
+  },
+  {
+    "file": "2026-10-08-fire-extinguisher-types-use-inspection.html",
+    "section": "safety",
+    "title": "소화기 종류·사용법·점검: 분말·CO2·K급 구분, 화재 등급별 선택, 월 1회 점검 항목",
+    "summary": "화재 등급별 맞는 소화기, 분말·CO2·강화액·청정 소화기 비교, 사용 4단계와 초기 진화의 한계, 비치 위치와 월 1회 점검 항목, 교체 시기와 법적 의무를 정리했어요.",
+    "date": "2026-10-08"
+  },
+  {
+    "file": "2026-10-08-slip-trip-fall-accident-analysis.html",
+    "section": "case",
+    "title": "넘어짐·미끄러짐 사고: 가장 흔한 재해가 왜 줄지 않나, 바닥·통로·계단·신발에서 찾는 원인과 예방",
+    "summary": "넘어짐 사고의 대표 상황 5가지, 직접·근본 원인, 바닥·통로·단차·조명·신발·행동별 예방 체크리스트와 법적 의무를 정리했어요.",
+    "date": "2026-10-08"
+  },
+  {
+    "file": "2026-10-08-chain-block-lever-hoist-guide.html",
+    "section": "tools",
+    "title": "체인블록·레버호이스트 사용법: 정격 하중 읽기, 걸기 전 점검, 당기는 자세와 금지 사항",
+    "summary": "체인블록과 레버호이스트의 차이, 정격 하중과 체인 규격, 사용 전 훅·체인·브레이크 점검, 걸이 지점과 수직 인양 원칙, 금지 행동, 보관·점검·폐기 기준을 정리했어요.",
+    "date": "2026-10-08"
+  },
+  {
+    "file": "2026-10-08-ess-energy-storage-industry-overview.html",
+    "section": "trend",
+    "title": "ESS(에너지저장장치) 산업 한눈에 보기: 구조, 어디에 쓰이나, 설치·운영 현장 직무와 화재 안전",
+    "summary": "ESS 구성 요소와 쓰임새, 산업이 커지는 이유, 설치·시운전·운영·정비 직무, 열폭주 화재 위험과 안전 설계·운영 수칙, 준비할 자격과 지식을 정리했어요.",
+    "date": "2026-10-08"
+  },
+  {
+    "file": "2026-10-08-noise-hearing-protection-tinnitus.html",
+    "section": "life",
+    "title": "현장 소음과 청력 관리: 귀마개 습관, 이명 신호, 청력검사 읽는 법과 소음성 난청 막기",
+    "summary": "소음성 난청의 특징, 소음 수준별 위험 기준, 귀마개·귀덮개 제대로 끼는 법, 이명·먹먹함 같은 초기 신호, 청력검사 결과 읽는 법, 청력을 지키는 습관을 정리했어요.",
+    "date": "2026-10-08"
   }
 ]

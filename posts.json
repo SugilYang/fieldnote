@@ -393,21 +393,24 @@
     "section": "license",
     "title": "에너지관리기능사(보일러) 준비법: 보일러 구조와 연소 이해, 필답·작업형 실기, 건물·공장 설비 취업까지",
     "summary": "시험 구성과 합격 기준, 보일러 구조·연소·수처리·안전장치 공부법과 4주 계획, 필답형과 작업형 실기 대비, 보일러 취급자 선임과 활용처, 다음 자격을 정리했어요.",
-    "date": "2026-10-09"
+    "date": "2026-10-09",
+    "image": "https://images.unsplash.com/photo-1773517458906-b2c7c94ad5b2?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aW5kdXN0cmlhbCUyMGJvaWxlciUyMHJvb20lMjBwaXBlcyUyMGdhdWdlc3xlbnwxfDB8fHwxNzkxNDgyNjIyfDA&ixlib=rb-4.1.0&w=600&q=70&auto=format&fit=crop"
   },
   {
     "file": "2026-10-09-lockout-tagout-loto-procedure.html",
     "section": "safety",
     "title": "잠금·표지(LOTO) 절차: 정비 중 설비가 켜지지 않게 하는 7단계, 자물쇠·표지 운영과 흔한 실수",
     "summary": "정지 버튼으로 부족한 이유, 전기·공압·유압·중력 등 에너지원 종류, LOTO 7단계, 자물쇠·표지·잠금 장치 운영, 그룹 잠금과 교대 인계·해제 규칙, 흔한 실수와 법적 의무를 정리했어요.",
-    "date": "2026-10-09"
+    "date": "2026-10-09",
+    "image": "https://images.unsplash.com/photo-1587195399841-fc7174360a86?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8bG9ja291dCUyMHBhZGxvY2slMjB0YWclMjBjaXJjdWl0JTIwYnJlYWtlcnxlbnwxfDB8fHwxNzkxNDgyNjI2fDA&ixlib=rb-4.1.0&w=600&q=70&auto=format&fit=crop"
   },
   {
     "file": "2026-10-09-truck-loading-unloading-accident-analysis.html",
     "section": "case",
     "title": "트럭 상하차 작업 사고: 적재함 추락, 화물 낙하, 도크에서 트럭이 움직이는 순간의 원인과 예방",
     "summary": "상하차 사고의 대표 상황, 직접·근본 원인, 고임목·도크 락·열쇠 제출·하역 책임자·적재함 발판·문 개방 요령 등 예방 체크리스트와 법적 의무를 정리했어요.",
-    "date": "2026-10-09"
+    "date": "2026-10-09",
+    "image": "https://images.unsplash.com/photo-1532635026-d12867005472?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8dHJ1Y2slMjBsb2FkaW5nJTIwZG9jayUyMGZvcmtsaWZ0JTIwcGFsbGV0fGVufDF8MHx8fDE3OTE0ODI2Mjd8MA&ixlib=rb-4.1.0&w=600&q=70&auto=format&fit=crop"
   },
   {
     "file": "2026-10-09-insulation-resistance-earth-tester-guide.html",
@@ -421,13 +424,15 @@
     "section": "trend",
     "title": "수소 산업 한눈에 보기: 생산·저장·운송·활용 구조, 연료전지와 충전소, 현장 직무와 고압 수소 안전",
     "summary": "수소 산업의 네 단계 구조, 그레이·블루·그린 수소와 연료전지, 충전소·설비 정비·연료전지 발전소·고압 배관 등 현장 직무, 수소의 위험 특성과 안전 수칙, 준비할 자격을 정리했어요.",
-    "date": "2026-10-09"
+    "date": "2026-10-09",
+    "image": "https://images.unsplash.com/photo-1489596162121-4a8e544d6de0?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aHlkcm9nZW4lMjBmdWVsJTIwc3RhdGlvbiUyMGRpc3BlbnNlcnxlbnwxfDB8fHwxNzkxNDgyNjI0fDA&ixlib=rb-4.1.0&w=600&q=70&auto=format&fit=crop"
   },
   {
     "file": "2026-10-09-eye-health-field-workers.html",
     "section": "life",
     "title": "현장 직장인 눈 건강: 용접 아크·분진·건조·화학물질에서 눈 지키기, 이물·튐 응급처치와 진료 신호",
     "summary": "눈이 상하는 다섯 가지 원인, 작업별 보호구 습관, 이물·파편과 화학물질 튐 응급처치와 세안 장치, 용접 아크 각막염, 건조·피로 관리와 진료가 필요한 신호를 정리했어요.",
-    "date": "2026-10-09"
+    "date": "2026-10-09",
+    "image": "https://images.unsplash.com/photo-1720177986159-f0fd99d8851c?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c2FmZXR5JTIwZ2xhc3NlcyUyMHdvcmtlciUyMGV5ZXMlMjBjbG9zZSUyMHVwfGVufDF8MHx8fDE3OTE0ODI2MjN8MA&ixlib=rb-4.1.0&w=600&q=70&auto=format&fit=crop"
   }
 ]

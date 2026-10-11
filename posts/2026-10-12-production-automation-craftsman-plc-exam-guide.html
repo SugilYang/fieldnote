@@ -12,7 +12,7 @@
 <meta property="og:title" content="생산자동화기능사 준비법: PLC 래더와 공압 회로, 작업형 실기에서 시간 안에 끝내는 요령">
 <meta property="og:description" content="생산자동화기능사 시험 구성과 합격 기준, 필기 과목(공유압·전기전자·자동화 시스템·기계요소) 공부법, PLC 래더 프로그래밍과 공압 회로 구성 작업형 실기의 과제 흐름과 감점 포인트, 연습 환경 만들기, 취득 후 설비 보전·자동화 직무 활용을 정리했어요.">
 <meta property="og:url" content="https://sugilyang.github.io/fieldnote/posts/2026-10-12-production-automation-craftsman-plc-exam-guide.html">
-<meta property="og:image" content="https://sugilyang.github.io/fieldnote/assets/og-image.png">
+<meta property="og:image" content="https://images.unsplash.com/photo-1635335874521-7987db781153?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8cGxjJTIwY29udHJvbCUyMHBhbmVsJTIwd2lyaW5nJTIwcG5ldW1hdGljfGVufDF8MHx8fDE3OTE3NDE3OTB8MA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -29,13 +29,14 @@
 </div></header>
 
 <article class="c-license">
-  <div class="post-hero" data-photo="plc control panel wiring pneumatic">
+  <div class="post-hero photo" style="--photo:url('https://images.unsplash.com/photo-1635335874521-7987db781153?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8cGxjJTIwY29udHJvbCUyMHBhbmVsJTIwd2lyaW5nJTIwcG5ldW1hdGljfGVufDF8MHx8fDE3OTE3NDE3OTB8MA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop')">
     <div class="icon">📜</div>
     <span class="cat">📜 자격증</span>
     <h1>생산자동화기능사 준비법: PLC 래더와 공압 회로, 작업형 실기에서 시간 안에 끝내는 요령</h1>
     <div class="meta">2026.10.12 · 황제효도르 · 읽는 시간 7분</div>
   </div>
   <div class="wrap">
+    <p class="credit">사진: <a href="https://unsplash.com/@mostafa_mahmoudi24?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">mostafa mahmoudi</a> / <a href="https://unsplash.com/?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></p>
     <div class="summary">
       <b>이 글의 핵심 요약</b>
       <ul>
@@ -61,7 +62,7 @@
     <p>현장에서는 설비 오퍼레이터가 보전팀이나 자동화 설비 담당으로 옮길 때, 자동화 설비 제작·설치 업체에 취업할 때, 스마트팩토리 관련 직무로 가려 할 때 기본 자격으로 쓰여요. 전기기능사가 "전기 배선"을, 생산자동화기능사는 "설비가 왜 이렇게 움직이는지"를 다루기 때문에 둘을 함께 갖추면 보전 직무에서 할 수 있는 일이 크게 넓어져요.</p>
     <p>응시 자격 제한이 없고 시험은 보통 연 3~4회 열려요. 필기 합격은 보통 2년간 유효해요.</p>
 
-    <figure data-photo="pneumatic cylinder solenoid valve training kit"><figcaption>실기는 공압 실린더·밸브·센서를 배관하고 PLC로 순서를 제어하는 과제예요. 손으로 배관하는 연습이 필요해요</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1711114474558-838c38c7fd6f?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8cG5ldW1hdGljJTIwY3lsaW5kZXIlMjBzb2xlbm9pZCUyMHZhbHZlJTIwdHJhaW5pbmclMjBraXR8ZW58MXwwfHx8MTc5MTc0MTc5MHww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop" alt="a machine with yellow hoses attached to it" loading="lazy"><figcaption>실기는 공압 실린더·밸브·센서를 배관하고 PLC로 순서를 제어하는 과제예요. 손으로 배관하는 연습이 필요해요 · 사진: <a href="https://unsplash.com/@guilleb?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Guille B</a> / <a href="https://unsplash.com/?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></figcaption></figure>
 
     <h2 id="s2">2. 시험 구성과 합격 기준</h2>
     <table>
@@ -99,7 +100,7 @@
       <li><b>6. 정리와 시연:</b> 호스·배선 정리, 공구 정리, 감독관 앞에서 조건대로 동작 시연.</li>
     </ul>
 
-    <figure data-photo="ladder logic programming laptop plc"><figcaption>래더는 자기유지 → 순차 → 타이머 → 비상정지 순으로 틀을 쌓아요. 처음부터 한 번에 짜면 디버깅이 안 돼요</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1499673610122-01c7122c5dcb?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8bGFkZGVyJTIwbG9naWMlMjBwcm9ncmFtbWluZyUyMGxhcHRvcCUyMHBsY3xlbnwxfDB8fHwxNzkxNzQxNzkwfDA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop" alt="turned on MacBook Air on desk" loading="lazy"><figcaption>래더는 자기유지 → 순차 → 타이머 → 비상정지 순으로 틀을 쌓아요. 처음부터 한 번에 짜면 디버깅이 안 돼요 · 사진: <a href="https://unsplash.com/@goran_ivos?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Goran Ivos</a> / <a href="https://unsplash.com/?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></figcaption></figure>
 
     <h2 id="s5">5. 실기 감점 포인트와 연습 환경 만들기</h2>
     <div class="warn">

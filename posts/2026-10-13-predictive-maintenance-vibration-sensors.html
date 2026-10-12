@@ -12,7 +12,7 @@
 <meta property="og:title" content="예지보전(PdM)이 보전 직무를 어떻게 바꾸나: 진동·온도·전류 센서로 고장을 미리 보는 원리와 현장 역할">
 <meta property="og:description" content="사후보전·예방보전·예지보전의 차이, 진동(베어링·불평형·정렬 불량)·온도(열화상)·전류·윤활유 분석으로 고장 징후를 읽는 원리, 무선 센서와 분석 플랫폼의 구조, 잘 맞는 설비와 아직 어려운 설비, 도입 시 보전 기술자·오퍼레이터의 역할 변화와 준비할 자격·지식을 정리했어요.">
 <meta property="og:url" content="https://sugilyang.github.io/fieldnote/posts/2026-10-13-predictive-maintenance-vibration-sensors.html">
-<meta property="og:image" content="https://sugilyang.github.io/fieldnote/assets/og-image.png">
+<meta property="og:image" content="https://images.unsplash.com/photo-1638734254958-4a11c989e9bb?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8dmlicmF0aW9uJTIwc2Vuc29yJTIwbW90b3IlMjBiZWFyaW5nJTIwbW9uaXRvcmluZ3xlbnwxfDB8fHwxNzkxODI4MTg5fDA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -29,13 +29,14 @@
 </div></header>
 
 <article class="c-trend">
-  <div class="post-hero" data-photo="vibration sensor motor bearing monitoring">
+  <div class="post-hero photo" style="--photo:url('https://images.unsplash.com/photo-1638734254958-4a11c989e9bb?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8dmlicmF0aW9uJTIwc2Vuc29yJTIwbW90b3IlMjBiZWFyaW5nJTIwbW9uaXRvcmluZ3xlbnwxfDB8fHwxNzkxODI4MTg5fDA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop')">
     <div class="icon">🔋</div>
     <span class="cat">🔋 산업 트렌드</span>
     <h1>예지보전(PdM)이 보전 직무를 어떻게 바꾸나: 진동·온도·전류 센서로 고장을 미리 보는 원리와 현장 역할</h1>
     <div class="meta">2026.10.13 · 황제효도르 · 읽는 시간 8분</div>
   </div>
   <div class="wrap">
+    <p class="credit">사진: <a href="https://unsplash.com/@ndcphoto?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Denis Nuțiu</a> / <a href="https://unsplash.com/?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></p>
     <div class="summary">
       <b>이 글의 핵심 요약</b>
       <ul>
@@ -66,7 +67,7 @@
     <p>현장의 실제는 세 가지가 섞여 있어요. 핵심 설비(멈추면 라인 전체가 서는 모터·컴프레서·펌프)는 예지보전, 교체가 쉽고 싼 부품은 예방보전, 고장 나도 영향이 작은 것은 사후보전. 예지보전의 가치는 "모든 설비를 센서로 보는 것"이 아니라 <b>"멈추면 안 되는 설비의 고장을 며칠~몇 주 전에 아는 것"</b>이에요.</p>
     <p>왜 지금 늘어나나요? 무선 진동 센서 가격이 내려가 모터 한 대에 붙이는 비용이 현실적이 됐고, 분석 소프트웨어가 전문가 없이도 "베어링 이상 징후" 수준의 판단을 해 주고, 보전 인력 부족으로 "사람이 돌며 듣는" 방식의 한계가 왔어요.</p>
 
-    <figure data-photo="thermal imaging camera electrical panel hotspot"><figcaption>열화상은 접속부 열화·베어링 과열·모터 권선 이상을 색으로 보여 줘요. 예지보전에서 가장 먼저 도입되는 측정이에요</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1765410847873-a9bee6e4ddbf?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8dGhlcm1hbCUyMGltYWdpbmclMjBjYW1lcmElMjBlbGVjdHJpY2FsJTIwcGFuZWwlMjBob3RzcG90fGVufDF8MHx8fDE3OTE4MjgxOTB8MA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop" alt="Abstract colorful wavy lines with glitch effect" loading="lazy"><figcaption>열화상은 접속부 열화·베어링 과열·모터 권선 이상을 색으로 보여 줘요. 예지보전에서 가장 먼저 도입되는 측정이에요 · 사진: <a href="https://unsplash.com/@egorkomarov?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Egor Komarov</a> / <a href="https://unsplash.com/?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></figcaption></figure>
 
     <h2 id="s2">2. 설비가 보내는 신호: 진동·온도·전류·윤활유</h2>
     <p>설비는 고장 나기 전에 신호를 보내요. 사람도 들을 수 있지만("소리가 달라졌다", "뜨겁다"), 센서는 사람이 못 듣는 작은 변화를 숫자로 잡아요.</p>
@@ -110,7 +111,7 @@
     </ul>
     <p>그래서 예지보전 도입은 "전부"가 아니라 "핵심 회전 설비 몇 대부터"가 정석이에요. 그 몇 대에서 "경보 → 점검 → 교체 → 고장 없음"의 성공 사례가 쌓이면 현장이 신뢰하고 확장돼요.</p>
 
-    <figure data-photo="maintenance technician tablet machine data"><figcaption>예지보전 현장의 보전 기술자는 그래프를 읽고 "언제 무엇을 바꿀지"를 정하는 사람이에요. 손 기술에 데이터 읽기가 더해져요</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1607292803026-3b9d9b3d0fe7?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8bWFpbnRlbmFuY2UlMjB0ZWNobmljaWFuJTIwdGFibGV0JTIwbWFjaGluZSUyMGRhdGF8ZW58MXwwfHx8MTc5MTgyODE5MHww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop" alt="person holding black android smartphone" loading="lazy"><figcaption>예지보전 현장의 보전 기술자는 그래프를 읽고 &quot;언제 무엇을 바꿀지&quot;를 정하는 사람이에요. 손 기술에 데이터 읽기가 더해져요 · 사진: <a href="https://unsplash.com/@yapics?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Leon Seibert</a> / <a href="https://unsplash.com/?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></figcaption></figure>
 
     <h2 id="s5">5. 도입 현장에서 보전·운전 직무는 어떻게 바뀌나</h2>
     <table>

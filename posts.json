@@ -481,5 +481,47 @@
     "summary": "어깨·목을 망가뜨리는 다섯 가지 동작, 회전근개·목 디스크 신호, 작업 높이·공구 무게·보조 장비로 부담 줄이기, 근무 중 1분 스트레칭과 퇴근 후 강화 운동, 진료 신호와 산재를 정리했어요.",
     "date": "2026-10-12",
     "image": "https://images.unsplash.com/photo-1482731215275-a1f151646268?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8d29ya2VyJTIwb3ZlcmhlYWQlMjB3b3JrJTIwY2VpbGluZyUyMGFybXMlMjByYWlzZWR8ZW58MXwwfHx8MTc5MTc0MTc5Mnww&ixlib=rb-4.1.0&w=600&q=70&auto=format&fit=crop"
+  },
+  {
+    "file": "2026-10-13-equipment-maintenance-craftsman-exam-guide.html",
+    "section": "license",
+    "title": "설비보전기능사 준비법: 윤활·베어링·축정렬·진동 기초, 분해조립 실기, 보전팀으로 가는 가장 짧은 길",
+    "summary": "시험 구성과 합격 기준, 기계 요소·윤활·유공압·설비진단 필기 공부법과 4주 계획, 분해조립·측정·진단 작업형 실기의 과제 흐름과 감점 포인트, 취득 후 활용과 다음 자격을 정리했어요.",
+    "date": "2026-10-13"
+  },
+  {
+    "file": "2026-10-13-supervisor-legal-duties-checklist.html",
+    "section": "safety",
+    "title": "관리감독자(반장·조장)의 법정 직무: 매일·매주·매월 꼭 해야 할 7가지와 기록 남기는 법",
+    "summary": "관리감독자가 누구인지, 법정 직무 7가지, 매일·매주·매월 루틴, 기록 서식과 보존, 관리감독자 교육과 사고 시 책임 범위, 잘하는 습관과 흔한 실수를 정리했어요.",
+    "date": "2026-10-13"
+  },
+  {
+    "file": "2026-10-13-chemical-burn-leak-accident-analysis.html",
+    "section": "case",
+    "title": "화학물질 화상·누출 사고: 세척조·배관·드럼 이송에서 산·알칼리가 몸에 닿는 순간, 원인과 예방",
+    "summary": "화학물질 화상·누출의 대표 상황 5가지, 직접·근본 원인, 밀폐 이송·부위별 보호구·세안 샤워·혼합 금지·누출 키트 등 예방 체크리스트와 법적 의무를 정리했어요.",
+    "date": "2026-10-13"
+  },
+  {
+    "file": "2026-10-13-wrench-socket-ratchet-basics.html",
+    "section": "tools",
+    "title": "스패너·몽키·소켓·래칫 제대로 쓰는 법: 규격 맞추기, 볼트 머리 뭉개지 않기, 손 다치지 않는 당기는 방향",
+    "summary": "종류별 용도와 고르는 순서, mm·inch와 6각·12각·드라이브 규격, 볼트 머리를 뭉개지 않는 파지, 당기기 원칙과 고착 볼트 푸는 요령, 점검·교체 기준을 정리했어요.",
+    "date": "2026-10-13"
+  },
+  {
+    "file": "2026-10-13-predictive-maintenance-vibration-sensors.html",
+    "section": "trend",
+    "title": "예지보전(PdM)이 보전 직무를 어떻게 바꾸나: 진동·온도·전류 센서로 고장을 미리 보는 원리와 현장 역할",
+    "summary": "사후·예방·예지보전의 차이, 진동·온도·전류·윤활유 신호로 고장을 읽는 원리, 센서·플랫폼 구조, 잘 맞는 설비와 어려운 설비, 보전·운전 직무 변화와 준비할 것을 정리했어요.",
+    "date": "2026-10-13"
+  },
+  {
+    "file": "2026-10-13-standing-work-leg-foot-knee-care.html",
+    "section": "life",
+    "title": "하루 종일 서서 일하는 현장 직장인 다리·발·무릎 관리: 하지정맥류·족저근막염·무릎 통증 막는 법",
+    "summary": "서 있는 자세가 다리를 상하게 하는 원리, 세 질환의 초기 신호, 매트·깔창·압박 스타킹·발판 같은 환경 대책, 근무 중 1분 순환 운동, 퇴근 후 관리, 진료 신호를 정리했어요.",
+    "date": "2026-10-13"
   }
 ]

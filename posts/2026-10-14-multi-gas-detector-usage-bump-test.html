@@ -12,7 +12,7 @@
 <meta property="og:title" content="복합가스측정기 사용법: 4가지 센서 읽기, 범프 테스트와 교정, 측정 순서, 경보가 울렸을 때 할 일">
 <meta property="og:description" content="산소·가연성·일산화탄소·황화수소 4가스 측정기의 센서 종류와 표시값 읽는 법, 사용 전 범프 테스트와 정기 교정의 차이, 영점 조정 위치, 밀폐공간·탱크·맨홀에서 위·중간·아래 측정 순서와 펌프형·확산형 차이, 경보 설정값과 경보 시 행동, 센서 수명·피독·배터리·보관 등 관리법을 현장 기준으로 정리했어요.">
 <meta property="og:url" content="https://sugilyang.github.io/fieldnote/posts/2026-10-14-multi-gas-detector-usage-bump-test.html">
-<meta property="og:image" content="https://sugilyang.github.io/fieldnote/assets/og-image.png">
+<meta property="og:image" content="https://images.unsplash.com/photo-1510467181625-c419e443bdfa?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Z2FzJTIwZGV0ZWN0b3IlMjBoYW5kaGVsZCUyMHdvcmtlciUyMHRhbmt8ZW58MXwwfHx8MTc5MTkxNDU4N3ww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -29,13 +29,14 @@
 </div></header>
 
 <article class="c-tools">
-  <div class="post-hero" data-photo="gas detector handheld worker tank">
+  <div class="post-hero photo" style="--photo:url('https://images.unsplash.com/photo-1510467181625-c419e443bdfa?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Z2FzJTIwZGV0ZWN0b3IlMjBoYW5kaGVsZCUyMHdvcmtlciUyMHRhbmt8ZW58MXwwfHx8MTc5MTkxNDU4N3ww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop')">
     <div class="icon">🔧</div>
     <span class="cat">🔧 장비·공구</span>
     <h1>복합가스측정기 사용법: 4가지 센서 읽기, 범프 테스트와 교정, 측정 순서, 경보가 울렸을 때 할 일</h1>
     <div class="meta">2026.10.14 · 황제효도르 · 읽는 시간 7분</div>
   </div>
   <div class="wrap">
+    <p class="credit">사진: <a href="https://unsplash.com/@chuttersnap?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">CHUTTERSNAP</a> / <a href="https://unsplash.com/?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></p>
     <div class="summary">
       <b>이 글의 핵심 요약</b>
       <ul>
@@ -61,7 +62,7 @@
     <p>측정기는 <b>"숫자를 보여 주는 기계"</b>이지 <b>"안전을 보장하는 기계"</b>가 아니에요. 그 숫자가 맞는지는 범프 테스트와 교정이 정하고, 그 숫자가 작업 공간을 대표하는지는 측정 순서가 정하고, 그 숫자에 따라 움직이는지는 사람이 정해요. 이 글은 그 세 가지를 현장에서 지키는 법을 정리했어요.</p>
     <p>제품마다 센서 구성·조작·표시가 다르니 제조사 설명서를 우선으로 확인하세요. 여기서는 가장 흔한 4가스(산소·가연성·CO·H2S) 휴대용 측정기 기준이에요.</p>
 
-    <figure data-photo="gas detector display screen readings"><figcaption>화면의 네 숫자가 각각 무엇인지, 단위가 %인지 ppm인지 %LEL인지를 읽을 줄 알아야 측정기가 의미가 있어요</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1721114989769-0423619f03d2?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Z2FzJTIwZGV0ZWN0b3IlMjBkaXNwbGF5JTIwc2NyZWVuJTIwcmVhZGluZ3N8ZW58MXwwfHx8MTc5MTkxNDU4N3ww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop" alt="A large monitor displaying a number of times" loading="lazy"><figcaption>화면의 네 숫자가 각각 무엇인지, 단위가 %인지 ppm인지 %LEL인지를 읽을 줄 알아야 측정기가 의미가 있어요 · 사진: <a href="https://unsplash.com/@idgeek?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Samuel Ramos</a> / <a href="https://unsplash.com/?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></figcaption></figure>
 
     <h2 id="s2">2. 4가지 센서와 표시값 읽기</h2>
     <table>
@@ -99,7 +100,7 @@
     </ul>
     <p><b>펌프형</b>은 튜브로 멀리서 빨아들여 측정하니 밀폐공간 사전 측정에 필수예요. <b>확산형</b>은 주변 공기가 센서에 닿아야 하니 몸에 차고 연속 측정하는 용도예요. 밀폐공간 작업 사업장은 두 가지(또는 펌프 탈착식)를 갖추는 것이 좋아요.</p>
 
-    <figure data-photo="confined space entry gas sampling tube"><figcaption>밖에서 샘플 튜브를 내려 위·중간·아래를 재요. 측정하려고 먼저 들어가는 것이 사고의 시작이에요</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1599556147785-480f85376373?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y29uZmluZWQlMjBzcGFjZSUyMGVudHJ5JTIwZ2FzJTIwc2FtcGxpbmclMjB0dWJlfGVufDF8MHx8fDE3OTE5MTQ1ODh8MA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop" alt="clear plastic tube on blue surface" loading="lazy"><figcaption>밖에서 샘플 튜브를 내려 위·중간·아래를 재요. 측정하려고 먼저 들어가는 것이 사고의 시작이에요 · 사진: <a href="https://unsplash.com/@testalizeme?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Testalize.me</a> / <a href="https://unsplash.com/?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></figcaption></figure>
 
     <h2 id="s5">5. 경보 설정값과 경보가 울렸을 때 할 일</h2>
     <p>측정기에는 보통 1차 경보(주의)와 2차 경보(위험), 그리고 노출 누적 경보(TWA·STEL)가 설정되어 있어요. 사업장은 법령 기준과 작업 특성에 맞게 설정값을 정하고, 작업자는 작업 전에 "이 측정기의 경보값이 얼마인가"를 알아야 해요.</p>

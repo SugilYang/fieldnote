@@ -12,7 +12,7 @@
 <meta property="og:title" content="열화상 카메라 사용법: 방사율·반사 온도 맞추기, 전기 접속부·베어링·배관 점검 요령, 오판을 막는 촬영 조건">
 <meta property="og:description" content="열화상 카메라의 원리와 한계, 방사율·반사 온도·거리 설정이 측정값을 바꾸는 이유, 전기 접속부(분전반·단자·차단기)·모터 베어링·배관 보온·스팀 트랩·지붕 누수 점검 요령, 온도 차(ΔT) 기준으로 판정하는 법, 유리·광택 금속·바람·햇빛 같은 오판 원인, 기록·비교와 장비 관리, 고르는 기준을 현장 기준으로 정리했어요.">
 <meta property="og:url" content="https://sugilyang.github.io/fieldnote/posts/2026-10-15-thermal-imaging-camera-usage-guide.html">
-<meta property="og:image" content="https://sugilyang.github.io/fieldnote/assets/og-image.png">
+<meta property="og:image" content="https://images.unsplash.com/photo-1660330589693-99889d60181e?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8dGhlcm1hbCUyMGNhbWVyYSUyMGVsZWN0cmljYWwlMjBwYW5lbCUyMGluc3BlY3Rpb258ZW58MXwwfHx8MTc5MjAwMTExNXww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -29,13 +29,14 @@
 </div></header>
 
 <article class="c-tools">
-  <div class="post-hero" data-photo="thermal camera electrical panel inspection">
+  <div class="post-hero photo" style="--photo:url('https://images.unsplash.com/photo-1660330589693-99889d60181e?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8dGhlcm1hbCUyMGNhbWVyYSUyMGVsZWN0cmljYWwlMjBwYW5lbCUyMGluc3BlY3Rpb258ZW58MXwwfHx8MTc5MjAwMTExNXww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop')">
     <div class="icon">🔧</div>
     <span class="cat">🔧 장비·공구</span>
     <h1>열화상 카메라 사용법: 방사율·반사 온도 맞추기, 전기 접속부·베어링·배관 점검 요령, 오판을 막는 촬영 조건</h1>
     <div class="meta">2026.10.15 · 황제효도르 · 읽는 시간 7분</div>
   </div>
   <div class="wrap">
+    <p class="credit">사진: <a href="https://unsplash.com/@razesolar?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Raze Solar</a> / <a href="https://unsplash.com/?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></p>
     <div class="summary">
       <b>이 글의 핵심 요약</b>
       <ul>
@@ -61,7 +62,7 @@
     <p>한계도 분명해요. 열화상은 <b>표면 온도</b>만 봐요. 분전반 문을 닫은 채로는 안쪽 단자가 안 보이고, 보온재 속 배관 온도는 보온재 표면으로 간접 추정만 해요. 유리·투명 플라스틱은 적외선을 통과시키지 않아 그 너머가 안 보이고(창문 너머 온도는 창문 온도), 광택 금속은 적외선을 반사해 주변을 비춰요. 그리고 화면의 숫자는 카메라가 설정값으로 계산한 것이라, 설정이 틀리면 숫자가 틀려요.</p>
     <p>이 글은 "뜨거운 곳을 찾는 눈"으로 열화상을 제대로 쓰기 위해 알아야 할 설정, 점검 요령, 오판 원인을 정리했어요. 제품마다 메뉴와 성능이 다르니 제조사 설명서를 우선으로 확인하세요.</p>
 
-    <figure data-photo="infrared thermal image motor hotspot"><figcaption>같은 조건의 설비 여러 대 중 하나만 뜨거우면 그것이 이상이에요. 열화상은 "절대 온도"보다 "차이"를 보는 도구예요</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1700081744390-53ac7df645ac?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aW5mcmFyZWQlMjB0aGVybWFsJTIwaW1hZ2UlMjBtb3RvciUyMGhvdHNwb3R8ZW58MXwwfHx8MTc5MjAwMTExNXww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop" alt="a blue and red image of a forest" loading="lazy"><figcaption>같은 조건의 설비 여러 대 중 하나만 뜨거우면 그것이 이상이에요. 열화상은 &quot;절대 온도&quot;보다 &quot;차이&quot;를 보는 도구예요 · 사진: <a href="https://unsplash.com/@wolfgang_hasselmann?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Wolfgang Hasselmann</a> / <a href="https://unsplash.com/?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></figcaption></figure>
 
     <h2 id="s2">2. 방사율·반사 온도·거리: 숫자를 바꾸는 세 가지 설정</h2>
     <table>
@@ -97,7 +98,7 @@
       <li><b>배터리·ESS:</b> 모듈·셀 온도 편차, 접속부 발열. 접속부 열화가 열폭주의 출발점이라 정기 점검 항목이에요.</li>
     </ul>
 
-    <figure data-photo="steam pipe insulation thermal leak"><figcaption>보온이 벗겨진 배관과 열림 고장 난 스팀 트랩은 열화상에서 한눈에 보여요. 에너지 절감 점검의 출발점이에요</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1538474705339-e87de81450e8?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c3RlYW0lMjBwaXBlJTIwaW5zdWxhdGlvbiUyMHRoZXJtYWwlMjBsZWFrfGVufDF8MHx8fDE3OTIwMDExMTZ8MA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop" alt="grayscale photography of metal pipes" loading="lazy"><figcaption>보온이 벗겨진 배관과 열림 고장 난 스팀 트랩은 열화상에서 한눈에 보여요. 에너지 절감 점검의 출발점이에요 · 사진: <a href="https://unsplash.com/@samthewam24?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Samuel  Sianipar</a> / <a href="https://unsplash.com/?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></figcaption></figure>
 
     <h2 id="s5">5. 오판을 막는 촬영 조건과 흔한 실수</h2>
     <div class="warn">

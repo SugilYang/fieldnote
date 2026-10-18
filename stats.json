@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-10-18",
   "yesterday": 1,
-  "total": 21,
+  "total": 25,
   "pages": {
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
     "posts/2026-09-30-risk-assessment-procedure-guide.html": 4,
@@ -22,6 +22,9 @@
     "posts/2026-10-07-press-machine-crush-accident-analysis.html": 1,
     "posts/2026-10-07-safety-signs-colors-and-placement.html": 1,
     "posts/2026-10-08-fire-extinguisher-types-use-inspection.html": 1,
-    "posts/2026-10-13-supervisor-legal-duties-checklist.html": 1
+    "posts/2026-10-13-supervisor-legal-duties-checklist.html": 1,
+    "posts/2026-10-15-stacked-load-collapse-crush-accident-analysis.html": 1,
+    "posts/2026-10-16-cnc-lathe-milling-craftsman-exam-guide.html": 1,
+    "posts/2026-10-16-rotating-shaft-entanglement-accident-analysis.html": 1
   }
 }

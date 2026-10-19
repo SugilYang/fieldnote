@@ -12,7 +12,7 @@
 <meta property="og:title" content="산업용 로봇 끼임·충돌 사고: 멈춘 줄 알았던 로봇이 왜 움직이나, 안전 펜스 안에 들어가는 순간의 원인과 예방, 티칭·정비 작업의 안전 절차">
 <meta property="og:description" content="산업용 로봇 셀에서 제품 걸림 해소·티칭·정비·시운전·안전 장치 복구 누락으로 생기는 끼임·충돌 사고의 대표 장면, 대기·홀드·보호 정지·전원 차단 네 가지 정지 상태의 차이, 자동 모드 진입·인터록 우회·재기동·잔압 같은 직접 원인, 설비·관리·절차의 근본 원인, 로봇 셀 3대 원칙과 예방 체크리스트, 법적 의무와 협동로봇의 안전을 정리했어요.">
 <meta property="og:url" content="https://sugilyang.github.io/fieldnote/posts/2026-10-20-industrial-robot-crush-collision-accident-analysis.html">
-<meta property="og:image" content="https://sugilyang.github.io/fieldnote/assets/og-image.png">
+<meta property="og:image" content="https://images.unsplash.com/photo-1647427060118-4911c9821b82?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aW5kdXN0cmlhbCUyMHJvYm90JTIwYXJtJTIwc2FmZXR5JTIwZmVuY2V8ZW58MXwwfHx8MTc5MjQzMzExMXww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -29,13 +29,14 @@
 </div></header>
 
 <article class="c-case">
-  <div class="post-hero" data-photo="industrial robot arm safety fence">
+  <div class="post-hero photo" style="--photo:url('https://images.unsplash.com/photo-1647427060118-4911c9821b82?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aW5kdXN0cmlhbCUyMHJvYm90JTIwYXJtJTIwc2FmZXR5JTIwZmVuY2V8ZW58MXwwfHx8MTc5MjQzMzExMXww&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop')">
     <div class="icon">🚨</div>
     <span class="cat">🚨 사고사례 분석</span>
     <h1>산업용 로봇 끼임·충돌 사고: 멈춘 줄 알았던 로봇이 왜 움직이나, 안전 펜스 안에 들어가는 순간의 원인과 예방, 티칭·정비 작업의 안전 절차</h1>
     <div class="meta">2026.10.20 · 황제효도르 · 읽는 시간 8분</div>
   </div>
   <div class="wrap">
+    <p class="credit">사진: <a href="https://unsplash.com/@simonkadula?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Simon Kadula</a> / <a href="https://unsplash.com/?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></p>
     <div class="summary">
       <b>이 글의 핵심 요약</b>
       <ul>
@@ -77,7 +78,7 @@
     </ul>
     <p>사람이 안전하게 들어갈 수 있는 상태는 마지막 것뿐이고, 그것도 잔압과 처짐을 처리한 뒤예요. 그런데 현장에서는 "대기"와 "정지"를 구분하지 않고 "안 움직이네"로 판단해요. 로봇은 사람보다 훨씬 빠르고(관절 속도가 초당 수 m), 산업용은 사람 몸을 밀어내는 힘이 수백 kg에 이르러요. 끼이면 스스로 빠져나올 수 없고, 비상정지를 누를 사람이 밖에 있어야 해요.</p>
 
-    <figure data-photo="robot cell light curtain interlock gate"><figcaption>펜스 문의 인터록 스위치와 라이트 커튼은 "들어가면 멈춘다"를 보장하는 장치예요. 우회하거나 꺼 둔 순간 로봇 셀은 보호 없는 공간이 돼요.</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1661882217431-b64b303fb1d0?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8cm9ib3QlMjBjZWxsJTIwbGlnaHQlMjBjdXJ0YWluJTIwaW50ZXJsb2NrJTIwZ2F0ZXxlbnwxfDB8fHwxNzkyNDMzMTExfDA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop" alt="a machine in a room" loading="lazy"><figcaption>펜스 문의 인터록 스위치와 라이트 커튼은 &quot;들어가면 멈춘다&quot;를 보장하는 장치예요. 우회하거나 꺼 둔 순간 로봇 셀은 보호 없는 공간이 돼요. · 사진: <a href="https://unsplash.com/@hermeus?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Hermeus</a> / <a href="https://unsplash.com/?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></figcaption></figure>
 
     <h2 id="s3">3. 직접 원인: 진입·우회·티칭·복구</h2>
     <ul class="check">
@@ -105,7 +106,7 @@
     </table>
     <p>가장 중요한 근본 원인은 <b>"들어가야만 하는 이유"가 설비에 남아 있는 것</b>이에요. 제품이 자주 걸리면 그 원인을 고치거나 밖에서 처리할 수 있게 바꿔야 해요. 들어갈 일을 줄이는 것이 어떤 교육보다 효과가 커요.</p>
 
-    <figure data-photo="robot teach pendant operator"><figcaption>티칭은 수동 저속 모드에서, 3위치 활성화 스위치를 쥔 한 사람만 조작하고, 로봇과 벽 사이에 서지 않는 것이 원칙이에요.</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1781275682577-4e018b389fb1?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8cm9ib3QlMjB0ZWFjaCUyMHBlbmRhbnQlMjBvcGVyYXRvcnxlbnwxfDB8fHwxNzkyNDMzMTEyfDA&ixlib=rb-4.1.0&w=1200&q=80&auto=format&fit=crop" alt="Oily hands hold a professional racing steering wheel" loading="lazy"><figcaption>티칭은 수동 저속 모드에서, 3위치 활성화 스위치를 쥔 한 사람만 조작하고, 로봇과 벽 사이에 서지 않는 것이 원칙이에요. · 사진: <a href="https://unsplash.com/@bharat05?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">BHARAT VISHAWAKARMA</a> / <a href="https://unsplash.com/?utm_source=fieldnote&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></figcaption></figure>
 
     <h2 id="s5">5. 예방 대책 체크리스트</h2>
     <div class="warn">

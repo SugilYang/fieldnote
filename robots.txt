@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sugilyang.github.io/fieldnote/sitemap.xml

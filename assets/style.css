@@ -136,3 +136,13 @@ th,td{border:1px solid var(--line);padding:11px 12px;text-align:left;vertical-al
 
 @media (max-width:820px){.layout{grid-template-columns:1fr}.layout .grid{grid-template-columns:repeat(2,1fr)}.side{position:static}.search{max-width:none;margin:0 10px}}
 @media (max-width:600px){.layout .grid{grid-template-columns:1fr}.prevnext{grid-template-columns:1fr}.prevnext .p{text-align:left}.search input{padding:7px 32px 7px 12px}}
+
+/* 섹션 페이지·FAQ */
+.banner.c-license,.banner.c-safety,.banner.c-case,.banner.c-tools,.banner.c-trend,.banner.c-life{background:linear-gradient(120deg,var(--sc2),var(--sc))}
+.tabs a.tab{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:24px;padding:8px 16px;font-size:14px;font-weight:600;white-space:nowrap;text-decoration:none}
+.tabs a.tab.on{background:var(--text);border-color:var(--text);color:var(--bg)}
+details.faq{border:1px solid var(--line);border-radius:10px;padding:0 16px;margin:8px 0}
+details.faq summary{cursor:pointer;font-weight:700;padding:12px 0;list-style:none}
+details.faq summary::before{content:"Q. ";color:var(--sc,var(--accent))}
+details.faq[open] summary{border-bottom:1px solid var(--line)}
+details.faq p{margin:10px 0 14px;font-size:15px}

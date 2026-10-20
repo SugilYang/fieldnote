@@ -31,14 +31,16 @@ jobs:
           GA_SERVICE_ACCOUNT: ${{ secrets.GA_SERVICE_ACCOUNT }}
           GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
         run: node scripts/fetch-stats.js
-      - name: 검색 색인
-        run: node scripts/build-index.js
+      - name: 정적 페이지·색인·피드 생성
+        run: node scripts/build.js
       - name: 변경 내용 커밋
         run: |
           git config user.name "fieldnote-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add posts posts.json stats.json search.json
+          git add posts posts.json stats.json search.json sitemap.xml feed.xml robots.txt index.html license.html safety.html case.html tools.html trend.html life.html
           if ! git diff --cached --quiet; then git commit -m "사진·통계·색인 갱신 [skip ci]" && git push; fi
+      - name: IndexNow 통보
+        run: node scripts/indexnow.js
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

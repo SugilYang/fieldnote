@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>현장노트</title>
+  <link>https://sugilyang.github.io/fieldnote/</link>
+  <description>현장에서 일하는 사람을 위한 실무 노트. 자격증, 산업안전, 사고사례 분석, 장비·공구, 산업 트렌드, 현장 생활.</description>
+  <language>ko</language>
+  <atom:link href="https://sugilyang.github.io/fieldnote/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>전산응용기계제도기능사(CAD) 준비법: 현장 작업자가 도면 그리는 사람이 되는 길, 필기 과목과 3D 모델링·2D 도면 작업형 실기, 공차·끼워맞춤 실수 줄이기</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-20-cad-mechanical-drawing-craftsman-exam-guide.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-20-cad-mechanical-drawing-craftsman-exam-guide.html</guid>
+    <pubDate>Mon, 19 Oct 2026 18:00:00 GMT</pubDate>
+    <category>자격증</category>
+    <description>전산응용기계제도기능사의 필기 과목과 3D 모델링·2D 도면 작업형 실기, 제도 규칙 중심 공부법, 조립도에서 부품을 분리해 모델링하는 순서, 공차·거칠기·기하 공차를 넣는 도면 작성 요령과 흔한 실수, 취득 후 진로를 정리했어요.</description>
+  </item>
+  <item>
+    <title>특수건강진단 한눈에 정리: 일반건강진단과 무엇이 다른가, 소음·분진·유기용제·야간작업 등 대상 유해인자와 주기, 결과표의 A·C·D 판정 읽는 법, 사후 조치와 근로자의 권리</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-20-special-health-examination-guide.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-20-special-health-examination-guide.html</guid>
+    <pubDate>Mon, 19 Oct 2026 18:00:00 GMT</pubDate>
+    <category>산업안전</category>
+    <description>일반·특수 건강진단의 차이, 소음·분진·유기용제·야간작업 등 특수건강진단 대상 유해인자와 주기, 인자별 검사 항목, 결과표의 A·C·D 판정과 1·2의 뜻, 사후 조치와 근로자의 권리, 흔한 오해를 정리했어요.</description>
+  </item>
+  <item>
+    <title>산업용 로봇 끼임·충돌 사고: 멈춘 줄 알았던 로봇이 왜 움직이나, 안전 펜스 안에 들어가는 순간의 원인과 예방, 티칭·정비 작업의 안전 절차</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-20-industrial-robot-crush-collision-accident-analysis.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-20-industrial-robot-crush-collision-accident-analysis.html</guid>
+    <pubDate>Mon, 19 Oct 2026 18:00:00 GMT</pubDate>
+    <category>사고사례 분석</category>
+    <description>산업용 로봇 셀에서 제품 걸림 해소·티칭·정비 중 생기는 끼임·충돌 사고의 대표 장면, 멈춘 듯 보여도 움직이는 네 가지 정지 상태, 직접·근본 원인, 로봇 셀 3대 원칙과 예방 체크리스트, 법적 의무와 협동로봇의 안전을 정리했어요.</description>
+  </item>
+  <item>
+    <title>고속절단기·원형톱·직소 안전 사용법: 날 고르는 기준(톱니 수·재질), 킥백이 생기는 순간과 막는 법, 절단 요령과 날 교체·점검</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-20-chop-saw-circular-saw-jigsaw-safety-guide.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-20-chop-saw-circular-saw-jigsaw-safety-guide.html</guid>
+    <pubDate>Mon, 19 Oct 2026 18:00:00 GMT</pubDate>
+    <category>장비·공구</category>
+    <description>고속절단기·원형톱·직소의 역할, 재질·톱니 수·회전수 등 날 고르는 기준, 킥백이 생기는 순간과 막는 법, 공구별 절단 요령, 날 교체와 작업 전 점검, 보호구·분진·불티 관리와 손가락을 잃게 하는 실수를 정리했어요.</description>
+  </item>
+  <item>
+    <title>풍력·태양광 발전 현장 직무 한눈에 보기: 발전소는 어떻게 지어지고 운영되나, 타워 작업·전기·용접·O&amp;M 직무와 필요한 자격, 고소·전기·해상 작업의 안전</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-20-wind-solar-power-plant-jobs-overview.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-20-wind-solar-power-plant-jobs-overview.html</guid>
+    <pubDate>Mon, 19 Oct 2026 18:00:00 GMT</pubDate>
+    <category>산업 트렌드</category>
+    <description>태양광·풍력 발전소의 건설과 운영·유지보수(O&amp;M) 인력 구조, 기초·구조물·타워·전기·해상 등 건설 직무, O&amp;M 기술자·블레이드 보수·전기 운영 직무, 전기·용접·GWO 등 자격과 경로, 추락·직류 감전·해상·화재 안전을 정리했어요.</description>
+  </item>
+  <item>
+    <title>환절기·겨울 앞둔 현장 직장인 감기·독감 예방: 예방접종은 언제 맞나, 교대 근무와 면역, 현장에서 옮지 않는 습관, 아픈데 출근해야 할 때와 쉬어야 할 신호</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-20-cold-flu-prevention-field-workers.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-20-cold-flu-prevention-field-workers.html</guid>
+    <pubDate>Mon, 19 Oct 2026 18:00:00 GMT</pubDate>
+    <category>현장 생활</category>
+    <description>현장에서 감기·독감이 잘 도는 이유, 감기와 독감의 구분, 독감 예방접종 시기와 흔한 오해, 손 씻기·마스크·환기·공용 물건 분리 등 옮지 않는 습관 7가지, 교대 근무자의 면역 관리, 쉬어야 할 신호와 회사가 할 일을 정리했어요.</description>
+  </item>
+  <item>
+    <title>배관기능사 준비법: 배관 도면 읽기와 재료 암기, 나사 절삭·동관 납땜·용접이 섞인 작업형 실기 연습 순서, 플랜트·설비·건설 어디에 쓰이나</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-19-piping-craftsman-exam-guide.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-19-piping-craftsman-exam-guide.html</guid>
+    <pubDate>Sun, 18 Oct 2026 18:00:00 GMT</pubDate>
+    <category>자격증</category>
+    <description>배관기능사의 필기 과목과 작업형 실기 구성, 관 종류·이음쇠·도면 기호 공부법, 절단 길이 계산법, 나사 절삭·동관 납땜·용접 연습 순서와 실격 피하기, 취득 후 진로를 정리했어요.</description>
+  </item>
+  <item>
+    <title>공장 비상 대피 훈련 제대로 하는 법: 화재·가스 누출·정전 시나리오별 대피 절차, 집결지와 인원 확인, 역할 분담, 형식적인 훈련을 실제 훈련으로 바꾸는 요령</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-19-emergency-evacuation-drill-guide.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-19-emergency-evacuation-drill-guide.html</guid>
+    <pubDate>Sun, 18 Oct 2026 18:00:00 GMT</pubDate>
+    <category>산업안전</category>
+    <description>비상시 사람이 늦게 움직이는 이유, 대피 계획 항목, 화재·가스 누출·정전·지진 시나리오별 절차, 역할 분담, 훈련 진행과 평가 항목, 형식적인 훈련을 실제 훈련으로 바꾸는 요령을 정리했어요.</description>
+  </item>
+  <item>
+    <title>스팀·고온 화상 사고: 보일러·스팀 배관·열교환기·용융물 작업에서 왜 데이고, 밸브를 열기 전 무엇을 확인해야 하나, 원인과 예방</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-19-steam-hot-surface-burn-accident-analysis.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-19-steam-hot-surface-burn-accident-analysis.html</guid>
+    <pubDate>Sun, 18 Oct 2026 18:00:00 GMT</pubDate>
+    <category>사고사례 분석</category>
+    <description>스팀 배관·보일러·열교환기·고온 표면·용융물 작업에서 생기는 화상 사고의 대표 장면, 스팀이 깊게 데우는 이유, 직접·근본 원인, 차단·배출·확인 3단계와 예방 체크리스트, 화상 응급처치를 정리했어요.</description>
+  </item>
+  <item>
+    <title>클램프 미터(후크 미터) 사용법: 선 하나만 거는 이유, 모터 부하 전류와 3상 불평형 읽기, 누설 전류 재기, AC·DC 구분과 고르는 기준</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-19-clamp-meter-usage-guide.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-19-clamp-meter-usage-guide.html</guid>
+    <pubDate>Sun, 18 Oct 2026 18:00:00 GMT</pubDate>
+    <category>장비·공구</category>
+    <description>클램프 미터의 원리, 한 가닥만 거는 이유와 기본 사용법, 모터 정격 전류·3상 불평형·기동 전류 읽는 법, 누설 전류로 누전 트립 원인 찾기, 트루 RMS·CAT 등급 등 고르는 기준과 흔한 오차를 정리했어요.</description>
+  </item>
+  <item>
+    <title>조선소 현장 직무 한눈에 보기: 배는 어떻게 만들어지나, 블록·용접·배관·전장·도장·족장 직무의 일과 필요한 자격, 인력 수요와 현장 안전</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-19-shipyard-jobs-overview.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-19-shipyard-jobs-overview.html</guid>
+    <pubDate>Sun, 18 Oct 2026 18:00:00 GMT</pubDate>
+    <category>산업 트렌드</category>
+    <description>배가 블록으로 만들어지는 7단계, 선체·의장·도장·족장·크레인·검사 직무의 일과 필요한 자격, 수주 흐름과 인력 수요, 협력업체·물량팀 등 고용 형태, 조선소 특유의 위험과 준비 순서를 정리했어요.</description>
+  </item>
+  <item>
+    <title>현장 직장인 손목·팔꿈치 통증 예방: 손목터널증후군·테니스엘보가 생기는 작업 동작, 공구 잡는 법과 손목 중립 자세, 1분 스트레칭과 병원 가야 할 신호</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-19-wrist-elbow-pain-prevention-field-workers.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-19-wrist-elbow-pain-prevention-field-workers.html</guid>
+    <pubDate>Sun, 18 Oct 2026 18:00:00 GMT</pubDate>
+    <category>현장 생활</category>
+    <description>손목터널증후군·건초염·테니스엘보 증상 구분, 통증을 만드는 작업 동작 7가지, 손목 중립 자세와 공구 잡는 법, 작업 중 1분 스트레칭과 근력 운동, 보호대·장갑·공구 선택과 병원 가야 할 신호를 정리했어요.</description>
+  </item>
+  <item>
+    <title>컴퓨터응용선반·밀링기능사 준비법: 범용과 CNC 중 무엇을 먼저 하나, 도면 읽기, 프로그램 작성형 실기에서 시간 안에 끝내는 요령</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-16-cnc-lathe-milling-craftsman-exam-guide.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-16-cnc-lathe-milling-craftsman-exam-guide.html</guid>
+    <pubDate>Thu, 15 Oct 2026 18:00:00 GMT</pubDate>
+    <category>자격증</category>
+    <description>컴퓨터응용선반·밀링기능사의 차이와 먼저 딸 종목, 필기 공부법, 도면에서 좌표를 뽑아 CNC 프로그램을 쓰는 연습 순서, 범용 가공에서 실격을 피하는 원칙과 취득 후 직무를 정리했어요.</description>
+  </item>
+  <item>
+    <title>안전작업허가서(PTW) 제도 제대로 운영하기: 화기·밀폐공간·고소·전기 작업에 허가가 필요한 이유, 발급 절차 6단계, 현장에서 흔한 형식적 운영 막는 법</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-16-permit-to-work-system-guide.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-16-permit-to-work-system-guide.html</guid>
+    <pubDate>Thu, 15 Oct 2026 18:00:00 GMT</pubDate>
+    <category>산업안전</category>
+    <description>안전작업허가서가 필요한 이유, 화기·밀폐공간·고소·전기 등 허가 유형별 확인 사항, 발급 절차 6단계, 형식적 운영의 신호와 막는 요령, 관련 법적 의무를 정리했어요.</description>
+  </item>
+  <item>
+    <title>회전체 말림 사고: 선반·드릴·롤러·교반기에 장갑·소매·머리카락이 감기는 순간, 왜 뿌리치지 못하나와 예방 대책</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-16-rotating-shaft-entanglement-accident-analysis.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-16-rotating-shaft-entanglement-accident-analysis.html</guid>
+    <pubDate>Thu, 15 Oct 2026 18:00:00 GMT</pubDate>
+    <category>사고사례 분석</category>
+    <description>선반·드릴·롤러·교반기·회전축에 장갑·소매·머리카락이 감기는 사고의 대표 장면, 뿌리치지 못하는 이유, 직접·근본 원인, 3대 원칙과 예방 체크리스트, 법적 의무를 정리했어요.</description>
+  </item>
+  <item>
+    <title>마이크로미터·다이얼게이지 읽는 법과 측정 요령: 0.01mm 눈금 읽기, 래칫 돌리는 횟수, 영점 맞추기, 흔들림·단차 측정과 보관법</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-16-micrometer-dial-gauge-reading-guide.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-16-micrometer-dial-gauge-reading-guide.html</guid>
+    <pubDate>Thu, 15 Oct 2026 18:00:00 GMT</pubDate>
+    <category>장비·공구</category>
+    <description>마이크로미터 눈금 읽는 순서와 0.5mm 실수, 래칫·영점·온도 같은 측정 요령, 종류별 선택, 다이얼게이지로 흔들림·단차·축 정렬 재는 법, 오차 원인과 보관법을 정리했어요.</description>
+  </item>
+  <item>
+    <title>데이터센터 건설·운영 산업 한눈에 보기: AI가 만드는 전기·냉각 설비 수요, 전기·공조·소방·시설관리 직무, 현장에서 필요한 자격과 안전</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-16-data-center-construction-operation-jobs.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-16-data-center-construction-operation-jobs.html</guid>
+    <pubDate>Thu, 15 Oct 2026 18:00:00 GMT</pubDate>
+    <category>산업 트렌드</category>
+    <description>AI 서버 수요로 늘어나는 데이터센터의 전기·냉각·소방 구조, 액체 냉각과 고밀도 전력이 바꾸는 설비, 건설·운영 단계 현장 직무와 필요한 자격, 특유의 안전과 준비 순서를 정리했어요.</description>
+  </item>
+  <item>
+    <title>현장에서 다쳤을 때 산재 처리 절차: 다친 직후 할 일, 산재 신청 서류와 흐름, 공상 처리와의 차이, 받을 수 있는 급여와 흔한 오해</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-16-workplace-injury-compensation-procedure.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-16-workplace-injury-compensation-procedure.html</guid>
+    <pubDate>Thu, 15 Oct 2026 18:00:00 GMT</pubDate>
+    <category>현장 생활</category>
+    <description>일하다 다쳤을 때 다친 직후 할 일, 산재 신청 서류와 흐름, 받을 수 있는 급여, 공상 처리와의 차이와 산재로 가야 할 부상 기준, 과실·불이익·일용직에 관한 흔한 오해를 정리했어요.</description>
+  </item>
+  <item>
+    <title>소방안전관리자 2급 취득법: 강습 교육과 시험 구성, 공장·건물에서 누가 선임되나, 시설관리 취업에 어떻게 쓰이나</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-15-fire-safety-manager-grade2-guide.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-15-fire-safety-manager-grade2-guide.html</guid>
+    <pubDate>Wed, 14 Oct 2026 18:00:00 GMT</pubDate>
+    <category>자격증</category>
+    <description>소방안전관리자 등급과 선임 대상, 2급을 얻는 두 가지 길(강습 교육 후 시험·자격 보유), 시험 구성과 공부 요령, 선임 후 업무와 시설관리 취업 활용법을 정리했어요.</description>
+  </item>
+  <item>
+    <title>작업환경측정 결과 읽는 법: 소음·분진·유기용제 측정값과 노출 기준, 초과하면 무엇이 바뀌나, 근로자가 확인할 권리</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-15-workplace-environment-measurement-reading.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-15-workplace-environment-measurement-reading.html</guid>
+    <pubDate>Wed, 14 Oct 2026 18:00:00 GMT</pubDate>
+    <category>산업안전</category>
+    <description>작업환경측정의 대상과 주기, 결과표의 TWA·STEL·노출 기준 읽는 법, 기준 초과 시 사업장이 해야 할 조치, 근로자의 결과 열람·설명 요구 권리를 정리했어요.</description>
+  </item>
+  <item>
+    <title>적재물 붕괴·깔림 사고: 팔레트 적재·코일·랙·자재 더미가 무너지는 순간, 원인과 예방</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-15-stacked-load-collapse-crush-accident-analysis.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-15-stacked-load-collapse-crush-accident-analysis.html</guid>
+    <pubDate>Wed, 14 Oct 2026 18:00:00 GMT</pubDate>
+    <category>사고사례 분석</category>
+    <description>높이 쌓은 팔레트·코일·랙 적재물이 무너져 작업자를 덮치는 사고의 대표 상황, 직접 원인과 근본 원인, 적재 높이·받침·랙 보호대 같은 예방 체크리스트와 법적 의무를 정리했어요.</description>
+  </item>
+  <item>
+    <title>열화상 카메라 사용법: 방사율·반사 온도 맞추기, 전기 접속부·베어링·배관 점검 요령, 오판을 막는 촬영 조건</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-15-thermal-imaging-camera-usage-guide.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-15-thermal-imaging-camera-usage-guide.html</guid>
+    <pubDate>Wed, 14 Oct 2026 18:00:00 GMT</pubDate>
+    <category>장비·공구</category>
+    <description>열화상 카메라의 원리와 한계, 방사율·반사 온도·거리 설정, 분전반·베어링·배관 점검 요령, 온도 차로 판정하는 기준, 유리·광택 금속·햇빛 같은 오판 원인을 정리했어요.</description>
+  </item>
+  <item>
+    <title>폐배터리 재사용·재활용 산업 한눈에 보기: 전기차 배터리는 어디로 가나, 진단·해체·습식 제련 현장 직무와 안전</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-15-battery-recycling-reuse-industry-jobs.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-15-battery-recycling-reuse-industry-jobs.html</guid>
+    <pubDate>Wed, 14 Oct 2026 18:00:00 GMT</pubDate>
+    <category>산업 트렌드</category>
+    <description>전기차·ESS 폐배터리의 회수→진단→재사용·재활용 흐름, 전처리·블랙매스·습식 제련의 역할, 현장에 생기는 직무와 고전압·화재·화학물질 안전 수칙, 준비할 자격을 정리했어요.</description>
+  </item>
+  <item>
+    <title>현장 신입이 첫 3개월에 다치지 않는 법: 사고가 신입에게 몰리는 이유, 첫날·첫주·첫달 체크리스트, 물어보는 기술</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-15-new-worker-first-3-months-safety.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-15-new-worker-first-3-months-safety.html</guid>
+    <pubDate>Wed, 14 Oct 2026 18:00:00 GMT</pubDate>
+    <category>현장 생활</category>
+    <description>입사 초기에 재해가 집중되는 이유, 첫날 꼭 확인할 7가지, 첫 주·첫 달 체크리스트, 모르는 것을 물어보는 기술과 작업 거부권, 선임이 신입에게 해야 할 것을 정리했어요.</description>
+  </item>
+  <item>
+    <title>기중기운전기능사 vs 천장크레인 조종 교육: 우리 현장 크레인에는 어떤 자격이 필요한가, 시험과 교육 준비법</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-14-crane-operator-license-vs-overhead-crane-training.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-14-crane-operator-license-vs-overhead-crane-training.html</guid>
+    <pubDate>Tue, 13 Oct 2026 18:00:00 GMT</pubDate>
+    <category>자격증</category>
+    <description>크레인 종류별 필요 자격 구분, 천장크레인 조종 교육과 줄걸이 교육, 기중기운전기능사 필기·실기 준비법과 면허 발급, 직무별 선택과 다음 단계를 정리했어요.</description>
+  </item>
+  <item>
+    <title>지게차 작업계획서 작성법: 법이 요구하는 항목, 현장에서 쓰는 한 장 서식, 운전자·유도자에게 알리는 방법</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-14-forklift-work-plan-writing-guide.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-14-forklift-work-plan-writing-guide.html</guid>
+    <pubDate>Tue, 13 Oct 2026 18:00:00 GMT</pubDate>
+    <category>산업안전</category>
+    <description>작업계획서가 필요한 이유, 법이 요구하는 포함 항목, 표준·일일 계획서로 나누는 요령, 한 장 서식 예시, 전달·기록 방법, 흔한 잘못과 점검 확인 사항을 정리했어요.</description>
+  </item>
+  <item>
+    <title>분진 폭발 사고: 밀가루·알루미늄·목재 가루가 왜 폭탄이 되나, 집진기·사일로·분체 설비의 원인과 예방</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-14-dust-explosion-accident-analysis.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-14-dust-explosion-accident-analysis.html</guid>
+    <pubDate>Tue, 13 Oct 2026 18:00:00 GMT</pubDate>
+    <category>사고사례 분석</category>
+    <description>분진 폭발 조건과 2차 폭발 원리, 집진기·사일로·분쇄기·이송 설비의 대표 상황, 직접·근본 원인, 퇴적 분진 청소·점화원 관리·방폭·방산 등 예방 체크리스트와 법적 의무를 정리했어요.</description>
+  </item>
+  <item>
+    <title>복합가스측정기 사용법: 4가지 센서 읽기, 범프 테스트와 교정, 측정 순서, 경보가 울렸을 때 할 일</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-14-multi-gas-detector-usage-bump-test.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-14-multi-gas-detector-usage-bump-test.html</guid>
+    <pubDate>Tue, 13 Oct 2026 18:00:00 GMT</pubDate>
+    <category>장비·공구</category>
+    <description>산소·가연성·CO·H2S 센서와 표시값 읽기, 범프 테스트와 교정의 차이, 영점·밖에서·위중간아래·연속 측정 순서, 경보 설정값과 경보 시 행동, 센서·배터리·보관 관리를 정리했어요.</description>
+  </item>
+  <item>
+    <title>공장 에너지 관리(FEMS)와 탄소중립, 현장 설비 담당이 알아야 할 것: 컴프레서·보일러·모터에서 새는 에너지 찾기</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-14-factory-energy-management-fems-carbon.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-14-factory-energy-management-fems-carbon.html</guid>
+    <pubDate>Tue, 13 Oct 2026 18:00:00 GMT</pubDate>
+    <category>산업 트렌드</category>
+    <description>탄소중립이 현장 설비의 일인 이유, FEMS 구조, 압축 공기·스팀·모터·공조·조명·대기 전력에서 에너지가 새는 곳과 절감 방법, 설비 담당의 역할 변화와 준비할 자격을 정리했어요.</description>
+  </item>
+  <item>
+    <title>야간 근무 후 졸음운전 막기: 퇴근길이 가장 위험한 이유, 출발 전 10분 체크, 졸음 신호와 대처, 대안 통근</title>
+    <link>https://sugilyang.github.io/fieldnote/posts/2026-10-14-night-shift-drowsy-driving-prevention.html</link>
+    <guid>https://sugilyang.github.io/fieldnote/posts/2026-10-14-night-shift-drowsy-driving-prevention.html</guid>
+    <pubDate>Tue, 13 Oct 2026 18:00:00 GMT</pubDate>
+    <category>현장 생활</category>
+    <description>야간 근무 후 퇴근길이 위험한 이유, 졸음 신호 단계, 출발 전 체크리스트와 커피 냅, 운전 중 효과 있는 대처와 없는 것, 카풀·대중교통·회사 지원 대안, 사업장 조치와 장기 수면 관리를 정리했어요.</description>
+  </item>
+</channel>
+</rss>

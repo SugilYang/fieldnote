@@ -71,7 +71,7 @@ ${footer}
 
 // 2) 메인 페이지: 정적 카드(최신 12편)와 섹션 링크를 심는다 (JS가 뜨면 대체됨)
 let idx = read('index.html');
-idx = idx.replace(/<div class="grid" id="grid">[\s\S]*?<\/div>\n/, `<div class="grid" id="grid">${posts.slice(0, 12).map((p, i) => card(p, i === 0)).join('\n')}</div>\n`);
+idx = idx.replace(/<div class="grid" id="grid">[\s\S]*?<!--\/grid-->/, `<div class="grid" id="grid">${posts.slice(0, 12).map((p, i) => card(p, i === 0)).join('\n')}<!--/grid-->`);
 idx = idx.replace(/<ul class="cats" id="cats">[\s\S]*?<\/ul>/, `<ul class="cats" id="cats">${Object.entries(SECTIONS).map(([id, [name, icon]]) => `<li><a href="${id}.html">${icon} ${name}</a><span>${posts.filter(p => p.section === id).length}</span></li>`).join('')}</ul>`);
 if (!idx.includes('rss+xml')) idx = idx.replace('<!-- Google Analytics -->', `<link rel="alternate" type="application/rss+xml" title="현장노트" href="${BASE}feed.xml">\n<!-- Google Analytics -->`);
 write('index.html', idx);

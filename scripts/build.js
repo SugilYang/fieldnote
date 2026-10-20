@@ -3,7 +3,7 @@
 //  - 글마다 JSON-LD(Article·BreadcrumbList·FAQPage) 삽입, 검색 색인 search.json
 const fs = require('fs'), path = require('path');
 const ROOT = path.join(__dirname, '..');
-const BASE = fs.existsSync(path.join(ROOT, 'CNAME')) ? `https://${fs.readFileSync(path.join(ROOT, 'CNAME'), 'utf8').trim()}/` : 'https://sugilyang.github.io/fieldnote/';
+const BASE = fs.existsSync(path.join(ROOT, 'CNAME')) ? `https://${fs.readFileSync(path.join(ROOT, 'CNAME'), 'utf8').trim()}/` : 'https://field.ynote.co.kr/';
 const SECTIONS = { license: ['자격증', '📜', '국가기술자격증·면허 취득 방법, 시험 구성, 공부법'], safety: ['산업안전', '🦺', '법정 안전교육, 위험성평가, 보호구, 작업별 안전수칙'], case: ['사고사례 분석', '🚨', '산업재해 유형별 원인과 예방 대책'], tools: ['장비·공구', '🔧', '공구·측정기·설비 사용법과 고르는 기준'], trend: ['산업 트렌드', '🔋', '2차전지·반도체·자동화·물류 산업의 흐름'], life: ['현장 생활', '💼', '교대근무 건강관리, 작업복 관리, 현장 직장인 생활 팁'] };
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const read = f => fs.readFileSync(path.join(ROOT, f), 'utf8');

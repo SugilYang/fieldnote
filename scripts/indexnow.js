@@ -1,7 +1,7 @@
 // 새로 올라온 글 주소를 IndexNow(네이버·빙 등)에 알린다. 실패해도 배포는 막지 않는다.
 const fs = require('fs'), path = require('path'), { execSync } = require('child_process');
 const ROOT = path.join(__dirname, '..');
-const BASE = fs.existsSync(path.join(ROOT, 'CNAME')) ? `https://${fs.readFileSync(path.join(ROOT, 'CNAME'), 'utf8').trim()}/` : 'https://sugilyang.github.io/fieldnote/';
+const BASE = fs.existsSync(path.join(ROOT, 'CNAME')) ? `https://${fs.readFileSync(path.join(ROOT, 'CNAME'), 'utf8').trim()}/` : 'https://field.ynote.co.kr/';
 const host = new URL(BASE).host;
 const KEY = fs.readFileSync(path.join(ROOT, 'indexnow-key.txt'), 'utf8').trim();
 

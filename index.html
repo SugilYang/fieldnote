@@ -207,7 +207,7 @@ function renderSide() {
   }
   if (!pop || pop.length < 3) { pop = posts.slice(0, 5); $('popTitle').textContent = '최신 글'; }
   $('pop').innerHTML = pop.map(p => `<li><a href="posts/${esc(p.file)}">${esc(p.title)}</a></li>`).join('');
-  if (stats) $('stats').innerHTML = `<div><b>${(stats.yesterday || 0).toLocaleString()}</b><span>어제</span></div><div><b>${(stats.total || 0).toLocaleString()}</b><span>전체 방문</span></div><div><b>${posts.length}</b><span>글</span></div>`;
+  if (stats) $('stats').innerHTML = `<div><b>${(stats.yesterday || 0).toLocaleString()}</b><span>어제</span></div><div><b>${(stats.total || 0).toLocaleString()}</b><span>전체 방문</span></div>${stats.search ? `<div><b>${stats.search.impressions.toLocaleString()}</b><span>검색 노출</span></div>` : ''}<div><b>${posts.length}</b><span>글</span></div>`;
   else $('stats').innerHTML = `<div><b>${posts.length}</b><span>글</span></div>`;
 }
 

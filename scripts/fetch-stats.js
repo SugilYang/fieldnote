@@ -12,7 +12,7 @@ const b64 = o => Buffer.from(JSON.stringify(o)).toString('base64url');
 async function token() {
   const now = Math.floor(Date.now() / 1000);
   const unsigned = b64({ alg: 'RS256', typ: 'JWT' }) + '.' + b64({
-    iss: sa.client_email, scope: 'https://www.googleapis.com/auth/analytics.readonly',
+    iss: sa.client_email, scope: 'https://www.googleapis.com/auth/analytics.readonly https://www.googleapis.com/auth/webmasters.readonly',
     aud: 'https://oauth2.googleapis.com/token', iat: now, exp: now + 3600 });
   const sig = crypto.sign('RSA-SHA256', Buffer.from(unsigned), sa.private_key).toString('base64url');
   const r = await fetch('https://oauth2.googleapis.com/token', { method: 'POST',
@@ -29,6 +29,22 @@ async function report(tok, body) {
   return (await r.json()).rows || [];
 }
 
+async function searchConsole(tok) {
+  const end = new Date(Date.now() - 2 * 86400000).toISOString().slice(0, 10); // SC는 2~3일 지연
+  const start = new Date(Date.now() - 30 * 86400000).toISOString().slice(0, 10);
+  const q = async body => {
+    const r = await fetch('https://searchconsole.googleapis.com/webmasters/v3/sites/sc-domain%3Aynote.co.kr/searchAnalytics/query', {
+      method: 'POST', headers: { Authorization: `Bearer ${tok}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ startDate: start, endDate: end, ...body }) });
+    if (!r.ok) throw new Error('Search Console ' + r.status + ' ' + await r.text());
+    return (await r.json()).rows || [];
+  };
+  const [total, queries, pages] = await Promise.all([
+    q({}), q({ dimensions: ['query'], rowLimit: 20 }), q({ dimensions: ['page'], rowLimit: 20 })]);
+  return { period: `${start}~${end}`, clicks: total[0]?.clicks || 0, impressions: total[0]?.impressions || 0,
+    queries: queries.map(r => ({ q: r.keys[0], clicks: r.clicks, impressions: r.impressions, position: +r.position.toFixed(1) })),
+    pages: pages.map(r => ({ page: r.keys[0].replace(/^https?:\/\/[^/]+\//, ''), clicks: r.clicks, impressions: r.impressions })) };
+}
+
 (async () => {
   const tok = await token();
   const [yday, total, pages] = await Promise.all([
@@ -43,6 +59,7 @@ async function report(tok, body) {
     total: +(total[0]?.metricValues[0].value || 0),
     pages: Object.fromEntries(pages.map(r => [r.dimensionValues[0].value.replace(/^\/fieldnote\//, '').replace(/^\//, ''), +r.metricValues[0].value])),
   };
+  try { stats.search = await searchConsole(tok); console.log(`검색: 노출 ${stats.search.impressions}, 클릭 ${stats.search.clicks}`); } catch (e) { console.log('Search Console 건너뜀:', e.message.slice(0, 120)); }
   fs.writeFileSync(__dirname + '/../stats.json', JSON.stringify(stats, null, 2) + '\n');
   console.log(`통계 저장: 어제 ${stats.yesterday}, 전체 ${stats.total}, 글 ${Object.keys(stats.pages).length}개`);
 })().catch(e => { console.error(e.message); process.exit(0); }); // 통계 실패가 배포를 막지 않게

@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-20",
-  "yesterday": 1,
-  "total": 27,
+  "yesterday": 11,
+  "total": 36,
   "pages": {
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
     "posts/2026-09-30-risk-assessment-procedure-guide.html": 4,
@@ -11,6 +11,8 @@
     "posts/2026-10-02-logistics-center-automation-overview.html": 2,
     "posts/2026-10-02-ppe-selection-and-wearing-guide.html": 2,
     "posts/2026-10-02-welding-craftsman-exam-guide.html": 2,
+    "posts/2026-10-05-toolbox-meeting-tbm-guide.html": 2,
+    "posts/2026-10-19-emergency-evacuation-drill-guide.html": 2,
     "posts/2026-09-29-battery-manufacturing-process-overview.html": 1,
     "posts/2026-09-30-safety-shoes-choosing-and-care.html": 1,
     "posts/2026-10-01-conveyor-entanglement-accident-analysis.html": 1,
@@ -25,7 +27,8 @@
     "posts/2026-10-13-supervisor-legal-duties-checklist.html": 1,
     "posts/2026-10-15-stacked-load-collapse-crush-accident-analysis.html": 1,
     "posts/2026-10-16-cnc-lathe-milling-craftsman-exam-guide.html": 1,
-    "posts/2026-10-16-rotating-shaft-entanglement-accident-analysis.html": 1
+    "posts/2026-10-16-rotating-shaft-entanglement-accident-analysis.html": 1,
+    "posts/2026-10-16-workplace-injury-compensation-procedure.html": 1
   },
   "search": {
     "period": "2026-09-20~2026-10-18",

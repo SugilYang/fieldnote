@@ -59,6 +59,12 @@ async function searchConsole(tok) {
     total: +(total[0]?.metricValues[0].value || 0),
     pages: Object.fromEntries(pages.map(r => [r.dimensionValues[0].value.replace(/^\/fieldnote\//, '').replace(/^\//, ''), +r.metricValues[0].value])),
   };
+  // 어제 방문자 상세: 유입 경로·국가·기기·페이지 (방문자 분석용)
+  try {
+    const dim = async (name, metric = 'activeUsers') => (await report(tok, { dateRanges: [{ startDate: 'yesterday', endDate: 'yesterday' }], dimensions: [{ name }], metrics: [{ name: metric }], limit: 15 }))
+      .map(r => [r.dimensionValues[0].value, +r.metricValues[0].value]);
+    stats.yesterdayDetail = { source: await dim('sessionSourceMedium'), country: await dim('country'), city: await dim('city'), device: await dim('deviceCategory'), pages: await dim('pagePath', 'screenPageViews') };
+  } catch (e) { console.log('상세 건너뜀:', e.message.slice(0, 100)); }
   try { stats.search = await searchConsole(tok); console.log(`검색: 노출 ${stats.search.impressions}, 클릭 ${stats.search.clicks}`); } catch (e) { console.log('Search Console 건너뜀:', e.message.slice(0, 120)); }
   fs.writeFileSync(__dirname + '/../stats.json', JSON.stringify(stats, null, 2) + '\n');
   console.log(`통계 저장: 어제 ${stats.yesterday}, 전체 ${stats.total}, 글 ${Object.keys(stats.pages).length}개`);

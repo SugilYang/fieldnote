@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-21",
   "yesterday": 12,
-  "total": 41,
+  "total": 48,
   "pages": {
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
     "posts/2026-09-30-risk-assessment-procedure-guide.html": 4,
@@ -28,50 +28,64 @@
     "posts/2026-10-15-stacked-load-collapse-crush-accident-analysis.html": 1,
     "posts/2026-10-16-cnc-lathe-milling-craftsman-exam-guide.html": 1,
     "posts/2026-10-16-rotating-shaft-entanglement-accident-analysis.html": 1,
+    "posts/2026-10-14-forklift-work-plan-writing-guide.html": 1,
     "posts/2026-10-16-workplace-injury-compensation-procedure.html": 1,
     "posts/2026-10-19-steam-hot-surface-burn-accident-analysis.html": 1,
-    "posts/2026-10-20-cad-mechanical-drawing-craftsman-exam-guide.html": 1
+    "posts/2026-10-20-cad-mechanical-drawing-craftsman-exam-guide.html": 1,
+    "posts/2026-10-21-serious-accident-workplace-list-disclosure.html": 1
   },
   "yesterdayDetail": {
     "source": [
       [
         "(direct) / (none)",
-        12
+        10
+      ],
+      [
+        "bing / organic",
+        1
+      ],
+      [
+        "daum / organic",
+        1
       ]
     ],
     "country": [
       [
-        "United States",
-        7
-      ],
-      [
         "South Korea",
-        4
+        6
       ],
       [
-        "Netherlands",
+        "United States",
+        5
+      ],
+      [
+        "Germany",
         1
       ]
     ],
     "city": [
       [
-        "Asan-si",
+        "Council Bluffs",
         3
       ],
       [
-        "Boardman",
-        2
-      ],
-      [
-        "San Jose",
-        2
-      ],
-      [
-        "(not set)",
+        "Asan-si",
         1
       ],
       [
-        "Groningen",
+        "Busan",
+        1
+      ],
+      [
+        "Daejeon",
+        1
+      ],
+      [
+        "Glenview",
+        1
+      ],
+      [
+        "Goyang-si",
         1
       ],
       [
@@ -79,59 +93,55 @@
         1
       ],
       [
-        "Independence",
+        "New York",
         1
       ],
       [
-        "Land O' Lakes",
+        "Seoul",
+        1
+      ],
+      [
+        "Wildpoldsried",
         1
       ]
     ],
     "device": [
       [
         "desktop",
-        8
+        9
       ],
       [
         "mobile",
-        4
+        3
       ]
     ],
     "pages": [
       [
         "/",
-        17
+        9
       ],
       [
         "/index.html",
-        7
+        6
       ],
       [
-        "/posts/2026-10-05-toolbox-meeting-tbm-guide.html",
-        2
-      ],
-      [
-        "/posts/2026-10-19-emergency-evacuation-drill-guide.html",
-        2
-      ],
-      [
-        "/fieldnote/",
+        "/case.html",
         1
       ],
       [
-        "/fieldnote/index.html",
+        "/posts/2026-10-14-forklift-work-plan-writing-guide.html",
         1
       ],
       [
-        "/license.html",
+        "/posts/2026-10-19-steam-hot-surface-burn-accident-analysis.html",
         1
       ],
       [
-        "/posts/2026-10-16-workplace-injury-compensation-procedure.html",
+        "/posts/2026-10-20-cad-mechanical-drawing-craftsman-exam-guide.html",
         1
       ],
       [
-        "/safety.html",
+        "/posts/2026-10-21-serious-accident-workplace-list-disclosure.html",
         1
       ]
     ]

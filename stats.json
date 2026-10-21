@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-20",
-  "yesterday": 11,
-  "total": 36,
+  "updated": "2026-10-21",
+  "yesterday": 12,
+  "total": 41,
   "pages": {
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
     "posts/2026-09-30-risk-assessment-procedure-guide.html": 4,
@@ -28,10 +28,116 @@
     "posts/2026-10-15-stacked-load-collapse-crush-accident-analysis.html": 1,
     "posts/2026-10-16-cnc-lathe-milling-craftsman-exam-guide.html": 1,
     "posts/2026-10-16-rotating-shaft-entanglement-accident-analysis.html": 1,
-    "posts/2026-10-16-workplace-injury-compensation-procedure.html": 1
+    "posts/2026-10-16-workplace-injury-compensation-procedure.html": 1,
+    "posts/2026-10-19-steam-hot-surface-burn-accident-analysis.html": 1,
+    "posts/2026-10-20-cad-mechanical-drawing-craftsman-exam-guide.html": 1
+  },
+  "yesterdayDetail": {
+    "source": [
+      [
+        "(direct) / (none)",
+        12
+      ]
+    ],
+    "country": [
+      [
+        "United States",
+        7
+      ],
+      [
+        "South Korea",
+        4
+      ],
+      [
+        "Netherlands",
+        1
+      ]
+    ],
+    "city": [
+      [
+        "Asan-si",
+        3
+      ],
+      [
+        "Boardman",
+        2
+      ],
+      [
+        "San Jose",
+        2
+      ],
+      [
+        "(not set)",
+        1
+      ],
+      [
+        "Groningen",
+        1
+      ],
+      [
+        "Incheon",
+        1
+      ],
+      [
+        "Independence",
+        1
+      ],
+      [
+        "Land O' Lakes",
+        1
+      ]
+    ],
+    "device": [
+      [
+        "desktop",
+        8
+      ],
+      [
+        "mobile",
+        4
+      ]
+    ],
+    "pages": [
+      [
+        "/",
+        17
+      ],
+      [
+        "/index.html",
+        7
+      ],
+      [
+        "/posts/2026-10-05-toolbox-meeting-tbm-guide.html",
+        2
+      ],
+      [
+        "/posts/2026-10-19-emergency-evacuation-drill-guide.html",
+        2
+      ],
+      [
+        "/fieldnote/",
+        1
+      ],
+      [
+        "/fieldnote/index.html",
+        1
+      ],
+      [
+        "/license.html",
+        1
+      ],
+      [
+        "/posts/2026-10-16-workplace-injury-compensation-procedure.html",
+        1
+      ],
+      [
+        "/safety.html",
+        1
+      ]
+    ]
   },
   "search": {
-    "period": "2026-09-20~2026-10-18",
+    "period": "2026-09-21~2026-10-19",
     "clicks": 0,
     "impressions": 0,
     "queries": [],

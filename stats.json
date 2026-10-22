@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-21",
-  "yesterday": 12,
-  "total": 48,
+  "updated": "2026-10-22",
+  "yesterday": 2,
+  "total": 49,
   "pages": {
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
     "posts/2026-09-30-risk-assessment-procedure-guide.html": 4,
@@ -38,116 +38,48 @@
     "source": [
       [
         "(direct) / (none)",
-        10
-      ],
-      [
-        "bing / organic",
-        1
-      ],
-      [
-        "daum / organic",
-        1
+        2
       ]
     ],
     "country": [
       [
         "South Korea",
-        6
-      ],
-      [
-        "United States",
-        5
-      ],
-      [
-        "Germany",
-        1
+        2
       ]
     ],
     "city": [
-      [
-        "Council Bluffs",
-        3
-      ],
       [
         "Asan-si",
         1
       ],
       [
-        "Busan",
-        1
-      ],
-      [
-        "Daejeon",
-        1
-      ],
-      [
-        "Glenview",
-        1
-      ],
-      [
-        "Goyang-si",
-        1
-      ],
-      [
         "Incheon",
-        1
-      ],
-      [
-        "New York",
-        1
-      ],
-      [
-        "Seoul",
-        1
-      ],
-      [
-        "Wildpoldsried",
         1
       ]
     ],
     "device": [
       [
         "desktop",
-        9
+        1
       ],
       [
         "mobile",
-        3
+        1
       ]
     ],
     "pages": [
       [
         "/",
-        9
+        1
       ],
       [
         "/index.html",
-        6
-      ],
-      [
-        "/case.html",
-        1
-      ],
-      [
-        "/posts/2026-10-14-forklift-work-plan-writing-guide.html",
-        1
-      ],
-      [
-        "/posts/2026-10-19-steam-hot-surface-burn-accident-analysis.html",
-        1
-      ],
-      [
-        "/posts/2026-10-20-cad-mechanical-drawing-craftsman-exam-guide.html",
-        1
-      ],
-      [
-        "/posts/2026-10-21-serious-accident-workplace-list-disclosure.html",
         1
       ]
     ]
   },
   "search": {
-    "period": "2026-09-21~2026-10-19",
+    "period": "2026-09-22~2026-10-20",
     "clicks": 0,
     "impressions": 0,
     "queries": [],

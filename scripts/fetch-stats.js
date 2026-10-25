@@ -65,7 +65,10 @@ async function searchConsole(tok) {
       .map(r => [r.dimensionValues[0].value, +r.metricValues[0].value]);
     stats.yesterdayDetail = { source: await dim('sessionSourceMedium'), country: await dim('country'), city: await dim('city'), device: await dim('deviceCategory'), pages: await dim('pagePath', 'screenPageViews') };
   } catch (e) { console.log('상세 건너뜀:', e.message.slice(0, 100)); }
-  try { stats.search = await searchConsole(tok); console.log(`검색: 노출 ${stats.search.impressions}, 클릭 ${stats.search.clicks}`); } catch (e) { console.log('Search Console 건너뜀:', e.message.slice(0, 120)); }
+  try { stats.search = await searchConsole(tok); console.log(`검색: 노출 ${stats.search.impressions}, 클릭 ${stats.search.clicks}`); } catch (e) {
+    console.log('Search Console 건너뜀:', e.message.slice(0, 120));
+    try { const prev = JSON.parse(fs.readFileSync(__dirname + '/../stats.json', 'utf8')).search; if (prev) stats.search = prev; } catch {}
+  }
   fs.writeFileSync(__dirname + '/../stats.json', JSON.stringify(stats, null, 2) + '\n');
   console.log(`통계 저장: 어제 ${stats.yesterday}, 전체 ${stats.total}, 글 ${Object.keys(stats.pages).length}개`);
 })().catch(e => { console.error(e.message); process.exit(0); }); // 통계 실패가 배포를 막지 않게

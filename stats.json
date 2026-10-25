@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-25",
   "yesterday": 2,
-  "total": 49,
+  "total": 54,
   "pages": {
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
     "posts/2026-09-30-risk-assessment-procedure-guide.html": 4,
@@ -32,13 +32,18 @@
     "posts/2026-10-16-workplace-injury-compensation-procedure.html": 1,
     "posts/2026-10-19-steam-hot-surface-burn-accident-analysis.html": 1,
     "posts/2026-10-20-cad-mechanical-drawing-craftsman-exam-guide.html": 1,
-    "posts/2026-10-21-serious-accident-workplace-list-disclosure.html": 1
+    "posts/2026-10-21-serious-accident-workplace-list-disclosure.html": 1,
+    "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 1
   },
   "yesterdayDetail": {
     "source": [
       [
         "(direct) / (none)",
-        2
+        1
+      ],
+      [
+        "bing / organic",
+        1
       ]
     ],
     "country": [
@@ -49,11 +54,11 @@
     ],
     "city": [
       [
-        "Asan-si",
+        "Incheon",
         1
       ],
       [
-        "Incheon",
+        "Seoul",
         1
       ]
     ],
@@ -73,16 +78,9 @@
         1
       ],
       [
-        "/index.html",
+        "/posts/2026-10-22-safety-harness-wearing-anchor-guide.html",
         1
       ]
     ]
-  },
-  "search": {
-    "period": "2026-09-22~2026-10-20",
-    "clicks": 0,
-    "impressions": 0,
-    "queries": [],
-    "pages": []
   }
 }

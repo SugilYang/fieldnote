@@ -6,6 +6,7 @@ const ROOT = path.join(__dirname, '..');
 const BASE = fs.existsSync(path.join(ROOT, 'CNAME')) ? `https://${fs.readFileSync(path.join(ROOT, 'CNAME'), 'utf8').trim()}/` : 'https://field.ynote.co.kr/';
 const SECTIONS = { license: ['자격증', '📜', '국가기술자격증·면허 취득 방법, 시험 구성, 공부법'], safety: ['산업안전', '🦺', '법정 안전교육, 위험성평가, 보호구, 작업별 안전수칙'], case: ['사고사례 분석', '🚨', '산업재해 유형별 원인과 예방 대책'], tools: ['장비·공구', '🔧', '공구·측정기·설비 사용법과 고르는 기준'], trend: ['산업 트렌드', '🔋', '2차전지·반도체·자동화·물류 산업의 흐름'], life: ['현장 생활', '💼', '교대근무 건강관리, 작업복 관리, 현장 직장인 생활 팁'] };
 const NAVER = '<meta name="naver-site-verification" content="c254b450f730ddc6064c4494834efa93d383bd94">';
+const ADS = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9274785237746410" crossorigin="anonymous"></script>';
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const read = f => fs.readFileSync(path.join(ROOT, f), 'utf8');
 const write = (f, s) => fs.writeFileSync(path.join(ROOT, f), s);
@@ -23,6 +24,7 @@ const card = (p, big) => {
 const head = (title, desc, url) => `<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ${NAVER}
+${ADS}
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${url}">
@@ -101,16 +103,19 @@ for (const p of posts) {
   const tag = `<script type="application/ld+json" id="ld">${JSON.stringify(ld)}</script>`;
   html = html.includes('id="ld"') ? html.replace(/<script type="application\/ld\+json" id="ld">[\s\S]*?<\/script>/, tag) : html.replace('</head>', `${tag}\n</head>`);
   if (!html.includes('naver-site-verification')) html = html.replace('<meta name="viewport" content="width=device-width, initial-scale=1.0">', `$&\n${NAVER}`);
+  if (!html.includes('adsbygoogle')) html = html.replace('</head>', `${ADS}\n</head>`);
   // 상단 메뉴를 섹션 페이지로
   html = html.replace(/<nav>[\s\S]*?<\/nav>/, `<nav>${Object.entries(SECTIONS).map(([id, [n]]) => `<a href="../${id}.html">${n}</a>`).join('')}</nav>`);
   fs.writeFileSync(fp, html);
 }
 write('search.json', JSON.stringify(index));
 
-// 정적 페이지에도 네이버 인증 태그
+// 정적 페이지에도 네이버 인증 태그와 애드센스 코드
 for (const f of ['index.html', 'about.html', 'contact.html', 'privacy.html', 'templates/post.html']) {
   let h = read(f);
-  if (!h.includes('naver-site-verification')) write(f, h.replace('<meta name="viewport" content="width=device-width, initial-scale=1.0">', `$&\n${NAVER}`));
+  if (!h.includes('naver-site-verification')) h = h.replace('<meta name="viewport" content="width=device-width, initial-scale=1.0">', `$&\n${NAVER}`);
+  if (!h.includes('adsbygoogle')) h = h.replace('</head>', `${ADS}\n</head>`);
+  write(f, h);
 }
 
 // 4) sitemap / feed / robots

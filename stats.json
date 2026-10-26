@@ -39,11 +39,7 @@
     "source": [
       [
         "(direct) / (none)",
-        1
-      ],
-      [
-        "bing / organic",
-        1
+        2
       ]
     ],
     "country": [
@@ -54,11 +50,11 @@
     ],
     "city": [
       [
-        "Incheon",
+        "Asan-si",
         1
       ],
       [
-        "Seoul",
+        "Incheon",
         1
       ]
     ],
@@ -74,11 +70,11 @@
     ],
     "pages": [
       [
-        "/",
-        1
+        "/index.html",
+        4
       ],
       [
-        "/posts/2026-10-22-safety-harness-wearing-anchor-guide.html",
+        "/",
         1
       ]
     ]

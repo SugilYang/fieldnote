@@ -119,7 +119,7 @@ for (const f of ['index.html', 'about.html', 'contact.html', 'privacy.html', 'te
 }
 
 // 4) sitemap / feed / robots
-const pages = ['', 'about.html', 'contact.html', 'privacy.html', ...Object.keys(SECTIONS).map(s => `${s}.html`)];
+const pages = ['', 'about.html', 'contact.html', 'privacy.html', 'apps/shift.html', ...Object.keys(SECTIONS).map(s => `${s}.html`)];
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages.map(u => `  <url><loc>${BASE}${u}</loc><lastmod>${today}</lastmod></url>`).join('\n')}

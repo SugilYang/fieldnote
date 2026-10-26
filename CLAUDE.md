@@ -33,6 +33,8 @@
 - `description`(요약)에도 핵심 검색어를 자연스럽게 1번 넣는다.
 - 본문 소제목(h2)에도 관련 검색어를 넣는다. 사람들이 묻는 질문 형태가 좋다.
 - **자주 묻는 질문 3개**(`details.faq`)는 실제로 검색되는 질문으로 쓴다. 검색 결과에 FAQ가 펼쳐져 보이게 하는 장치다.
+- 주제는 **사람들이 실제로 묻는 질문형 검색어**를 먼저 고른다 (예: "~ 합격률", "~ 차이", "~ 하는 법", "~ 기준"). 넓은 개념 설명보다 구체적인 질문 하나에 답하는 글이 검색에 잘 걸린다.
+- 교대근무를 다루는 글에는 본문에 `<a href="../apps/shift.html">교대근무 달력 만들기</a>` 링크를 1번 넣는다.
 - **같은 섹션 기존 글 3편을 본문 안에서 자연스럽게 링크**한다 (`<a href="파일명.html">`). "함께 보면 좋은 글"과 별개다.
 
 ## 사진
@@ -67,4 +69,4 @@
 - "함께 보면 좋은 글"은 `posts.json`의 기존 글 중 관련 있는 것으로만 링크한다. 없는 글을 링크하지 않는다.
 
 ## 수정하지 말 것
-`index.html`, `about.html`, `contact.html`, `privacy.html`, `assets/`, `scripts/`, `templates/post.html`, `.github/`, `stats.json`, `search.json`, `sitemap.xml`, `feed.xml`, `robots.txt`, 섹션 페이지(`license.html` 등 6개), `indexnow-key.txt`는 운영자가 요청할 때만 수정한다.
+`index.html`, `about.html`, `contact.html`, `privacy.html`, `assets/`, `apps/`, `scripts/`, `templates/post.html`, `.github/`, `stats.json`, `search.json`, `sitemap.xml`, `feed.xml`, `robots.txt`, 섹션 페이지(`license.html` 등 6개), `indexnow-key.txt`는 운영자가 요청할 때만 수정한다.

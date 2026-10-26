@@ -27,6 +27,7 @@ footer a{margin:0 8px;text-decoration:none}footer a:hover{color:var(--text)}
 .banner::after{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;background:rgba(245,158,11,.25)}
 .banner h1{margin:0 0 8px;font-size:34px;font-weight:900;letter-spacing:-1px;line-height:1.25}
 .banner p{margin:0;opacity:.85;font-size:16px}
+.banner a.tool{position:relative;z-index:1;display:inline-block;margin-top:16px;background:#fff;color:#1e293b;font-weight:700;font-size:14px;padding:8px 16px;border-radius:20px;text-decoration:none}
 .tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 0 20px;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}
 .tabs button{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:24px;padding:8px 16px;font:inherit;font-size:14px;font-weight:600;white-space:nowrap;cursor:pointer;transition:.15s}
 .tabs button.on{background:var(--text);border-color:var(--text);color:var(--bg)}
@@ -103,7 +104,7 @@ th,td{border:1px solid var(--line);padding:11px 12px;text-align:left;vertical-al
 .result{color:var(--sub);font-size:14px;margin:0 0 12px}
 
 /* 메인 2단 */
-.layout{display:grid;grid-template-columns:1fr 280px;gap:28px;align-items:start}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:28px;align-items:start}
 .layout .grid{grid-template-columns:repeat(2,1fr)}
 .side{position:sticky;top:76px;display:flex;flex-direction:column;gap:16px}
 .box{background:var(--card);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow)}
@@ -115,7 +116,7 @@ th,td{border:1px solid var(--line);padding:11px 12px;text-align:left;vertical-al
 .cats{list-style:none;margin:0;padding:0}.cats li{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line);font-size:14px}
 .cats li:last-child{border:0}.cats a{text-decoration:none;font-weight:600}.cats a:hover{color:var(--accent)}.cats span{color:var(--sub);font-size:13px}
 .pop{margin:0;padding-left:20px;font-size:14px}.pop li{margin:6px 0;line-height:1.45}.pop a{text-decoration:none;font-weight:500}.pop a:hover{color:var(--accent)}
-.pager{display:flex;justify-content:center;gap:6px;margin-top:28px}
+.pager{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:28px}
 .pager button{min-width:36px;height:36px;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:8px;font:inherit;font-weight:600;cursor:pointer}
 .pager button.on{background:var(--text);color:var(--bg);border-color:var(--text)}
 
@@ -134,8 +135,8 @@ th,td{border:1px solid var(--line);padding:11px 12px;text-align:left;vertical-al
 .prevnext small{display:block;color:var(--accent);font-weight:700;font-size:12px;margin-bottom:4px}
 .prevnext .p{text-align:right}
 
-@media (max-width:820px){.layout{grid-template-columns:1fr}.layout .grid{grid-template-columns:repeat(2,1fr)}.side{position:static}.search{max-width:none;margin:0 10px}}
-@media (max-width:600px){.layout .grid{grid-template-columns:1fr}.prevnext{grid-template-columns:1fr}.prevnext .p{text-align:left}.search input{padding:7px 32px 7px 12px}}
+@media (max-width:820px){.layout{grid-template-columns:minmax(0,1fr)}.layout .grid{grid-template-columns:repeat(2,1fr)}.side{position:static}.search{max-width:none;margin:0 10px}}
+@media (max-width:600px){.layout .grid{grid-template-columns:minmax(0,1fr)}.prevnext{grid-template-columns:1fr}.prevnext .p{text-align:left}.search input{padding:7px 32px 7px 12px}}
 
 /* 섹션 페이지·FAQ */
 .banner.c-license,.banner.c-safety,.banner.c-case,.banner.c-tools,.banner.c-trend,.banner.c-life{background:linear-gradient(120deg,var(--sc2),var(--sc))}

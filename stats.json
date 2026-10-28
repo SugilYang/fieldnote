@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-27",
-  "yesterday": 9,
-  "total": 65,
+  "updated": "2026-10-28",
+  "yesterday": 4,
+  "total": 70,
   "pages": {
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
     "posts/2026-09-30-risk-assessment-procedure-guide.html": 4,
-    "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 3,
+    "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 4,
     "posts/2026-09-30-electrician-craftsman-exam-guide.html": 2,
     "posts/2026-09-30-smart-factory-automation-jobs.html": 2,
     "posts/2026-10-01-manual-lifting-back-pain-prevention.html": 2,
@@ -39,7 +39,7 @@
     "source": [
       [
         "(direct) / (none)",
-        8
+        3
       ],
       [
         "bing / organic",
@@ -48,75 +48,59 @@
     ],
     "country": [
       [
-        "United States",
-        5
+        "South Korea",
+        2
       ],
       [
-        "South Korea",
-        4
+        "Canada",
+        1
+      ],
+      [
+        "United States",
+        1
       ]
     ],
     "city": [
       [
+        "Burnaby",
+        1
+      ],
+      [
         "Council Bluffs",
-        2
-      ],
-      [
-        "Acton",
         1
       ],
       [
-        "Anseong-si",
-        1
-      ],
-      [
-        "Asan-si",
-        1
-      ],
-      [
-        "Glenview",
+        "Iksan-si",
         1
       ],
       [
         "Incheon",
-        1
-      ],
-      [
-        "San Jose",
-        1
-      ],
-      [
-        "Seoul",
         1
       ]
     ],
     "device": [
       [
         "desktop",
-        7
+        3
       ],
       [
         "mobile",
-        2
+        1
       ]
     ],
     "pages": [
       [
         "/",
-        10
+        3
       ],
       [
         "/posts/2026-10-22-safety-harness-wearing-anchor-guide.html",
-        2
-      ],
-      [
-        "/apps/shift.html",
         1
       ]
     ]
   },
   "search": {
-    "period": "2026-09-27~2026-10-25",
+    "period": "2026-09-28~2026-10-26",
     "clicks": 0,
     "impressions": 0,
     "queries": [],

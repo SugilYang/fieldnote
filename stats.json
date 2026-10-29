@@ -1,7 +1,7 @@
 {
-  "updated": "2026-10-28",
-  "yesterday": 4,
-  "total": 70,
+  "updated": "2026-10-29",
+  "yesterday": 20,
+  "total": 90,
   "pages": {
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
     "posts/2026-09-30-risk-assessment-procedure-guide.html": 4,
@@ -29,40 +29,66 @@
     "posts/2026-10-15-stacked-load-collapse-crush-accident-analysis.html": 1,
     "posts/2026-10-16-cnc-lathe-milling-craftsman-exam-guide.html": 1,
     "posts/2026-10-16-rotating-shaft-entanglement-accident-analysis.html": 1,
+    "posts/2026-10-12-production-automation-craftsman-plc-exam-guide.html": 1,
     "posts/2026-10-14-forklift-work-plan-writing-guide.html": 1,
     "posts/2026-10-16-workplace-injury-compensation-procedure.html": 1,
     "posts/2026-10-19-steam-hot-surface-burn-accident-analysis.html": 1,
     "posts/2026-10-20-cad-mechanical-drawing-craftsman-exam-guide.html": 1,
-    "posts/2026-10-21-serious-accident-workplace-list-disclosure.html": 1
+    "posts/2026-10-21-serious-accident-workplace-list-disclosure.html": 1,
+    "posts/2026-10-22-inverter-welder-current-setting-guide.html": 1
   },
   "yesterdayDetail": {
     "source": [
       [
         "(direct) / (none)",
-        3
+        19
       ],
       [
-        "bing / organic",
+        "google / organic",
         1
       ]
     ],
     "country": [
       [
+        "United States",
+        13
+      ],
+      [
         "South Korea",
-        2
+        3
       ],
       [
         "Canada",
         1
       ],
       [
-        "United States",
+        "Germany",
+        1
+      ],
+      [
+        "Mayotte",
+        1
+      ],
+      [
+        "Netherlands",
         1
       ]
     ],
     "city": [
       [
-        "Burnaby",
+        "",
+        6
+      ],
+      [
+        "Ashburn",
+        4
+      ],
+      [
+        "Birmingham",
+        2
+      ],
+      [
+        "Anseong-si",
         1
       ],
       [
@@ -70,37 +96,65 @@
         1
       ],
       [
-        "Iksan-si",
+        "Glenview",
+        1
+      ],
+      [
+        "Houston",
         1
       ],
       [
         "Incheon",
+        1
+      ],
+      [
+        "Montreal",
+        1
+      ],
+      [
+        "Moses Lake",
+        1
+      ],
+      [
+        "Pohang-si",
         1
       ]
     ],
     "device": [
       [
         "desktop",
-        3
+        14
       ],
       [
         "mobile",
+        5
+      ],
+      [
+        "tablet",
         1
       ]
     ],
     "pages": [
       [
         "/",
-        3
+        18
       ],
       [
-        "/posts/2026-10-22-safety-harness-wearing-anchor-guide.html",
+        "/index.html",
+        1
+      ],
+      [
+        "/posts/2026-10-12-production-automation-craftsman-plc-exam-guide.html",
+        1
+      ],
+      [
+        "/posts/2026-10-22-inverter-welder-current-setting-guide.html",
         1
       ]
     ]
   },
   "search": {
-    "period": "2026-09-28~2026-10-26",
+    "period": "2026-09-29~2026-10-27",
     "clicks": 0,
     "impressions": 0,
     "queries": [],

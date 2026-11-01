@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-29",
-  "yesterday": 20,
-  "total": 90,
+  "updated": "2026-11-01",
+  "yesterday": 3,
+  "total": 111,
   "pages": {
+    "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 5,
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
     "posts/2026-09-30-risk-assessment-procedure-guide.html": 4,
-    "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 4,
     "posts/2026-09-30-electrician-craftsman-exam-guide.html": 2,
     "posts/2026-09-30-smart-factory-automation-jobs.html": 2,
     "posts/2026-10-01-manual-lifting-back-pain-prevention.html": 2,
@@ -29,66 +29,42 @@
     "posts/2026-10-15-stacked-load-collapse-crush-accident-analysis.html": 1,
     "posts/2026-10-16-cnc-lathe-milling-craftsman-exam-guide.html": 1,
     "posts/2026-10-16-rotating-shaft-entanglement-accident-analysis.html": 1,
+    "posts/2026-10-08-chain-block-lever-hoist-guide.html": 1,
     "posts/2026-10-12-production-automation-craftsman-plc-exam-guide.html": 1,
     "posts/2026-10-14-forklift-work-plan-writing-guide.html": 1,
     "posts/2026-10-16-workplace-injury-compensation-procedure.html": 1,
+    "posts/2026-10-19-clamp-meter-usage-guide.html": 1,
     "posts/2026-10-19-steam-hot-surface-burn-accident-analysis.html": 1,
     "posts/2026-10-20-cad-mechanical-drawing-craftsman-exam-guide.html": 1,
     "posts/2026-10-21-serious-accident-workplace-list-disclosure.html": 1,
-    "posts/2026-10-22-inverter-welder-current-setting-guide.html": 1
+    "posts/2026-10-21-voltage-tester-insulated-tools-guide.html": 1,
+    "posts/2026-10-22-inverter-welder-current-setting-guide.html": 1,
+    "posts/2026-10-29-semiconductor-back-end-packaging-test-jobs.html": 1
   },
   "yesterdayDetail": {
     "source": [
       [
         "(direct) / (none)",
-        19
+        2
       ],
       [
-        "google / organic",
+        "m.search.naver.com / referral",
         1
       ]
     ],
     "country": [
       [
-        "United States",
-        13
-      ],
-      [
         "South Korea",
-        3
+        2
       ],
       [
-        "Canada",
-        1
-      ],
-      [
-        "Germany",
-        1
-      ],
-      [
-        "Mayotte",
-        1
-      ],
-      [
-        "Netherlands",
+        "United States",
         1
       ]
     ],
     "city": [
       [
-        "",
-        6
-      ],
-      [
-        "Ashburn",
-        4
-      ],
-      [
-        "Birmingham",
-        2
-      ],
-      [
-        "Anseong-si",
+        "Busan",
         1
       ],
       [
@@ -96,68 +72,168 @@
         1
       ],
       [
-        "Glenview",
-        1
-      ],
-      [
-        "Houston",
-        1
-      ],
-      [
         "Incheon",
-        1
-      ],
-      [
-        "Montreal",
-        1
-      ],
-      [
-        "Moses Lake",
-        1
-      ],
-      [
-        "Pohang-si",
         1
       ]
     ],
     "device": [
       [
-        "desktop",
-        14
-      ],
-      [
         "mobile",
-        5
+        2
       ],
       [
-        "tablet",
+        "desktop",
         1
       ]
     ],
     "pages": [
       [
         "/",
-        18
+        2
       ],
       [
-        "/index.html",
-        1
-      ],
-      [
-        "/posts/2026-10-12-production-automation-craftsman-plc-exam-guide.html",
-        1
-      ],
-      [
-        "/posts/2026-10-22-inverter-welder-current-setting-guide.html",
+        "/apps/shift.html",
         1
       ]
     ]
   },
   "search": {
-    "period": "2026-09-29~2026-10-27",
-    "clicks": 0,
-    "impressions": 0,
-    "queries": [],
-    "pages": []
+    "period": "2026-10-02~2026-10-30",
+    "clicks": 3,
+    "impressions": 88,
+    "queries": [
+      {
+        "q": "아차사고 보고가 활성화되지 않는 이유",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 8
+      },
+      {
+        "q": "안전화 수명",
+        "clicks": 0,
+        "impressions": 3,
+        "position": 8.7
+      },
+      {
+        "q": "자키 사용법",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 9
+      },
+      {
+        "q": "전동자키 사용법",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 8
+      },
+      {
+        "q": "체인블럭 사용법",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 9
+      }
+    ],
+    "pages": [
+      {
+        "page": "posts/2026-10-08-chain-block-lever-hoist-guide.html",
+        "clicks": 1,
+        "impressions": 2
+      },
+      {
+        "page": "posts/2026-10-12-production-automation-craftsman-plc-exam-guide.html",
+        "clicks": 1,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-21-voltage-tester-insulated-tools-guide.html",
+        "clicks": 1,
+        "impressions": 10
+      },
+      {
+        "page": "posts/2026-09-29-shift-work-sleep-management.html",
+        "clicks": 0,
+        "impressions": 2
+      },
+      {
+        "page": "posts/2026-09-30-safety-shoes-choosing-and-care.html",
+        "clicks": 0,
+        "impressions": 4
+      },
+      {
+        "page": "posts/2026-10-01-hazardous-materials-craftsman-exam-guide.html",
+        "clicks": 0,
+        "impressions": 3
+      },
+      {
+        "page": "posts/2026-10-02-ppe-selection-and-wearing-guide.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-02-winter-work-clothing-layering-cold-stress.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-05-toolbox-meeting-tbm-guide.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-07-safety-signs-colors-and-placement.html",
+        "clicks": 0,
+        "impressions": 3
+      },
+      {
+        "page": "posts/2026-10-07-work-clothes-washing-and-care.html",
+        "clicks": 0,
+        "impressions": 7
+      },
+      {
+        "page": "posts/2026-10-08-slip-trip-fall-accident-analysis.html",
+        "clicks": 0,
+        "impressions": 2
+      },
+      {
+        "page": "posts/2026-10-09-insulation-resistance-earth-tester-guide.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-12-hand-pallet-truck-usage-inspection.html",
+        "clicks": 0,
+        "impressions": 4
+      },
+      {
+        "page": "posts/2026-10-13-equipment-maintenance-craftsman-exam-guide.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-13-supervisor-legal-duties-checklist.html",
+        "clicks": 0,
+        "impressions": 2
+      },
+      {
+        "page": "posts/2026-10-14-night-shift-drowsy-driving-prevention.html",
+        "clicks": 0,
+        "impressions": 3
+      },
+      {
+        "page": "posts/2026-10-15-fire-safety-manager-grade2-guide.html",
+        "clicks": 0,
+        "impressions": 2
+      },
+      {
+        "page": "posts/2026-10-15-stacked-load-collapse-crush-accident-analysis.html",
+        "clicks": 0,
+        "impressions": 2
+      },
+      {
+        "page": "posts/2026-10-16-cnc-lathe-milling-craftsman-exam-guide.html",
+        "clicks": 0,
+        "impressions": 1
+      }
+    ]
   }
 }

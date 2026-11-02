@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-01",
-  "yesterday": 3,
-  "total": 111,
+  "updated": "2026-11-02",
+  "yesterday": 8,
+  "total": 120,
   "pages": {
-    "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 5,
+    "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 10,
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
     "posts/2026-09-30-risk-assessment-procedure-guide.html": 4,
     "posts/2026-09-30-electrician-craftsman-exam-guide.html": 2,
@@ -45,7 +45,23 @@
     "source": [
       [
         "(direct) / (none)",
+        3
+      ],
+      [
+        "naver / organic",
         2
+      ],
+      [
+        "(not set)",
+        1
+      ],
+      [
+        "bing / organic",
+        1
+      ],
+      [
+        "google / organic",
+        1
       ],
       [
         "m.search.naver.com / referral",
@@ -55,7 +71,7 @@
     "country": [
       [
         "South Korea",
-        2
+        7
       ],
       [
         "United States",
@@ -64,7 +80,15 @@
     ],
     "city": [
       [
-        "Busan",
+        "Seoul",
+        2
+      ],
+      [
+        "",
+        1
+      ],
+      [
+        "Asan-si",
         1
       ],
       [
@@ -74,33 +98,45 @@
       [
         "Incheon",
         1
+      ],
+      [
+        "Jeonju-si",
+        1
+      ],
+      [
+        "Samcheok-si",
+        1
       ]
     ],
     "device": [
       [
-        "mobile",
-        2
+        "desktop",
+        6
       ],
       [
-        "desktop",
-        1
+        "mobile",
+        2
       ]
     ],
     "pages": [
       [
+        "/posts/2026-10-22-safety-harness-wearing-anchor-guide.html",
+        5
+      ],
+      [
         "/",
-        2
+        3
       ],
       [
         "/apps/shift.html",
-        1
+        2
       ]
     ]
   },
   "search": {
-    "period": "2026-10-02~2026-10-30",
-    "clicks": 3,
-    "impressions": 88,
+    "period": "2026-10-03~2026-10-31",
+    "clicks": 4,
+    "impressions": 105,
     "queries": [
       {
         "q": "아차사고 보고가 활성화되지 않는 이유",
@@ -131,13 +167,19 @@
         "clicks": 0,
         "impressions": 1,
         "position": 9
+      },
+      {
+        "q": "컴퓨터응용선반기능사",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 8
       }
     ],
     "pages": [
       {
         "page": "posts/2026-10-08-chain-block-lever-hoist-guide.html",
         "clicks": 1,
-        "impressions": 2
+        "impressions": 3
       },
       {
         "page": "posts/2026-10-12-production-automation-craftsman-plc-exam-guide.html",
@@ -145,9 +187,19 @@
         "impressions": 1
       },
       {
+        "page": "posts/2026-10-19-clamp-meter-usage-guide.html",
+        "clicks": 1,
+        "impressions": 3
+      },
+      {
         "page": "posts/2026-10-21-voltage-tester-insulated-tools-guide.html",
         "clicks": 1,
-        "impressions": 10
+        "impressions": 11
+      },
+      {
+        "page": "posts/2026-09-29-forklift-license-guide.html",
+        "clicks": 0,
+        "impressions": 1
       },
       {
         "page": "posts/2026-09-29-shift-work-sleep-management.html",
@@ -165,6 +217,11 @@
         "impressions": 3
       },
       {
+        "page": "posts/2026-10-02-drill-driver-impact-hammer-comparison.html",
+        "clicks": 0,
+        "impressions": 2
+      },
+      {
         "page": "posts/2026-10-02-ppe-selection-and-wearing-guide.html",
         "clicks": 0,
         "impressions": 1
@@ -177,12 +234,17 @@
       {
         "page": "posts/2026-10-05-toolbox-meeting-tbm-guide.html",
         "clicks": 0,
+        "impressions": 2
+      },
+      {
+        "page": "posts/2026-10-06-shift-work-meal-timing-diet.html",
+        "clicks": 0,
         "impressions": 1
       },
       {
         "page": "posts/2026-10-07-safety-signs-colors-and-placement.html",
         "clicks": 0,
-        "impressions": 3
+        "impressions": 4
       },
       {
         "page": "posts/2026-10-07-work-clothes-washing-and-care.html",
@@ -210,27 +272,7 @@
         "impressions": 1
       },
       {
-        "page": "posts/2026-10-13-supervisor-legal-duties-checklist.html",
-        "clicks": 0,
-        "impressions": 2
-      },
-      {
-        "page": "posts/2026-10-14-night-shift-drowsy-driving-prevention.html",
-        "clicks": 0,
-        "impressions": 3
-      },
-      {
-        "page": "posts/2026-10-15-fire-safety-manager-grade2-guide.html",
-        "clicks": 0,
-        "impressions": 2
-      },
-      {
-        "page": "posts/2026-10-15-stacked-load-collapse-crush-accident-analysis.html",
-        "clicks": 0,
-        "impressions": 2
-      },
-      {
-        "page": "posts/2026-10-16-cnc-lathe-milling-craftsman-exam-guide.html",
+        "page": "posts/2026-10-13-predictive-maintenance-vibration-sensors.html",
         "clicks": 0,
         "impressions": 1
       }

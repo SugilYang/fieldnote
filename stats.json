@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "yesterday": 8,
-  "total": 120,
+  "total": 122,
   "pages": {
     "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 10,
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
@@ -14,6 +14,7 @@
     "posts/2026-10-02-welding-craftsman-exam-guide.html": 2,
     "posts/2026-10-05-toolbox-meeting-tbm-guide.html": 2,
     "posts/2026-10-19-emergency-evacuation-drill-guide.html": 2,
+    "posts/2026-10-22-inverter-welder-current-setting-guide.html": 2,
     "posts/2026-09-29-battery-manufacturing-process-overview.html": 1,
     "posts/2026-09-30-safety-shoes-choosing-and-care.html": 1,
     "posts/2026-10-01-conveyor-entanglement-accident-analysis.html": 1,
@@ -29,6 +30,7 @@
     "posts/2026-10-15-stacked-load-collapse-crush-accident-analysis.html": 1,
     "posts/2026-10-16-cnc-lathe-milling-craftsman-exam-guide.html": 1,
     "posts/2026-10-16-rotating-shaft-entanglement-accident-analysis.html": 1,
+    "posts/2026-09-29-torque-wrench-types-and-usage.html": 1,
     "posts/2026-10-08-chain-block-lever-hoist-guide.html": 1,
     "posts/2026-10-12-production-automation-craftsman-plc-exam-guide.html": 1,
     "posts/2026-10-14-forklift-work-plan-writing-guide.html": 1,
@@ -38,7 +40,6 @@
     "posts/2026-10-20-cad-mechanical-drawing-craftsman-exam-guide.html": 1,
     "posts/2026-10-21-serious-accident-workplace-list-disclosure.html": 1,
     "posts/2026-10-21-voltage-tester-insulated-tools-guide.html": 1,
-    "posts/2026-10-22-inverter-welder-current-setting-guide.html": 1,
     "posts/2026-10-29-semiconductor-back-end-packaging-test-jobs.html": 1
   },
   "yesterdayDetail": {
@@ -50,10 +51,6 @@
       [
         "naver / organic",
         2
-      ],
-      [
-        "(not set)",
-        1
       ],
       [
         "bing / organic",
@@ -84,7 +81,7 @@
         2
       ],
       [
-        "",
+        "(not set)",
         1
       ],
       [
@@ -134,7 +131,7 @@
     ]
   },
   "search": {
-    "period": "2026-10-03~2026-10-31",
+    "period": "2026-10-04~2026-11-01",
     "clicks": 4,
     "impressions": 105,
     "queries": [

@@ -12,6 +12,7 @@ a{color:inherit}
 .c-tools{--sc:#2563eb;--sc2:#1e3a8a}
 .c-trend{--sc:#0891b2;--sc2:#155e75}
 .c-life{--sc:#7c3aed;--sc2:#4c1d95}
+.c-guide{--sc:#0f766e;--sc2:#134e4a}
 
 /* 공통 헤더 */
 header.site{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--line);padding:0 16px}
@@ -139,7 +140,7 @@ th,td{border:1px solid var(--line);padding:11px 12px;text-align:left;vertical-al
 @media (max-width:600px){.layout .grid{grid-template-columns:minmax(0,1fr)}.prevnext{grid-template-columns:1fr}.prevnext .p{text-align:left}.search input{padding:7px 32px 7px 12px}}
 
 /* 섹션 페이지·FAQ */
-.banner.c-license,.banner.c-safety,.banner.c-case,.banner.c-tools,.banner.c-trend,.banner.c-life{background:linear-gradient(120deg,var(--sc2),var(--sc))}
+.banner.c-license,.banner.c-safety,.banner.c-case,.banner.c-tools,.banner.c-trend,.banner.c-life,.banner.c-guide{background:linear-gradient(120deg,var(--sc2),var(--sc))}
 .tabs a.tab{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:24px;padding:8px 16px;font-size:14px;font-weight:600;white-space:nowrap;text-decoration:none}
 .tabs a.tab.on{background:var(--text);border-color:var(--text);color:var(--bg)}
 details.faq{border:1px solid var(--line);border-radius:10px;padding:0 16px;margin:8px 0}

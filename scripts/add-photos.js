@@ -14,7 +14,7 @@ const postsJsonPath = path.join(__dirname, '..', 'posts.json');
 const postsJson = JSON.parse(fs.readFileSync(postsJsonPath, 'utf8'));
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 const SECTION_QUERY = { license: 'study desk notes', safety: 'construction worker safety', case: 'industrial warning sign',
-  tools: 'workshop tools', trend: 'factory automation', life: 'worker break' };
+  tools: 'workshop tools', trend: 'factory automation', life: 'worker break', guide: 'exam study textbook' };
 
 class RateLimit extends Error {}
 const cache = new Map();

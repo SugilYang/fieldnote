@@ -4,7 +4,7 @@
 const fs = require('fs'), path = require('path');
 const ROOT = path.join(__dirname, '..');
 const BASE = fs.existsSync(path.join(ROOT, 'CNAME')) ? `https://${fs.readFileSync(path.join(ROOT, 'CNAME'), 'utf8').trim()}/` : 'https://field.ynote.co.kr/';
-const SECTIONS = { license: ['자격증', '📜', '국가기술자격증·면허 취득 방법, 시험 구성, 공부법'], safety: ['산업안전', '🦺', '법정 안전교육, 위험성평가, 보호구, 작업별 안전수칙'], case: ['사고사례 분석', '🚨', '산업재해 유형별 원인과 예방 대책'], tools: ['장비·공구', '🔧', '공구·측정기·설비 사용법과 고르는 기준'], trend: ['산업 트렌드', '🔋', '2차전지·반도체·자동화·물류 산업의 흐름'], life: ['현장 생활', '💼', '교대근무 건강관리, 작업복 관리, 현장 직장인 생활 팁'] };
+const SECTIONS = { license: ['자격증', '📜', '국가기술자격증·면허 취득 방법, 시험 구성, 공부법'], safety: ['산업안전', '🦺', '법정 안전교육, 위험성평가, 보호구, 작업별 안전수칙'], case: ['사고사례 분석', '🚨', '산업재해 유형별 원인과 예방 대책'], tools: ['장비·공구', '🔧', '공구·측정기·설비 사용법과 고르는 기준'], trend: ['산업 트렌드', '🔋', '2차전지·반도체·자동화·물류 산업의 흐름'], life: ['현장 생활', '💼', '교대근무 건강관리, 작업복 관리, 현장 직장인 생활 팁'], guide: ['산업안전지도사', '📋', '산업안전지도사 시험 과목별 정보, 응시자격, 일정, 공부법'] };
 const NAVER = '<meta name="naver-site-verification" content="c254b450f730ddc6064c4494834efa93d383bd94">';
 const ADS = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9274785237746410" crossorigin="anonymous"></script>';
 // 디자인 파일이 바뀌면 주소 뒤 ?v=가 바뀌어 휴대폰 캐시에 남은 옛 파일 대신 새 파일을 받는다

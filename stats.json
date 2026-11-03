@@ -1,9 +1,9 @@
 {
   "updated": "2026-11-03",
-  "yesterday": 8,
-  "total": 122,
+  "yesterday": 7,
+  "total": 125,
   "pages": {
-    "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 10,
+    "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 12,
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
     "posts/2026-09-30-risk-assessment-procedure-guide.html": 4,
     "posts/2026-09-30-electrician-craftsman-exam-guide.html": 2,
@@ -15,6 +15,10 @@
     "posts/2026-10-05-toolbox-meeting-tbm-guide.html": 2,
     "posts/2026-10-19-emergency-evacuation-drill-guide.html": 2,
     "posts/2026-10-22-inverter-welder-current-setting-guide.html": 2,
+    "posts/2026-11-03-industrial-hygiene-engineer-exam-jobs-guide.html": 2,
+    "posts/2026-11-03-industrial-safety-consultant-eligibility-schedule.html": 2,
+    "posts/2026-11-03-industrial-safety-consultant-first-exam-structure.html": 2,
+    "posts/2026-11-03-industrial-safety-consultant-what-they-do.html": 2,
     "posts/2026-09-29-battery-manufacturing-process-overview.html": 1,
     "posts/2026-09-30-safety-shoes-choosing-and-care.html": 1,
     "posts/2026-10-01-conveyor-entanglement-accident-analysis.html": 1,
@@ -31,6 +35,7 @@
     "posts/2026-10-16-cnc-lathe-milling-craftsman-exam-guide.html": 1,
     "posts/2026-10-16-rotating-shaft-entanglement-accident-analysis.html": 1,
     "posts/2026-09-29-torque-wrench-types-and-usage.html": 1,
+    "posts/2026-10-07-ai-machine-vision-inspection-jobs.html": 1,
     "posts/2026-10-08-chain-block-lever-hoist-guide.html": 1,
     "posts/2026-10-12-production-automation-craftsman-plc-exam-guide.html": 1,
     "posts/2026-10-14-forklift-work-plan-writing-guide.html": 1,
@@ -40,28 +45,25 @@
     "posts/2026-10-20-cad-mechanical-drawing-craftsman-exam-guide.html": 1,
     "posts/2026-10-21-serious-accident-workplace-list-disclosure.html": 1,
     "posts/2026-10-21-voltage-tester-insulated-tools-guide.html": 1,
-    "posts/2026-10-29-semiconductor-back-end-packaging-test-jobs.html": 1
+    "posts/2026-10-29-semiconductor-back-end-packaging-test-jobs.html": 1,
+    "posts/2026-11-02-black-ice-winter-commute-driving-tips.html": 1
   },
   "yesterdayDetail": {
     "source": [
       [
-        "(direct) / (none)",
+        "naver / organic",
         3
       ],
       [
-        "naver / organic",
+        "google / organic",
         2
       ],
       [
+        "(direct) / (none)",
+        1
+      ],
+      [
         "bing / organic",
-        1
-      ],
-      [
-        "google / organic",
-        1
-      ],
-      [
-        "m.search.naver.com / referral",
         1
       ]
     ],
@@ -69,46 +71,34 @@
       [
         "South Korea",
         7
-      ],
-      [
-        "United States",
-        1
       ]
     ],
     "city": [
+      [
+        "Asan-si",
+        2
+      ],
       [
         "Seoul",
         2
       ],
       [
-        "(not set)",
+        "Ansan-si",
         1
       ],
       [
-        "Asan-si",
-        1
-      ],
-      [
-        "Council Bluffs",
+        "Cheongju-si",
         1
       ],
       [
         "Incheon",
-        1
-      ],
-      [
-        "Jeonju-si",
-        1
-      ],
-      [
-        "Samcheok-si",
         1
       ]
     ],
     "device": [
       [
         "desktop",
-        6
+        5
       ],
       [
         "mobile",
@@ -117,24 +107,78 @@
     ],
     "pages": [
       [
-        "/posts/2026-10-22-safety-harness-wearing-anchor-guide.html",
-        5
+        "/index.html",
+        8
       ],
       [
-        "/",
+        "/guide.html",
+        4
+      ],
+      [
+        "/license.html",
         3
       ],
       [
-        "/apps/shift.html",
+        "/",
         2
+      ],
+      [
+        "/posts/2026-10-22-safety-harness-wearing-anchor-guide.html",
+        2
+      ],
+      [
+        "/posts/2026-11-03-industrial-hygiene-engineer-exam-jobs-guide.html",
+        2
+      ],
+      [
+        "/posts/2026-11-03-industrial-safety-consultant-eligibility-schedule.html",
+        2
+      ],
+      [
+        "/posts/2026-11-03-industrial-safety-consultant-first-exam-structure.html",
+        2
+      ],
+      [
+        "/posts/2026-11-03-industrial-safety-consultant-what-they-do.html",
+        2
+      ],
+      [
+        "/apps/shift.html",
+        1
+      ],
+      [
+        "/life.html",
+        1
+      ],
+      [
+        "/posts/2026-09-29-torque-wrench-types-and-usage.html",
+        1
+      ],
+      [
+        "/posts/2026-10-07-ai-machine-vision-inspection-jobs.html",
+        1
+      ],
+      [
+        "/posts/2026-10-22-inverter-welder-current-setting-guide.html",
+        1
+      ],
+      [
+        "/posts/2026-11-02-black-ice-winter-commute-driving-tips.html",
+        1
       ]
     ]
   },
   "search": {
     "period": "2026-10-04~2026-11-01",
-    "clicks": 4,
-    "impressions": 105,
+    "clicks": 5,
+    "impressions": 151,
     "queries": [
+      {
+        "q": "2차 전지 생산",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 20
+      },
       {
         "q": "아차사고 보고가 활성화되지 않는 이유",
         "clicks": 0,
@@ -144,14 +188,20 @@
       {
         "q": "안전화 수명",
         "clicks": 0,
-        "impressions": 3,
-        "position": 8.7
+        "impressions": 5,
+        "position": 7.2
       },
       {
         "q": "자키 사용법",
         "clicks": 0,
         "impressions": 1,
         "position": 9
+      },
+      {
+        "q": "전기기능사 실기 팁",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 76
       },
       {
         "q": "전동자키 사용법",
@@ -191,7 +241,22 @@
       {
         "page": "posts/2026-10-21-voltage-tester-insulated-tools-guide.html",
         "clicks": 1,
-        "impressions": 11
+        "impressions": 13
+      },
+      {
+        "page": "posts/2026-10-22-safety-harness-wearing-anchor-guide.html",
+        "clicks": 1,
+        "impressions": 10
+      },
+      {
+        "page": "case.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-09-29-battery-manufacturing-process-overview.html",
+        "clicks": 0,
+        "impressions": 1
       },
       {
         "page": "posts/2026-09-29-forklift-license-guide.html",
@@ -204,24 +269,44 @@
         "impressions": 2
       },
       {
-        "page": "posts/2026-09-30-safety-shoes-choosing-and-care.html",
-        "clicks": 0,
-        "impressions": 4
-      },
-      {
-        "page": "posts/2026-10-01-hazardous-materials-craftsman-exam-guide.html",
-        "clicks": 0,
-        "impressions": 3
-      },
-      {
-        "page": "posts/2026-10-02-drill-driver-impact-hammer-comparison.html",
+        "page": "posts/2026-09-30-electrician-craftsman-exam-guide.html",
         "clicks": 0,
         "impressions": 2
       },
       {
-        "page": "posts/2026-10-02-ppe-selection-and-wearing-guide.html",
+        "page": "posts/2026-09-30-safety-shoes-choosing-and-care.html",
+        "clicks": 0,
+        "impressions": 7
+      },
+      {
+        "page": "posts/2026-10-01-confined-space-work-procedure.html",
+        "clicks": 0,
+        "impressions": 2
+      },
+      {
+        "page": "posts/2026-10-01-digital-multimeter-usage-guide.html",
         "clicks": 0,
         "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-01-hazardous-materials-craftsman-exam-guide.html",
+        "clicks": 0,
+        "impressions": 4
+      },
+      {
+        "page": "posts/2026-10-02-drill-driver-impact-hammer-comparison.html",
+        "clicks": 0,
+        "impressions": 3
+      },
+      {
+        "page": "posts/2026-10-02-electric-shock-accident-analysis.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-02-ppe-selection-and-wearing-guide.html",
+        "clicks": 0,
+        "impressions": 2
       },
       {
         "page": "posts/2026-10-02-winter-work-clothing-layering-cold-stress.html",
@@ -229,49 +314,14 @@
         "impressions": 1
       },
       {
+        "page": "posts/2026-10-05-hand-skin-care-work-gloves.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
         "page": "posts/2026-10-05-toolbox-meeting-tbm-guide.html",
         "clicks": 0,
         "impressions": 2
-      },
-      {
-        "page": "posts/2026-10-06-shift-work-meal-timing-diet.html",
-        "clicks": 0,
-        "impressions": 1
-      },
-      {
-        "page": "posts/2026-10-07-safety-signs-colors-and-placement.html",
-        "clicks": 0,
-        "impressions": 4
-      },
-      {
-        "page": "posts/2026-10-07-work-clothes-washing-and-care.html",
-        "clicks": 0,
-        "impressions": 7
-      },
-      {
-        "page": "posts/2026-10-08-slip-trip-fall-accident-analysis.html",
-        "clicks": 0,
-        "impressions": 2
-      },
-      {
-        "page": "posts/2026-10-09-insulation-resistance-earth-tester-guide.html",
-        "clicks": 0,
-        "impressions": 1
-      },
-      {
-        "page": "posts/2026-10-12-hand-pallet-truck-usage-inspection.html",
-        "clicks": 0,
-        "impressions": 4
-      },
-      {
-        "page": "posts/2026-10-13-equipment-maintenance-craftsman-exam-guide.html",
-        "clicks": 0,
-        "impressions": 1
-      },
-      {
-        "page": "posts/2026-10-13-predictive-maintenance-vibration-sensors.html",
-        "clicks": 0,
-        "impressions": 1
       }
     ]
   }

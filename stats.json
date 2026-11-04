@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "yesterday": 7,
-  "total": 125,
+  "total": 129,
   "pages": {
     "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 12,
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
@@ -39,6 +39,7 @@
     "posts/2026-10-08-chain-block-lever-hoist-guide.html": 1,
     "posts/2026-10-12-production-automation-craftsman-plc-exam-guide.html": 1,
     "posts/2026-10-14-forklift-work-plan-writing-guide.html": 1,
+    "posts/2026-10-14-multi-gas-detector-usage-bump-test.html": 1,
     "posts/2026-10-16-workplace-injury-compensation-procedure.html": 1,
     "posts/2026-10-19-clamp-meter-usage-guide.html": 1,
     "posts/2026-10-19-steam-hot-surface-burn-accident-analysis.html": 1,
@@ -169,15 +170,21 @@
     ]
   },
   "search": {
-    "period": "2026-10-04~2026-11-01",
-    "clicks": 5,
-    "impressions": 151,
+    "period": "2026-10-05~2026-11-02",
+    "clicks": 6,
+    "impressions": 205,
     "queries": [
       {
         "q": "2차 전지 생산",
         "clicks": 0,
         "impressions": 1,
         "position": 20
+      },
+      {
+        "q": "레이저 줄자 사용법",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 16
       },
       {
         "q": "아차사고 보고가 활성화되지 않는 이유",
@@ -188,8 +195,8 @@
       {
         "q": "안전화 수명",
         "clicks": 0,
-        "impressions": 5,
-        "position": 7.2
+        "impressions": 7,
+        "position": 7.6
       },
       {
         "q": "자키 사용법",
@@ -224,6 +231,11 @@
     ],
     "pages": [
       {
+        "page": "posts/2026-09-29-torque-wrench-types-and-usage.html",
+        "clicks": 1,
+        "impressions": 1
+      },
+      {
         "page": "posts/2026-10-08-chain-block-lever-hoist-guide.html",
         "clicks": 1,
         "impressions": 3
@@ -231,7 +243,7 @@
       {
         "page": "posts/2026-10-12-production-automation-craftsman-plc-exam-guide.html",
         "clicks": 1,
-        "impressions": 1
+        "impressions": 2
       },
       {
         "page": "posts/2026-10-19-clamp-meter-usage-guide.html",
@@ -241,12 +253,12 @@
       {
         "page": "posts/2026-10-21-voltage-tester-insulated-tools-guide.html",
         "clicks": 1,
-        "impressions": 13
+        "impressions": 16
       },
       {
         "page": "posts/2026-10-22-safety-harness-wearing-anchor-guide.html",
         "clicks": 1,
-        "impressions": 10
+        "impressions": 12
       },
       {
         "page": "case.html",
@@ -276,7 +288,7 @@
       {
         "page": "posts/2026-09-30-safety-shoes-choosing-and-care.html",
         "clicks": 0,
-        "impressions": 7
+        "impressions": 13
       },
       {
         "page": "posts/2026-10-01-confined-space-work-procedure.html",
@@ -286,7 +298,7 @@
       {
         "page": "posts/2026-10-01-digital-multimeter-usage-guide.html",
         "clicks": 0,
-        "impressions": 1
+        "impressions": 3
       },
       {
         "page": "posts/2026-10-01-hazardous-materials-craftsman-exam-guide.html",
@@ -296,7 +308,7 @@
       {
         "page": "posts/2026-10-02-drill-driver-impact-hammer-comparison.html",
         "clicks": 0,
-        "impressions": 3
+        "impressions": 7
       },
       {
         "page": "posts/2026-10-02-electric-shock-accident-analysis.html",
@@ -306,20 +318,15 @@
       {
         "page": "posts/2026-10-02-ppe-selection-and-wearing-guide.html",
         "clicks": 0,
-        "impressions": 2
+        "impressions": 3
       },
       {
         "page": "posts/2026-10-02-winter-work-clothing-layering-cold-stress.html",
         "clicks": 0,
-        "impressions": 1
+        "impressions": 2
       },
       {
         "page": "posts/2026-10-05-hand-skin-care-work-gloves.html",
-        "clicks": 0,
-        "impressions": 1
-      },
-      {
-        "page": "posts/2026-10-05-toolbox-meeting-tbm-guide.html",
         "clicks": 0,
         "impressions": 2
       }

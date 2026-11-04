@@ -102,4 +102,4 @@
 - "함께 보면 좋은 글"은 `posts.json`의 기존 글 중 관련 있는 것으로만 링크한다. 없는 글을 링크하지 않는다.
 
 ## 수정하지 말 것
-`index.html`, `about.html`, `contact.html`, `privacy.html`, `assets/`, `apps/`, `scripts/`, `templates/post.html`, `.github/`, `stats.json`, `search.json`, `sitemap.xml`, `feed.xml`, `robots.txt`, 섹션 페이지(`license.html` 등 6개), `indexnow-key.txt`, `products.json`은 운영자가 요청할 때만 수정한다.
+`index.html`, `about.html`, `contact.html`, `privacy.html`, `assets/`, `apps/`, `scripts/`, `templates/post.html`, `.github/`, `stats.json`, `search.json`, `sitemap.xml`, `feed.xml`, `robots.txt`, 섹션 페이지(`license.html` 등 6개), `indexnow-key.txt`, `products.json`, `experiment.json`은 운영자가 요청할 때만 수정한다.

@@ -39,7 +39,7 @@ async function searchConsole(tok) {
     return (await r.json()).rows || [];
   };
   const [total, queries, pages] = await Promise.all([
-    q({}), q({ dimensions: ['query'], rowLimit: 20 }), q({ dimensions: ['page'], rowLimit: 20 })]);
+    q({}), q({ dimensions: ['query'], rowLimit: 100 }), q({ dimensions: ['page'], rowLimit: 500 })]);
   return { period: `${start}~${end}`, clicks: total[0]?.clicks || 0, impressions: total[0]?.impressions || 0,
     queries: queries.map(r => ({ q: r.keys[0], clicks: r.clicks, impressions: r.impressions, position: +r.position.toFixed(1) })),
     pages: pages.map(r => ({ page: r.keys[0].replace(/^https?:\/\/[^/]+\//, ''), clicks: r.clicks, impressions: r.impressions })) };
@@ -96,7 +96,7 @@ async function trackIndex(tok, prev) {
     report(tok, { dateRanges: [{ startDate: 'yesterday', endDate: 'yesterday' }], metrics: [{ name: 'activeUsers' }] }),
     report(tok, { dateRanges: [{ startDate: START, endDate: 'today' }], metrics: [{ name: 'activeUsers' }] }),
     report(tok, { dateRanges: [{ startDate: START, endDate: 'today' }], dimensions: [{ name: 'pagePath' }],
-      metrics: [{ name: 'screenPageViews' }], dimensionFilter: { filter: { fieldName: 'pagePath', stringFilter: { matchType: 'CONTAINS', value: '/posts/' } } }, limit: 1000 }),
+      metrics: [{ name: 'screenPageViews' }], dimensionFilter: { orGroup: { expressions: ['/posts/', '/apps/'].map(v => ({ filter: { fieldName: 'pagePath', stringFilter: { matchType: 'CONTAINS', value: v } } })) } }, limit: 1000 }),
   ]);
   const stats = {
     updated: new Date().toISOString().slice(0, 10),
@@ -104,6 +104,13 @@ async function trackIndex(tok, prev) {
     total: +(total[0]?.metricValues[0].value || 0),
     pages: Object.fromEntries(pages.map(r => [r.dimensionValues[0].value.replace(/^\/fieldnote\//, '').replace(/^\//, ''), +r.metricValues[0].value])),
   };
+  // 도구 페이지 유입 경로 (개설일부터 누적): 어떤 경로로 도구에 오는지
+  try {
+    const rows = await report(tok, { dateRanges: [{ startDate: START, endDate: 'today' }], dimensions: [{ name: 'pagePath' }, { name: 'sessionSourceMedium' }], metrics: [{ name: 'screenPageViews' }],
+      dimensionFilter: { filter: { fieldName: 'pagePath', stringFilter: { matchType: 'CONTAINS', value: '/apps/' } } }, limit: 200 });
+    stats.tools = {};
+    for (const r of rows) { const p = r.dimensionValues[0].value.replace(/^\//, ''), src = r.dimensionValues[1].value; (stats.tools[p] = stats.tools[p] || {})[src] = +r.metricValues[0].value; }
+  } catch (e) { console.log('도구 유입 건너뜀:', e.message.slice(0, 100)); }
   // 어제 방문자 상세: 유입 경로·국가·기기·페이지 (방문자 분석용)
   try {
     const dim = async (name, metric = 'activeUsers') => (await report(tok, { dateRanges: [{ startDate: 'yesterday', endDate: 'yesterday' }], dimensions: [{ name }], metrics: [{ name: metric }], limit: 15 }))

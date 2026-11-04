@@ -1,0 +1,135 @@
+{
+  "name": "수동 색인 요청 효과 탐색 실험 (참고용, 표본 작음)",
+  "designedOn": "2026-11-05",
+  "evaluateOn": "2026-11-18",
+  "note": "A는 운영자가 Search Console에서 수동 색인 요청, B는 요청하지 않음. 발행일은 짝으로 맞췄지만 주제(트렌드 vs 안전)는 완전히 같지 않아 결과는 탐색적으로만 해석한다.",
+  "requestedOn": null,
+  "A": [
+    "posts/2026-09-30-smart-factory-automation-jobs.html",
+    "posts/2026-10-02-welding-craftsman-exam-guide.html",
+    "posts/2026-10-07-press-machine-crush-accident-analysis.html",
+    "posts/2026-10-09-hydrogen-industry-overview-jobs.html",
+    "posts/2026-10-12-shoulder-neck-pain-prevention-field-workers.html",
+    "posts/2026-10-14-factory-energy-management-fems-carbon.html",
+    "posts/2026-10-15-battery-recycling-reuse-industry-jobs.html",
+    "posts/2026-10-16-data-center-construction-operation-jobs.html",
+    "posts/2026-10-20-chop-saw-circular-saw-jigsaw-safety-guide.html",
+    "posts/2026-10-23-hydraulic-jack-lift-safe-use-guide.html"
+  ],
+  "B": [
+    "posts/2026-09-30-vernier-caliper-reading-and-usage.html",
+    "posts/2026-10-05-excavator-operator-license-guide.html",
+    "posts/2026-10-08-fire-extinguisher-types-use-inspection.html",
+    "posts/2026-10-09-truck-loading-unloading-accident-analysis.html",
+    "posts/2026-10-12-smart-safety-technology-ai-cctv-wearables.html",
+    "posts/2026-10-14-forklift-work-plan-writing-guide.html",
+    "posts/2026-10-15-new-worker-first-3-months-safety.html",
+    "posts/2026-10-16-permit-to-work-system-guide.html",
+    "posts/2026-10-20-wind-solar-power-plant-jobs-overview.html",
+    "posts/2026-10-23-nuclear-smr-construction-maintenance-jobs.html"
+  ],
+  "A_baseline": {
+    "posts/2026-09-30-smart-factory-automation-jobs.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-02-welding-craftsman-exam-guide.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-07-press-machine-crush-accident-analysis.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-09-hydrogen-industry-overview-jobs.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-12-shoulder-neck-pain-prevention-field-workers.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-14-factory-energy-management-fems-carbon.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-15-battery-recycling-reuse-industry-jobs.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-16-data-center-construction-operation-jobs.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-20-chop-saw-circular-saw-jigsaw-safety-guide.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-23-hydraulic-jack-lift-safe-use-guide.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    }
+  },
+  "B_baseline": {
+    "posts/2026-09-30-vernier-caliper-reading-and-usage.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-05-excavator-operator-license-guide.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-08-fire-extinguisher-types-use-inspection.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-09-truck-loading-unloading-accident-analysis.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-12-smart-safety-technology-ai-cctv-wearables.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-14-forklift-work-plan-writing-guide.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-15-new-worker-first-3-months-safety.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-16-permit-to-work-system-guide.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-20-wind-solar-power-plant-jobs-overview.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    },
+    "posts/2026-10-23-nuclear-smr-construction-maintenance-jobs.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "checked": "2026-11-04"
+    }
+  }
+}

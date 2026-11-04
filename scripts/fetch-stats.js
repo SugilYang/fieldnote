@@ -64,13 +64,28 @@ async function trackIndex(tok, prev) {
     if (!r.ok) { console.log('URL 검사 중단:', r.status, (await r.text()).slice(0, 120)); break; }
     const s = (await r.json()).inspectionResult?.indexStatusResult || {};
     const indexed = s.verdict === 'PASS' && /indexed/i.test(s.coverageState || '') && !/not indexed/i.test(s.coverageState || '');
-    index[u] = { status: indexed ? 'INDEXED' : (s.coverageState || s.verdict || 'UNKNOWN'), crawled: (s.lastCrawlTime || '').slice(0, 10), indexedOn: index[u]?.indexedOn || (indexed ? today : ''), checked: today };
+    const first = !index[u];
+    index[u] = { status: indexed ? 'INDEXED' : (s.coverageState || s.verdict || 'UNKNOWN'), crawled: (s.lastCrawlTime || '').slice(0, 10),
+      indexedOn: index[u]?.indexedOn || (indexed ? today : ''), checked: today,
+      // 첫 검사에서 이미 색인돼 있던 URL: 실제 색인일을 모르므로 소요 일수 평균에서 제외
+      baseline: index[u]?.baseline ?? (first && indexed) };
     n++;
   }
   // 요약: 글 발행일 기준 색인까지 걸린 날수 (신규 글 vs 기존 글 비교용)
+  const all = [...pages, ...posts.map(p => 'posts/' + p.file)];
   const byDate = {};
-  for (const p of posts) { const i = index['posts/' + p.file]; if (!i) continue; const k = p.date >= '2026-11-04' ? 'new' : 'old'; byDate[k] = byDate[k] || { total: 0, indexed: 0, days: [] }; byDate[k].total++; if (i.status === 'INDEXED') { byDate[k].indexed++; byDate[k].days.push((new Date(i.indexedOn) - new Date(p.date)) / 86400000); } }
-  const summary = Object.fromEntries(Object.entries(byDate).map(([k, v]) => [k, { total: v.total, indexed: v.indexed, avgDays: v.days.length ? +(v.days.reduce((a, b) => a + b) / v.days.length).toFixed(1) : null }]));
+  for (const p of posts) {
+    const i = index['posts/' + p.file]; const k = p.date >= '2026-11-04' ? 'new' : 'old';
+    byDate[k] = byDate[k] || { total: 0, checked: 0, indexed: 0, baseline: 0, days: [] }; byDate[k].total++;
+    if (!i) continue; byDate[k].checked++;
+    if (i.status === 'INDEXED') { byDate[k].indexed++; if (i.baseline) byDate[k].baseline++; else byDate[k].days.push((new Date(i.indexedOn) - new Date(p.date)) / 86400000); }
+  }
+  const summary = {
+    totalUrls: all.length, checked: all.filter(u => index[u]).length, unchecked: all.filter(u => !index[u]).length,
+    indexedAmongChecked: all.filter(u => index[u]?.status === 'INDEXED').length, lastRun: new Date().toISOString(),
+    // 코호트: 관찰 기간이 다르므로 비율만으로 비교하지 않는다. avgDaysToIndexConfirmed는 첫 검사 이후 색인이 '확인된' 글만 집계 (baseline 제외)
+    cohort: Object.fromEntries(Object.entries(byDate).map(([k, v]) => [k, { total: v.total, checked: v.checked, indexed: v.indexed, indexedAtFirstCheck: v.baseline,
+      avgDaysToIndexConfirmed: v.days.length ? +(v.days.reduce((a, b) => a + b) / v.days.length).toFixed(1) : null, n: v.days.length }])) };
   console.log(`색인 추적: ${n}개 검사, 색인됨 ${Object.values(index).filter(i => i.status === 'INDEXED').length}/${Object.keys(index).length}`, JSON.stringify(summary));
   return { index, summary };
 }

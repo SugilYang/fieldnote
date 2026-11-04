@@ -70,6 +70,11 @@ th,td{border:1px solid var(--line);padding:11px 12px;text-align:left;vertical-al
 @media (prefers-color-scheme:dark){.warn{background:#2a1515}}
 .key{background:var(--accent-bg);border-radius:14px;padding:20px 22px;margin:36px 0}.key h3{margin:0 0 8px;color:var(--accent)}
 .ad{display:none}
+.products{border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:32px 0}.products>b{display:block;margin-bottom:10px}
+.plist{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.plist a{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:12px 14px;text-decoration:none;color:var(--text);background:var(--bg)}
+.plist a span{font-size:28px;grid-row:span 2}.plist a em{font-style:normal;font-weight:700}.plist a small{color:var(--blue);font-size:13px}.plist a:hover{border-color:var(--blue)}
+.products p{margin:12px 0 0;font-size:12px;color:var(--sub)}
 .related{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
 .related a{border:1px solid var(--line);border-radius:12px;padding:14px;text-decoration:none;color:var(--text);font-size:14px;line-height:1.5;font-weight:600;transition:.15s}
 .related a:hover{border-color:var(--accent);box-shadow:var(--shadow)}

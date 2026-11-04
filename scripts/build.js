@@ -14,6 +14,18 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 const read = f => fs.readFileSync(path.join(ROOT, f), 'utf8');
 const write = (f, s) => fs.writeFileSync(path.join(ROOT, f), s);
 
+// 쿠팡파트너스 상품: 글 본문에 키워드가 있으면 관련 상품 카드를 최대 2개 넣는다 (법정 고지 문구 포함)
+const products = fs.existsSync(path.join(ROOT, 'products.json')) ? JSON.parse(read('products.json')) : [];
+const DISCLOSE = '이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.';
+function productBlock(p, text) {
+  if (p.section === 'trend' || p.section === 'case') return '';
+  // 제목에 키워드가 있거나 본문에 3번 이상 나올 때만 (스치듯 언급한 글에는 넣지 않는다)
+  const cnt = (s, k) => (s.match(new RegExp(k, 'g')) || []).length;
+  const hits = products.map(x => ({ x, t: x.keywords.some(k => cnt(p.title, k)), n: x.keywords.reduce((s, k) => s + cnt(text, k), 0) }))
+    .filter(h => h.t || h.n >= 3).sort((a, b) => (b.t - a.t) || (b.n - a.n)).slice(0, 2);
+  if (!hits.length) return '';
+  return `<!--products--><div class="products"><b>🛒 관련 상품</b><div class="plist">${hits.map(({ x }) => `<a href="${x.url}" target="_blank" rel="nofollow sponsored noopener"><span>${x.emoji}</span><em>${esc(x.name)}</em><small>쿠팡에서 보기 →</small></a>`).join('')}</div><p>${DISCLOSE}</p></div><!--/products-->`;
+}
 const posts = JSON.parse(read('posts.json')).sort((a, b) => b.date.localeCompare(a.date));
 const stats = fs.existsSync(path.join(ROOT, 'stats.json')) ? JSON.parse(read('stats.json')) : null;
 const today = new Date().toISOString().slice(0, 10);
@@ -104,6 +116,11 @@ for (const p of posts) {
   ];
   if (faqs.length) ld.push({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs });
   const tag = `<script type="application/ld+json" id="ld">${JSON.stringify(ld)}</script>`;
+  // 상품 카드: 기존 블록은 교체, 없으면 FAQ 앞에 삽입
+  html = html.replace(/\s*<!--products-->[\s\S]*?<!--\/products-->/, '');
+  const pb = productBlock(p, p.title + ' ' + text);
+  const anchor = ['<h2>자주 묻는 질문</h2>', '<h2>함께 보면 좋은 글</h2>', '<p class="note">'].find(a => html.includes(a));
+  if (pb && anchor) html = html.replace(anchor, `${pb}\n\n    ${anchor}`);
   html = html.includes('id="ld"') ? html.replace(/<script type="application\/ld\+json" id="ld">[\s\S]*?<\/script>/, tag) : html.replace('</head>', `${tag}\n</head>`);
   if (!html.includes('naver-site-verification')) html = html.replace('<meta name="viewport" content="width=device-width, initial-scale=1.0">', `$&\n${NAVER}`);
   if (!html.includes('adsbygoogle')) html = html.replace('</head>', `${ADS}\n</head>`);

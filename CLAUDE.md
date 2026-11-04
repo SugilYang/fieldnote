@@ -87,6 +87,9 @@
 - 구성: 어떤 상황에서 일어나는가 → 직접 원인 → 근본 원인(관리·설비·절차) → 예방 대책(체크리스트) → 관련 법적 의무.
 - 목적은 예방이다. 공포를 주는 글이 아니라 "이렇게 하면 막을 수 있다"가 중심이다.
 
+## 상품 카드
+- 쿠팡파트너스 상품 카드는 배포 봇이 `products.json` 키워드로 자동 삽입한다. 글에 상품 링크를 직접 넣지 않는다.
+
 ## 금지 (구글 애드센스 정책)
 - 특정 회사·제품·개인 비방, 투자 추천, 의학적 진단, 자극적·선정적 표현.
 - 이미지 URL을 직접 넣지 않는다. 사진은 `data-photo="영문 검색어"`만 적으면 배포 시 Unsplash에서 자동으로 채워진다.
@@ -94,4 +97,4 @@
 - "함께 보면 좋은 글"은 `posts.json`의 기존 글 중 관련 있는 것으로만 링크한다. 없는 글을 링크하지 않는다.
 
 ## 수정하지 말 것
-`index.html`, `about.html`, `contact.html`, `privacy.html`, `assets/`, `apps/`, `scripts/`, `templates/post.html`, `.github/`, `stats.json`, `search.json`, `sitemap.xml`, `feed.xml`, `robots.txt`, 섹션 페이지(`license.html` 등 6개), `indexnow-key.txt`는 운영자가 요청할 때만 수정한다.
+`index.html`, `about.html`, `contact.html`, `privacy.html`, `assets/`, `apps/`, `scripts/`, `templates/post.html`, `.github/`, `stats.json`, `search.json`, `sitemap.xml`, `feed.xml`, `robots.txt`, 섹션 페이지(`license.html` 등 6개), `indexnow-key.txt`, `products.json`은 운영자가 요청할 때만 수정한다.

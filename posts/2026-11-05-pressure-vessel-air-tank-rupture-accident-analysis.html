@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="c254b450f730ddc6064c4494834efa93d383bd94">
+<title>공기탱크·압력용기 파열 사고는 왜 날까? 안전밸브·부식 원인과 예방 | 현장노트</title>
+<meta name="description" content="공기탱크·압력용기 파열 사고가 안전밸브 고장과 내부 부식에서 어떻게 생기는지 직접·근본 원인을 정리하고, 드레인·안전밸브 점검 등 예방 체크리스트와 법적 의무를 담았어요.">
+<meta name="author" content="황제효도르">
+<link rel="canonical" href="https://field.ynote.co.kr/posts/2026-11-05-pressure-vessel-air-tank-rupture-accident-analysis.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="현장노트">
+<meta property="og:title" content="공기탱크·압력용기 파열 사고는 왜 날까? 안전밸브·부식 원인과 예방">
+<meta property="og:description" content="공기탱크·압력용기 파열 사고가 안전밸브 고장과 내부 부식에서 어떻게 생기는지 직접·근본 원인을 정리하고, 드레인·안전밸브 점검 등 예방 체크리스트와 법적 의무를 담았어요.">
+<meta property="og:url" content="https://field.ynote.co.kr/posts/2026-11-05-pressure-vessel-air-tank-rupture-accident-analysis.html">
+<meta property="og:image" content="https://field.ynote.co.kr/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMS58YZHEH"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-GMS58YZHEH');</script>
+<link rel="stylesheet" href="../assets/style.css?v=ba7607e8">
+<script src="../assets/post.js" defer></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9274785237746410" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="site"><div class="in">
+  <a class="logo" href="../index.html">현장<span>노트</span></a>
+  <nav><a href="../license.html">자격증</a><a href="../safety.html">산업안전</a><a href="../case.html">사고사례</a><a href="../tools.html">장비·공구</a><a href="../trend.html">산업 트렌드</a><a href="../life.html">현장 생활</a><a href="../guide.html">지도사</a></nav>
+</div></header>
+
+<article class="c-case">
+  <div class="post-hero" data-photo="air compressor tank factory">
+    <div class="icon">🚨</div>
+    <span class="cat">🚨 사고사례 분석</span>
+    <h1>공기탱크·압력용기 파열 사고는 왜 날까? 안전밸브·부식 원인과 예방</h1>
+    <div class="meta">2026.11.05 · 황제효도르 · 읽는 시간 7분</div>
+  </div>
+  <div class="wrap">
+    <div class="summary">
+      <b>이 글의 핵심 요약</b>
+      <ul>
+        <li>압력용기 파열 사고는 컴프레서 공기탱크, 보일러, 배관 속 압력이 갑자기 풀리면서 용기가 찢어지거나 파편이 날아가는 유형이에요.</li>
+        <li>직접 원인은 안전밸브 고장·임의 조정, 탱크 내부 부식, 압력 스위치 고장, 허용 압력 초과예요.</li>
+        <li>예방의 핵심은 "안전밸브 정상 유지, 매일 드레인, 정기 검사, 개조 금지"예요.</li>
+      </ul>
+    </div>
+
+    <div class="toc"><b>목차</b>
+      <ol>
+        <li><a href="#s1">압력용기 파열 사고는 어떤 상황에서 일어나나요?</a></li>
+        <li><a href="#s2">공기탱크 파열의 직접 원인</a></li>
+        <li><a href="#s3">근본 원인: 관리·설비·절차</a></li>
+        <li><a href="#s4">압력용기 파열 예방 체크리스트</a></li>
+        <li><a href="#s5">압력용기 관련 법적 의무</a></li>
+      </ol>
+    </div>
+
+    <h2 id="s1">1. 압력용기 파열 사고는 어떤 상황에서 일어나나요?</h2>
+    <p>압력용기는 안에 공기·증기·가스를 높은 압력으로 담는 용기예요. 평소에는 조용하지만, 압력을 견디지 못하는 순간 한꺼번에 에너지가 터져 나와요. 현장에서 흔한 장면은 아래와 같아요.</p>
+    <table>
+      <tr><th>장면</th><th>어떻게 사고가 나나</th></tr>
+      <tr><td>오래된 컴프레서 공기탱크</td><td>안에 고인 물로 바닥이 부식돼 얇아진 곳이 터짐</td></tr>
+      <tr><td>안전밸브를 막거나 조여 둠</td><td>압력 스위치가 고장 나 압력이 계속 오르는데 빠질 곳이 없음</td></tr>
+      <tr><td>탱크에 용접·구멍 개조</td><td>약해진 용접부에서 파열</td></tr>
+      <tr><td>압력이 남은 배관·호스 분리</td><td>이음부가 튕겨 나가 작업자를 침</td></tr>
+      <tr><td>소형 보일러·온수 탱크</td><td>수위 부족·제어 장치 고장으로 과열·과압</td></tr>
+    </table>
+    <p>압력이 남은 상태에서 설비를 정비하다 다치는 경우도 많아요. 잔압 제거는 <a href="2026-10-19-steam-hot-surface-burn-accident-analysis.html">증기·고온 표면 화상 사고</a>에서 다룬 것처럼 정비 전 필수 절차예요.</p>
+    <figure data-photo="pressure relief valve gauge"><figcaption>안전밸브는 압력이 정해진 값을 넘으면 저절로 열려 압력을 빼 주는 마지막 안전장치예요. 막거나 조이면 안 돼요.</figcaption></figure>
+
+    <h2 id="s2">2. 공기탱크 파열의 직접 원인</h2>
+    <ul class="check">
+      <li>안전밸브가 녹슬어 붙었거나, 누가 설정값을 임의로 올렸다</li>
+      <li>압력 스위치가 고장 나 컴프레서가 멈추지 않았다</li>
+      <li>드레인을 안 해 탱크 바닥에 물이 고이고 부식이 진행됐다</li>
+      <li>허용 압력보다 높은 압력으로 사용했다</li>
+      <li>탱크에 브래킷을 용접하거나 구멍을 뚫어 개조했다</li>
+      <li>압력이 남은 상태에서 배관·호스를 풀었다</li>
+    </ul>
+    <p>특히 공기탱크 내부 부식은 겉에서 보이지 않아요. 압축 공기에서 나온 수분이 바닥에 고이면서 안쪽부터 얇아지기 때문이에요. 그래서 "매일 드레인"이 가장 기본이면서도 가장 자주 빠지는 관리예요.</p>
+
+    <h2 id="s3">3. 근본 원인: 관리·설비·절차</h2>
+    <table>
+      <tr><th>구분</th><th>근본 원인</th></tr>
+      <tr><td>관리</td><td>설비 담당자 없음, 안전밸브 작동 시험 기록 없음, 검사 대상 여부 파악 안 됨</td></tr>
+      <tr><td>설비</td><td>오래된 탱크 교체 미루기, 자동 드레인 고장 방치, 게이지 고장</td></tr>
+      <tr><td>절차</td><td>잔압 제거 절차 없음, 개조 승인 절차 없음, 설정값 변경 통제 없음</td></tr>
+      <tr><td>문화</td><td>"안전밸브에서 바람이 새서 시끄럽다"며 막아 버리는 습관</td></tr>
+    </table>
+    <div class="warn">
+      <b>⚠ 안전밸브에서 바람이 샌다면 막지 말고 원인을 찾으세요</b>
+      안전밸브가 자주 열린다는 건 압력이 너무 높다는 신호이거나 밸브 자체 고장이에요. 막아 버리면 마지막 안전장치가 사라져요. 압력 스위치와 밸브를 점검하고, 고장 난 밸브는 교체하세요.
+    </div>
+
+    <h2 id="s4">4. 압력용기 파열 예방 체크리스트</h2>
+    <ul class="check">
+      <li>매일 작업 시작 전 탱크 드레인 밸브를 열어 물을 뺀다</li>
+      <li>압력계가 정상 범위를 가리키고, 바늘이 0으로 돌아오는지 확인한다</li>
+      <li>정기적으로 안전밸브 레버를 당겨 작동하는지 시험하고 기록한다</li>
+      <li>안전밸브 설정값을 임의로 바꾸지 않는다(봉인 확인)</li>
+      <li>탱크 외부 녹, 부풀음, 용접부 균열을 점검한다</li>
+      <li>탱크에 용접·천공 개조를 하지 않는다</li>
+      <li>정비 전 전원 차단·잠금 후 잔압을 완전히 뺀다</li>
+      <li>검사 대상 설비는 검사 주기를 달력에 적어 관리한다</li>
+    </ul>
+    <figure data-photo="compressor tank drain valve water"><figcaption>탱크 바닥 드레인 밸브를 열면 녹물이 나오는 경우가 많아요. 매일 빼 주는 것만으로 내부 부식을 크게 줄일 수 있어요.</figcaption></figure>
+    <p>컴프레서와 공압 공구 관리 방법은 장비·공구 섹션의 에어 컴프레서 글에서 더 자세히 다뤘어요. 정비 중 설비가 다시 켜지지 않게 하는 절차는 잠금·표지(LOTO)로 운영하세요. 화학 설비에서 압력과 함께 위험물이 새는 사고는 <a href="2026-10-13-chemical-burn-leak-accident-analysis.html">화학물질 화상·누출 사고</a>, 정전기로 인한 화재·폭발은 <a href="2026-11-02-static-electricity-fire-explosion-accident-analysis.html">정전기 화재·폭발 사고</a>를 참고하세요.</p>
+
+    <h2 id="s5">5. 압력용기 관련 법적 의무</h2>
+    <p>산업안전보건법령에는 압력용기에 관한 규정이 여러 곳에 있어요. 큰 틀은 아래와 같고, 세부 대상과 주기는 법령 원문과 안전보건공단 자료로 확인하세요.</p>
+    <ul class="check">
+      <li>압력용기는 안전인증과 안전검사 대상이 될 수 있어요. 대상 여부는 용량·압력 기준으로 정해져요</li>
+      <li>압력용기에는 과압을 막는 안전밸브 등 방호장치를 설치해야 해요</li>
+      <li>안전밸브는 정해진 주기로 검사·작동 확인을 해야 하고, 설정값을 임의로 바꾸지 못하게 봉인해요</li>
+      <li>사업주는 정비 시 잔압 제거 등 위험 방지 조치를 해야 해요</li>
+      <li>보일러는 별도의 안전 조치(압력방출장치, 압력제한스위치 등) 기준이 있어요</li>
+    </ul>
+    <p>"우리 탱크가 검사 대상인지 모른다"는 경우가 많아요. 설비 목록에 압력용기를 따로 표시하고, 대상 여부를 안전관리자와 함께 확인해 두세요.</p>
+
+    <p>설비 담당자가 바뀔 때도 사고 위험이 커져요. 인수인계 때 압력용기 목록, 안전밸브 설정값, 마지막 시험일, 드레인 위치를 함께 넘겨 주세요. 작은 공장에서는 컴프레서실이 창고처럼 쓰이면서 물건이 쌓여 드레인 밸브에 손이 닿지 않는 경우도 있어요. 컴프레서 주변은 늘 비워 두세요.</p>
+
+    <p>새 컴프레서를 들일 때는 탱크 명판(최고 사용 압력, 제조 연월)을 사진으로 찍어 설비 대장에 붙여 두세요. 나중에 검사 대상 여부를 확인할 때 바로 쓸 수 있어요.</p>
+
+    <div class="key">
+      <h3>✔ 핵심 정리</h3>
+      <ul>
+        <li>압력용기 파열 = 공기탱크·보일러·배관의 압력이 한꺼번에 풀리며 파열·파편 비산.</li>
+        <li>직접 원인: 안전밸브 고장·조작, 압력 스위치 고장, 내부 부식, 과압 사용, 개조, 잔압 상태 분해.</li>
+        <li>근본 원인: 담당자·기록 부재, 노후 설비 방치, 잔압 제거·개조 승인 절차 없음.</li>
+        <li>예방: 매일 드레인, 압력계 확인, 안전밸브 작동 시험, 개조 금지, 정비 전 잔압 제거.</li>
+        <li>법적으로 안전인증·안전검사 대상 여부 확인, 방호장치 설치, 봉인 관리.</li>
+      </ul>
+    </div>
+
+    <div class="ad"></div>
+
+    <h2>자주 묻는 질문</h2>
+    <details class="faq"><summary>컴프레서 공기탱크 물빼기는 얼마나 자주 해야 하나요?</summary><p>보통 매일 작업 전이나 후에 드레인 밸브를 열어 물을 빼는 걸 권장해요. 습한 계절이나 사용량이 많으면 더 자주 빼야 해요. 자동 드레인이 있어도 작동하는지 확인하세요.</p></details>
+    <details class="faq"><summary>안전밸브에서 공기가 새는 건 고장인가요?</summary><p>압력이 설정값을 넘어서 정상적으로 열린 것일 수도 있고, 밸브가 상해서 새는 것일 수도 있어요. 압력계와 압력 스위치를 먼저 확인하고, 정상 압력에서도 샌다면 밸브를 점검·교체하세요. 막아 버리면 절대 안 돼요.</p></details>
+    <details class="faq"><summary>공기탱크도 안전검사를 받아야 하나요?</summary><p>용량과 압력 기준에 따라 안전검사 대상이 될 수 있어요. 대상 여부는 산업안전보건법령과 안전보건공단 안내로 확인하고, 해당되면 정해진 주기에 맞춰 검사를 받아야 해요.</p></details>
+
+    <h2>함께 보면 좋은 글</h2>
+    <div class="related">
+      <a href="2026-10-07-air-compressor-pneumatic-tools-guide.html"><small>장비·공구</small>에어 컴프레서와 공압 공구 관리</a>
+      <a href="2026-10-19-steam-hot-surface-burn-accident-analysis.html"><small>사고사례 분석</small>증기·고온 표면 화상 사고</a>
+      <a href="2026-10-09-lockout-tagout-loto-procedure.html"><small>산업안전</small>잠금·표지(LOTO) 절차</a>
+    </div>
+
+    <p class="note">※ 이 글은 사고 유형별 일반적인 원인과 예방 대책을 설명한 것으로, 특정 사건이나 사업장을 지칭하지 않아요. 자세한 재해 사례는 안전보건공단(kosha.or.kr) 자료를 참고하세요.</p>
+
+    <div class="author"><div class="av">효</div><div><b>황제효도르</b> · 현장노트 운영자<br>제조 현장에서 일하며 배운 것들을 쉽게 정리해요.</div></div>
+  </div>
+</article>
+<footer>
+  <div><a href="../about.html">소개</a>·<a href="../contact.html">문의</a>·<a href="../privacy.html">개인정보처리방침</a></div>
+  <div style="margin-top:8px">© 2026 현장노트 · 운영 황제효도르</div>
+</footer>
+</body>
+</html>

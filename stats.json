@@ -1,9 +1,10 @@
 {
   "updated": "2026-11-04",
-  "yesterday": 4,
+  "yesterday": 5,
   "total": 129,
   "pages": {
-    "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 12,
+    "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 14,
+    "apps/shift.html": 7,
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
     "posts/2026-09-30-risk-assessment-procedure-guide.html": 4,
     "posts/2026-09-30-electrician-craftsman-exam-guide.html": 2,
@@ -19,6 +20,9 @@
     "posts/2026-11-03-industrial-safety-consultant-eligibility-schedule.html": 2,
     "posts/2026-11-03-industrial-safety-consultant-first-exam-structure.html": 2,
     "posts/2026-11-03-industrial-safety-consultant-what-they-do.html": 2,
+    "apps/convert.html": 1,
+    "apps/dday.html": 1,
+    "apps/injury-rate.html": 1,
     "posts/2026-09-29-battery-manufacturing-process-overview.html": 1,
     "posts/2026-09-30-safety-shoes-choosing-and-care.html": 1,
     "posts/2026-10-01-conveyor-entanglement-accident-analysis.html": 1,
@@ -47,13 +51,30 @@
     "posts/2026-10-21-serious-accident-workplace-list-disclosure.html": 1,
     "posts/2026-10-21-voltage-tester-insulated-tools-guide.html": 1,
     "posts/2026-10-29-semiconductor-back-end-packaging-test-jobs.html": 1,
-    "posts/2026-11-02-black-ice-winter-commute-driving-tips.html": 1
+    "posts/2026-11-02-black-ice-winter-commute-driving-tips.html": 1,
+    "posts/2026-11-04-2027-national-technical-qualification-exam-schedule-announcement.html": 1
+  },
+  "tools": {
+    "apps/shift.html": {
+      "(direct) / (none)": 3,
+      "naver / organic": 3,
+      "m.search.naver.com / referral": 1
+    },
+    "apps/convert.html": {
+      "(direct) / (none)": 1
+    },
+    "apps/dday.html": {
+      "(direct) / (none)": 1
+    },
+    "apps/injury-rate.html": {
+      "(direct) / (none)": 1
+    }
   },
   "yesterdayDetail": {
     "source": [
       [
         "(direct) / (none)",
-        3
+        4
       ],
       [
         "google / organic",
@@ -63,7 +84,7 @@
     "country": [
       [
         "South Korea",
-        3
+        4
       ],
       [
         "United States",
@@ -76,6 +97,10 @@
         2
       ],
       [
+        "Asan-si",
+        1
+      ],
+      [
         "Council Bluffs",
         1
       ],
@@ -86,21 +111,49 @@
     ],
     "device": [
       [
-        "desktop",
-        2
+        "mobile",
+        3
       ],
       [
-        "mobile",
+        "desktop",
         2
       ]
     ],
     "pages": [
       [
         "/",
+        6
+      ],
+      [
+        "/guide.html",
         3
       ],
       [
+        "/index.html",
+        2
+      ],
+      [
+        "/posts/2026-10-22-safety-harness-wearing-anchor-guide.html",
+        2
+      ],
+      [
+        "/apps/convert.html",
+        1
+      ],
+      [
+        "/apps/dday.html",
+        1
+      ],
+      [
+        "/apps/injury-rate.html",
+        1
+      ],
+      [
         "/posts/2026-10-14-multi-gas-detector-usage-bump-test.html",
+        1
+      ],
+      [
+        "/posts/2026-11-04-2027-national-technical-qualification-exam-schedule-announcement.html",
         1
       ]
     ]
@@ -265,6 +318,171 @@
         "page": "posts/2026-10-05-hand-skin-care-work-gloves.html",
         "clicks": 0,
         "impressions": 2
+      },
+      {
+        "page": "posts/2026-10-05-toolbox-meeting-tbm-guide.html",
+        "clicks": 0,
+        "impressions": 2
+      },
+      {
+        "page": "posts/2026-10-06-laser-distance-meter-and-level-guide.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-06-shift-work-meal-timing-diet.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-07-safety-signs-colors-and-placement.html",
+        "clicks": 0,
+        "impressions": 15
+      },
+      {
+        "page": "posts/2026-10-07-work-clothes-washing-and-care.html",
+        "clicks": 0,
+        "impressions": 9
+      },
+      {
+        "page": "posts/2026-10-08-slip-trip-fall-accident-analysis.html",
+        "clicks": 0,
+        "impressions": 2
+      },
+      {
+        "page": "posts/2026-10-09-eye-health-field-workers.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-09-insulation-resistance-earth-tester-guide.html",
+        "clicks": 0,
+        "impressions": 3
+      },
+      {
+        "page": "posts/2026-10-12-hand-pallet-truck-usage-inspection.html",
+        "clicks": 0,
+        "impressions": 7
+      },
+      {
+        "page": "posts/2026-10-12-msds-reading-ghs-pictograms.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-13-equipment-maintenance-craftsman-exam-guide.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-13-predictive-maintenance-vibration-sensors.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-13-supervisor-legal-duties-checklist.html",
+        "clicks": 0,
+        "impressions": 2
+      },
+      {
+        "page": "posts/2026-10-14-multi-gas-detector-usage-bump-test.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-14-night-shift-drowsy-driving-prevention.html",
+        "clicks": 0,
+        "impressions": 4
+      },
+      {
+        "page": "posts/2026-10-15-fire-safety-manager-grade2-guide.html",
+        "clicks": 0,
+        "impressions": 3
+      },
+      {
+        "page": "posts/2026-10-15-stacked-load-collapse-crush-accident-analysis.html",
+        "clicks": 0,
+        "impressions": 2
+      },
+      {
+        "page": "posts/2026-10-15-workplace-environment-measurement-reading.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-16-cnc-lathe-milling-craftsman-exam-guide.html",
+        "clicks": 0,
+        "impressions": 2
+      },
+      {
+        "page": "posts/2026-10-16-micrometer-dial-gauge-reading-guide.html",
+        "clicks": 0,
+        "impressions": 15
+      },
+      {
+        "page": "posts/2026-10-19-emergency-evacuation-drill-guide.html",
+        "clicks": 0,
+        "impressions": 3
+      },
+      {
+        "page": "posts/2026-10-19-piping-craftsman-exam-guide.html",
+        "clicks": 0,
+        "impressions": 2
+      },
+      {
+        "page": "posts/2026-10-20-cad-mechanical-drawing-craftsman-exam-guide.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-20-special-health-examination-guide.html",
+        "clicks": 0,
+        "impressions": 9
+      },
+      {
+        "page": "posts/2026-10-21-excavation-soil-collapse-accident-analysis.html",
+        "clicks": 0,
+        "impressions": 5
+      },
+      {
+        "page": "posts/2026-10-21-shift-worker-exercise-routine.html",
+        "clicks": 0,
+        "impressions": 3
+      },
+      {
+        "page": "posts/2026-10-23-fire-explosion-inspection-november-checklist.html",
+        "clicks": 0,
+        "impressions": 2
+      },
+      {
+        "page": "posts/2026-10-26-falling-object-struck-by-accident-analysis.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-26-osh-act-amendment-2026-stop-work-penalty.html",
+        "clicks": 0,
+        "impressions": 6
+      },
+      {
+        "page": "posts/2026-10-27-4-crew-vs-3-crew-two-shift-comparison.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-27-near-miss-reporting-system-guide.html",
+        "clicks": 0,
+        "impressions": 1
+      },
+      {
+        "page": "posts/2026-10-27-welding-helmet-shade-number-guide.html",
+        "clicks": 0,
+        "impressions": 14
+      },
+      {
+        "page": "posts/2026-10-29-winter-concrete-curing-charcoal-co-poisoning-analysis.html",
+        "clicks": 0,
+        "impressions": 2
       }
     ]
   },
@@ -396,9 +614,9 @@
       "baseline": false
     },
     "posts/2026-11-04-industrial-safety-consultant-law-subject-study.html": {
-      "status": "Crawled - currently not indexed",
+      "status": "INDEXED",
       "crawled": "2026-11-04",
-      "indexedOn": "",
+      "indexedOn": "2026-11-04",
       "checked": "2026-11-04",
       "baseline": false
     },
@@ -445,16 +663,16 @@
       "baseline": true
     },
     "posts/2026-11-03-industrial-safety-consultant-what-they-do.html": {
-      "status": "URL is unknown to Google",
-      "crawled": "",
-      "indexedOn": "",
+      "status": "INDEXED",
+      "crawled": "2026-11-04",
+      "indexedOn": "2026-11-04",
       "checked": "2026-11-04",
       "baseline": false
     },
     "posts/2026-11-03-industrial-safety-consultant-eligibility-schedule.html": {
-      "status": "URL is unknown to Google",
-      "crawled": "",
-      "indexedOn": "",
+      "status": "INDEXED",
+      "crawled": "2026-11-04",
+      "indexedOn": "2026-11-04",
       "checked": "2026-11-04",
       "baseline": false
     },
@@ -1528,18 +1746,73 @@
       "indexedOn": "2026-11-04",
       "checked": "2026-11-04",
       "baseline": true
+    },
+    "posts/2026-09-29-industrial-safety-engineer-written-exam-study-order.html": {
+      "status": "INDEXED",
+      "crawled": "2026-10-28",
+      "indexedOn": "2026-11-04",
+      "checked": "2026-11-04",
+      "baseline": true
+    },
+    "posts/2026-09-29-legal-safety-training-hours-guide.html": {
+      "status": "URL is unknown to Google",
+      "crawled": "",
+      "indexedOn": "",
+      "checked": "2026-11-04",
+      "baseline": false
+    },
+    "posts/2026-09-29-forklift-collision-crush-accident-analysis.html": {
+      "status": "INDEXED",
+      "crawled": "2026-10-27",
+      "indexedOn": "2026-11-04",
+      "checked": "2026-11-04",
+      "baseline": true
+    },
+    "posts/2026-09-29-torque-wrench-types-and-usage.html": {
+      "status": "INDEXED",
+      "crawled": "2026-10-27",
+      "indexedOn": "2026-11-04",
+      "checked": "2026-11-04",
+      "baseline": true
+    },
+    "posts/2026-09-29-battery-manufacturing-process-overview.html": {
+      "status": "INDEXED",
+      "crawled": "2026-10-27",
+      "indexedOn": "2026-11-04",
+      "checked": "2026-11-04",
+      "baseline": true
+    },
+    "posts/2026-09-29-shift-work-sleep-management.html": {
+      "status": "INDEXED",
+      "crawled": "2026-10-27",
+      "indexedOn": "2026-11-04",
+      "checked": "2026-11-04",
+      "baseline": true
     }
   },
   "indexSummary": {
-    "new": {
-      "total": 14,
-      "indexed": 0,
-      "avgDays": null
-    },
-    "old": {
-      "total": 154,
-      "indexed": 105,
-      "avgDays": 20
+    "totalUrls": 186,
+    "checked": 186,
+    "unchecked": 0,
+    "indexedAmongChecked": 121,
+    "lastRun": "2026-11-04T22:35:09.218Z",
+    "cohort": {
+      "new": {
+        "total": 14,
+        "checked": 14,
+        "indexed": 1,
+        "indexedAtFirstCheck": 0,
+        "avgDaysToIndexConfirmed": 0,
+        "n": 1
+      },
+      "old": {
+        "total": 160,
+        "checked": 160,
+        "indexed": 112,
+        "indexedAtFirstCheck": 110,
+        "avgDaysToIndexConfirmed": 1,
+        "n": 2
+      }
     }
   }
 }

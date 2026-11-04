@@ -114,7 +114,7 @@ for (const p of posts) {
 write('search.json', JSON.stringify(index));
 
 // 정적 페이지에도 네이버 인증 태그와 애드센스 코드, 디자인 파일 버전
-for (const f of ['index.html', 'about.html', 'contact.html', 'privacy.html', 'templates/post.html', 'apps/shift.html']) {
+for (const f of ['index.html', 'about.html', 'contact.html', 'privacy.html', 'templates/post.html', 'apps/shift.html', 'apps/injury-rate.html', 'apps/convert.html', 'apps/dday.html']) {
   let h = read(f);
   if (!h.includes('naver-site-verification')) h = h.replace('<meta name="viewport" content="width=device-width, initial-scale=1.0">', `$&\n${NAVER}`);
   if (!h.includes('adsbygoogle')) h = h.replace('</head>', `${ADS}\n</head>`);
@@ -122,7 +122,7 @@ for (const f of ['index.html', 'about.html', 'contact.html', 'privacy.html', 'te
 }
 
 // 4) sitemap / feed / robots
-const pages = ['', 'about.html', 'contact.html', 'privacy.html', 'apps/shift.html', ...Object.keys(SECTIONS).map(s => `${s}.html`)];
+const pages = ['', 'about.html', 'contact.html', 'privacy.html', 'apps/shift.html', 'apps/injury-rate.html', 'apps/convert.html', 'apps/dday.html', ...Object.keys(SECTIONS).map(s => `${s}.html`)];
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages.map(u => `  <url><loc>${BASE}${u}</loc><lastmod>${today}</lastmod></url>`).join('\n')}

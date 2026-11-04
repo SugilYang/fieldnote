@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="c254b450f730ddc6064c4494834efa93d383bd94">
+<title>현장 단위 변환기: 토크 N·m↔kgf·m, 압력 bar↔MPa↔psi, 마력↔kW | 현장노트</title>
+<meta name="description" content="토크(N·m, kgf·m, lbf·ft), 압력(bar, MPa, kgf/cm², psi, atm), 힘, 길이, 무게, 동력(kW, HP, PS), 온도를 정확한 국제 환산 상수로 바로 바꿔요.">
+<meta name="author" content="황제효도르">
+<link rel="canonical" href="https://field.ynote.co.kr/apps/convert.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="현장노트">
+<meta property="og:title" content="현장 단위 변환기: 토크 N·m↔kgf·m, 압력 bar↔MPa↔psi, 마력↔kW">
+<meta property="og:description" content="토크(N·m, kgf·m, lbf·ft), 압력(bar, MPa, kgf/cm², psi, atm), 힘, 길이, 무게, 동력(kW, HP, PS), 온도를 정확한 국제 환산 상수로 바로 바꿔요.">
+<meta property="og:url" content="https://field.ynote.co.kr/apps/convert.html">
+<meta property="og:image" content="https://field.ynote.co.kr/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMS58YZHEH"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-GMS58YZHEH');</script>
+<link rel="stylesheet" href="../assets/style.css?v=9933471a">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9274785237746410" crossorigin="anonymous"></script>
+<style>
+.form{display:grid;gap:12px;margin:24px 0}.form label{font-size:14px;font-weight:700;display:block;margin-bottom:4px}
+.form input,.form select{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--text)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:600px){.row{grid-template-columns:1fr}}
+.res{background:var(--accent-bg);border-radius:14px;padding:18px 20px;margin:16px 0}.res b{font-size:22px;color:var(--accent)}.res small{color:var(--sub)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips button{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:20px;padding:7px 14px;font:inherit;font-size:14px;cursor:pointer}
+table.small{font-size:14px}
+.cv{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:end}.cv .eq{padding-bottom:12px;font-size:20px;color:var(--sub)}@media(max-width:600px){.cv{grid-template-columns:1fr}.cv .eq{display:none}}
+.all{font-size:15px}.all td:last-child{text-align:right;font-variant-numeric:tabular-nums}</style>
+</head>
+<body>
+<header class="site"><div class="in">
+  <a class="logo" href="../index.html">현장<span>노트</span></a>
+  <nav><a href="../license.html">자격증</a><a href="../safety.html">산업안전</a><a href="../case.html">사고사례</a><a href="../tools.html">장비·공구</a><a href="../trend.html">산업 트렌드</a><a href="../life.html">현장 생활</a></nav>
+</div></header>
+
+<article class="c-tools">
+  <div class="post-hero">
+    <div class="icon">🔁</div>
+    <span class="cat">🧰 현장 도구</span>
+    <h1>현장 단위 변환기</h1>
+    <div class="meta">토크·압력·힘·길이·무게·동력·온도</div>
+  </div>
+  <div class="wrap">
+
+    <div class="form">
+      <div><label>종류</label><div class="chips" id="cats"></div></div>
+      <div class="cv">
+        <div><label for="a">값</label><input id="a" type="number" step="any" value="1"></div>
+        <div class="eq">=</div>
+        <div><label for="ua">단위</label><select id="ua"></select></div>
+      </div>
+    </div>
+    <table class="all" id="all"></table>
+    <div class="chips noprint"><button id="copy">🔗 이 변환 주소 복사</button></div>
+
+    <div class="ad"></div>
+    <h2>환산 기준</h2>
+    <p>모든 값은 국제단위계(SI)와 공인된 정의값으로 환산해요. 반올림은 결과를 보여줄 때만 해요.</p>
+    <table class="small">
+      <tr><th>종류</th><th>기준 상수</th></tr>
+      <tr><td>토크·힘</td><td>1 kgf = 9.80665 N (표준중력가속도 정의값), 1 lbf = 4.4482216152605 N</td></tr>
+      <tr><td>압력</td><td>1 bar = 100 kPa, 1 atm = 101.325 kPa, 1 kgf/cm² = 98.0665 kPa, 1 psi = 6.894757293168 kPa, 1 mmHg = 133.322387415 Pa</td></tr>
+      <tr><td>길이</td><td>1 in = 25.4 mm (정의값), 1 ft = 12 in</td></tr>
+      <tr><td>무게</td><td>1 lb = 0.45359237 kg (정의값)</td></tr>
+      <tr><td>동력</td><td>1 HP(영국 마력) = 745.699872 W, 1 PS(미터 마력) = 735.49875 W</td></tr>
+      <tr><td>온도</td><td>°F = °C × 9/5 + 32, K = °C + 273.15</td></tr>
+    </table>
+    <div class="warn"><b>주의</b> 마력은 HP(영국·미국식)와 PS(독일·일본식, 국내 자동차·모터에 흔함)가 달라요. 모터 명판에 "PS"인지 "HP"인지 확인하고 고르세요. 토크렌치 눈금은 보통 N·m와 lbf·ft 두 가지인데, kgf·m 설명서를 쓰는 장비도 있어 환산이 자주 필요해요.</div>
+
+    <h2>자주 묻는 질문</h2>
+    <details class="faq"><summary>1 kgf·m는 몇 N·m인가요?</summary><p>9.80665 N·m예요. 반대로 1 N·m는 약 0.10197 kgf·m예요. 현장에서 대략 "kgf·m × 10 = N·m"로 어림하지만, 정밀 체결은 정확한 값으로 환산하세요.</p></details>
+    <details class="faq"><summary>1 bar와 1 kgf/cm²는 같은가요?</summary><p>거의 비슷하지만 같지 않아요. 1 bar = 100 kPa, 1 kgf/cm² = 98.0665 kPa라서 1 bar ≈ 1.0197 kgf/cm²예요. 공압 설비 게이지에서 두 단위가 섞여 있을 때 2% 정도 차이가 나요.</p></details>
+    <details class="faq"><summary>모터 마력을 kW로 바꾸면요?</summary><p>HP 기준이면 1 HP ≈ 0.7457 kW, PS 기준이면 1 PS ≈ 0.7355 kW예요. 국내 모터 명판은 PS 또는 kW로 적힌 경우가 많아요.</p></details>
+    <div class="ad"></div>
+    <p class="note">환산 상수는 국제단위계(SI) 정의값과 공인 환산값이에요. 계측기 눈금과 장비 사양은 제조사 설명서를 우선으로 확인하세요.</p>
+
+    <div class="author"><div class="av">효</div><div><b>황제효도르</b> · 현장노트 운영자<br>제조 현장에서 일하며 배운 것들을 쉽게 정리해요.</div></div>
+  </div>
+</article>
+<footer>
+  <div><a href="../about.html">소개</a>·<a href="../contact.html">문의</a>·<a href="../privacy.html">개인정보처리방침</a></div>
+  <div style="margin-top:8px">© 2026 현장노트 · 운영 황제효도르</div>
+</footer>
+<script>
+const $ = id => document.getElementById(id);
+// 각 단위를 기준 단위로 바꾸는 배율. 온도만 함수.
+const C = {
+  '토크': { base: 'N·m', u: { 'N·m': 1, 'kgf·m': 9.80665, 'kgf·cm': 0.0980665, 'lbf·ft': 1.3558179483314004, 'lbf·in': 0.1129848290276167 } },
+  '압력': { base: 'kPa', u: { 'kPa': 1, 'MPa': 1000, 'bar': 100, 'kgf/cm²': 98.0665, 'psi': 6.894757293168, 'atm': 101.325, 'mmHg': 0.133322387415 } },
+  '힘': { base: 'N', u: { 'N': 1, 'kN': 1000, 'kgf': 9.80665, 'tf': 9806.65, 'lbf': 4.4482216152605 } },
+  '길이': { base: 'mm', u: { 'mm': 1, 'cm': 10, 'm': 1000, 'inch': 25.4, 'ft': 304.8 } },
+  '무게': { base: 'kg', u: { 'g': 0.001, 'kg': 1, 't': 1000, 'lb': 0.45359237, 'oz': 0.028349523125 } },
+  '동력': { base: 'W', u: { 'W': 1, 'kW': 1000, 'HP': 745.699872, 'PS': 735.49875 } },
+  '온도': { temp: true, u: { '°C': [c => c, c => c], '°F': [f => (f - 32) * 5 / 9, c => c * 9 / 5 + 32], 'K': [k => k - 273.15, c => c + 273.15] } },
+};
+const hash = new URLSearchParams(location.hash.slice(1));
+let cat = C[hash.get('c')] ? hash.get('c') : '토크';
+if (hash.get('v')) $('a').value = hash.get('v');
+function units() {
+  $('ua').innerHTML = Object.keys(C[cat].u).map(u => `<option>${u}</option>`).join('');
+  if (hash.get('u') && C[cat].u[hash.get('u')]) $('ua').value = hash.get('u');
+  $('cats').innerHTML = Object.keys(C).map(k => `<button class="${k === cat ? 'on' : ''}" style="${k === cat ? 'background:var(--text);color:var(--bg);border-color:var(--text)' : ''}">${k}</button>`).join('');
+  [...$('cats').children].forEach(b => b.onclick = () => { cat = b.textContent; hash.delete('u'); units(); });
+  calc();
+}
+const fmt = x => Math.abs(x) >= 1e6 || (Math.abs(x) < 1e-4 && x) ? x.toExponential(5) : x.toLocaleString('ko-KR', { maximumSignificantDigits: 7 });
+function calc() {
+  const v = +$('a').value, from = $('ua').value, d = C[cat];
+  const base = d.temp ? d.u[from][0](v) : v * d.u[from];
+  $('all').innerHTML = Object.keys(d.u).map(u => `<tr><td>${u}</td><td>${fmt(d.temp ? d.u[u][1](base) : base / d.u[u])}</td></tr>`).join('');
+  history.replaceState(null, '', `#c=${encodeURIComponent(cat)}&v=${v}&u=${encodeURIComponent(from)}`);
+}
+$('a').oninput = calc; $('ua').onchange = calc;
+$('copy').onclick = () => navigator.clipboard.writeText(location.href).then(() => $('copy').textContent = '✅ 복사됐어요');
+units();
+</script>
+</body>
+</html>

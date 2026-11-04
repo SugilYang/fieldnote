@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="c254b450f730ddc6064c4494834efa93d383bd94">
+<title>자격증 시험 D-day 계산기: 접수일·시험일 남은 날짜 한눈에 | 현장노트</title>
+<meta name="description" content="시험 이름과 접수 시작일, 시험일을 넣으면 접수까지·시험까지 남은 날짜가 D-day로 표시돼요. 여러 시험을 저장하고 가족·동료에게 주소로 공유할 수 있어요.">
+<meta name="author" content="황제효도르">
+<link rel="canonical" href="https://field.ynote.co.kr/apps/dday.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="현장노트">
+<meta property="og:title" content="자격증 시험 D-day 계산기: 접수일·시험일 남은 날짜 한눈에">
+<meta property="og:description" content="시험 이름과 접수 시작일, 시험일을 넣으면 접수까지·시험까지 남은 날짜가 D-day로 표시돼요. 여러 시험을 저장하고 가족·동료에게 주소로 공유할 수 있어요.">
+<meta property="og:url" content="https://field.ynote.co.kr/apps/dday.html">
+<meta property="og:image" content="https://field.ynote.co.kr/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMS58YZHEH"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-GMS58YZHEH');</script>
+<link rel="stylesheet" href="../assets/style.css?v=9933471a">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9274785237746410" crossorigin="anonymous"></script>
+<style>
+.form{display:grid;gap:12px;margin:24px 0}.form label{font-size:14px;font-weight:700;display:block;margin-bottom:4px}
+.form input,.form select{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--text)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:600px){.row{grid-template-columns:1fr}}
+.res{background:var(--accent-bg);border-radius:14px;padding:18px 20px;margin:16px 0}.res b{font-size:22px;color:var(--accent)}.res small{color:var(--sub)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips button{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:20px;padding:7px 14px;font:inherit;font-size:14px;cursor:pointer}
+table.small{font-size:14px}
+.list{display:grid;gap:10px;margin:16px 0}.item{border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center}.item b{font-size:17px}.item .dd{font-size:24px;font-weight:900;color:var(--accent);text-align:right}.item small{color:var(--sub);display:block}.item .x{background:none;border:0;color:var(--sub);cursor:pointer;font-size:14px}.item.past .dd{color:var(--sub)}</style>
+</head>
+<body>
+<header class="site"><div class="in">
+  <a class="logo" href="../index.html">현장<span>노트</span></a>
+  <nav><a href="../license.html">자격증</a><a href="../safety.html">산업안전</a><a href="../case.html">사고사례</a><a href="../tools.html">장비·공구</a><a href="../trend.html">산업 트렌드</a><a href="../life.html">현장 생활</a></nav>
+</div></header>
+
+<article class="c-license">
+  <div class="post-hero">
+    <div class="icon">⏳</div>
+    <span class="cat">🧰 현장 도구</span>
+    <h1>시험 D-day 계산기</h1>
+    <div class="meta">접수일과 시험일을 넣으면 남은 날짜가 바로 보여요</div>
+  </div>
+  <div class="wrap">
+
+    <div class="form">
+      <div><label for="name">시험 이름</label><input id="name" placeholder="예: 산업안전기사 1회 필기"></div>
+      <div class="row">
+        <div><label for="reg">접수 시작일 (선택)</label><input id="reg" type="date"></div>
+        <div><label for="exam">시험일</label><input id="exam" type="date"></div>
+      </div>
+      <div class="chips"><button id="add">＋ 추가</button><button id="copy">🔗 이 목록 주소 복사</button></div>
+    </div>
+    <div class="list" id="list"></div>
+
+    <div class="ad"></div>
+    <h2>사용 방법</h2>
+    <ol>
+      <li>큐넷(q-net.or.kr) 시행 공고에서 <b>접수 시작일</b>과 <b>시험일</b>을 확인해요. 이 도구는 날짜를 저장해 두는 역할만 하고, 일정 자체는 공고가 기준이에요.</li>
+      <li>시험 이름과 날짜를 넣고 추가를 누르면 목록에 D-day가 표시돼요. 접수 시작일을 넣으면 접수까지 남은 날도 같이 보여요.</li>
+      <li>목록은 이 기기의 브라우저에 저장되고, "주소 복사"로 같은 목록을 다른 기기나 동료에게 보낼 수 있어요.</li>
+    </ol>
+    <div class="key"><h3>💡 기억할 점</h3><p>D-day는 오늘 자정 기준으로 계산해요. 시험 당일은 D-0으로 표시돼요. 접수는 보통 5일 정도만 열리고 첫날 마감되는 시험장도 있으니, 접수 시작일 D-day를 꼭 넣어 두세요.</p></div>
+
+    <h2>자주 묻는 질문</h2>
+    <details class="faq"><summary>시험 일정이 자동으로 들어가지 않나요?</summary><p>자동으로 넣지 않아요. 시험 일정은 해마다 공고로 바뀌고 수정 공고도 나오기 때문에, 틀린 날짜가 들어가는 것보다 공고를 보고 직접 넣는 게 안전해요.</p></details>
+    <details class="faq"><summary>저장한 목록이 사라졌어요.</summary><p>목록은 브라우저 저장소에 남아요. 시크릿 모드이거나 브라우저 데이터를 지우면 사라져요. 주소 복사로 저장해 둔 링크를 열면 그 목록이 다시 들어와요.</p></details>
+    <details class="faq"><summary>산업안전지도사처럼 1차·2차·3차가 있는 시험은요?</summary><p>단계마다 따로 추가하면 돼요. 예를 들어 "지도사 1차", "지도사 2차" 두 줄로 넣으면 각각 D-day가 보여요. 지도사 일정은 <a href="../guide.html">산업안전지도사 섹션</a>에서 정리하고 있어요.</p></details>
+    <div class="ad"></div>
+    <p class="note">이 도구는 날짜 계산만 해요. 접수일·시험일은 반드시 큐넷 시행 공고에서 확인하세요.</p>
+
+    <div class="author"><div class="av">효</div><div><b>황제효도르</b> · 현장노트 운영자<br>제조 현장에서 일하며 배운 것들을 쉽게 정리해요.</div></div>
+  </div>
+</article>
+<footer>
+  <div><a href="../about.html">소개</a>·<a href="../contact.html">문의</a>·<a href="../privacy.html">개인정보처리방침</a></div>
+  <div style="margin-top:8px">© 2026 현장노트 · 운영 황제효도르</div>
+</footer>
+<script>
+const $ = id => document.getElementById(id);
+const pad = n => String(n).padStart(2, '0');
+const day = s => { const [y, m, d] = s.split('-').map(Number); return Date.UTC(y, m - 1, d) / 86400000; };
+const now = new Date(), today = day(`${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`);
+let items = [];
+try { items = JSON.parse(decodeURIComponent(location.hash.slice(1)) || localStorage.getItem('dday') || '[]'); } catch { items = []; }
+const dd = n => n > 0 ? `D-${n}` : n === 0 ? 'D-DAY' : `D+${-n}`;
+function render() {
+  items.sort((a, b) => a.exam.localeCompare(b.exam));
+  $('list').innerHTML = items.map((it, i) => {
+    const e = day(it.exam) - today, r = it.reg ? day(it.reg) - today : null;
+    return `<div class="item${e < 0 ? ' past' : ''}"><div><b>${it.name.replace(/</g, '&lt;')}</b><small>시험 ${it.exam.replace(/-/g, '.')}${it.reg ? ` · 접수 시작 ${it.reg.replace(/-/g, '.')} (${dd(r)})` : ''}</small></div><div><div class="dd">${dd(e)}</div><button class="x" data-i="${i}">삭제</button></div></div>`;
+  }).join('') || '<p style="color:var(--sub)">아직 추가한 시험이 없어요.</p>';
+  [...document.querySelectorAll('.x')].forEach(b => b.onclick = () => { items.splice(+b.dataset.i, 1); save(); });
+}
+function save() { try { localStorage.setItem('dday', JSON.stringify(items)); } catch {} history.replaceState(null, '', items.length ? '#' + encodeURIComponent(JSON.stringify(items)) : location.pathname); render(); }
+$('add').onclick = () => { const name = $('name').value.trim(), exam = $('exam').value, reg = $('reg').value; if (!name || !exam) return alert('시험 이름과 시험일을 넣어주세요.'); items.push({ name, exam, reg }); $('name').value = ''; save(); };
+$('copy').onclick = () => navigator.clipboard.writeText(location.href).then(() => $('copy').textContent = '✅ 복사됐어요');
+render();
+</script>
+</body>
+</html>

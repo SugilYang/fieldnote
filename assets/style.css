@@ -28,7 +28,7 @@ footer a{margin:0 8px;text-decoration:none}footer a:hover{color:var(--text)}
 .banner::after{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;background:rgba(245,158,11,.25)}
 .banner h1{margin:0 0 8px;font-size:34px;font-weight:900;letter-spacing:-1px;line-height:1.25}
 .banner p{margin:0;opacity:.85;font-size:16px}
-.banner a.tool{position:relative;z-index:1;display:inline-block;margin-top:16px;background:#fff;color:#1e293b;font-weight:700;font-size:14px;padding:8px 16px;border-radius:20px;text-decoration:none}
+.banner a.tool{position:relative;z-index:1;display:inline-block;margin:14px 6px 0 0;background:#fff;color:#1e293b;font-weight:700;font-size:14px;padding:8px 16px;border-radius:20px;text-decoration:none}
 .tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 0 20px;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}
 .tabs button{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:24px;padding:8px 16px;font:inherit;font-size:14px;font-weight:600;white-space:nowrap;cursor:pointer;transition:.15s}
 .tabs button.on{background:var(--text);border-color:var(--text);color:var(--bg)}

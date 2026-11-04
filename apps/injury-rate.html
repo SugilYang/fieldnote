@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="c254b450f730ddc6064c4494834efa93d383bd94">
+<title>재해율 계산기: 도수율·강도율·연천인율·종합재해지수 자동 계산 | 현장노트</title>
+<meta name="description" content="재해 건수, 근로손실일수, 연근로시간, 근로자 수를 넣으면 도수율·강도율·연천인율·재해율·종합재해지수가 바로 계산돼요. 공식과 근로손실일수 기준표도 함께 정리했어요.">
+<meta name="author" content="황제효도르">
+<link rel="canonical" href="https://field.ynote.co.kr/apps/injury-rate.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="현장노트">
+<meta property="og:title" content="재해율 계산기: 도수율·강도율·연천인율·종합재해지수 자동 계산">
+<meta property="og:description" content="재해 건수, 근로손실일수, 연근로시간, 근로자 수를 넣으면 도수율·강도율·연천인율·재해율·종합재해지수가 바로 계산돼요. 공식과 근로손실일수 기준표도 함께 정리했어요.">
+<meta property="og:url" content="https://field.ynote.co.kr/apps/injury-rate.html">
+<meta property="og:image" content="https://field.ynote.co.kr/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GMS58YZHEH"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-GMS58YZHEH');</script>
+<link rel="stylesheet" href="../assets/style.css?v=9933471a">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9274785237746410" crossorigin="anonymous"></script>
+<style>
+.form{display:grid;gap:12px;margin:24px 0}.form label{font-size:14px;font-weight:700;display:block;margin-bottom:4px}
+.form input,.form select{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--text)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:600px){.row{grid-template-columns:1fr}}
+.res{background:var(--accent-bg);border-radius:14px;padding:18px 20px;margin:16px 0}.res b{font-size:22px;color:var(--accent)}.res small{color:var(--sub)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips button{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:20px;padding:7px 14px;font:inherit;font-size:14px;cursor:pointer}
+table.small{font-size:14px}
+</style>
+</head>
+<body>
+<header class="site"><div class="in">
+  <a class="logo" href="../index.html">현장<span>노트</span></a>
+  <nav><a href="../license.html">자격증</a><a href="../safety.html">산업안전</a><a href="../case.html">사고사례</a><a href="../tools.html">장비·공구</a><a href="../trend.html">산업 트렌드</a><a href="../life.html">현장 생활</a></nav>
+</div></header>
+
+<article class="c-safety">
+  <div class="post-hero">
+    <div class="icon">📊</div>
+    <span class="cat">🧰 현장 도구</span>
+    <h1>재해율 계산기</h1>
+    <div class="meta">도수율·강도율·연천인율·종합재해지수를 한 번에</div>
+  </div>
+  <div class="wrap">
+
+    <div class="form">
+      <div class="row">
+        <div><label for="n">재해 건수 (건)</label><input id="n" type="number" min="0" step="1" placeholder="예: 3"></div>
+        <div><label for="v">재해자 수 (명)</label><input id="v" type="number" min="0" step="1" placeholder="예: 3"></div>
+      </div>
+      <div class="row">
+        <div><label for="d">근로손실일수 (일)</label><input id="d" type="number" min="0" step="1" placeholder="예: 120"></div>
+        <div><label for="w">연평균 근로자 수 (명)</label><input id="w" type="number" min="0" step="1" placeholder="예: 250"></div>
+      </div>
+      <div class="row">
+        <div><label for="h">연근로시간수 (시간) — 비우면 근로자 수 × 2,400시간</label><input id="h" type="number" min="0" step="1" placeholder="예: 600000"></div>
+        <div><label for="hw">1인당 연간 근로시간 (기본 2,400)</label><input id="hw" type="number" min="1" step="1" value="2400"></div>
+      </div>
+    </div>
+    <div class="res" id="out"><small>숫자를 넣으면 결과가 여기 나와요.</small></div>
+    <div class="chips noprint"><button id="copy">🔗 이 계산 주소 복사</button></div>
+
+    <div class="ad"></div>
+    <h2>공식</h2>
+    <table class="small">
+      <tr><th>지표</th><th>공식</th><th>뜻</th></tr>
+      <tr><td>도수율 (빈도율, FR)</td><td>재해 건수 ÷ 연근로시간수 × 1,000,000</td><td>100만 근로시간당 재해 건수</td></tr>
+      <tr><td>강도율 (SR)</td><td>근로손실일수 ÷ 연근로시간수 × 1,000</td><td>1,000 근로시간당 근로손실일수</td></tr>
+      <tr><td>연천인율</td><td>연간 재해자 수 ÷ 연평균 근로자 수 × 1,000</td><td>근로자 1,000명당 연간 재해자 수</td></tr>
+      <tr><td>재해율</td><td>재해자 수 ÷ 근로자 수 × 100</td><td>근로자 100명당 재해자 수</td></tr>
+      <tr><td>종합재해지수 (FSI)</td><td>√(도수율 × 강도율)</td><td>빈도와 강도를 함께 보는 지수</td></tr>
+    </table>
+    <p>연근로시간수를 모르면 근로자 수에 1인당 연간 근로시간을 곱해 써요. 보통 하루 8시간 × 연 300일 = <b>2,400시간</b>을 기준으로 잡고, 이때 연천인율 ≈ 도수율 × 2.4 관계가 성립해요. 실제 근로시간을 알면 그 값을 넣는 게 정확해요.</p>
+
+    <h2>근로손실일수 기준표</h2>
+    <p>강도율에 쓰는 근로손실일수는 실제 휴업일수에 300/365를 곱하거나, 사망·장해는 아래 기준 일수를 써요. 이 표는 국제노동기구(ILO) 기준으로, 산업안전기사 시험과 안전보건 통계에서 쓰는 값이에요.</p>
+    <table class="small">
+      <tr><th>구분</th><th>근로손실일수</th></tr>
+      <tr><td>사망, 영구 전노동불능 (장해 1~3급)</td><td>7,500일</td></tr>
+      <tr><td>장해 4급</td><td>5,500일</td></tr>
+      <tr><td>장해 5급</td><td>4,000일</td></tr>
+      <tr><td>장해 6급</td><td>3,000일</td></tr>
+      <tr><td>장해 7급</td><td>2,200일</td></tr>
+      <tr><td>장해 8급</td><td>1,500일</td></tr>
+      <tr><td>장해 9급</td><td>1,000일</td></tr>
+      <tr><td>장해 10급</td><td>600일</td></tr>
+      <tr><td>장해 11급</td><td>400일</td></tr>
+      <tr><td>장해 12급</td><td>200일</td></tr>
+      <tr><td>장해 13급</td><td>100일</td></tr>
+      <tr><td>장해 14급</td><td>50일</td></tr>
+      <tr><td>일시 전노동불능 (휴업)</td><td>휴업일수 × 300 ÷ 365</td></tr>
+    </table>
+    <div class="key"><h3>💡 예시</h3><p>근로자 250명, 재해 3건(재해자 3명), 근로손실일수 120일, 연근로시간 600,000시간이면 도수율 5.0, 강도율 0.2, 연천인율 12.0, 재해율 1.2%, 종합재해지수 1.0이에요. 위 칸에 그대로 넣어 확인해 보세요.</p></div>
+
+    <h2>자주 묻는 질문</h2>
+    <details class="faq"><summary>도수율과 연천인율은 뭐가 다른가요?</summary><p>도수율은 근로시간 기준(100만 시간당 재해 건수), 연천인율은 근로자 수 기준(1,000명당 연간 재해자 수)이에요. 1인당 연간 2,400시간으로 가정하면 연천인율 = 도수율 × 2.4로 환산할 수 있어요.</p></details>
+    <details class="faq"><summary>강도율 계산할 때 근로손실일수는 어떻게 구하나요?</summary><p>사망이나 영구 장해는 위 기준표의 일수를 쓰고, 휴업 재해는 실제 휴업일수에 300/365를 곱해요. 여러 건이면 모두 더한 값을 넣어요.</p></details>
+    <details class="faq"><summary>산업안전기사 시험 문제 풀 때도 쓸 수 있나요?</summary><p>네. 공식이 같아서 기출문제 숫자를 넣고 답을 확인하는 데 쓸 수 있어요. 다만 시험에서는 문제에 주어진 근로시간 가정(예: 1일 8시간, 연 300일)을 그대로 따라야 해요.</p></details>
+    <div class="ad"></div>
+    <p class="note">공식과 근로손실일수 기준표는 ILO 기준과 산업안전기사 교재에서 통용되는 값이에요. 회사 보고서는 소속 기관이 정한 산식과 기준을 먼저 확인하세요.</p>
+
+    <div class="author"><div class="av">효</div><div><b>황제효도르</b> · 현장노트 운영자<br>제조 현장에서 일하며 배운 것들을 쉽게 정리해요.</div></div>
+  </div>
+</article>
+<footer>
+  <div><a href="../about.html">소개</a>·<a href="../contact.html">문의</a>·<a href="../privacy.html">개인정보처리방침</a></div>
+  <div style="margin-top:8px">© 2026 현장노트 · 운영 황제효도르</div>
+</footer>
+<script>
+const $ = id => document.getElementById(id);
+const ids = ['n','v','d','w','h','hw'];
+const hash = new URLSearchParams(location.hash.slice(1));
+ids.forEach(i => { if (hash.get(i)) $(i).value = hash.get(i); });
+const f = (x, k=2) => Number.isFinite(x) ? x.toLocaleString('ko-KR', {maximumFractionDigits: k}) : '-';
+function calc() {
+  const n = +$('n').value, v = +$('v').value, d = +$('d').value, w = +$('w').value, hw = +$('hw').value || 2400;
+  const H = +$('h').value || w * hw;
+  const fr = H ? n / H * 1e6 : NaN, sr = H ? d / H * 1000 : NaN;
+  const rows = [
+    ['도수율', fr, '건/100만 시간'], ['강도율', sr, '일/1,000시간'],
+    ['연천인율', w ? v / w * 1000 : NaN, '명/1,000명'], ['재해율', w ? v / w * 100 : NaN, '%'],
+    ['종합재해지수', Math.sqrt(fr * sr), '']];
+  $('out').innerHTML = (H ? `<small>연근로시간수 ${f(H,0)}시간 기준</small><br>` : '') +
+    rows.map(([k, x, u]) => `${k} <b>${f(x)}</b> <small>${u}</small>`).join('<br>');
+  history.replaceState(null, '', '#' + ids.filter(i => $(i).value).map(i => `${i}=${$(i).value}`).join('&'));
+}
+ids.forEach(i => $(i).oninput = calc);
+$('copy').onclick = () => navigator.clipboard.writeText(location.href).then(() => $('copy').textContent = '✅ 복사됐어요');
+calc();
+</script>
+</body>
+</html>

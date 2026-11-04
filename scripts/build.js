@@ -139,10 +139,13 @@ for (const f of ['index.html', 'about.html', 'contact.html', 'privacy.html', 'te
 }
 
 // 4) sitemap / feed / robots
-const pages = ['', 'about.html', 'contact.html', 'privacy.html', 'apps/shift.html', 'apps/injury-rate.html', 'apps/convert.html', 'apps/dday.html', ...Object.keys(SECTIONS).map(s => `${s}.html`)];
+// lastmod: 실제로 바뀐 날만 적는다 (매일 오늘 날짜로 갱신하면 신호로서 의미가 없다)
+const gitDate = f => { try { return require('child_process').execSync(`git log -1 --format=%cs -- "${f}"`, { cwd: ROOT }).toString().trim() || today; } catch { return today; } };
+const pages = [['', posts[0].date], ...['about.html', 'contact.html', 'privacy.html', 'apps/shift.html', 'apps/injury-rate.html', 'apps/convert.html', 'apps/dday.html'].map(f => [f, gitDate(f)]),
+  ...Object.keys(SECTIONS).map(s => [`${s}.html`, (posts.find(p => p.section === s) || { date: today }).date])];
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${pages.map(u => `  <url><loc>${BASE}${u}</loc><lastmod>${today}</lastmod></url>`).join('\n')}
+${pages.map(([u, d]) => `  <url><loc>${BASE}${u}</loc><lastmod>${d}</lastmod></url>`).join('\n')}
 ${posts.map(p => `  <url><loc>${BASE}posts/${p.file}</loc><lastmod>${p.date}</lastmod></url>`).join('\n')}
 </urlset>
 `);

@@ -3,7 +3,7 @@
   "designedOn": "2026-11-05",
   "evaluateOn": "2026-11-18",
   "note": "A는 운영자가 Search Console에서 수동 색인 요청, B는 요청하지 않음. 발행일은 짝으로 맞췄지만 주제(트렌드 vs 안전)는 완전히 같지 않아 결과는 탐색적으로만 해석한다.",
-  "requestedOn": "2026-11-06",
+  "requestedOn": "2026-11-06 (A 1~5), 2026-11-10 (A 6~10)",
   "A": [
     "posts/2026-09-30-smart-factory-automation-jobs.html",
     "posts/2026-10-02-welding-craftsman-exam-guide.html",
@@ -132,5 +132,5 @@
       "checked": "2026-11-04"
     }
   },
-  "requestNote": "11/06 운영자가 도구 4개 + A그룹 앞 5편(09-30 smart-factory, 10-02 welding, 10-07 press, 10-09 hydrogen, 10-12 shoulder-neck)까지 9개 요청 후 할당량 초과. A그룹 나머지 5편은 11/07 요청 예정."
+  "requestNote": "11/06 도구 4개 + A그룹 5편(09-30 smart-factory, 10-02 welding, 10-07 press, 10-09 hydrogen, 10-12 shoulder-neck) 요청. 11/10 A그룹 나머지 5편(10-14 fems, 10-15 battery-recycling, 10-16 data-center, 10-20 chop-saw, 10-23 hydraulic-jack) 요청. B그룹 요청 없음."
 }

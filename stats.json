@@ -916,14 +916,14 @@
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-30-shift-worker-caffeine-intake-timing.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-29-industrial-safety-engineer-practical-exam-guide.html": {
@@ -1000,21 +1000,21 @@
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-28-safety-shoe-insole-choosing-guide.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-27-national-technical-qualification-2027-changes.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-27-near-miss-reporting-system-guide.html": {
@@ -1042,7 +1042,7 @@
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-27-4-crew-vs-3-crew-two-shift-comparison.html": {
@@ -1056,7 +1056,7 @@
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-26-osh-act-amendment-2026-stop-work-penalty.html": {
@@ -1182,14 +1182,14 @@
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-21-serious-accident-workplace-list-disclosure.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-21-excavation-soil-collapse-accident-analysis.html": {
@@ -1210,7 +1210,7 @@
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-21-shift-worker-exercise-routine.html": {
@@ -1245,14 +1245,14 @@
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-20-wind-solar-power-plant-jobs-overview.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-20-cold-flu-prevention-field-workers.html": {
@@ -1294,7 +1294,7 @@
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-19-wrist-elbow-pain-prevention-field-workers.html": {
@@ -1312,10 +1312,10 @@
       "baseline": true
     },
     "posts/2026-10-16-permit-to-work-system-guide.html": {
-      "status": "URL is unknown to Google",
-      "crawled": "",
-      "indexedOn": "",
-      "checked": "2026-11-08",
+      "status": "INDEXED",
+      "crawled": "2026-11-09",
+      "indexedOn": "2026-11-09",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-16-rotating-shaft-entanglement-accident-analysis.html": {
@@ -1336,14 +1336,14 @@
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-16-workplace-injury-compensation-procedure.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-15-fire-safety-manager-grade2-guide.html": {
@@ -1378,14 +1378,14 @@
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-15-new-worker-first-3-months-safety.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-14-crane-operator-license-vs-overhead-crane-training.html": {
@@ -1399,7 +1399,7 @@
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "baseline": false
     },
     "posts/2026-10-14-dust-explosion-accident-analysis.html": {
@@ -2100,8 +2100,8 @@
     "totalUrls": 207,
     "checked": 207,
     "unchecked": 0,
-    "indexedAmongChecked": 152,
-    "lastRun": "2026-11-09T18:07:53.481Z",
+    "indexedAmongChecked": 153,
+    "lastRun": "2026-11-09T18:46:41.879Z",
     "cohort": {
       "new": {
         "total": 35,
@@ -2114,10 +2114,10 @@
       "old": {
         "total": 160,
         "checked": 160,
-        "indexed": 120,
+        "indexed": 121,
         "indexedAtFirstCheck": 110,
-        "avgDaysToIndexConfirmed": 15.7,
-        "n": 10
+        "avgDaysToIndexConfirmed": 16.5,
+        "n": 11
       }
     }
   }

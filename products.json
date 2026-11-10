@@ -1,12 +1,250 @@
 [
-  { "name": "케이투세이프티 벨크로 안전화 K2-11", "short": "안전화", "url": "https://link.coupang.com/a/iyY1na27Ua", "image": "https://image4.coupangcdn.com/image/affiliate/banner/9702fea5dc13d0887c7e7fd4ff124080@2x.jpg", "keywords": ["안전화"] },
-  { "name": "몽크로스 그네식 안전벨트 (자동카라비너·엘라 더블 죔줄)", "short": "그네식 안전대", "url": "https://link.coupang.com/a/iyY7jr0UMe", "image": "https://image14.coupangcdn.com/image/affiliate/banner/b77df5aa74e0d92d69d5343537e736dd@2x.jpg", "keywords": ["안전대(?!책)", "안전고리", "추락방지", "죔줄"] },
-  { "name": "JW 오토 후크메타 ST-184 (클램프미터)", "short": "클램프미터", "url": "https://link.coupang.com/a/iyZa1QQWqW", "image": "https://image15.coupangcdn.com/image/affiliate/banner/b40349a65c5dce59c5f94a3ddb8b197a@2x.jpg", "keywords": ["클램프 ?미터", "후크 ?미터", "후크메타"] },
-  { "name": "종원 JW 비접촉 검전기 DB03", "short": "비접촉식 검전기", "url": "https://link.coupang.com/a/iyZdyz4sxw", "image": "https://image13.coupangcdn.com/image/affiliate/banner/4a49ee9dad8494dd02c8a93d15ea114e@2x.jpg", "keywords": ["검전기"] },
-  { "name": "JMLT 초경량 알루미늄 체인블록", "short": "체인블록", "url": "https://link.coupang.com/a/iyZghe7z6i", "image": "https://image3.coupangcdn.com/image/affiliate/banner/07231fe9d32e8b11e6ce77cf4eea59df@2x.jpg", "keywords": ["체인블[록럭]", "레버블[록럭]", "호이스트"] },
-  { "name": "프로라인 토크렌치 28-210N·m", "short": "토크렌치", "url": "https://link.coupang.com/a/iyZiWLJUcu", "image": "https://img1a.coupangcdn.com/image/affiliate/banner/bfe5e743dbcbe7d5571ca24efc1a4336@2x.jpg", "keywords": ["토크 ?렌치", "체결 토크"] },
-  { "name": "쓰리엠 슈퍼터프 NBR 코팅 안전장갑", "short": "작업용 안전장갑", "url": "https://link.coupang.com/a/iyZk5kcWSO", "image": "https://img2c.coupangcdn.com/image/affiliate/banner/3790dc0bf9f94d405cd4952ddab426cb@2x.jpg", "keywords": ["안전장갑", "작업장갑", "작업용 장갑", "코팅 ?장갑", "NBR"] },
-  { "name": "동명 ABE등급 투구형 안전모", "short": "안전모", "url": "https://link.coupang.com/a/iyZrruBaPk", "image": "https://img4a.coupangcdn.com/image/affiliate/banner/52b1b102c145d696d130aefc254e4bfd@2x.jpg", "keywords": ["안전모"] },
-  { "name": "Motria 겨울 방한 작업복 상하 세트", "short": "방한 작업복", "url": "https://link.coupang.com/a/iyZvc0K8f6", "image": "https://img4c.coupangcdn.com/image/affiliate/banner/f0853acf773cedd550146e9ec82a0144@2x.jpg", "keywords": ["방한복", "방한 작업복", "겨울 작업복", "동계 작업복", "겨울철 작업복", "방한 장갑"] },
-  { "name": "2027 시대에듀 산업안전지도사 1차 10개년 기출문제집", "short": "지도사 1차 기출문제집", "url": "https://link.coupang.com/a/iyZwRmQ7iu", "image": "https://image7.coupangcdn.com/image/affiliate/banner/16166a0fb8a7cabef029fc8cfe1b744e@2x.jpg", "keywords": ["산업안전지도사"] }
+  {
+    "name": "케이투세이프티 벨크로 안전화 K2-11",
+    "short": "안전화",
+    "url": "https://link.coupang.com/a/iyY1na27Ua",
+    "image": "https://image4.coupangcdn.com/image/affiliate/banner/9702fea5dc13d0887c7e7fd4ff124080@2x.jpg",
+    "keywords": [
+      "안전화"
+    ]
+  },
+  {
+    "name": "몽크로스 그네식 안전벨트 (자동카라비너·엘라 더블 죔줄)",
+    "short": "그네식 안전대",
+    "url": "https://link.coupang.com/a/iyY7jr0UMe",
+    "image": "https://image14.coupangcdn.com/image/affiliate/banner/b77df5aa74e0d92d69d5343537e736dd@2x.jpg",
+    "keywords": [
+      "안전대(?!책)",
+      "안전고리",
+      "추락방지",
+      "죔줄"
+    ]
+  },
+  {
+    "name": "JW 오토 후크메타 ST-184 (클램프미터)",
+    "short": "클램프미터",
+    "url": "https://link.coupang.com/a/iyZa1QQWqW",
+    "image": "https://image15.coupangcdn.com/image/affiliate/banner/b40349a65c5dce59c5f94a3ddb8b197a@2x.jpg",
+    "keywords": [
+      "클램프 ?미터",
+      "후크 ?미터",
+      "후크메타"
+    ]
+  },
+  {
+    "name": "종원 JW 비접촉 검전기 DB03",
+    "short": "비접촉식 검전기",
+    "url": "https://link.coupang.com/a/iyZdyz4sxw",
+    "image": "https://image13.coupangcdn.com/image/affiliate/banner/4a49ee9dad8494dd02c8a93d15ea114e@2x.jpg",
+    "keywords": [
+      "검전기"
+    ]
+  },
+  {
+    "name": "JMLT 초경량 알루미늄 체인블록",
+    "short": "체인블록",
+    "url": "https://link.coupang.com/a/iyZghe7z6i",
+    "image": "https://image3.coupangcdn.com/image/affiliate/banner/07231fe9d32e8b11e6ce77cf4eea59df@2x.jpg",
+    "keywords": [
+      "체인블[록럭]",
+      "레버블[록럭]",
+      "호이스트"
+    ]
+  },
+  {
+    "name": "프로라인 토크렌치 28-210N·m",
+    "short": "토크렌치",
+    "url": "https://link.coupang.com/a/iyZiWLJUcu",
+    "image": "https://img1a.coupangcdn.com/image/affiliate/banner/bfe5e743dbcbe7d5571ca24efc1a4336@2x.jpg",
+    "keywords": [
+      "토크 ?렌치",
+      "체결 토크"
+    ]
+  },
+  {
+    "name": "쓰리엠 슈퍼터프 NBR 코팅 안전장갑",
+    "short": "작업용 안전장갑",
+    "url": "https://link.coupang.com/a/iyZk5kcWSO",
+    "image": "https://img2c.coupangcdn.com/image/affiliate/banner/3790dc0bf9f94d405cd4952ddab426cb@2x.jpg",
+    "keywords": [
+      "안전장갑",
+      "작업장갑",
+      "작업용 장갑",
+      "코팅 ?장갑",
+      "NBR"
+    ]
+  },
+  {
+    "name": "동명 ABE등급 투구형 안전모",
+    "short": "안전모",
+    "url": "https://link.coupang.com/a/iyZrruBaPk",
+    "image": "https://img4a.coupangcdn.com/image/affiliate/banner/52b1b102c145d696d130aefc254e4bfd@2x.jpg",
+    "keywords": [
+      "안전모"
+    ]
+  },
+  {
+    "name": "Motria 겨울 방한 작업복 상하 세트",
+    "short": "방한 작업복",
+    "url": "https://link.coupang.com/a/iyZvc0K8f6",
+    "image": "https://img4c.coupangcdn.com/image/affiliate/banner/f0853acf773cedd550146e9ec82a0144@2x.jpg",
+    "keywords": [
+      "방한복",
+      "방한 작업복",
+      "겨울 작업복",
+      "동계 작업복",
+      "겨울철 작업복",
+      "방한 장갑"
+    ]
+  },
+  {
+    "name": "2027 시대에듀 산업안전지도사 1차 10개년 기출문제집",
+    "short": "지도사 1차 기출문제집",
+    "url": "https://link.coupang.com/a/iyZwRmQ7iu",
+    "image": "https://image7.coupangcdn.com/image/affiliate/banner/16166a0fb8a7cabef029fc8cfe1b744e@2x.jpg",
+    "keywords": [
+      "산업안전지도사"
+    ]
+  },
+  {
+    "name": "카로히포 3D 암막 수면안대 (귀마개 포함)",
+    "short": "수면안대·귀마개",
+    "url": "https://link.coupang.com/a/iy1WkzQPhQ",
+    "image": "https://img5a.coupangcdn.com/image/affiliate/banner/35cf26998740203c1555dc89ca50f8b5@2x.jpg",
+    "keywords": [
+      "수면안대",
+      "안대",
+      "수면의 질",
+      "낮잠",
+      "숙면",
+      "교대 ?근무 수면",
+      "수면 시간"
+    ]
+  },
+  {
+    "name": "2027 박문각 지게차운전기능사 필기 기출문제집",
+    "short": "지게차운전기능사 교재",
+    "url": "https://link.coupang.com/a/iy1X7qzCii",
+    "image": "https://img4c.coupangcdn.com/image/affiliate/banner/ee3372999527f7ead13a80cb3b8868f8@2x.jpg",
+    "keywords": [
+      "지게차운전기능사",
+      "지게차 ?면허",
+      "지게차 ?자격"
+    ]
+  },
+  {
+    "name": "스탠맨 21V 무선 충전 해머 전동드릴 세트",
+    "short": "충전 드릴드라이버",
+    "url": "https://link.coupang.com/a/iy1Y9ro2Ym",
+    "image": "https://img2c.coupangcdn.com/image/affiliate/banner/73d2bd5f89de9608b4365f0037f2aa01@2x.jpg",
+    "keywords": [
+      "전동 ?드릴",
+      "드릴 ?드라이버",
+      "충전 ?드릴",
+      "임팩트 ?드릴",
+      "해머 ?드릴"
+    ]
+  },
+  {
+    "name": "2027 박문각 전기기능사 필기 기출문제집",
+    "short": "전기기능사 교재",
+    "url": "https://link.coupang.com/a/iy10aoE8Bw",
+    "image": "https://image10.coupangcdn.com/image/affiliate/banner/ddaf58d2772e76e890d19d6b65bb1d9c@2x.jpg",
+    "keywords": [
+      "전기기능사"
+    ]
+  },
+  {
+    "name": "대동소방 ABC 분말소화기 3.3kg 세트",
+    "short": "소화기",
+    "url": "https://link.coupang.com/a/iy11aP79Fs",
+    "image": "https://image2.coupangcdn.com/image/affiliate/banner/a91783b5e8fec21b4f158fe5ab9a8063@2x.jpg",
+    "keywords": [
+      "소화기"
+    ]
+  },
+  {
+    "name": "애니가드 1급 방진마스크 VC102V (30개)",
+    "short": "방진마스크",
+    "url": "https://link.coupang.com/a/iy12dq0DRI",
+    "image": "https://img5a.coupangcdn.com/image/affiliate/banner/5a73f439a9f6ef73e64002107a40d329@2x.jpg",
+    "keywords": [
+      "방진 ?마스크",
+      "방독 ?마스크",
+      "호흡 ?보호구"
+    ]
+  },
+  {
+    "name": "스탠핏 소음차단 귀덮개 헤드셋",
+    "short": "귀덮개",
+    "url": "https://link.coupang.com/a/iy19kd9Mtg",
+    "image": "https://image15.coupangcdn.com/image/affiliate/banner/74937da4f6732cf3b73f4aa4b9c8fe29@2x.jpg",
+    "keywords": [
+      "귀덮개",
+      "귀마개",
+      "청력 ?보호",
+      "소음성 ?난청"
+    ]
+  },
+  {
+    "name": "에듀윌 2027 산업안전기사 필기 한권끝장",
+    "short": "산업안전기사 교재",
+    "url": "https://link.coupang.com/a/iy14vLZzPw",
+    "image": "https://image4.coupangcdn.com/image/affiliate/banner/1378a89a7fc4f4b8f9f1d09697e2d833@2x.jpg",
+    "keywords": [
+      "산업안전기사",
+      "산업안전산업기사"
+    ]
+  },
+  {
+    "name": "라라무브 슬림 허리보호대",
+    "short": "허리보호대",
+    "url": "https://link.coupang.com/a/iy15sOTrDE",
+    "image": "https://image8.coupangcdn.com/image/affiliate/banner/3fc199f5fce4dad2d46468eefa3d39fd@2x.jpg",
+    "keywords": [
+      "허리 ?보호대",
+      "허리 ?통증",
+      "요통",
+      "중량물 ?취급"
+    ]
+  },
+  {
+    "name": "하루온 붙이는 핫팩 50g (10개입×5)",
+    "short": "붙이는 핫팩",
+    "url": "https://link.coupang.com/a/iy16qCkqAe",
+    "image": "https://image10.coupangcdn.com/image/affiliate/banner/4ab8d0dd0a50c1432cf606fb3833d087@2x.jpg",
+    "keywords": [
+      "핫팩",
+      "손난로",
+      "한파",
+      "동계 ?작업",
+      "겨울철 ?작업",
+      "저체온"
+    ]
+  },
+  {
+    "name": "씨티컴퍼니 안티포그 투명 보안경",
+    "short": "보안경",
+    "url": "https://link.coupang.com/a/iy17of2OYK",
+    "image": "https://image14.coupangcdn.com/image/affiliate/banner/45e8b514996566ee183ca3b13092475d@2x.jpg",
+    "keywords": [
+      "보안경",
+      "보안면",
+      "눈 ?보호",
+      "비산"
+    ]
+  },
+  {
+    "name": "디지털 스테인리스 버니어캘리퍼스 150mm",
+    "short": "디지털 버니어캘리퍼스",
+    "url": "https://link.coupang.com/a/iy18m1namW",
+    "image": "https://img5a.coupangcdn.com/image/affiliate/banner/e4538a25d46caa395a9078433f565b15@2x.jpg",
+    "keywords": [
+      "버니어 ?캘리퍼스",
+      "캘리퍼스",
+      "노기스",
+      "마이크로미터",
+      "치수 측정"
+    ]
+  }
 ]

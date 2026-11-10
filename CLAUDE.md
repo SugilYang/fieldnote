@@ -2,7 +2,7 @@
 
 현장(제조·물류·건설)에서 일하는 사람을 위한 정보 블로그다. 매일 섹션별로 1편씩, 하루 7편을 쓴다.
 운영자(작성자 표기): **황제효도르** / 문의: bisabul501@naver.com
-사이트 주소(BASE_URL): `https://field.ynote.co.kr/` (도메인을 연결하면 이 값만 바꾼다)
+사이트 주소(BASE_URL): `https://field.ynote.co.kr/` · 네이버 미러 블로그: https://blog.naver.com/fedor0725 (요약·링크만 올림) (도메인을 연결하면 이 값만 바꾼다)
 
 ## 섹션
 | ID | 이름 | 이모지 | 다루는 내용 |

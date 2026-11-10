@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /naver/
 Sitemap: https://field.ynote.co.kr/sitemap.xml

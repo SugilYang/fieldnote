@@ -66,7 +66,7 @@
     <div class="mnav"><button id="prev">◀ 이전 달</button><b id="ym"></b><button id="next">다음 달 ▶</button></div>
     <div class="cal" id="cal"></div>
     <p class="count" id="count"></p>
-    <div class="chips noprint"><button id="print">🖨️ 인쇄하기</button><button id="copy">🔗 이 근무표 주소 복사</button></div>
+    <div class="chips noprint"><button id="print">🖨️ 인쇄하기</button><button id="share">💬 카톡·문자로 공유</button><button id="copy">🔗 이 근무표 주소 복사</button></div>
 
     <div class="ad"></div>
     <h2>사용 방법</h2>
@@ -134,6 +134,10 @@ $('next').onclick = () => { view = view[1] < 11 ? [view[0], view[1] + 1] : [view
 $('print').onclick = () => print();
 $('copy').onclick = () => navigator.clipboard.writeText(location.href).then(() => $('copy').textContent = '✅ 복사됐어요');
 render();
+
+// 공유: 휴대폰은 공유창(카톡·문자), 공유창이 없는 PC는 주소 복사
+const _sb = document.getElementById('share');
+if (_sb) _sb.onclick = () => navigator.share ? navigator.share({ title: document.title, url: location.href }).catch(() => {}) : navigator.clipboard.writeText(location.href).then(() => _sb.textContent = '✅ 주소를 복사했어요');
 </script>
 </body>
 </html>

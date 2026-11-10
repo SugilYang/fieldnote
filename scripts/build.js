@@ -168,5 +168,5 @@ ${posts.slice(0, 30).map(p => `  <item>
 </channel>
 </rss>
 `);
-write('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${BASE}sitemap.xml\n`);
+write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /naver/\nSitemap: ${BASE}sitemap.xml\n`);
 console.log(`빌드 완료: 글 ${posts.length}편, 섹션 페이지 ${Object.keys(SECTIONS).length}개, sitemap·feed·robots 갱신`);

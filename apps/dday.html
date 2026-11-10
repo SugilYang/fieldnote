@@ -52,7 +52,7 @@ table.small{font-size:14px}
         <div><label for="reg">접수 시작일 (선택)</label><input id="reg" type="date"></div>
         <div><label for="exam">시험일</label><input id="exam" type="date"></div>
       </div>
-      <div class="chips"><button id="add">＋ 추가</button><button id="copy">🔗 이 목록 주소 복사</button></div>
+      <div class="chips"><button id="add">＋ 추가</button><button id="share">💬 카톡·문자로 공유</button><button id="copy">🔗 이 목록 주소 복사</button></div>
     </div>
     <div class="list" id="list"></div>
 
@@ -106,6 +106,10 @@ function save() { try { localStorage.setItem('dday', JSON.stringify(items)); } c
 $('add').onclick = () => { const name = $('name').value.trim(), exam = $('exam').value, reg = $('reg').value; if (!name || !exam) return alert('시험 이름과 시험일을 넣어주세요.'); items.push({ name, exam, reg }); $('name').value = ''; save(); };
 $('copy').onclick = () => navigator.clipboard.writeText(location.href).then(() => $('copy').textContent = '✅ 복사됐어요');
 render();
+
+// 공유: 휴대폰은 공유창(카톡·문자), 공유창이 없는 PC는 주소 복사
+const _sb = document.getElementById('share');
+if (_sb) _sb.onclick = () => navigator.share ? navigator.share({ title: document.title, url: location.href }).catch(() => {}) : navigator.clipboard.writeText(location.href).then(() => _sb.textContent = '✅ 주소를 복사했어요');
 </script>
 </body>
 </html>

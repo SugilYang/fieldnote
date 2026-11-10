@@ -24,7 +24,7 @@ function productBlock(p, text) {
   const hits = products.map(x => ({ x, t: x.keywords.some(k => cnt(p.title, k)), n: x.keywords.reduce((s, k) => s + cnt(text, k), 0) }))
     .filter(h => h.t || h.n >= 3).sort((a, b) => (b.t - a.t) || (b.n - a.n)).slice(0, 2);
   if (!hits.length) return '';
-  return `<!--products--><div class="products"><b>🛒 관련 상품</b><div class="plist">${hits.map(({ x }) => `<a href="${x.url}" target="_blank" rel="nofollow sponsored noopener"><span>${x.emoji}</span><em>${esc(x.name)}</em><small>쿠팡에서 보기 →</small></a>`).join('')}</div><p>${DISCLOSE}</p></div><!--/products-->`;
+  return `<!--products--><div class="products"><b>🛒 관련 상품</b><div class="plist">${hits.map(({ x }) => `<a href="${x.url}" target="_blank" rel="nofollow sponsored noopener"><img src="${x.image}" alt="${esc(x.name)}" width="120" height="240" loading="lazy"><span><b>${esc(x.short)}</b><em>${esc(x.name)}</em><small>쿠팡에서 가격 보기 →</small></span></a>`).join('')}</div><p>${DISCLOSE}</p></div><!--/products-->`;
 }
 const posts = JSON.parse(read('posts.json')).sort((a, b) => b.date.localeCompare(a.date));
 const stats = fs.existsSync(path.join(ROOT, 'stats.json')) ? JSON.parse(read('stats.json')) : null;

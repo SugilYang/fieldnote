@@ -39,7 +39,7 @@
 
    [태그] #해시태그 5~8개 (검색어 위주)
    ```
-   `naver/` 폴더는 검색엔진 색인에서 제외돼 있다(robots.txt).
+   `naver/` 폴더는 검색엔진 색인에서 제외돼 있다(robots.txt). 배포 봇이 같은 이름의 `.html`(붙여넣기용 페이지)을 자동 생성한다.
 9. 커밋 메시지 `오늘의 글 7편 (YYYY-MM-DD)`로 커밋하고 `git push origin main` 한다.
    푸시가 거부되면 `git pull --rebase origin main` 후 다시 푸시한다. 기존 글 보강분과 `naver/` 요약문도 같은 커밋에 넣는다.
 

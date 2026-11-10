@@ -138,6 +138,35 @@ for (const f of ['index.html', 'about.html', 'contact.html', 'privacy.html', 'te
   write(f, ver(h));
 }
 
+// 3-1) 네이버 블로그 붙여넣기용 페이지: naver/날짜.txt → naver/날짜.html (전체 선택·복사하면 문단·링크·사진이 그대로 들어간다)
+const nvDir = path.join(ROOT, 'naver');
+if (fs.existsSync(nvDir)) for (const f of fs.readdirSync(nvDir).filter(f => /^\d{4}-\d{2}-\d{2}\.txt$/.test(f))) {
+  const t = fs.readFileSync(path.join(nvDir, f), 'utf8');
+  const title = (t.match(/\[제목\]\s*(.+)/) || [, ''])[1].trim();
+  const body = ((t.split('[본문]')[1] || '').split('[태그]')[0]).trim();
+  const tags = (t.match(/\[태그\]\s*(.+)/) || [, ''])[1].trim();
+  const postFile = (body.match(/posts\/([\w-]+\.html)/) || [])[1];
+  const post = postFile && posts.find(p => p.file === postFile);
+  const img = post && post.image ? post.image.replace('w=600&q=70', 'w=1200&q=80') : '';
+  const paras = body.split(/\n\s*\n/).map(s => s.trim()).filter(Boolean)
+    .map(s => '<p>' + esc(s).replace(/\n/g, '<br>').replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1">$1</a>') + '</p>').join('\n');
+  write(`naver/${f.replace('.txt', '.html')}`, `<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="robots" content="noindex,nofollow">
+<title>네이버 붙여넣기용 ${esc(title)}</title>
+<style>body{font-family:sans-serif;max-width:720px;margin:24px auto;padding:0 16px;line-height:1.8;font-size:16px}.how{background:#fff5e0;border-radius:10px;padding:12px 16px;font-size:14px;margin-bottom:20px}.copy{border:2px dashed #999;border-radius:10px;padding:16px}.copy img{max-width:100%;height:auto;border-radius:8px}.tags{margin-top:20px;background:#eef4ff;border-radius:10px;padding:12px 16px;font-size:14px}</style></head>
+<body>
+<div class="how"><b>사용법</b> ① 아래 점선 상자 안을 드래그해 전체 선택하고 복사(Ctrl+C) ② 네이버 글쓰기 본문에 붙여넣기(Ctrl+V) ③ 제목은 따로 복사 ④ 태그는 발행 창의 태그 칸에 입력. 사진도 같이 붙어요.</div>
+<p><b>제목:</b> ${esc(title)}</p>
+<div class="copy">
+${img ? `<p><img src="${img}" alt="${esc(title)}"></p>` : ''}
+${paras}
+<p>사진: Unsplash</p>
+</div>
+<div class="tags"><b>태그 칸에 입력:</b> ${esc(tags.replace(/#/g, '').trim().split(/\s+/).join(', '))}</div>
+</body></html>
+`);
+}
+
 // 4) sitemap / feed / robots
 // lastmod: 실제로 바뀐 날만 적는다 (매일 오늘 날짜로 갱신하면 신호로서 의미가 없다)
 const gitDate = f => { try { return require('child_process').execSync(`git log -1 --format=%cs -- "${f}"`, { cwd: ROOT }).toString().trim() || today; } catch { return today; } };

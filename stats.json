@@ -1,7 +1,7 @@
 {
   "updated": "2026-11-11",
   "yesterday": 6,
-  "total": 169,
+  "total": 171,
   "pages": {
     "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 21,
     "apps/shift.html": 7,
@@ -2167,7 +2167,7 @@
     "checked": 214,
     "unchecked": 0,
     "indexedAmongChecked": 153,
-    "lastRun": "2026-11-11T02:38:42.142Z",
+    "lastRun": "2026-11-11T04:28:58.796Z",
     "cohort": {
       "new": {
         "total": 42,

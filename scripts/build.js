@@ -148,8 +148,10 @@ if (fs.existsSync(nvDir)) for (const f of fs.readdirSync(nvDir).filter(f => /^\d
   const postFile = (body.match(/posts\/([\w-]+\.html)/) || [])[1];
   const post = postFile && posts.find(p => p.file === postFile);
   const img = post && post.image ? post.image.replace('w=600&q=70', 'w=1200&q=80') : '';
-  const paras = body.split(/\n\s*\n/).map(s => s.trim()).filter(Boolean)
-    .map(s => '<p>' + esc(s).replace(/\n/g, '<br>').replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1">$1</a>') + '</p>').join('\n');
+  // 문단마다 빈 줄을 끼워 넣는다: 네이버 편집기에 붙여넣어도 문단 간격이 그대로 남는다. 링크 줄은 각각 한 문단.
+  const lines = body.split(/\n\s*\n/).map(s => s.trim()).filter(Boolean)
+    .flatMap(s => /https?:\/\//.test(s) ? s.split('\n').map(x => x.trim()).filter(Boolean) : [s]);
+  const paras = lines.map(s => '<p>' + esc(s).replace(/\n/g, ' ').replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1">$1</a>') + '</p>').join('\n<p>&nbsp;</p>\n');
   write(`naver/${f.replace('.txt', '.html')}`, `<!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="robots" content="noindex,nofollow">
 <title>네이버 붙여넣기용 ${esc(title)}</title>
@@ -158,8 +160,9 @@ if (fs.existsSync(nvDir)) for (const f of fs.readdirSync(nvDir).filter(f => /^\d
 <div class="how"><b>사용법</b> ① 아래 점선 상자 안을 드래그해 전체 선택하고 복사(Ctrl+C) ② 네이버 글쓰기 본문에 붙여넣기(Ctrl+V) ③ 제목은 따로 복사 ④ 태그는 발행 창의 태그 칸에 입력. 사진도 같이 붙어요.</div>
 <p><b>제목:</b> ${esc(title)}</p>
 <div class="copy">
-${img ? `<p><img src="${img}" alt="${esc(title)}"></p>` : ''}
+${img ? `<p><img src="${img}" alt="${esc(title)}"></p>\n<p>&nbsp;</p>` : ''}
 ${paras}
+<p>&nbsp;</p>
 <p>사진: Unsplash</p>
 </div>
 <div class="tags"><b>태그 칸에 입력:</b> ${esc(tags.replace(/#/g, '').trim().split(/\s+/).join(', '))}</div>

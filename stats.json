@@ -1,9 +1,9 @@
 {
   "updated": "2026-11-11",
   "yesterday": 6,
-  "total": 168,
+  "total": 169,
   "pages": {
-    "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 20,
+    "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 21,
     "apps/shift.html": 7,
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
     "posts/2026-09-30-risk-assessment-procedure-guide.html": 4,
@@ -86,10 +86,6 @@
       [
         "naver / organic",
         3
-      ],
-      [
-        "(not set)",
-        1
       ]
     ],
     "country": [
@@ -892,8 +888,8 @@
       "baseline": false
     },
     "posts/2026-11-02-power-grid-transmission-substation-construction-jobs.html": {
-      "status": "URL is unknown to Google",
-      "crawled": "",
+      "status": "Crawled - currently not indexed",
+      "crawled": "2026-11-11",
       "indexedOn": "",
       "checked": "2026-11-11",
       "baseline": false
@@ -1938,7 +1934,7 @@
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-10",
+      "checked": "2026-11-11",
       "baseline": false
     },
     "posts/2026-09-29-forklift-collision-crush-accident-analysis.html": {
@@ -2171,7 +2167,7 @@
     "checked": 214,
     "unchecked": 0,
     "indexedAmongChecked": 153,
-    "lastRun": "2026-11-11T01:42:28.606Z",
+    "lastRun": "2026-11-11T02:38:42.142Z",
     "cohort": {
       "new": {
         "total": 42,

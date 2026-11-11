@@ -148,6 +148,9 @@ if (fs.existsSync(nvDir)) for (const f of fs.readdirSync(nvDir).filter(f => /^\d
   const postFile = (body.match(/posts\/([\w-]+\.html)/) || [])[1];
   const post = postFile && posts.find(p => p.file === postFile);
   const img = post && post.image ? post.image.replace('w=600&q=70', 'w=1200&q=80') : '';
+  const NCAT = { license: '자격증', safety: '산업안전', case: '산업안전', tools: '장비·공구', trend: '현장 생활', life: '현장 생활', guide: '산업안전지도사' };
+  const cat = post ? NCAT[post.section] || '현장 생활' : '현장 생활';
+  const tagList = tags.replace(/#/g, ' ').trim().split(/[\s,]+/).filter(Boolean).slice(0, 6);
   // 문단마다 빈 줄을 끼워 넣는다: 네이버 편집기에 붙여넣어도 문단 간격이 그대로 남는다. 링크 줄은 각각 한 문단.
   const lines = body.split(/\n\s*\n/).map(s => s.trim()).filter(Boolean)
     .flatMap(s => /https?:\/\//.test(s) ? s.split('\n').map(x => x.trim()).filter(Boolean) : [s]);
@@ -157,15 +160,16 @@ if (fs.existsSync(nvDir)) for (const f of fs.readdirSync(nvDir).filter(f => /^\d
 <title>네이버 붙여넣기용 ${esc(title)}</title>
 <style>body{font-family:sans-serif;max-width:720px;margin:24px auto;padding:0 16px;line-height:1.8;font-size:16px}.how{background:#fff5e0;border-radius:10px;padding:12px 16px;font-size:14px;margin-bottom:20px}.copy{border:2px dashed #999;border-radius:10px;padding:16px}.copy img{max-width:100%;height:auto;border-radius:8px}.tags{margin-top:20px;background:#eef4ff;border-radius:10px;padding:12px 16px;font-size:14px}</style></head>
 <body>
-<div class="how"><b>사용법</b> ① 아래 점선 상자 안을 드래그해 전체 선택하고 복사(Ctrl+C) ② 네이버 글쓰기 본문에 붙여넣기(Ctrl+V) ③ 제목은 따로 복사 ④ 태그는 발행 창의 태그 칸에 입력. 사진도 같이 붙어요.</div>
+<div class="how"><b>사용법</b> ① 점선 상자 안을 드래그해 전체 선택 → 복사(Ctrl+C) ② 네이버 글쓰기 본문에 붙여넣기(Ctrl+V) ③ 제목 복사해 붙이기 ④ 발행 창에서 카테고리 선택, 태그는 아래 목록을 <b>한 줄씩 복사 → 태그 칸에 붙여넣기 → Enter</b></div>
 <p><b>제목:</b> ${esc(title)}</p>
+<p><b>카테고리:</b> ${cat}</p>
 <div class="copy">
 ${img ? `<p><img src="${img}" alt="${esc(title)}"></p>\n<p>&nbsp;</p>` : ''}
 ${paras}
 <p>&nbsp;</p>
 <p>사진: Unsplash</p>
 </div>
-<div class="tags"><b>태그 칸에 입력:</b> ${esc(tags.replace(/#/g, '').trim().split(/\s+/).join(', '))}</div>
+<div class="tags"><b>태그</b> (한 줄씩 복사 → 붙여넣기 → Enter)<br>${tagList.map(t => `<div style="padding:4px 0;font-size:16px">${esc(t)}</div>`).join('')}</div>
 </body></html>
 `);
 }

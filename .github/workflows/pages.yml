@@ -38,7 +38,7 @@ jobs:
           git config user.name "fieldnote-bot"
           git config user.email "actions@users.noreply.github.com"
           git add posts naver posts.json stats.json search.json sitemap.xml feed.xml robots.txt index.html license.html safety.html case.html tools.html trend.html life.html
-          if ! git diff --cached --quiet; then git commit -m "사진·통계·색인 갱신 [skip ci]" && git push; fi
+          if ! git diff --cached --quiet; then git commit -m "사진·통계·색인 갱신 [skip ci]" && (git pull --rebase origin main || true) && git push; fi
       - name: IndexNow 통보
         run: node scripts/indexnow.js
       - uses: actions/configure-pages@v5

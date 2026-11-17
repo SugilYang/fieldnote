@@ -186,11 +186,19 @@ ${paras}
 const gitDate = f => { try { return require('child_process').execSync(`git log -1 --format=%cs -- "${f}"`, { cwd: ROOT }).toString().trim() || today; } catch { return today; } };
 const pages = [['', posts[0].date], ...['about.html', 'contact.html', 'privacy.html', 'apps/shift.html', 'apps/injury-rate.html', 'apps/convert.html', 'apps/dday.html'].map(f => [f, gitDate(f)]),
   ...Object.keys(SECTIONS).map(s => [`${s}.html`, (posts.find(p => p.section === s) || { date: today }).date])];
-write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
+// 사이트맵 인덱스: 글 사이트맵(매일 갱신)과 페이지 사이트맵을 나눠 구글이 변경을 알아채기 쉽게 한다
+const urlset = items => `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${pages.map(([u, d]) => `  <url><loc>${BASE}${u}</loc><lastmod>${d}</lastmod></url>`).join('\n')}
-${posts.map(p => `  <url><loc>${BASE}posts/${p.file}</loc><lastmod>${p.date}</lastmod></url>`).join('\n')}
+${items.map(([u, d]) => `  <url><loc>${u}</loc><lastmod>${d}</lastmod></url>`).join('\n')}
 </urlset>
+`;
+write('sitemap-posts.xml', urlset(posts.map(p => [`${BASE}posts/${p.file}`, p.updated || p.date])));
+write('sitemap-pages.xml', urlset(pages.map(([u, d]) => [`${BASE}${u}`, d])));
+write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap><loc>${BASE}sitemap-posts.xml</loc><lastmod>${posts.reduce((m, p) => (p.updated || p.date) > m ? (p.updated || p.date) : m, '')}</lastmod></sitemap>
+  <sitemap><loc>${BASE}sitemap-pages.xml</loc><lastmod>${pages.reduce((m, [, d]) => d > m ? d : m, '')}</lastmod></sitemap>
+</sitemapindex>
 `);
 write('feed.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">

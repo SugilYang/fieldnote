@@ -153,8 +153,15 @@ if (fs.existsSync(nvDir)) for (const f of fs.readdirSync(nvDir).filter(f => /^\d
   const tagList = tags.replace(/#/g, ' ').trim().split(/[\s,]+/).filter(Boolean).slice(0, 6);
   // 문단마다 빈 줄을 끼워 넣는다: 네이버 편집기에 붙여넣어도 문단 간격이 그대로 남는다. 링크 줄은 각각 한 문단.
   const lines = body.split(/\n\s*\n/).map(s => s.trim()).filter(Boolean)
-    .flatMap(s => /https?:\/\//.test(s) ? s.split('\n').map(x => x.trim()).filter(Boolean) : [s]);
-  const paras = lines.map(s => '<p>' + esc(s).replace(/\n/g, ' ').replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1">$1</a>') + '</p>').join('\n<p>&nbsp;</p>\n');
+    .flatMap(s => /https?:\/\//.test(s) || /^■/m.test(s) ? s.split('\n').map(x => x.trim()).filter(Boolean) : [s]);
+  // 본문 사진: 현장노트 글의 본문 사진 1장을 중간(두 번째 소제목 앞)에 넣는다
+  const postHtml = post && fs.existsSync(path.join(ROOT, 'posts', post.file)) ? fs.readFileSync(path.join(ROOT, 'posts', post.file), 'utf8') : '';
+  const midImg = (postHtml.match(/<figure><img src="([^"]+)"/) || [])[1] || '';
+  let headCount = 0;
+  const paras = lines.map(s => {
+    if (/^■\s*/.test(s)) { headCount++; const h = `<p><b>${esc(s.replace(/^■\s*/, ''))}</b></p>`; return headCount === 2 && midImg ? `<p><img src="${midImg}" alt=""></p>\n<p>&nbsp;</p>\n${h}` : h; }
+    return '<p>' + esc(s).replace(/\n/g, ' ').replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1">$1</a>') + '</p>';
+  }).join('\n<p>&nbsp;</p>\n');
   write(`naver/${f.replace('.txt', '.html')}`, `<!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="robots" content="noindex,nofollow">
 <title>네이버 붙여넣기용 ${esc(title)}</title>

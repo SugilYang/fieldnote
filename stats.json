@@ -1,7 +1,7 @@
 {
   "updated": "2026-11-17",
   "yesterday": 6,
-  "total": 212,
+  "total": 216,
   "pages": {
     "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 38,
     "apps/shift.html": 9,
@@ -25,6 +25,7 @@
     "posts/2026-11-03-industrial-safety-consultant-eligibility-schedule.html": 2,
     "posts/2026-11-03-industrial-safety-consultant-first-exam-structure.html": 2,
     "posts/2026-11-03-industrial-safety-consultant-what-they-do.html": 2,
+    "posts/2026-11-10-tape-measure-reading-accurate-measuring-tips.html": 2,
     "apps/convert.html": 1,
     "apps/dday.html": 1,
     "apps/injury-rate.html": 1,
@@ -63,8 +64,10 @@
     "posts/2026-11-02-black-ice-winter-commute-driving-tips.html": 1,
     "posts/2026-11-04-2027-national-technical-qualification-exam-schedule-announcement.html": 1,
     "posts/2026-11-05-industrial-safety-consultant-safety-general-study.html": 1,
-    "posts/2026-11-10-tape-measure-reading-accurate-measuring-tips.html": 1,
-    "posts/2026-11-13-construction-safety-industrial-engineer-exam-guide.html": 1
+    "posts/2026-11-11-pressure-washer-nozzle-usage-safety-guide.html": 1,
+    "posts/2026-11-13-construction-safety-industrial-engineer-exam-guide.html": 1,
+    "posts/2026-11-13-gas-mask-cartridge-replacement-wearing-guide.html": 1,
+    "posts/2026-11-16-impact-wrench-usage-socket-wheel-nut-guide.html": 1
   },
   "tools": {
     "apps/shift.html": {
@@ -2454,7 +2457,7 @@
     "checked": 249,
     "unchecked": 0,
     "indexedAmongChecked": 153,
-    "lastRun": "2026-11-17T18:08:34.749Z",
+    "lastRun": "2026-11-17T23:37:48.673Z",
     "cohort": {
       "new": {
         "total": 77,

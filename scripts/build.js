@@ -123,7 +123,12 @@ for (const p of posts) {
   if (pb && anchor) html = html.replace(anchor, `${pb}\n\n    ${anchor}`);
   html = html.includes('id="ld"') ? html.replace(/<script type="application\/ld\+json" id="ld">[\s\S]*?<\/script>/, tag) : html.replace('</head>', `${tag}\n</head>`);
   if (!html.includes('naver-site-verification')) html = html.replace('<meta name="viewport" content="width=device-width, initial-scale=1.0">', `$&\n${NAVER}`);
+  // 구글이 읽고 색인하지 않은 글 중 노출·조회가 없는 글은 검색엔진 평가에서 제외(noindex). 방문자에게는 그대로 보인다. 보강 후 posts.json에서 noindex를 지우면 다시 열린다.
+  html = html.replace(/\n<meta name="robots" content="noindex,follow">/, '');
+  if (p.noindex) html = html.replace('<meta name="viewport" content="width=device-width, initial-scale=1.0">', `$&\n<meta name="robots" content="noindex,follow">`);
   if (!html.includes('adsbygoogle')) html = html.replace('</head>', `${ADS}\n</head>`);
+  // 저자 상자에 작성·검토 기준 명시
+  html = html.replace(/<div class="author"><div class="av">효<\/div><div>[\s\S]*?<\/div><\/div>/, '<div class="author"><div class="av">효</div><div><b>황제효도르</b> · 현장노트 운영자<br>제조 현장에서 일하며 배운 것을 정리해요. 법령·기준·수치는 법제처, 안전보건공단, 큐넷, 제조사 자료를 확인해 쓰고, 바뀌는 기준은 기준 연도를 밝혀요. 틀린 내용은 <a href="../contact.html">문의</a>로 알려주시면 바로 고쳐요.</div></div>');
   // 상단 메뉴를 섹션 페이지로
   html = html.replace(/<nav>[\s\S]*?<\/nav>/, `<nav>${Object.entries(SECTIONS).map(([id, [n]]) => `<a href="../${id}.html">${n}</a>`).join('')}</nav>`);
   fs.writeFileSync(fp, ver(html));
@@ -192,7 +197,7 @@ const urlset = items => `<?xml version="1.0" encoding="UTF-8"?>
 ${items.map(([u, d]) => `  <url><loc>${u}</loc><lastmod>${d}</lastmod></url>`).join('\n')}
 </urlset>
 `;
-write('sitemap-posts.xml', urlset(posts.map(p => [`${BASE}posts/${p.file}`, p.updated || p.date])));
+write('sitemap-posts.xml', urlset(posts.filter(p => !p.noindex).map(p => [`${BASE}posts/${p.file}`, p.updated || p.date])));
 write('sitemap-pages.xml', urlset(pages.map(([u, d]) => [`${BASE}${u}`, d])));
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -208,7 +213,7 @@ write('feed.xml', `<?xml version="1.0" encoding="UTF-8"?>
   <description>현장에서 일하는 사람을 위한 실무 노트. 자격증, 산업안전, 사고사례 분석, 장비·공구, 산업 트렌드, 현장 생활.</description>
   <language>ko</language>
   <atom:link href="${BASE}feed.xml" rel="self" type="application/rss+xml"/>
-${posts.slice(0, 30).map(p => `  <item>
+${posts.filter(p => !p.noindex).slice(0, 30).map(p => `  <item>
     <title>${esc(p.title)}</title>
     <link>${BASE}posts/${p.file}</link>
     <guid>${BASE}posts/${p.file}</guid>

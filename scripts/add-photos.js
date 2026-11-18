@@ -43,8 +43,10 @@ async function search(query, section, used) {
     // Unsplash API 가이드라인: 사용 시 download 엔드포인트 호출
     fetch(p.links.download_location, { headers: { Authorization: `Client-ID ${KEY}` } }).catch(() => {});
     return {
-      url: `${p.urls.raw}&w=1200&q=80&auto=format&fit=crop`,
-      thumb: `${p.urls.raw}&w=600&q=70&auto=format&fit=crop`,
+      url: `${p.urls.raw}&w=1200&h=600&q=80&auto=format&fit=crop&crop=entropy`,
+      og: `${p.urls.raw}&w=1200&h=630&q=80&auto=format&fit=crop&crop=entropy`,
+      body: `${p.urls.raw}&w=1200&q=80&auto=format`,
+      thumb: `${p.urls.raw}&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy`,
       alt: p.alt_description || query,
       credit: `사진: <a href="${p.user.links.html}?${UTM}" target="_blank" rel="noopener">${esc(p.user.name)}</a> / <a href="https://unsplash.com/?${UTM}" target="_blank" rel="noopener">Unsplash</a>`,
     };
@@ -72,7 +74,7 @@ async function search(query, section, used) {
             html = html.replace(hero[0], `<div class="post-hero photo" style="--photo:url('${p.url}')">`);
             html = html.replace('<div class="wrap">', `<div class="wrap">\n    <p class="credit">${p.credit}</p>`);
             if (entry) entry.image = p.thumb;
-            html = html.replace(/<meta property="og:image" content="[^"]*">/, `<meta property="og:image" content="${p.url}">`);
+            html = html.replace(/<meta property="og:image" content="[^"]*">/, `<meta property="og:image" content="${p.og}">`);
           } else {
             html = html.replace(hero[0], '<div class="post-hero">');
           }
@@ -82,7 +84,7 @@ async function search(query, section, used) {
         for (const m of [...html.matchAll(/<figure data-photo="([^"]+)">\s*<figcaption>([^<]*)<\/figcaption>\s*<\/figure>/g)]) {
           const p = await search(m[1], section, used);
           html = html.replace(m[0], p
-            ? `<figure><img src="${p.url}" alt="${esc(p.alt)}" loading="lazy"><figcaption>${esc(m[2])} · ${p.credit}</figcaption></figure>`
+            ? `<figure><img src="${p.body}" alt="${esc(p.alt)}" loading="lazy"><figcaption>${esc(m[2])} · ${p.credit}</figcaption></figure>`
             : '');
         }
       } finally {

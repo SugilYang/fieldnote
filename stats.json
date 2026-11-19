@@ -984,7 +984,7 @@
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-17",
+      "checked": "2026-11-19",
       "baseline": false
     },
     "posts/2026-10-30-food-factory-production-jobs-overview.html": {
@@ -2526,7 +2526,7 @@
     "checked": 257,
     "unchecked": 0,
     "indexedAmongChecked": 33,
-    "lastRun": "2026-11-19T23:19:10.806Z",
+    "lastRun": "2026-11-19T23:22:42.429Z",
     "cohort": {
       "new": {
         "total": 85,

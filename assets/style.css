@@ -134,6 +134,20 @@ th,td{border:1px solid var(--line);padding:11px 12px;text-align:left;vertical-al
 
 /* 글: 공유·이전다음 */
 .share{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:20px 0 0;font-size:13px}
+.share .fs{margin-left:auto;display:flex;gap:4px}.share .fs button{padding:5px 9px}
+body.fs-custom .wrap{font-size:var(--fs)}body.fs-custom .wrap p,body.fs-custom .wrap li{font-size:var(--fs)}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:20;transition:width .1s}
+.helpful{border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:28px 0}
+.helpful .hq{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.helpful .hq b{margin-right:auto}
+.helpful button,.helpful a{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:20px;padding:7px 14px;font:inherit;font-size:14px;font-weight:600;text-decoration:none;cursor:pointer}
+.helpful #up{background:var(--accent-bg);border-color:var(--accent)}.helpful #up:disabled{opacity:.7;cursor:default}
+.follow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:14px;padding-top:14px;border-top:1px dashed var(--line);font-size:13px}.follow span{color:var(--sub);font-weight:600;margin-right:4px}
+.follow a:first-of-type{color:#03c75a;border-color:#03c75a}
+.bottombar{display:none}
+@media (max-width:600px){.bottombar{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);z-index:15;padding:6px 0 max(6px,env(safe-area-inset-bottom))}
+.bottombar a,.bottombar button{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:18px;color:var(--text);text-decoration:none;background:none;border:0;font-family:inherit}.bottombar small{font-size:11px;color:var(--sub)}
+body{padding-bottom:64px}.top{bottom:76px}}
+.mine li{display:flex;justify-content:space-between;gap:8px;padding:7px 0;border-bottom:1px solid var(--line);font-size:14px}.mine li a{color:var(--text);text-decoration:none;flex:1}.mine li button{background:none;border:0;color:var(--sub);cursor:pointer}
 .share span{color:var(--sub);font-weight:600;margin-right:4px}
 .share a,.share button{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:20px;padding:5px 12px;font:inherit;font-size:13px;font-weight:600;text-decoration:none;cursor:pointer}
 .share a:hover,.share button:hover{border-color:var(--accent)}.share .kakao{background:#fee500;border-color:#fee500;color:#191919}

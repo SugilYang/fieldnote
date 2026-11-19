@@ -20,7 +20,7 @@
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMS58YZHEH"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-GMS58YZHEH');</script>
-<link rel="stylesheet" href="assets/style.css?v=66e96b98">
+<link rel="stylesheet" href="assets/style.css?v=76dde82c">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9274785237746410" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -68,12 +68,15 @@
     <aside class="side">
       <div class="box profile"><div class="av">효</div><b>황제효도르</b><p>제조 현장에서 일하며 배운 것들을 쉽게 정리해요.</p><div class="stats" id="stats"></div></div>
       <div class="box"><h3>카테고리</h3><ul class="cats" id="cats"><li><a href="license.html">📜 자격증</a><span>39</span></li><li><a href="safety.html">🦺 산업안전</a><span>38</span></li><li><a href="case.html">🚨 사고사례 분석</a><span>38</span></li><li><a href="tools.html">🔧 장비·공구</a><span>38</span></li><li><a href="trend.html">🔋 산업 트렌드</a><span>38</span></li><li><a href="life.html">💼 현장 생활</a><span>39</span></li><li><a href="guide.html">📋 산업안전지도사</a><span>15</span></li></ul></div>
-      <div class="box"><h3>🧰 현장 도구</h3><ul class="cats"><li><a href="apps/shift.html">📅 교대근무 달력 만들기</a></li><li><a href="apps/injury-rate.html">📊 재해율 계산기</a></li><li><a href="apps/convert.html">🔁 현장 단위 변환기</a></li><li><a href="apps/dday.html">⏳ 시험 D-day 계산기</a></li></ul></div>
+      <div class="box" id="tools"><h3>🧰 현장 도구</h3><ul class="cats"><li><a href="apps/shift.html">📅 교대근무 달력 만들기</a></li><li><a href="apps/injury-rate.html">📊 재해율 계산기</a></li><li><a href="apps/convert.html">🔁 현장 단위 변환기</a></li><li><a href="apps/dday.html">⏳ 시험 D-day 계산기</a></li></ul></div>
+      <div class="box" id="mineBox" hidden><h3>🔖 내가 저장한 글</h3><ul class="mine" id="mine"></ul></div>
+      <div class="box" id="recentBox" hidden><h3>🕘 최근 본 글</h3><ul class="mine" id="recent"></ul></div>
       <div class="box"><h3 id="popTitle">인기 글</h3><ol class="pop" id="pop"></ol></div>
     </aside>
   </div>
 </main>
 <a class="top" id="top" href="#" aria-label="맨 위로">↑</a>
+<nav class="bottombar"><a href="index.html">🏠<small>홈</small></a><a href="#q" onclick="document.getElementById('q').focus()">🔍<small>검색</small></a><a href="#tools">🧰<small>도구</small></a><a href="https://blog.naver.com/fedor0725" target="_blank" rel="noopener">N<small>네이버</small></a></nav>
 <footer>
   <div><a href="about.html">소개</a>·<a href="contact.html">문의</a>·<a href="privacy.html">개인정보처리방침</a></div>
   <div style="margin-top:8px">© 2026 현장노트 · 운영 황제효도르</div>
@@ -129,6 +132,16 @@ Promise.all([
 ]).then(([d, s]) => {
   posts = d.sort((a, b) => b.date.localeCompare(a.date)); stats = s;
   renderSide(); render();
+  // 저장한 글 · 최근 본 글 (이 기기에만 저장)
+  try {
+    const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    const fill = (key, box, ul, del) => { const list = JSON.parse(localStorage.getItem(key) || '[]'); if (!list.length) return;
+      document.getElementById(box).hidden = false;
+      document.getElementById(ul).innerHTML = list.slice(0, 8).map(r => `<li><a href="posts/${esc(r.file)}">${esc(r.title)}</a>${del ? `<button data-f="${esc(r.file)}" title="삭제">✕</button>` : ''}</li>`).join('');
+      if (del) document.querySelectorAll('#' + ul + ' button').forEach(b => b.onclick = () => { localStorage.setItem(key, JSON.stringify(list.filter(r => r.file !== b.dataset.f))); location.reload(); }); };
+    fill('saved', 'mineBox', 'mine', true); fill('recent', 'recentBox', 'recent', false);
+  } catch {}
+  if (location.hash === '#q') document.getElementById('q')?.focus();
 });
 let idx = null;
 $('q').addEventListener('input', async () => {

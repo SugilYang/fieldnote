@@ -104,6 +104,12 @@ async function trackIndex(tok, prev) {
     total: +(total[0]?.metricValues[0].value || 0),
     pages: Object.fromEntries(pages.map(r => [r.dimensionValues[0].value.replace(/^\/fieldnote\//, '').replace(/^\//, ''), +r.metricValues[0].value])),
   };
+  // 👍 도움됐어요 집계 (GA 이벤트 helpful, 개설일부터 누적)
+  try {
+    const rows = await report(tok, { dateRanges: [{ startDate: START, endDate: 'today' }], dimensions: [{ name: 'pagePath' }], metrics: [{ name: 'eventCount' }],
+      dimensionFilter: { filter: { fieldName: 'eventName', stringFilter: { matchType: 'EXACT', value: 'helpful' } } }, limit: 1000 });
+    stats.helpful = Object.fromEntries(rows.map(r => [r.dimensionValues[0].value.replace(/^\//, ''), +r.metricValues[0].value]));
+  } catch (e) { console.log('helpful 건너뜀:', e.message.slice(0, 100)); }
   // 도구 페이지 유입 경로 (개설일부터 누적): 어떤 경로로 도구에 오는지
   try {
     const rows = await report(tok, { dateRanges: [{ startDate: START, endDate: 'today' }], dimensions: [{ name: 'pagePath' }, { name: 'sessionSourceMedium' }], metrics: [{ name: 'screenPageViews' }],

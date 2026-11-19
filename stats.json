@@ -73,6 +73,7 @@
     "posts/2026-11-18-spirit-level-bubble-reading-accuracy-check.html": 1,
     "posts/2026-11-19-fire-safety-manager-grade1-vs-grade2-difference.html": 1
   },
+  "helpful": {},
   "tools": {
     "apps/shift.html": {
       "naver / organic": 5,
@@ -991,14 +992,14 @@
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-17",
+      "checked": "2026-11-19",
       "baseline": false
     },
     "posts/2026-10-30-shift-worker-caffeine-intake-timing.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-17",
+      "checked": "2026-11-19",
       "baseline": false
     },
     "posts/2026-10-29-industrial-safety-engineer-practical-exam-guide.html": {
@@ -1075,14 +1076,14 @@
       "status": "Crawled - currently not indexed",
       "crawled": "2026-11-15",
       "indexedOn": "",
-      "checked": "2026-11-17",
+      "checked": "2026-11-19",
       "baseline": false
     },
     "posts/2026-10-28-safety-shoe-insole-choosing-guide.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-17",
+      "checked": "2026-11-19",
       "baseline": false
     },
     "posts/2026-10-27-national-technical-qualification-2027-changes.html": {
@@ -2526,7 +2527,7 @@
     "checked": 257,
     "unchecked": 0,
     "indexedAmongChecked": 33,
-    "lastRun": "2026-11-19T23:22:42.429Z",
+    "lastRun": "2026-11-19T23:30:59.798Z",
     "cohort": {
       "new": {
         "total": 85,

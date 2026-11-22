@@ -7,6 +7,14 @@
   <language>ko</language>
   <atom:link href="https://field.ynote.co.kr/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>와이어로프 폐기 기준과 점검법: 소선 끊김·지름 감소·킹크 확인하는 순서</title>
+    <link>https://field.ynote.co.kr/posts/2026-11-23-wire-rope-discard-criteria-inspection-guide.html</link>
+    <guid>https://field.ynote.co.kr/posts/2026-11-23-wire-rope-discard-criteria-inspection-guide.html</guid>
+    <pubDate>Sun, 22 Nov 2026 18:00:00 GMT</pubDate>
+    <category>장비·공구</category>
+    <description>와이어로프 폐기 기준과 점검법을 정리했어요. 소선 끊김 10%·지름 감소 7% 같은 사용 금지 기준, 작업 전 점검 순서, 클립 체결 방향과 안전계수 확인법을 담았어요.</description>
+  </item>
+  <item>
     <title>야간수당 계산법: 교대근무 야간·연장·휴일 가산 계산 예시로 정리</title>
     <link>https://field.ynote.co.kr/posts/2026-11-20-night-shift-allowance-calculation-overtime-holiday.html</link>
     <guid>https://field.ynote.co.kr/posts/2026-11-20-night-shift-allowance-calculation-overtime-holiday.html</guid>
@@ -237,14 +245,6 @@
     <pubDate>Sun, 15 Nov 2026 18:00:00 GMT</pubDate>
     <category>산업안전지도사</category>
     <description>산업안전지도사 3차 면접 준비법을 정리했어요. 평가 항목과 10점 만점 6점 합격 기준, 질문 유형, 답변 요령과 1~3차 공부 순서를 담았어요.</description>
-  </item>
-  <item>
-    <title>건설안전산업기사 준비법: 필기 4과목·실기 구성과 응시자격 확인하기</title>
-    <link>https://field.ynote.co.kr/posts/2026-11-13-construction-safety-industrial-engineer-exam-guide.html</link>
-    <guid>https://field.ynote.co.kr/posts/2026-11-13-construction-safety-industrial-engineer-exam-guide.html</guid>
-    <pubDate>Thu, 12 Nov 2026 18:00:00 GMT</pubDate>
-    <category>자격증</category>
-    <description>건설안전산업기사 준비법을 정리했어요. 필기 4과목과 합격 기준, 실기 필답형·작업형 구성, 응시자격 확인법과 공부 순서를 담았어요.</description>
   </item>
 </channel>
 </rss>

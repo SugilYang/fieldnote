@@ -164,7 +164,7 @@ if (fs.existsSync(nvDir)) for (const f of fs.readdirSync(nvDir).filter(f => /^\d
   const midImg = (postHtml.match(/<figure><img src="([^"]+)"/) || [])[1] || '';
   let headCount = 0;
   const paras = lines.map(s => {
-    if (/^■\s*/.test(s)) { headCount++; const h = `<p><b>${esc(s.replace(/^■\s*/, ''))}</b></p>`; return headCount === 2 && midImg ? `<p><img src="${midImg}" alt=""></p>\n<p>&nbsp;</p>\n${h}` : h; }
+    if (/^■\s*/.test(s)) { headCount++; return `<p><b>■ ${esc(s.replace(/^■\s*/, ''))}</b></p>`; }
     return '<p>' + esc(s).replace(/\n/g, ' ').replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1">$1</a>') + '</p>';
   }).join('\n<p>&nbsp;</p>\n');
   write(`naver/${f.replace('.txt', '.html')}`, `<!DOCTYPE html>
@@ -172,14 +172,14 @@ if (fs.existsSync(nvDir)) for (const f of fs.readdirSync(nvDir).filter(f => /^\d
 <title>네이버 붙여넣기용 ${esc(title)}</title>
 <style>body{font-family:sans-serif;max-width:720px;margin:24px auto;padding:0 16px;line-height:1.8;font-size:16px}.how{background:#fff5e0;border-radius:10px;padding:12px 16px;font-size:14px;margin-bottom:20px}.copy{border:2px dashed #999;border-radius:10px;padding:16px}.copy img{max-width:100%;height:auto;border-radius:8px}.tags{margin-top:20px;background:#eef4ff;border-radius:10px;padding:12px 16px;font-size:14px}</style></head>
 <body>
-<div class="how"><b>사용법</b> ① 점선 상자 안을 드래그해 전체 선택 → 복사(Ctrl+C) ② 네이버 글쓰기 본문에 붙여넣기(Ctrl+V) ③ 제목 복사해 붙이기 ④ 발행 창에서 카테고리 선택, 태그는 아래 목록을 <b>한 줄씩 복사 → 태그 칸에 붙여넣기 → Enter</b></div>
+<div class="how"><b>휴대폰 앱 기준 순서</b><br>① 아래 <b>사진을 길게 눌러 저장</b> (네이버에 직접 올려야 "사진 있는 글"로 인정돼요)<br>② 점선 상자 안 글 전체 선택 → 복사<br>③ 네이버 앱 글쓰기 → 붙여넣기 → 본문 맨 앞 누르고 <b>📷 아이콘 → 저장한 사진 첨부</b><br>④ 제목 입력 → 등록 → 카테고리·태그(한 줄씩 입력 후 Enter) → 발행</div>
 <p><b>제목:</b> ${esc(title)}</p>
 <p><b>카테고리:</b> ${cat}</p>
+${img ? `<p><b>① 저장할 사진</b> (길게 눌러 저장)</p><p><img src="${img}" alt="${esc(title)}" style="max-width:100%;border-radius:8px"></p>` : ''}
+${midImg ? `<p><img src="${midImg}" alt="" style="max-width:100%;border-radius:8px"></p>` : ''}
+<p><b>② 복사할 글</b></p>
 <div class="copy">
-${img ? `<p><img src="${img}" alt="${esc(title)}"></p>\n<p>&nbsp;</p>` : ''}
 ${paras}
-<p>&nbsp;</p>
-<p>사진: Unsplash</p>
 </div>
 <div class="tags"><b>태그</b> (한 줄씩 복사 → 붙여넣기 → Enter)<br>${tagList.map(t => `<div style="padding:4px 0;font-size:16px">${esc(t)}</div>`).join('')}</div>
 </body></html>

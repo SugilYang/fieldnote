@@ -30,28 +30,41 @@ async function fetchResults(query) {
 }
 
 // used: 같은 글 안에서 이미 쓴 사진 id (중복 방지)
+// 검색어를 줄여 가며 아무 사진이나 받지 않는다. 사진 설명·태그에 핵심 단어가 들어 있는 것만 고르고,
+// 없으면 섹션 기본 검색어의 사진을 쓴다. (전에는 "foam earplugs"가 "foam"으로 줄어 거품 사진이 걸렸다)
+const STOP = new Set(['worker', 'workers', 'factory', 'industrial', 'site', 'hand', 'hands', 'close', 'up', 'closeup', 'work', 'working', 'man', 'woman', 'person', 'people', 'korean', 'korea', 'the', 'a', 'an', 'of', 'in', 'on', 'with', 'and', 'at']);
+const stem = w => w.toLowerCase().replace(/(ies|es|s|ing|ed)$/, '');
+function relevance(photo, keys) {
+  const text = [photo.alt_description, photo.description, ...(photo.tags || []).map(t => t.title)].filter(Boolean).join(' ').toLowerCase();
+  return keys.filter(k => text.includes(k)).length;
+}
+async function pick(query, keys, used, requireMatch) {
+  const results = (await fetchResults(query)).filter(x => !used.has(x.id));
+  const scored = results.map(x => [relevance(x, keys), x]).sort((a, b) => b[0] - a[0]);
+  const best = scored.find(([sc]) => !requireMatch || sc > 0);
+  return best ? best[1] : null;
+}
 async function search(query, section, used) {
   const words = query.trim().split(/\s+/);
-  const tries = [];
-  for (let n = words.length; n >= 1; n--) tries.push(words.slice(0, n).join(' '));
-  if (words.length > 1) tries.push(words.slice(-1)[0]);
-  if (SECTION_QUERY[section]) tries.push(SECTION_QUERY[section]);
-  for (const q of [...new Set(tries)]) {
-    const p = (await fetchResults(q)).find(x => !used.has(x.id));
-    if (!p) continue;
-    used.add(p.id);
-    // Unsplash API 가이드라인: 사용 시 download 엔드포인트 호출
-    fetch(p.links.download_location, { headers: { Authorization: `Client-ID ${KEY}` } }).catch(() => {});
-    return {
-      url: `${p.urls.raw}&w=1200&h=600&q=80&auto=format&fit=crop&crop=entropy`,
-      og: `${p.urls.raw}&w=1200&h=630&q=80&auto=format&fit=crop&crop=entropy`,
-      body: `${p.urls.raw}&w=1200&q=80&auto=format`,
-      thumb: `${p.urls.raw}&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy`,
-      alt: p.alt_description || query,
-      credit: `사진: <a href="${p.user.links.html}?${UTM}" target="_blank" rel="noopener">${esc(p.user.name)}</a> / <a href="https://unsplash.com/?${UTM}" target="_blank" rel="noopener">Unsplash</a>`,
-    };
-  }
-  return null;
+  const keys = [...new Set(words.filter(w => !STOP.has(w.toLowerCase())).map(stem))].filter(k => k.length >= 3);
+  const tries = [query];
+  if (words.length > 2) tries.push(words.slice(0, 2).join(' '));
+  if (keys.length) tries.push(keys.join(' '));
+  let p = null;
+  for (const q of [...new Set(tries)]) { p = await pick(q, keys, used, true); if (p) break; }
+  if (!p && SECTION_QUERY[section]) p = await pick(SECTION_QUERY[section], [], used, false);
+  if (!p) return null;
+  used.add(p.id);
+  // Unsplash API 가이드라인: 사용 시 download 엔드포인트 호출
+  fetch(p.links.download_location, { headers: { Authorization: `Client-ID ${KEY}` } }).catch(() => {});
+  return {
+    url: `${p.urls.raw}&w=1200&h=600&q=80&auto=format&fit=crop&crop=entropy`,
+    og: `${p.urls.raw}&w=1200&h=630&q=80&auto=format&fit=crop&crop=entropy`,
+    body: `${p.urls.raw}&w=1200&q=80&auto=format`,
+    thumb: `${p.urls.raw}&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy`,
+    alt: p.alt_description || query,
+    credit: `사진: <a href="${p.user.links.html}?${UTM}" target="_blank" rel="noopener">${esc(p.user.name)}</a> / <a href="https://unsplash.com/?${UTM}" target="_blank" rel="noopener">Unsplash</a>`,
+  };
 }
 
 (async () => {

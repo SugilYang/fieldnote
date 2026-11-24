@@ -152,7 +152,8 @@ if (fs.existsSync(nvDir)) for (const f of fs.readdirSync(nvDir).filter(f => /^\d
   const tags = (t.match(/\[태그\]\s*(.+)/) || [, ''])[1].trim();
   const postFile = (body.match(/posts\/([\w-]+\.html)/) || [])[1];
   const post = postFile && posts.find(p => p.file === postFile);
-  const jpg = u => u ? u.replace(/&auto=format/, '') + '&fm=jpg' : '';
+  // 저장용 사진: 두 장 모두 같은 크기(1200×675, 16:9) JPG로 통일
+  const jpg = u => u ? u.replace(/&(w|h|q|auto|fit|crop|fm)=[^&]*/g, '') + '&w=1200&h=675&q=85&fit=crop&crop=entropy&fm=jpg' : '';
   const img = post && post.image ? jpg(post.image.replace('w=600&q=70', 'w=1200&q=80')) : '';
   const NCAT = { license: '자격증', safety: '산업안전', case: '산업안전', tools: '장비·공구', trend: '현장 생활', life: '현장 생활', guide: '산업안전지도사' };
   const cat = post ? NCAT[post.section] || '현장 생활' : '현장 생활';

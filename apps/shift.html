@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="naver-site-verification" content="c254b450f730ddc6064c4494834efa93d383bd94">
-<title>교대근무 달력 만들기: 4조2교대·3조2교대 근무표 자동 계산 | 현장노트</title>
+<title>교대근무 달력 만들기: 4조2교대·3조2교대 근무표와 야간수당 계산 | 현장노트</title>
 <meta name="description" content="교대근무 달력을 자동으로 만들어요. 4조2교대·3조2교대·4조3교대 등 내 근무 패턴과 시작일만 넣으면 월별 주간·야간·휴무가 달력에 표시되고 인쇄·공유할 수 있어요.">
 <meta name="author" content="황제효도르">
 <link rel="canonical" href="https://field.ynote.co.kr/apps/shift.html">
@@ -34,6 +34,10 @@
 .cal span{display:block;margin-top:4px;border-radius:6px;padding:3px 0;font-weight:700;font-size:15px;color:#fff;background:#94a3b8}
 .cal .k주{background:#f59e0b}.cal .k오{background:#ea580c}.cal .k야{background:#1e3a8a}.cal .k휴{background:#16a34a}.cal .k비{background:#64748b}
 .count{font-size:14px;color:var(--sub);margin:10px 0}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:600px){.row{grid-template-columns:1fr}}
+.tw{display:flex;align-items:center;gap:6px}.tw input{width:auto;flex:1}.tw span{color:var(--sub)}
+.res{background:var(--accent-bg);border-radius:14px;padding:18px 20px;margin:16px 0;line-height:1.9}.res b{font-size:22px;color:var(--accent)}.res small{color:var(--sub)}
+.res table{width:100%;font-size:14px;margin-top:6px}.res td{padding:3px 0}.res td:last-child{text-align:right;font-variant-numeric:tabular-nums}
 @media print{header.site,footer,.form,.mnav button,.chips,.noprint,.ad{display:none!important}.post-hero{min-height:auto;padding:12px;color:#000;background:none}.cal span{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 </style>
 </head>
@@ -67,6 +71,40 @@
     <div class="cal" id="cal"></div>
     <p class="count" id="count"></p>
     <div class="chips noprint"><button id="print">🖨️ 인쇄하기</button><button id="share">💬 카톡·문자로 공유</button><button id="copy">🔗 이 근무표 주소 복사</button></div>
+
+    <div class="ad"></div>
+
+    <h2 id="pay">이번 달 수당 예상 계산</h2>
+    <p>위 달력의 근무일 수를 그대로 써서 계산해요. <b>시급과 근무 시간대만</b> 넣으면 돼요. 결과는 근로기준법 제56조 가산율(연장·야간 50%, 휴일 8시간 초과 100%)을 적용한 <b>예상액</b>이에요.</p>
+    <div class="form pay">
+      <div class="row">
+        <div><label for="wage">통상시급 (원)</label><input id="wage" type="number" min="0" step="10" placeholder="예: 11000"></div>
+        <div><label for="monthly">모르면 월 기본급 입력 → 209시간으로 환산</label><input id="monthly" type="number" min="0" step="1000" placeholder="예: 2300000"></div>
+      </div>
+      <div class="row">
+        <div><label>주간조(주) 시작 ~ 종료</label><div class="tw"><input id="ds" type="time" value="08:00"><span>~</span><input id="de" type="time" value="20:00"></div></div>
+        <div><label>야간조(야) 시작 ~ 종료</label><div class="tw"><input id="ns" type="time" value="20:00"><span>~</span><input id="ne" type="time" value="08:00"></div></div>
+      </div>
+      <div class="row">
+        <div><label>오후조(오) 시작 ~ 종료 <small>(패턴에 '오'가 있을 때만)</small></label><div class="tw"><input id="as" type="time" value="14:00"><span>~</span><input id="ae" type="time" value="22:00"></div></div>
+        <div><label for="brk">근무일당 휴게시간 (시간, 무급)</label><input id="brk" type="number" min="0" max="4" step="0.5" value="1"></div>
+      </div>
+      <div class="row">
+        <div><label for="hdays">휴무일 특근 (이번 달 일수)</label><input id="hdays" type="number" min="0" step="1" value="0"></div>
+        <div><label for="hhrs">특근 1일 근무시간 (휴게 제외)</label><input id="hhrs" type="number" min="0" max="24" step="0.5" value="8"></div>
+      </div>
+    </div>
+    <div class="res" id="pay-out"><small>시급을 넣으면 이번 달 예상 금액이 여기 나와요.</small></div>
+    <details class="faq"><summary>계산 기준 (꼭 읽어 주세요)</summary><p>
+      · <b>기본급 부분</b>: 근무일마다 소정근로 8시간 × 시급.<br>
+      · <b>연장수당</b>: 하루 8시간을 넘는 시간 × 시급 × 1.5 (가산 50%, 근로기준법 제56조 제1항).<br>
+      · <b>야간수당</b>: 근무 시간대 중 22:00~06:00에 겹치는 시간 × 시급 × 0.5 (제56조 제3항). 연장과 겹치면 둘 다 붙어요.<br>
+      · <b>휴일(특근)수당</b>: 8시간 이내 × 1.5, 8시간 초과분 × 2.0 (제56조 제2항). 특근은 주간 시간대로 보고 야간 가산은 넣지 않았어요.<br>
+      · 휴게시간은 야간 구간 밖에서 쉬는 것으로 가정했어요. 휴게가 야간 구간 안이면 야간수당이 조금 줄어요.<br>
+      · <b>주휴수당, 식대, 교통비, 직책수당은 포함하지 않았어요.</b> 통상시급은 월 통상임금 ÷ 209시간(주 40시간 기준, 시행령 제6조)이에요.<br>
+      · <b>상시 5인 미만 사업장</b>은 제56조 가산수당이 적용되지 않아요(시행령 별표 1). 이 경우 가산분은 빼고 봐야 해요.<br>
+      · 회사 취업규칙·단체협약이 법보다 유리하면 그 기준이 우선이에요. 실제 급여명세서와 다를 수 있는 <b>참고용</b>이에요.
+    </p></details>
 
     <div class="ad"></div>
     <h2>사용 방법</h2>
@@ -123,10 +161,52 @@ function render() {
   }
   $('cal').innerHTML = html;
   $('count').textContent = Object.keys(count).length ? '이번 달: ' + Object.entries(count).map(([k, n]) => `${k} ${n}일`).join(' · ') : '';
+  window._count = count; calcPay();
   const q = `p=${encodeURIComponent(pat.join(''))}&s=${start}`;
   history.replaceState(null, '', '#' + q);
   try { localStorage.setItem('shift', JSON.stringify({ p: pat.join(''), s: start })); } catch {}
 }
+// ── 수당 계산 (근로기준법 제56조: 연장·야간 50%, 휴일 8h 이내 50%·초과 100%)
+const toMin = t => { const [h, m] = (t || '0:0').split(':').map(Number); return h * 60 + m; };
+// 근무 시간대(분)를 [시작, 끝)으로, 자정 넘김 처리. 반환: { work(h, 휴게 제외), night(h: 22~06 겹침) }
+function shiftHours(s, e, brk) {
+  let a = toMin(s), b = toMin(e); if (b <= a) b += 1440;
+  let night = 0;
+  for (const [ns, ne] of [[1320, 1800], [-120, 360], [2760, 3240]]) night += Math.max(0, Math.min(b, ne) - Math.max(a, ns)); // 22~06 구간(전날·당일·다음날)
+  return { work: Math.max(0, (b - a) / 60 - brk), night: night / 60 };
+}
+const won = n => Math.round(n).toLocaleString('ko-KR') + '원';
+function calcPay() {
+  const out = $('pay-out'); if (!out) return;
+  let wage = +$('wage').value; if (!wage && +$('monthly').value) wage = +$('monthly').value / 209;
+  const c = window._count || {};
+  if (!wage || !Object.keys(c).length) { out.innerHTML = '<small>시급(또는 월 기본급)을 넣으면 이번 달 예상 금액이 여기 나와요.</small>'; return; }
+  const brk = +$('brk').value || 0;
+  const kinds = { '주': [$('ds').value, $('de').value], '야': [$('ns').value, $('ne').value], '오': [$('as').value, $('ae').value] };
+  let base = 0, ot = 0, nt = 0, otH = 0, ntH = 0, days = 0;
+  for (const [k, [s, e]] of Object.entries(kinds)) {
+    const n = c[k] || 0; if (!n) continue; days += n;
+    const { work, night } = shiftHours(s, e, brk);
+    const reg = Math.min(8, work), over = Math.max(0, work - 8);
+    base += n * reg * wage; ot += n * over * wage * 1.5; otH += n * over;
+    nt += n * night * wage * 0.5; ntH += n * night;
+  }
+  const hd = +$('hdays').value || 0, hh = +$('hhrs').value || 0;
+  const hol = hd * (Math.min(8, hh) * wage * 1.5 + Math.max(0, hh - 8) * wage * 2);
+  const total = base + ot + nt + hol;
+  out.innerHTML = `이번 달 예상 <b>${won(total)}</b> <small>(근무 ${days}일${hd ? ` + 특근 ${hd}일` : ''}, 통상시급 ${won(wage)})</small>
+    <table>
+      <tr><td>기본급 부분 (소정 8시간 × 근무일)</td><td>${won(base)}</td></tr>
+      <tr><td>연장수당 (${otH.toFixed(1)}시간 × 1.5배)</td><td>${won(ot)}</td></tr>
+      <tr><td>야간수당 가산 (${ntH.toFixed(1)}시간 × 0.5배)</td><td>${won(nt)}</td></tr>
+      ${hd ? `<tr><td>휴일 특근 (${hd}일 × ${hh}시간)</td><td>${won(hol)}</td></tr>` : ''}
+      <tr><td>가산수당 합계 (연장+야간+휴일 가산분)</td><td><b style="font-size:15px">${won(ot - otH * wage + nt + (hd ? hol - hd * hh * wage : 0))}</b></td></tr>
+    </table>
+    <small>※ 주휴수당·식대 등 제외, 5인 이상 사업장 기준 예상액이에요. 자세한 기준은 아래 "계산 기준"을 펼쳐 보세요.</small>`;
+  const q = new URLSearchParams(location.hash.slice(1)); q.set('w', Math.round(wage)); history.replaceState(null, '', '#' + q.toString());
+}
+['wage','monthly','ds','de','ns','ne','as','ae','brk','hdays','hhrs'].forEach(id => $(id).oninput = calcPay);
+if (hash.get('w')) $('wage').value = hash.get('w');
 document.querySelectorAll('[data-p]').forEach(b => b.onclick = () => { $('pat').value = b.dataset.p; render(); });
 $('pat').oninput = $('start').oninput = render;
 $('prev').onclick = () => { view = view[1] ? [view[0], view[1] - 1] : [view[0] - 1, 11]; render(); };

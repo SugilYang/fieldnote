@@ -52,3 +52,9 @@ jobs:
           path: .
       - id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+      # GitHub 쪽 일시 오류(아티팩트 조회 실패)가 가끔 있어 1분 뒤 한 번 더 시도한다
+      - if: steps.deployment.outcome == 'failure'
+        run: sleep 60
+      - if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v4

@@ -1853,14 +1853,14 @@
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-23",
+      "checked": "2026-11-24",
       "baseline": true
     },
     "posts/2026-10-05-hand-skin-care-work-gloves.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-23",
+      "checked": "2026-11-24",
       "baseline": true
     },
     "posts/2026-10-02-welding-craftsman-exam-guide.html": {
@@ -1874,91 +1874,91 @@
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-23",
+      "checked": "2026-11-24",
       "baseline": true
     },
     "posts/2026-10-02-electric-shock-accident-analysis.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-23",
+      "checked": "2026-11-24",
       "baseline": true
     },
     "posts/2026-10-02-drill-driver-impact-hammer-comparison.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-23",
+      "checked": "2026-11-24",
       "baseline": true
     },
     "posts/2026-10-02-logistics-center-automation-overview.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-23",
+      "checked": "2026-11-24",
       "baseline": true
     },
     "posts/2026-10-02-winter-work-clothing-layering-cold-stress.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-23",
+      "checked": "2026-11-24",
       "baseline": true
     },
     "posts/2026-10-01-hazardous-materials-craftsman-exam-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-23",
+      "checked": "2026-11-24",
       "baseline": true
     },
     "posts/2026-10-01-confined-space-work-procedure.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-23",
+      "checked": "2026-11-24",
       "baseline": true
     },
     "posts/2026-10-01-conveyor-entanglement-accident-analysis.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-23",
+      "checked": "2026-11-24",
       "baseline": true
     },
     "posts/2026-10-01-digital-multimeter-usage-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-23",
+      "checked": "2026-11-24",
       "baseline": true
     },
     "posts/2026-10-01-semiconductor-8-process-overview.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-23",
+      "checked": "2026-11-24",
       "baseline": true
     },
     "posts/2026-10-01-manual-lifting-back-pain-prevention.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-23",
+      "checked": "2026-11-24",
       "baseline": true
     },
     "posts/2026-09-30-electrician-craftsman-exam-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-23",
+      "checked": "2026-11-24",
       "baseline": true
     },
     "posts/2026-09-30-risk-assessment-procedure-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-23",
+      "checked": "2026-11-24",
       "baseline": true
     },
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": {
@@ -1979,7 +1979,7 @@
       "status": "Crawled - currently not indexed",
       "crawled": "2026-11-09",
       "indexedOn": "2026-11-09",
-      "checked": "2026-11-23",
+      "checked": "2026-11-24",
       "baseline": false
     },
     "posts/2026-09-30-safety-shoes-choosing-and-care.html": {
@@ -2555,7 +2555,7 @@
     "checked": 259,
     "unchecked": 0,
     "indexedAmongChecked": 3,
-    "lastRun": "2026-11-24T09:03:27.109Z",
+    "lastRun": "2026-11-24T09:10:48.783Z",
     "cohort": {
       "new": {
         "total": 87,

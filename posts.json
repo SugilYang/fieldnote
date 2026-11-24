@@ -30,7 +30,8 @@
     "title": "지게차 협착·충돌 사고, 왜 반복될까? 원인과 예방 체크리스트",
     "summary": "지게차 협착·충돌의 대표 상황 5가지와 직접·근본 원인, 관리자·운전자·보행자별 예방 체크리스트와 법적 의무를 정리했어요.",
     "date": "2026-09-29",
-    "image": "https://images.unsplash.com/photo-1740733448722-82e16d3468bb?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Zm9ya2xpZnQlMjB3YXJlaG91c2V8ZW58MXwwfHx8MTc5Mjk3MjQ0OHww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1740733448722-82e16d3468bb?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Zm9ya2xpZnQlMjB3YXJlaG91c2V8ZW58MXwwfHx8MTc5Mjk3MjQ0OHww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-09-29-torque-wrench-types-and-usage.html",
@@ -48,7 +49,8 @@
     "summary": "배터리 공장의 전극·조립·화성 공정과 셀 형태별 차이, 드라이룸·화학물질 같은 현장 특징과 직무를 설명했어요.",
     "date": "2026-09-29",
     "image": "https://images.unsplash.com/photo-1717386255773-1e3037c81788?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8bGl0aGl1bSUyMGJhdHRlcnklMjBmYWN0b3J5JTIwcHJvZHVjdGlvbnxlbnwxfDB8fHwxNzkwNjU3Mjk2fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
-    "updated": "2026-11-12"
+    "updated": "2026-11-12",
+    "noindex": true
   },
   {
     "file": "2026-09-29-shift-work-sleep-management.html",
@@ -82,7 +84,8 @@
     "title": "이동식 사다리 추락 사고: 2m도 안 되는 높이에서 왜 크게 다칠까",
     "summary": "A형 사다리 추락의 대표 상황 5가지, 직접·근본 원인, 높이별 안전 기준(1.2m·2m·3.5m)과 예방 체크리스트, 법적 의무를 정리했어요.",
     "date": "2026-09-30",
-    "image": "https://images.unsplash.com/photo-1549030782-4935f80baeb6?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c3RlcGxhZGRlciUyMHdhcmVob3VzZSUyMG1haW50ZW5hbmNlfGVufDF8MHx8fDE3OTA3MDUwMDl8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1549030782-4935f80baeb6?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c3RlcGxhZGRlciUyMHdhcmVob3VzZSUyMG1haW50ZW5hbmNlfGVufDF8MHx8fDE3OTA3MDUwMDl8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-09-30-vernier-caliper-reading-and-usage.html",
@@ -99,7 +102,8 @@
     "title": "스마트팩토리와 자동화, 현장 직무는 어떻게 바뀌나: 오퍼레이터가 준비할 것",
     "summary": "PLC·로봇·MES·AMR·예지보전이 무엇인지, 생산직·보전직·품질직 업무가 어떻게 바뀌는지, 새로운 안전 위험과 준비할 기술·자격을 정리했어요.",
     "date": "2026-09-30",
-    "image": "https://images.unsplash.com/photo-1647427060118-4911c9821b82?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aW5kdXN0cmlhbCUyMHJvYm90JTIwYXJtJTIwZmFjdG9yeXxlbnwxfDB8fHwxNzkwNzA1MDEzfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1647427060118-4911c9821b82?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aW5kdXN0cmlhbCUyMHJvYm90JTIwYXJtJTIwZmFjdG9yeXxlbnwxfDB8fHwxNzkwNzA1MDEzfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-09-30-safety-shoes-choosing-and-care.html",
@@ -134,7 +138,8 @@
     "title": "컨베이어 끼임 사고: 멈춘 줄 알았던 설비에 왜 손이 들어가나",
     "summary": "컨베이어 끼임의 대표 상황 5가지, 직접·근본 원인, 잠금·표지와 물림점 덮개·비상정지 등 예방 체크리스트와 법적 의무를 정리했어요.",
     "date": "2026-10-01",
-    "image": "https://images.unsplash.com/photo-1701328778019-e95dedbf5346?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y29udmV5b3IlMjBiZWx0JTIwcm9sbGVycyUyMGZhY3Rvcnl8ZW58MXwwfHx8MTc5MDc5MTM5NXww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1701328778019-e95dedbf5346?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y29udmV5b3IlMjBiZWx0JTIwcm9sbGVycyUyMGZhY3Rvcnl8ZW58MXwwfHx8MTc5MDc5MTM5NXww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-01-digital-multimeter-usage-guide.html",
@@ -152,7 +157,8 @@
     "summary": "반도체 8대 공정의 역할, 전공정과 후공정의 차이, 클린룸 근무 환경, 오퍼레이터·설비 엔지니어 직무와 준비할 것을 설명했어요.",
     "date": "2026-10-01",
     "image": "https://images.unsplash.com/photo-1672307613484-3254a04651fd?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c2VtaWNvbmR1Y3RvciUyMHdhZmVyfGVufDF8MHx8fDE3OTI5NzI0NTB8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
-    "updated": "2026-11-20"
+    "updated": "2026-11-20",
+    "noindex": true
   },
   {
     "file": "2026-10-01-manual-lifting-back-pain-prevention.html",
@@ -186,7 +192,8 @@
     "summary": "저압 감전의 대표 상황 5가지, 직접·근본 원인, 누전차단기·접지·정전 작업 절차 등 예방 체크리스트와 법적 의무를 정리했어요.",
     "date": "2026-10-02",
     "image": "https://images.unsplash.com/photo-1579019874729-ffca9e9fe11c?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZWxlY3RyaWNhbCUyMHBhbmVsJTIwd2FybmluZyUyMHNpZ258ZW58MXwwfHx8MTc5MDg3Nzc4Nnww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
-    "updated": "2026-11-16"
+    "updated": "2026-11-16",
+    "noindex": true
   },
   {
     "file": "2026-10-02-drill-driver-impact-hammer-comparison.html",
@@ -204,7 +211,8 @@
     "summary": "WMS·소터·AMR·GTP·자동창고가 무엇인지, 입고부터 출고까지 자동화 범위와 사람이 남는 일, 새로운 안전 위험과 준비할 것을 정리했어요.",
     "date": "2026-10-02",
     "image": "https://images.unsplash.com/photo-1665238456957-48788e0a3e16?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8YXV0b21hdGVkJTIwd2FyZWhvdXNlJTIwY29udmV5b3IlMjBzb3J0aW5nfGVufDF8MHx8fDE3OTA4Nzc3ODZ8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
-    "updated": "2026-11-23"
+    "updated": "2026-11-23",
+    "noindex": true
   },
   {
     "file": "2026-10-02-winter-work-clothing-layering-cold-stress.html",
@@ -239,7 +247,8 @@
     "summary": "불티 화재의 대표 상황 5가지, 직접·근본 원인, 가연물 제거·방염포·소화기·화재감시자·잔불 확인 등 예방 체크리스트와 법적 의무를 정리했어요.",
     "date": "2026-10-05",
     "image": "https://images.unsplash.com/photo-1738162837672-de9d735a9b90?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Z3JpbmRpbmclMjBzcGFya3MlMjBtZXRhbCUyMHdvcmtzaG9wfGVufDF8MHx8fDE3OTExMzcwOTd8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
-    "updated": "2026-11-20"
+    "updated": "2026-11-20",
+    "noindex": true
   },
   {
     "file": "2026-10-05-angle-grinder-safe-use-guide.html",
@@ -256,7 +265,8 @@
     "title": "협동로봇, 현장에 어떻게 들어오나: 산업용 로봇과의 차이, 적용 작업, 안전 기준",
     "summary": "협동로봇과 산업용 로봇의 차이, 팔레타이징·머신텐딩·용접 등 대표 적용 작업, 힘·속도 제한과 위험성평가 같은 안전 기준, 직무 변화와 준비할 것을 정리했어요.",
     "date": "2026-10-05",
-    "image": "https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y29sbGFib3JhdGl2ZSUyMHJvYm90JTIwYXJtJTIwd29ya2VyfGVufDF8MHx8fDE3OTExMzcwOTN8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y29sbGFib3JhdGl2ZSUyMHJvYm90JTIwYXJtJTIwd29ya2VyfGVufDF8MHx8fDE3OTExMzcwOTN8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-05-hand-skin-care-work-gloves.html",
@@ -290,7 +300,8 @@
     "title": "크레인·호이스트 줄걸이 작업 중 낙하 사고: 와이어·슬링이 끊기고 화물이 떨어지는 이유",
     "summary": "줄걸이 낙하 사고의 대표 상황 5가지, 직접·근본 원인, 슬링 점검·걸이 각도·훅 해지장치·신호수·하중 아래 출입 금지 등 예방 체크리스트와 법적 의무를 정리했어요.",
     "date": "2026-10-06",
-    "image": "https://images.unsplash.com/photo-1562590761-84a8fb108f23?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8b3ZlcmhlYWQlMjBjcmFuZSUyMGhvb2slMjBzdGVlbCUyMGxvYWR8ZW58MXwwfHx8MTc5MTIyMzI1M3ww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1562590761-84a8fb108f23?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8b3ZlcmhlYWQlMjBjcmFuZSUyMGhvb2slMjBzdGVlbCUyMGxvYWR8ZW58MXwwfHx8MTc5MTIyMzI1M3ww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-06-laser-distance-meter-and-level-guide.html",
@@ -308,7 +319,8 @@
     "summary": "내연기관차와 전기차 생산 공정의 차이, 배터리팩·모터·전력 전자 조립, 고전압의 위험과 차단 절차·절연 보호구·작업자 자격 구분, 직무 변화와 준비할 것을 정리했어요.",
     "date": "2026-10-06",
     "image": "https://images.unsplash.com/photo-1742899273038-67ff67477663?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZWxlY3RyaWMlMjB2ZWhpY2xlJTIwYXNzZW1ibHklMjBsaW5lJTIwYmF0dGVyeXxlbnwxfDB8fHwxNzkxMjIzMjU0fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
-    "updated": "2026-11-23"
+    "updated": "2026-11-23",
+    "noindex": true
   },
   {
     "file": "2026-10-06-shift-work-meal-timing-diet.html",
@@ -342,7 +354,8 @@
     "title": "프레스 끼임 사고: 금형 사이에 손이 들어가는 순간, 방호장치는 왜 작동하지 않았나",
     "summary": "프레스 끼임의 대표 상황 5가지, 직접·근본 원인, 광전자식·양수조작식 방호장치와 안전블록, 걸림 처리 절차 등 예방 체크리스트와 법적 의무를 정리했어요.",
     "date": "2026-10-07",
-    "image": "https://images.unsplash.com/photo-1717386255773-a456c611dc4e?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aHlkcmF1bGljJTIwcHJlc3MlMjBtYWNoaW5lJTIwbWV0YWwlMjBzdGFtcGluZ3xlbnwxfDB8fHwxNzkxMzA5NzY0fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1717386255773-a456c611dc4e?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aHlkcmF1bGljJTIwcHJlc3MlMjBtYWNoaW5lJTIwbWV0YWwlMjBzdGFtcGluZ3xlbnwxfDB8fHwxNzkxMzA5NzY0fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-07-air-compressor-pneumatic-tools-guide.html",
@@ -359,7 +372,8 @@
     "summary": "머신비전 시스템 구성, 규칙 기반과 AI 검사의 차이, 잘 맞는 검사와 어려운 검사, 검사원·품질·보전 직무의 변화, 현장 직장인이 준비할 것을 정리했어요.",
     "date": "2026-10-07",
     "image": "https://images.unsplash.com/photo-1717386255767-52643970d483?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8bWFjaGluZSUyMHZpc2lvbiUyMGNhbWVyYSUyMGluc3BlY3Rpb24lMjBsaW5lfGVufDF8MHx8fDE3OTEzMDk3NjF8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
-    "updated": "2026-11-18"
+    "updated": "2026-11-18",
+    "noindex": true
   },
   {
     "file": "2026-10-07-work-clothes-washing-and-care.html",
@@ -393,7 +407,8 @@
     "summary": "넘어짐 사고의 대표 상황 5가지, 직접·근본 원인, 바닥·통로·단차·조명·신발·행동별 예방 체크리스트와 법적 의무를 정리했어요.",
     "date": "2026-10-08",
     "image": "https://images.unsplash.com/photo-1554280955-b112f2babdc0?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8d2V0JTIwZmxvb3IlMjB3YXJuaW5nJTIwc2lnbiUyMHdhcmVob3VzZXxlbnwxfDB8fHwxNzkxMzk2MTczfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
-    "updated": "2026-11-18"
+    "updated": "2026-11-18",
+    "noindex": true
   },
   {
     "file": "2026-10-08-chain-block-lever-hoist-guide.html",
@@ -411,7 +426,8 @@
     "summary": "ESS 구성 요소와 쓰임새, 산업이 커지는 이유, 설치·시운전·운영·정비 직무, 열폭주 화재 위험과 안전 설계·운영 수칙, 준비할 자격과 지식을 정리했어요.",
     "date": "2026-10-08",
     "image": "https://images.unsplash.com/photo-1589276534126-adef63a95e05?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8YmF0dGVyeSUyMGVuZXJneSUyMHN0b3JhZ2UlMjBjb250YWluZXJzJTIwc29sYXJ8ZW58MXwwfHx8MTc5MTM5NjE2OXww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
-    "updated": "2026-11-23"
+    "updated": "2026-11-23",
+    "noindex": true
   },
   {
     "file": "2026-10-08-noise-hearing-protection-tinnitus.html",
@@ -444,7 +460,8 @@
     "title": "트럭 상하차 작업 사고: 적재함 추락, 화물 낙하, 도크에서 트럭이 움직이는 순간의 원인과 예방",
     "summary": "상하차 사고의 대표 상황, 직접·근본 원인, 고임목·도크 락·열쇠 제출·하역 책임자·적재함 발판·문 개방 요령 등 예방 체크리스트와 법적 의무를 정리했어요.",
     "date": "2026-10-09",
-    "image": "https://images.unsplash.com/photo-1532635026-d12867005472?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8dHJ1Y2slMjBsb2FkaW5nJTIwZG9jayUyMGZvcmtsaWZ0JTIwcGFsbGV0fGVufDF8MHx8fDE3OTE0ODI2Mjd8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1532635026-d12867005472?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8dHJ1Y2slMjBsb2FkaW5nJTIwZG9jayUyMGZvcmtsaWZ0JTIwcGFsbGV0fGVufDF8MHx8fDE3OTE0ODI2Mjd8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-09-insulation-resistance-earth-tester-guide.html",
@@ -461,7 +478,8 @@
     "title": "수소 산업 한눈에 보기: 생산·저장·운송·활용 구조, 연료전지와 충전소, 현장 직무와 고압 수소 안전",
     "summary": "수소 산업의 네 단계 구조, 그레이·블루·그린 수소와 연료전지, 충전소·설비 정비·연료전지 발전소·고압 배관 등 현장 직무, 수소의 위험 특성과 안전 수칙, 준비할 자격을 정리했어요.",
     "date": "2026-10-09",
-    "image": "https://images.unsplash.com/photo-1489596162121-4a8e544d6de0?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aHlkcm9nZW4lMjBmdWVsJTIwc3RhdGlvbiUyMGRpc3BlbnNlcnxlbnwxfDB8fHwxNzkxNDgyNjI0fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1489596162121-4a8e544d6de0?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aHlkcm9nZW4lMjBmdWVsJTIwc3RhdGlvbiUyMGRpc3BlbnNlcnxlbnwxfDB8fHwxNzkxNDgyNjI0fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-09-eye-health-field-workers.html",
@@ -496,7 +514,8 @@
     "title": "공장 지붕·채광창 추락 사고: 밟으면 꺼지는 지붕 위에서 왜 작업하게 되나, 원인과 예방",
     "summary": "지붕·채광창 추락의 대표 상황 5가지, 직접·근본 원인, 채광창 덮개·안전망·발판·안전대·작업 허가 등 예방 체크리스트와 법적 의무를 정리했어요.",
     "date": "2026-10-12",
-    "image": "https://images.unsplash.com/photo-1786472861878-973bbd048eb7?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZmFjdG9yeSUyMHJvb2YlMjBza3lsaWdodCUyMHBhbmVscyUyMHdvcmtlcnxlbnwxfDB8fHwxNzkxNzQxNzkxfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1786472861878-973bbd048eb7?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZmFjdG9yeSUyMHJvb2YlMjBza3lsaWdodCUyMHBhbmVscyUyMHdvcmtlcnxlbnwxfDB8fHwxNzkxNzQxNzkxfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-12-hand-pallet-truck-usage-inspection.html",
@@ -513,7 +532,8 @@
     "title": "스마트 안전 기술 현장 적용: AI CCTV·웨어러블의 실제와 한계",
     "summary": "스마트 안전 기술의 종류와 막는 사고, 기술별 효과와 한계, 감시가 아닌 보호가 되기 위한 조건, 작업자·관리감독자의 역할 변화, 준비할 것을 정리했어요.",
     "date": "2026-10-12",
-    "image": "https://images.unsplash.com/photo-1496368077930-c1e31b4e5b44?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c2VjdXJpdHklMjBjYW1lcmF8ZW58MXwwfHx8MTc5Mjk3MjQ1N3ww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1496368077930-c1e31b4e5b44?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c2VjdXJpdHklMjBjYW1lcmF8ZW58MXwwfHx8MTc5Mjk3MjQ1N3ww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-12-shoulder-neck-pain-prevention-field-workers.html",
@@ -547,7 +567,8 @@
     "title": "화학물질 화상·누출 사고: 세척조·배관·드럼 이송에서 산·알칼리가 몸에 닿는 순간, 원인과 예방",
     "summary": "화학물질 화상·누출의 대표 상황 5가지, 직접·근본 원인, 밀폐 이송·부위별 보호구·세안 샤워·혼합 금지·누출 키트 등 예방 체크리스트와 법적 의무를 정리했어요.",
     "date": "2026-10-13",
-    "image": "https://images.unsplash.com/photo-1633559409226-85a0b3baeedb?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y2hlbWljYWwlMjBwbGFudCUyMHdvcmtlciUyMHByb3RlY3RpdmUlMjBzdWl0JTIwZHJ1bXxlbnwxfDB8fHwxNzkxODI4MTg2fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1633559409226-85a0b3baeedb?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y2hlbWljYWwlMjBwbGFudCUyMHdvcmtlciUyMHByb3RlY3RpdmUlMjBzdWl0JTIwZHJ1bXxlbnwxfDB8fHwxNzkxODI4MTg2fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-13-wrench-socket-ratchet-basics.html",
@@ -565,7 +586,8 @@
     "summary": "사후·예방·예지보전의 차이, 진동·온도·전류·윤활유 신호로 고장을 읽는 원리, 센서·플랫폼 구조, 잘 맞는 설비와 어려운 설비, 보전·운전 직무 변화와 준비할 것을 정리했어요.",
     "date": "2026-10-13",
     "image": "https://images.unsplash.com/photo-1638734254958-4a11c989e9bb?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8dmlicmF0aW9uJTIwc2Vuc29yJTIwbW90b3IlMjBiZWFyaW5nJTIwbW9uaXRvcmluZ3xlbnwxfDB8fHwxNzkxODI4MTg5fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
-    "updated": "2026-11-20"
+    "updated": "2026-11-20",
+    "noindex": true
   },
   {
     "file": "2026-10-13-standing-work-leg-foot-knee-care.html",
@@ -597,7 +619,8 @@
     "title": "분진 폭발 사고: 밀가루·알루미늄·목재 가루가 왜 폭탄이 되나, 집진기·사일로·분체 설비의 원인과 예방",
     "summary": "분진 폭발 조건과 2차 폭발 원리, 집진기·사일로·분쇄기·이송 설비의 대표 상황, 직접·근본 원인, 퇴적 분진 청소·점화원 관리·방폭·방산 등 예방 체크리스트와 법적 의무를 정리했어요.",
     "date": "2026-10-14",
-    "image": "https://images.unsplash.com/photo-1557487970-f2d521d32f94?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZHVzdCUyMGNvbGxlY3RvciUyMGluZHVzdHJpYWwlMjBzaWxvfGVufDF8MHx8fDE3OTE5MTQ1ODR8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1557487970-f2d521d32f94?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZHVzdCUyMGNvbGxlY3RvciUyMGluZHVzdHJpYWwlMjBzaWxvfGVufDF8MHx8fDE3OTE5MTQ1ODR8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-14-multi-gas-detector-usage-bump-test.html",
@@ -651,7 +674,8 @@
     "summary": "높이 쌓은 팔레트·코일·랙 적재물이 무너져 작업자를 덮치는 사고의 대표 상황, 직접 원인과 근본 원인, 적재 높이·받침·랙 보호대 같은 예방 체크리스트와 법적 의무를 정리했어요.",
     "date": "2026-10-15",
     "image": "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8d2FyZWhvdXNlJTIwcGFsbGV0cyUyMHN0YWNrZWQlMjBoaWdoJTIwcmFja2luZ3xlbnwxfDB8fHwxNzkyMDAxMTE0fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
-    "updated": "2026-11-17"
+    "updated": "2026-11-17",
+    "noindex": true
   },
   {
     "file": "2026-10-15-thermal-imaging-camera-usage-guide.html",
@@ -668,7 +692,8 @@
     "title": "폐배터리 재사용·재활용 산업: 진단·해체·제련 현장 직무",
     "summary": "전기차·ESS 폐배터리의 회수→진단→재사용·재활용 흐름, 전처리·블랙매스·습식 제련의 역할, 현장에 생기는 직무와 고전압·화재·화학물질 안전 수칙, 준비할 자격을 정리했어요.",
     "date": "2026-10-15",
-    "image": "https://images.unsplash.com/photo-1592318348310-f31b61a931c8?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZWxlY3RyaWMlMjB2ZWhpY2xlJTIwYmF0dGVyeSUyMHBhY2slMjBkaXNhc3NlbWJseSUyMHJlY3ljbGluZ3xlbnwxfDB8fHwxNzkyMDAxMTEyfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1592318348310-f31b61a931c8?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZWxlY3RyaWMlMjB2ZWhpY2xlJTIwYmF0dGVyeSUyMHBhY2slMjBkaXNhc3NlbWJseSUyMHJlY3ljbGluZ3xlbnwxfDB8fHwxNzkyMDAxMTEyfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-15-new-worker-first-3-months-safety.html",
@@ -701,7 +726,8 @@
     "title": "회전체 말림 사고 분석: 장갑·소매가 감기는 원인과 예방 대책",
     "summary": "선반·드릴·롤러·교반기·회전축에 장갑·소매·머리카락이 감기는 사고의 대표 장면, 뿌리치지 못하는 이유, 직접·근본 원인, 3대 원칙과 예방 체크리스트, 법적 의무를 정리했어요.",
     "date": "2026-10-16",
-    "image": "https://images.unsplash.com/photo-1666634157070-6fd830fb5672?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8bGF0aGUlMjBjaHVjayUyMHNwaW5uaW5nJTIwbWV0YWx8ZW58MXwwfHx8MTc5MjA4NzUwMHww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1666634157070-6fd830fb5672?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8bGF0aGUlMjBjaHVjayUyMHNwaW5uaW5nJTIwbWV0YWx8ZW58MXwwfHx8MTc5MjA4NzUwMHww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-16-micrometer-dial-gauge-reading-guide.html",
@@ -718,7 +744,8 @@
     "title": "데이터센터 건설·운영 직무: 전기·공조·소방·시설관리 일과 자격",
     "summary": "AI 서버 수요로 늘어나는 데이터센터의 전기·냉각·소방 구조, 액체 냉각과 고밀도 전력이 바꾸는 설비, 건설·운영 단계 현장 직무와 필요한 자격, 특유의 안전과 준비 순서를 정리했어요.",
     "date": "2026-10-16",
-    "image": "https://images.unsplash.com/photo-1584169417032-d34e8d805e8b?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZGF0YSUyMGNlbnRlciUyMHNlcnZlciUyMHJhY2tzfGVufDF8MHx8fDE3OTIwODc0OTZ8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1584169417032-d34e8d805e8b?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZGF0YSUyMGNlbnRlciUyMHNlcnZlciUyMHJhY2tzfGVufDF8MHx8fDE3OTIwODc0OTZ8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-16-workplace-injury-compensation-procedure.html",
@@ -752,7 +779,8 @@
     "title": "스팀·고온 화상 사고 분석: 밸브 열기 전 확인할 것과 예방",
     "summary": "스팀 배관·보일러·열교환기·고온 표면·용융물 작업에서 생기는 화상 사고의 대표 장면, 스팀이 깊게 데우는 이유, 직접·근본 원인, 차단·배출·확인 3단계와 예방 체크리스트, 화상 응급처치를 정리했어요.",
     "date": "2026-10-19",
-    "image": "https://images.unsplash.com/photo-1639600993675-2281b2c939f0?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c3RlYW0lMjBwaXBlJTIwdmFsdmUlMjBpbmR1c3RyaWFsJTIwYm9pbGVyfGVufDF8MHx8fDE3OTIzNDY2NzF8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1639600993675-2281b2c939f0?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c3RlYW0lMjBwaXBlJTIwdmFsdmUlMjBpbmR1c3RyaWFsJTIwYm9pbGVyfGVufDF8MHx8fDE3OTIzNDY2NzF8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-19-clamp-meter-usage-guide.html",
@@ -769,7 +797,8 @@
     "title": "조선소 현장 직무 총정리: 블록·용접·배관·전장·도장·족장",
     "summary": "배가 블록으로 만들어지는 7단계, 선체·의장·도장·족장·크레인·검사 직무의 일과 필요한 자격, 수주 흐름과 인력 수요, 협력업체·물량팀 등 고용 형태, 조선소 특유의 위험과 준비 순서를 정리했어요.",
     "date": "2026-10-19",
-    "image": "https://images.unsplash.com/photo-1602575051429-c502cac0d3e8?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c2hpcHlhcmQlMjBjcmFuZSUyMHNoaXAlMjBodWxsfGVufDF8MHx8fDE3OTIzNDY2NzB8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1602575051429-c502cac0d3e8?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c2hpcHlhcmQlMjBjcmFuZSUyMHNoaXAlMjBodWxsfGVufDF8MHx8fDE3OTIzNDY2NzB8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-19-wrist-elbow-pain-prevention-field-workers.html",
@@ -802,7 +831,8 @@
     "title": "산업용 로봇 끼임·충돌 사고 분석: 펜스 안 진입과 티칭 작업 안전",
     "summary": "산업용 로봇 셀에서 제품 걸림 해소·티칭·정비 중 생기는 끼임·충돌 사고의 대표 장면, 멈춘 듯 보여도 움직이는 네 가지 정지 상태, 직접·근본 원인, 로봇 셀 3대 원칙과 예방 체크리스트, 법적 의무와 협동로봇의 안전을 정리했어요.",
     "date": "2026-10-20",
-    "image": "https://images.unsplash.com/photo-1647427060118-4911c9821b82?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aW5kdXN0cmlhbCUyMHJvYm90JTIwYXJtJTIwc2FmZXR5JTIwZmVuY2V8ZW58MXwwfHx8MTc5MjQzMzExMXww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1647427060118-4911c9821b82?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aW5kdXN0cmlhbCUyMHJvYm90JTIwYXJtJTIwc2FmZXR5JTIwZmVuY2V8ZW58MXwwfHx8MTc5MjQzMzExMXww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-20-chop-saw-circular-saw-jigsaw-safety-guide.html",
@@ -818,7 +848,8 @@
     "title": "풍력·태양광 발전 현장 직무: 타워·전기·O&M 일과 필요한 자격",
     "summary": "태양광·풍력 발전소의 건설과 운영·유지보수(O&M) 인력 구조, 기초·구조물·타워·전기·해상 등 건설 직무, O&M 기술자·블레이드 보수·전기 운영 직무, 전기·용접·GWO 등 자격과 경로, 추락·직류 감전·해상·화재 안전을 정리했어요.",
     "date": "2026-10-20",
-    "image": "https://images.unsplash.com/photo-1548337138-e87d889cc369?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8d2luZCUyMHR1cmJpbmUlMjB0ZWNobmljaWFuJTIwb2Zmc2hvcmV8ZW58MXwwfHx8MTc5MjQzMzExNHww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1548337138-e87d889cc369?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8d2luZCUyMHR1cmJpbmUlMjB0ZWNobmljaWFuJTIwb2Zmc2hvcmV8ZW58MXwwfHx8MTc5MjQzMzExNHww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-20-cold-flu-prevention-field-workers.html",
@@ -869,7 +900,8 @@
     "title": "반도체 공장 건설 현장 직무 총정리: 클린룸 시공부터 배관·전기까지",
     "summary": "반도체 공장 건설 현장의 클린룸·서브팹·유틸리티 구조, 단계별 시공 직무, 인력 수요가 가장 큰 후크업과 특수 가스·케미컬 배관 기술, 필요한 자격과 경로, 특유의 안전과 근무 환경을 정리했어요.",
     "date": "2026-10-21",
-    "image": "https://images.unsplash.com/photo-1717386255773-1e3037c81788?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c2VtaWNvbmR1Y3RvciUyMGZhY3RvcnklMjBidWlsZGluZyUyMGNvbnN0cnVjdGlvbnxlbnwxfDB8fHwxNzkyNjA1ODUzfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1717386255773-1e3037c81788?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c2VtaWNvbmR1Y3RvciUyMGZhY3RvcnklMjBidWlsZGluZyUyMGNvbnN0cnVjdGlvbnxlbnwxfDB8fHwxNzkyNjA1ODUzfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-21-shift-worker-exercise-routine.html",
@@ -904,7 +936,8 @@
     "summary": "밀폐공간 질식 사고가 맨홀·탱크·사일로에서 일어나는 상황, 산소 결핍·황화수소가 느낌 없이 쓰러뜨리는 이유와 연쇄 피해, 직접·근본 원인, 측정·환기·감시·구조 3대 원칙, 쓰러진 사람을 봤을 때 행동을 정리했어요.",
     "date": "2026-10-22",
     "image": "https://images.unsplash.com/photo-1709086566068-3a5d99097f7f?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8bWFuaG9sZSUyMHdvcmtlciUyMGdhcyUyMGRldGVjdG9yJTIwZW50cnl8ZW58MXwwfHx8MTc5MjYwNTg1Nnww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
-    "updated": "2026-11-13"
+    "updated": "2026-11-13",
+    "noindex": true
   },
   {
     "file": "2026-10-22-inverter-welder-current-setting-guide.html",
@@ -921,7 +954,8 @@
     "title": "콜드체인 물류센터 직무 총정리: 냉동창고 작업과 안전",
     "summary": "콜드체인 물류센터 직무를 냉장·냉동 창고 구조, 입출고·피킹·온도 관리·냉동 설비 운영 직무, 자동창고·AMR이 바꾸는 일, 지게차·공조냉동·가스·전기 자격과 경로, 한랭·갇힘·냉매 누설 안전으로 정리했어요.",
     "date": "2026-10-22",
-    "image": "https://images.unsplash.com/photo-1769698750982-2eadb83e0933?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y29sZCUyMHN0b3JhZ2UlMjB3YXJlaG91c2UlMjBmb3JrbGlmdCUyMGZyb3plbnxlbnwxfDB8fHwxNzkyNjA1ODU1fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1769698750982-2eadb83e0933?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y29sZCUyMHN0b3JhZ2UlMjB3YXJlaG91c2UlMjBmb3JrbGlmdCUyMGZyb3plbnxlbnwxfDB8fHwxNzkyNjA1ODU1fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-22-burnout-signs-stress-management-field-workers.html",
@@ -955,7 +989,8 @@
     "title": "화물차·덤프트럭 후진 보행자 충돌 사고: 사각지대와 예방",
     "summary": "화물차·덤프트럭 후진 중 보행자 충돌 사고의 대표 상황, 후방 사각지대와 경보음의 한계, 직접·근본 원인, 후진 작업 3대 원칙과 예방 체크리스트, 운전자·유도자·보행자별 할 일을 정리했어요.",
     "date": "2026-10-23",
-    "image": "https://images.unsplash.com/photo-1653924333410-0dda83ae490c?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZHVtcCUyMHRydWNrJTIwcmV2ZXJzaW5nJTIwY29uc3RydWN0aW9uJTIwc2l0ZXxlbnwxfDB8fHwxNzkyNjkyMjgzfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1653924333410-0dda83ae490c?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZHVtcCUyMHRydWNrJTIwcmV2ZXJzaW5nJTIwY29uc3RydWN0aW9uJTIwc2l0ZXxlbnwxfDB8fHwxNzkyNjkyMjgzfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-23-hydraulic-jack-lift-safe-use-guide.html",
@@ -972,7 +1007,8 @@
     "title": "원전·SMR 건설·정비 현장 직무 총정리: 용접·배관·전기·방사선",
     "summary": "원전·SMR 건설·정비 현장 직무를 원전 구조, 건설 직무(토목·기계·배관 용접·전기·검사), 계획예방정비 직무, 용접 PQ·방사선 교육·비파괴검사 등 자격과 경로, 방사선·품질·일반 안전으로 정리했어요.",
     "date": "2026-10-23",
-    "image": "https://images.unsplash.com/photo-1630142895963-6996ae6b3a5b?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8bnVjbGVhciUyMHBvd2VyJTIwcGxhbnQlMjBjb29saW5nJTIwdG93ZXIlMjB3b3JrZXJzfGVufDF8MHx8fDE3OTI2OTIyODJ8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1630142895963-6996ae6b3a5b?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8bnVjbGVhciUyMHBvd2VyJTIwcGxhbnQlMjBjb29saW5nJTIwdG93ZXIlMjB3b3JrZXJzfGVufDF8MHx8fDE3OTI2OTIyODJ8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-23-dental-care-field-workers.html",
@@ -1023,7 +1059,8 @@
     "title": "전기차 충전기 설치·유지보수 직무 총정리: 자격과 일하는 법",
     "summary": "전기차 충전기 설치·유지보수 직무를 충전기 종류, 설치 순서, 자주 나는 고장과 대응, 전기기능사 등 필요한 자격, 고전압 직류·화재 안전으로 정리했어요.",
     "date": "2026-10-26",
-    "image": "https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZWxlY3RyaWMlMjB2ZWhpY2xlJTIwY2hhcmdpbmclMjBzdGF0aW9uJTIwaW5zdGFsbGF0aW9ufGVufDF8MHx8fDE3OTI5NTEyMzl8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZWxlY3RyaWMlMjB2ZWhpY2xlJTIwY2hhcmdpbmclMjBzdGF0aW9uJTIwaW5zdGFsbGF0aW9ufGVufDF8MHx8fDE3OTI5NTEyMzl8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-26-shift-worker-blood-pressure-glucose-management.html",
@@ -1056,7 +1093,8 @@
     "title": "지게차 전도 사고는 왜 날까? 경사로·과적·급회전 원인과 예방",
     "summary": "지게차 전도 사고가 경사로·과적·급회전·패인 바닥에서 일어나는 이유와 안정 삼각형, 예방 체크리스트, 넘어질 때 행동을 정리했어요.",
     "date": "2026-10-27",
-    "image": "https://images.unsplash.com/photo-1620388640785-892616248ec8?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Zm9ya2xpZnQlMjB0aXBwaW5nJTIwd2FyZWhvdXNlJTIwcmFtcHxlbnwxfDB8fHwxNzkzMDM3NjQyfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1620388640785-892616248ec8?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Zm9ya2xpZnQlMjB0aXBwaW5nJTIwd2FyZWhvdXNlJTIwcmFtcHxlbnwxfDB8fHwxNzkzMDM3NjQyfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-27-welding-helmet-shade-number-guide.html",
@@ -1127,7 +1165,8 @@
     "title": "용접 로봇이 늘면 용접공 일자리는 줄까? 자동화 현장의 직무 변화",
     "summary": "용접 로봇이 늘면서 용접공 일자리가 어떻게 바뀌는지, 로봇 용접 셀에서 사람이 하는 일, 준비할 것과 셀 안전을 정리했어요.",
     "date": "2026-10-28",
-    "image": "https://images.unsplash.com/photo-1716191299980-a6e8827ba10b?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8cm9ib3RpYyUyMHdlbGRpbmclMjBhcm18ZW58MXwwfHx8MTc5MzEyNDAzM3ww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1716191299980-a6e8827ba10b?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8cm9ib3RpYyUyMHdlbGRpbmclMjBhcm18ZW58MXwwfHx8MTc5MzEyNDAzM3ww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-28-safety-shoe-insole-choosing-guide.html",
@@ -1162,7 +1201,8 @@
     "summary": "겨울철 콘크리트 보온양생 중 갈탄 일산화탄소 질식 사고가 반복되는 이유와 원인, 예방 대책, 쓰러진 사람 구조와 법적 의무를 정리했어요.",
     "date": "2026-10-29",
     "image": "https://images.unsplash.com/photo-1710595678637-9315c88ee873?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y29uY3JldGUlMjBjdXJpbmclMjB3aW50ZXIlMjBjb25zdHJ1Y3Rpb24lMjB0YXJwfGVufDF8MHx8fDE3OTMyMTA0MjR8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
-    "updated": "2026-11-19"
+    "updated": "2026-11-19",
+    "noindex": true
   },
   {
     "file": "2026-10-29-industrial-borescope-inspection-camera-guide.html",
@@ -1179,7 +1219,8 @@
     "title": "반도체 후공정은 무슨 일을 하나요? 패키징·테스트 직무와 필요한 역량",
     "summary": "반도체 후공정이 무슨 일을 하는지 공정 순서와 첨단 패키징, 오퍼레이터·보전·품질·테스트 직무와 필요한 역량을 정리했어요.",
     "date": "2026-10-29",
-    "image": "https://images.unsplash.com/photo-1592659762303-90081d34b277?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c2VtaWNvbmR1Y3RvciUyMGNoaXAlMjBwYWNrYWdpbmd8ZW58MXwwfHx8MTc5MzIxMDQyMnww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1592659762303-90081d34b277?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c2VtaWNvbmR1Y3RvciUyMGNoaXAlMjBwYWNrYWdpbmd8ZW58MXwwfHx8MTc5MzIxMDQyMnww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-29-shift-worker-family-time-schedule-tips.html",
@@ -1230,7 +1271,8 @@
     "title": "식품 공장 생산직은 무슨 일을 하나요? 위생 규칙·자동화·교대 총정리",
     "summary": "식품 공장 생산직이 하는 일과 위생 규칙, 자동화가 바꾸는 직무, 근무 환경과 안전을 정리했어요.",
     "date": "2026-10-30",
-    "image": "https://images.unsplash.com/photo-1774977864150-be36aa3db802?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Zm9vZCUyMGZhY3RvcnklMjBwcm9kdWN0aW9uJTIwbGluZSUyMHdvcmtlcnMlMjBoYWlybmV0fGVufDF8MHx8fDE3OTMyOTY4Njd8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1774977864150-be36aa3db802?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Zm9vZCUyMGZhY3RvcnklMjBwcm9kdWN0aW9uJTIwbGluZSUyMHdvcmtlcnMlMjBoYWlybmV0fGVufDF8MHx8fDE3OTMyOTY4Njd8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-10-30-shift-worker-caffeine-intake-timing.html",
@@ -1263,7 +1305,8 @@
     "title": "정전기 화재·폭발 사고는 왜 날까? 용제 옮기기·분체 투입 원인과 예방",
     "summary": "정전기 화재·폭발 사고가 용제 옮기기와 분체 투입에서 왜 나는지 직접·근본 원인을 정리하고, 접지·본딩 예방 체크리스트와 11월 고용노동부 화재·폭발 집중점검 내용을 함께 담았어요.",
     "date": "2026-11-02",
-    "image": "https://images.unsplash.com/photo-1632632262762-ed2997dabd3c?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c29sdmVudCUyMGRydW0lMjBncm91bmRpbmclMjBjbGFtcCUyMHN0YXRpY3xlbnwxfDB8fHwxNzkzNTU2MTg5fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1632632262762-ed2997dabd3c?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c29sdmVudCUyMGRydW0lMjBncm91bmRpbmclMjBjbGFtcCUyMHN0YXRpY3xlbnwxfDB8fHwxNzkzNTU2MTg5fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-02-oxy-fuel-gas-cutting-torch-safe-use-guide.html",
@@ -1312,7 +1355,8 @@
     "title": "고소작업대 끼임 사고는 왜 날까? 천장·보 사이 협착 원인과 예방",
     "summary": "고소작업대 끼임 사고가 천장·보와 난간 사이에서 어떻게 일어나는지 직접·근본 원인을 정리하고, 상부 장애물 확인과 비상 하강 등 예방 체크리스트와 법적 의무를 담았어요.",
     "date": "2026-11-03",
-    "image": "https://images.unsplash.com/photo-1730584475949-a01e4663003a?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c2Npc3NvciUyMGxpZnQlMjBjZWlsaW5nJTIwd2FyZWhvdXNlfGVufDF8MHx8fDE3OTM2NDI5ODh8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1730584475949-a01e4663003a?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c2Npc3NvciUyMGxpZnQlMjBjZWlsaW5nJTIwd2FyZWhvdXNlfGVufDF8MHx8fDE3OTM2NDI5ODh8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-03-pipe-wrench-pipe-cutter-usage-guide.html",
@@ -1329,7 +1373,8 @@
     "title": "철강 탄소중립, 전기로·수소환원제철로 현장 일은 어떻게 바뀌나요?",
     "summary": "철강 탄소중립 흐름에서 고로·전기로·수소환원제철의 차이를 설명하고, 전기로 확대와 수소 공정 도입으로 제철소 현장 직무와 필요한 역량이 어떻게 바뀌는지 정리했어요.",
     "date": "2026-11-03",
-    "image": "https://images.unsplash.com/photo-1613970351372-9804e380bd09?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c3RlZWwlMjBtaWxsJTIwZnVybmFjZSUyMG1vbHRlbiUyMG1ldGFsfGVufDF8MHx8fDE3OTM2NDI5OTN8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1613970351372-9804e380bd09?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c3RlZWwlMjBtaWxsJTIwZnVybmFjZSUyMG1vbHRlbiUyMG1ldGFsfGVufDF8MHx8fDE3OTM2NDI5OTN8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-03-factory-dormitory-life-tips-shift-roommate.html",
@@ -1386,7 +1431,8 @@
     "title": "둥근톱 손 베임·절단 사고는 왜 날까? 목공기계 반발·덮개 문제와 예방",
     "summary": "둥근톱 손 베임·절단 사고가 반발(킥백)과 덮개 제거에서 어떻게 생기는지 직접·근본 원인을 정리하고, 분할날·밀대 등 예방 체크리스트와 법적 의무를 담았어요.",
     "date": "2026-11-04",
-    "image": "https://images.unsplash.com/photo-1631396328075-9c65a7406f09?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8dGFibGUlMjBzYXclMjB3b29kd29ya2luZyUyMHNob3B8ZW58MXwwfHx8MTc5MzcyODg5Nnww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1631396328075-9c65a7406f09?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8dGFibGUlMjBzYXclMjB3b29kd29ya2luZyUyMHNob3B8ZW58MXwwfHx8MTc5MzcyODg5Nnww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-04-electric-pallet-truck-usage-guide.html",
@@ -1402,7 +1448,8 @@
     "title": "산업용 드론 점검은 왜 늘어날까? 설비 점검 현장 직무 변화 총정리",
     "summary": "산업용 드론 점검이 철탑·풍력·태양광·지붕 점검에서 늘어나는 이유와 드론과 사람의 역할 차이, 필요한 자격과 역량, 현장 안전과 한계를 정리했어요.",
     "date": "2026-11-04",
-    "image": "https://images.unsplash.com/photo-1515424408177-7b2c508d6114?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aW5kdXN0cmlhbCUyMGRyb25lJTIwaW5zcGVjdGlvbiUyMHRvd2VyfGVufDF8MHx8fDE3OTM3Mjg4OTN8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1515424408177-7b2c508d6114?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aW5kdXN0cmlhbCUyMGRyb25lJTIwaW5zcGVjdGlvbiUyMHRvd2VyfGVufDF8MHx8fDE3OTM3Mjg4OTN8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-04-shift-worker-sunlight-vitamin-d-tips.html",
@@ -1444,7 +1491,8 @@
     "title": "공기탱크·압력용기 파열 사고는 왜 날까? 안전밸브·부식 원인과 예방",
     "summary": "공기탱크·압력용기 파열 사고가 안전밸브 고장과 내부 부식에서 어떻게 생기는지 직접·근본 원인을 정리하고, 드레인·안전밸브 점검 등 예방 체크리스트와 법적 의무를 담았어요.",
     "date": "2026-11-05",
-    "image": "https://images.unsplash.com/photo-1737874132953-b39a4812875d?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8YWlyJTIwY29tcHJlc3NvciUyMHRhbmslMjBmYWN0b3J5fGVufDF8MHx8fDE3OTM4MTU0Mzd8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1737874132953-b39a4812875d?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8YWlyJTIwY29tcHJlc3NvciUyMHRhbmslMjBmYWN0b3J5fGVufDF8MHx8fDE3OTM4MTU0Mzd8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-05-insulating-gloves-inspection-air-test-guide.html",
@@ -1501,7 +1549,8 @@
     "title": "연삭숫돌 파손 사고는 왜 날까? 그라인더 숫돌 깨짐 원인과 예방 수칙",
     "summary": "연삭숫돌 파손 사고가 금 간 숫돌, 속도 초과, 덮개 제거, 측면 사용에서 어떻게 생기는지 직접·근본 원인을 정리하고 시운전 등 예방 체크리스트와 법적 의무를 담았어요.",
     "date": "2026-11-06",
-    "image": "https://images.unsplash.com/photo-1734888369502-3e01d4c0a46e?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Z3JpbmRpbmclMjB3aGVlbCUyMGJlbmNoJTIwZ3JpbmRlciUyMHNwYXJrc3xlbnwxfDB8fHwxNzkzOTAxNjYwfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1734888369502-3e01d4c0a46e?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Z3JpbmRpbmclMjB3aGVlbCUyMGJlbmNoJTIwZ3JpbmRlciUyMHNwYXJrc3xlbnwxfDB8fHwxNzkzOTAxNjYwfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-06-flange-bolt-tightening-sequence-torque-steps.html",
@@ -1517,7 +1566,8 @@
     "title": "휴머노이드 로봇, 공장에 언제 들어오나요? 현장 직무에 주는 변화",
     "summary": "휴머노이드 로봇이 공장에 어떻게 들어오는지 기존 산업용 로봇·협동로봇과 비교하고, 맡을 수 있는 일과 한계, 현장 직무 변화와 로봇과 함께 일할 때의 안전을 정리했어요.",
     "date": "2026-11-06",
-    "image": "https://images.unsplash.com/photo-1737644467636-6b0053476bb2?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aHVtYW5vaWQlMjByb2JvdCUyMGZhY3Rvcnl8ZW58MXwwfHx8MTc5MzkwMTY2Mnww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1737644467636-6b0053476bb2?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aHVtYW5vaWQlMjByb2JvdCUyMGZhY3Rvcnl8ZW58MXwwfHx8MTc5MzkwMTY2Mnww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-06-back-support-belt-effect-how-to-wear.html",
@@ -1558,7 +1608,8 @@
     "title": "아크 플래시 화상 사고는 왜 날까? 분전반 작업 중 단락 원인과 예방",
     "summary": "아크 플래시 화상 사고가 활선 분전반 작업과 측정 중 단락에서 어떻게 생기는지 직접·근본 원인을 정리하고, 정전·검전·보호구 예방 체크리스트와 법적 의무를 담았어요.",
     "date": "2026-11-09",
-    "image": "https://images.unsplash.com/photo-1566417110090-6b15a06ec800?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZWxlY3RyaWNhbCUyMHN3aXRjaGdlYXIlMjBwYW5lbCUyMGFyY3xlbnwxfDB8fHwxNzk0MTYwODkyfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1566417110090-6b15a06ec800?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZWxlY3RyaWNhbCUyMHN3aXRjaGdlYXIlMjBwYW5lbCUyMGFyY3xlbnwxfDB8fHwxNzk0MTYwODkyfDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-09-bolt-size-thread-pitch-strength-grade-guide.html",
@@ -1574,7 +1625,8 @@
     "title": "반도체 장비 엔지니어는 무슨 일을 하나요? 셋업·유지보수 직무 총정리",
     "summary": "반도체 장비 엔지니어가 하는 셋업·예방정비·고장 수리 업무와 장비사·공장 설비 엔지니어 차이, 필요한 역량과 자격, 현장 안전과 근무 환경을 정리했어요.",
     "date": "2026-11-09",
-    "image": "https://images.unsplash.com/photo-1748000970909-845f4aa144d2?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c2VtaWNvbmR1Y3RvciUyMGVxdWlwbWVudCUyMGVuZ2luZWVyJTIwY2xlYW5yb29tfGVufDF8MHx8fDE3OTQxNjA4OTl8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1748000970909-845f4aa144d2?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c2VtaWNvbmR1Y3RvciUyMGVxdWlwbWVudCUyMGVuZ2luZWVyJTIwY2xlYW5yb29tfGVufDF8MHx8fDE3OTQxNjA4OTl8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-09-hypothermia-frostbite-symptoms-first-aid.html",
@@ -1614,7 +1666,8 @@
     "title": "유기용제 중독 사고는 왜 날까? 세척·도장 작업 중 어지럼증 원인과 예방",
     "summary": "유기용제 중독 사고가 세척·도장 작업 중 환기 부족과 맞지 않는 마스크에서 어떻게 생기는지 직접·근본 원인을 정리하고 예방 체크리스트와 법적 의무를 담았어요.",
     "date": "2026-11-10",
-    "image": "https://images.unsplash.com/photo-1763889107827-8e7d7960d68a?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8cGFydHMlMjB3YXNoaW5nJTIwc29sdmVudCUyMHRhbmt8ZW58MXwwfHx8MTc5NDI0NzI4N3ww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1763889107827-8e7d7960d68a?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8cGFydHMlMjB3YXNoaW5nJTIwc29sdmVudCUyMHRhbmt8ZW58MXwwfHx8MTc5NDI0NzI4N3ww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-10-tape-measure-reading-accurate-measuring-tips.html",
@@ -1630,7 +1683,8 @@
     "title": "전고체 배터리는 언제 양산되나요? 리튬이온과 차이와 생산 현장 변화",
     "summary": "전고체 배터리가 리튬이온과 무엇이 다른지, 양산은 언제쯤인지 최근 보도를 바탕으로 정리하고, 풀어야 할 과제와 배터리 생산 현장의 변화를 설명했어요.",
     "date": "2026-11-10",
-    "image": "https://images.unsplash.com/photo-1619641805634-b867f535071c?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c29saWQlMjBzdGF0ZSUyMGJhdHRlcnklMjBjZWxsfGVufDF8MHx8fDE3OTQyNDcyOTB8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1619641805634-b867f535071c?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c29saWQlMjBzdGF0ZSUyMGJhdHRlcnklMjBjZWxsfGVufDF8MHx8fDE3OTQyNDcyOTB8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-10-winter-work-clothes-static-electricity-tips.html",
@@ -1670,7 +1724,8 @@
     "title": "용접 감전 사고는 왜 날까? 자동전격방지기·홀더 절연 문제와 예방",
     "summary": "용접 감전 사고가 자동전격방지기 고장, 홀더·케이블 절연 손상, 젖은 보호구에서 어떻게 생기는지 직접·근본 원인을 정리하고 예방 체크리스트와 법적 의무를 담았어요.",
     "date": "2026-11-11",
-    "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8YXJjJTIwd2VsZGluZyUyMHN0ZWVsJTIwc3RydWN0dXJlJTIwd29ya2VyfGVufDF8MHx8fDE3OTQzMzM2MzN8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8YXJjJTIwd2VsZGluZyUyMHN0ZWVsJTIwc3RydWN0dXJlJTIwd29ya2VyfGVufDF8MHx8fDE3OTQzMzM2MzN8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-11-pressure-washer-nozzle-usage-safety-guide.html",
@@ -1686,7 +1741,8 @@
     "title": "2차전지 화성 공정은 무슨 일을 하나요? 충방전·에이징·검사 직무 총정리",
     "summary": "2차전지 화성 공정이 하는 일을 프리차지·에이징·디가스·충방전·OCV 검사·등급 선별 단계로 정리하고, 걸러지는 불량과 현장 직무, 열폭주 안전 관리를 설명했어요.",
     "date": "2026-11-11",
-    "image": "https://images.unsplash.com/photo-1653116204460-4ab39d6c0b2b?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8YmF0dGVyeSUyMGZvcm1hdGlvbiUyMGNoYXJnaW5nJTIwcmFja3N8ZW58MXwwfHx8MTc5NDMzMzYyNHww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1653116204460-4ab39d6c0b2b?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8YmF0dGVyeSUyMGZvcm1hdGlvbiUyMGNoYXJnaW5nJTIwcmFja3N8ZW58MXwwfHx8MTc5NDMzMzYyNHww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-11-shift-worker-day-off-sleep-rhythm-reset.html",
@@ -1726,7 +1782,8 @@
     "title": "바닥 개구부 추락 사고는 왜 날까? 덮개 미고정·표시 부족 원인과 예방",
     "summary": "바닥 개구부 추락 사고가 덮개 미설치·미고정·표시 부족에서 어떻게 생기는지 직접·근본 원인을 정리하고, 덮개·난간·개방 허가 등 예방 체크리스트와 법적 의무를 담았어요.",
     "date": "2026-11-12",
-    "image": "https://images.unsplash.com/photo-1741105820127-97dd1aaafe87?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Zmxvb3IlMjBvcGVuaW5nJTIwY292ZXIlMjBjb25zdHJ1Y3Rpb258ZW58MXwwfHx8MTc5NDQyMDAzNXww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1741105820127-97dd1aaafe87?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Zmxvb3IlMjBvcGVuaW5nJTIwY292ZXIlMjBjb25zdHJ1Y3Rpb258ZW58MXwwfHx8MTc5NDQyMDAzNXww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-12-lifting-sling-belt-usage-discard-criteria.html",
@@ -1742,7 +1799,8 @@
     "title": "배터리 소재 공장은 무슨 일을 하나요? 황산니켈·양극재 공정과 현장 직무",
     "summary": "배터리 소재 공장이 하는 일을 이번 주 황산니켈 공장 준공 소식과 함께 정리했어요. 원료에서 양극재까지 공정 흐름, 현장 직무, 화학물질 안전 관리를 설명했어요.",
     "date": "2026-11-12",
-    "image": "https://images.unsplash.com/photo-1578776349090-de61da00ff1a?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y2hlbWljYWwlMjBwbGFudCUyMGJhdHRlcnklMjBtYXRlcmlhbHN8ZW58MXwwfHx8MTc5NDQyMDAzNHww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1578776349090-de61da00ff1a?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y2hlbWljYWwlMjBwbGFudCUyMGJhdHRlcnklMjBtYXRlcmlhbHN8ZW58MXwwfHx8MTc5NDQyMDAzNHww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-12-knee-pads-choosing-kneeling-work-knee-care.html",
@@ -1782,7 +1840,8 @@
     "title": "가스 누출 폭발 사고는 왜 날까? 화재·폭발 사망 증가와 공장 예방 대책",
     "summary": "가스 누출 폭발 사고가 왜 나는지 정리했어요. 2026년 화재·폭발 사망 증가 통계, 누출·점화 원인, 공장 예방 체크리스트를 담았어요.",
     "date": "2026-11-13",
-    "image": "https://images.unsplash.com/photo-1510467181625-c419e443bdfa?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Z2FzJTIwcGlwZSUyMHZhbHZlJTIwbGVhayUyMGRldGVjdG9yfGVufDF8MHx8fDE3OTQ1MDY2NDB8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1510467181625-c419e443bdfa?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Z2FzJTIwcGlwZSUyMHZhbHZlJTIwbGVhayUyMGRldGVjdG9yfGVufDF8MHx8fDE3OTQ1MDY2NDB8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-13-electric-hoist-pendant-inspection-usage-guide.html",
@@ -1798,7 +1857,8 @@
     "title": "변압기 공장은 무슨 일을 하나요? 전력기기 호황과 생산 현장 직무 총정리",
     "summary": "변압기 공장은 무슨 일을 하는지 정리했어요. 전력기기 수요가 늘어난 이유, 변압기 생산 공정 6단계, 현장 직무와 안전 포인트를 담았어요.",
     "date": "2026-11-13",
-    "image": "https://images.unsplash.com/photo-1781786490109-5a1720afbae6?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8cG93ZXIlMjB0cmFuc2Zvcm1lciUyMGZhY3Rvcnl8ZW58MXwwfHx8MTc5NDUwNjY0NXww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1781786490109-5a1720afbae6?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8cG93ZXIlMjB0cmFuc2Zvcm1lciUyMGZhY3Rvcnl8ZW58MXwwfHx8MTc5NDUwNjY0NXww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-13-night-shift-sleepiness-3am-5am-tips.html",
@@ -1838,7 +1898,8 @@
     "title": "카고크레인 전도·낙하 사고는 왜 날까? 아웃트리거·과부하 원인과 예방",
     "summary": "카고크레인 전도·낙하 사고가 왜 나는지 정리했어요. 아웃트리거·과부하·줄걸이·전선 접촉 원인과 예방 체크리스트, 법적 의무를 담았어요.",
     "date": "2026-11-16",
-    "image": "https://images.unsplash.com/photo-1586458995526-09ce6839babe?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8dHJ1Y2slMjBtb3VudGVkJTIwY3JhbmV8ZW58MXwwfHx8MTc5NDc2NTcwMHww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1586458995526-09ce6839babe?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8dHJ1Y2slMjBtb3VudGVkJTIwY3JhbmV8ZW58MXwwfHx8MTc5NDc2NTcwMHww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-16-impact-wrench-usage-socket-wheel-nut-guide.html",
@@ -1854,7 +1915,8 @@
     "title": "웨어러블 로봇(산업용 외골격)은 현장에 도움이 될까? 종류·효과·한계 정리",
     "summary": "웨어러블 로봇(산업용 외골격)이 현장에 도움이 되는지 정리했어요. 허리·어깨 보조형 종류, 효과가 있는 작업, 도입 한계와 직무 변화를 담았어요.",
     "date": "2026-11-16",
-    "image": "https://images.unsplash.com/photo-1564183063457-680b3759a5bd?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aW5kdXN0cmlhbCUyMGV4b3NrZWxldG9uJTIwd29ya2VyJTIwbGlmdGluZ3xlbnwxfDB8fHwxNzk0NzY1NzA1fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1564183063457-680b3759a5bd?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8aW5kdXN0cmlhbCUyMGV4b3NrZWxldG9uJTIwd29ya2VyJTIwbGlmdGluZ3xlbnwxfDB8fHwxNzk0NzY1NzA1fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-16-winter-dehydration-water-drinking-tips-field-workers.html",
@@ -1894,7 +1956,8 @@
     "title": "전동자키 사고는 왜 날까? 발 끼임·벽 사이 협착 원인과 예방 체크리스트",
     "summary": "전동자키 사고가 왜 나는지 정리했어요. 발 끼임·벽 사이 협착·도크 사고 원인과 벨리 버튼 점검, 예방 체크리스트와 관리 포인트를 담았어요.",
     "date": "2026-11-17",
-    "image": "https://images.unsplash.com/photo-1644079446600-219068676743?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZWxlY3RyaWMlMjBwYWxsZXQlMjBqYWNrJTIwd2FyZWhvdXNlJTIwYWlzbGV8ZW58MXwwfHx8MTc5NDg1MjEyMnww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1644079446600-219068676743?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8ZWxlY3RyaWMlMjBwYWxsZXQlMjBqYWNrJTIwd2FyZWhvdXNlJTIwYWlzbGV8ZW58MXwwfHx8MTc5NDg1MjEyMnww&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-17-drill-bit-types-metal-concrete-wood-guide.html",
@@ -1910,7 +1973,8 @@
     "title": "AI 인체감지 장비 지원사업이란? 소규모 공장 스마트 안전장비 도입 흐름",
     "summary": "AI 인체감지 장비 지원사업을 정리했어요. 장비 원리, 2026년 스마트 안전장비 지원 조건, 먼저 쓰이는 설비와 도입 한계를 담았어요.",
     "date": "2026-11-17",
-    "image": "https://images.unsplash.com/photo-1647427060118-4911c9821b82?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8YWklMjBjYW1lcmElMjBmYWN0b3J5JTIwbWFjaGluZSUyMHNhZmV0eXxlbnwxfDB8fHwxNzk0ODUyNTM1fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1647427060118-4911c9821b82?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8YWklMjBjYW1lcmElMjBmYWN0b3J5JTIwbWFjaGluZSUyMHNhZmV0eXxlbnwxfDB8fHwxNzk0ODUyNTM1fDA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-17-safety-shoes-odor-removal-athletes-foot-care.html",
@@ -1950,7 +2014,8 @@
     "title": "냉동창고 갇힘·저체온 사고는 왜 날까? 문 잠김·혼자 작업 원인과 예방",
     "summary": "냉동창고 갇힘·저체온 사고가 왜 나는지 정리했어요. 문 잠김·혼자 작업 원인과 출입 관리, 방한 보호구, 예방 체크리스트를 담았어요.",
     "date": "2026-11-18",
-    "image": "https://images.unsplash.com/photo-1563696992148-626c57c95457?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y29sZCUyMHN0b3JhZ2UlMjB3YXJlaG91c2UlMjBkb29yfGVufDF8MHx8fDE3OTQ5Mzg0OTR8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1563696992148-626c57c95457?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y29sZCUyMHN0b3JhZ2UlMjB3YXJlaG91c2UlMjBkb29yfGVufDF8MHx8fDE3OTQ5Mzg0OTR8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-18-spirit-level-bubble-reading-accuracy-check.html",
@@ -1966,7 +2031,8 @@
     "title": "공장 이동로봇(AMR) 충전 규격 통합 논의: 반도체 공장 현장은 뭐가 달라질까",
     "summary": "공장 이동로봇(AMR) 충전 규격 통합 논의를 정리했어요. AMR과 AGV 차이, 표준화로 달라질 현장, 충전 구역 안전과 직무 변화를 담았어요.",
     "date": "2026-11-18",
-    "image": "https://images.unsplash.com/photo-1716191300038-28ba994616a1?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8YXV0b25vbW91cyUyMG1vYmlsZSUyMHJvYm90JTIwZmFjdG9yeSUyMGZsb29yfGVufDF8MHx8fDE3OTQ5Mzg0OTZ8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1716191300038-28ba994616a1?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8YXV0b25vbW91cyUyMG1vYmlsZSUyMHJvYm90JTIwZmFjdG9yeSUyMGZsb29yfGVufDF8MHx8fDE3OTQ5Mzg0OTZ8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-18-shift-work-weight-gain-diet-management.html",
@@ -2006,7 +2072,8 @@
     "title": "압축공기 사고는 왜 날까? 에어건 장난·호스 휘둘림 원인과 예방",
     "summary": "압축공기 사고가 왜 나는지 정리했어요. 에어건으로 몸 털기·장난 분사·호스 휘둘림 원인과 안전형 노즐, 예방 체크리스트를 담았어요.",
     "date": "2026-11-19",
-    "image": "https://images.unsplash.com/photo-1752241279650-5d551b8607af?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y29tcHJlc3NlZCUyMGFpciUyMGhvc2UlMjBibG93JTIwZ3VufGVufDF8MHx8fDE3OTUwMjQ4NDF8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1752241279650-5d551b8607af?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8Y29tcHJlc3NlZCUyMGFpciUyMGhvc2UlMjBibG93JTIwZ3VufGVufDF8MHx8fDE3OTUwMjQ4NDF8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-19-grease-gun-usage-amount-nipple-cartridge-guide.html",
@@ -2022,7 +2089,8 @@
     "title": "반도체 패키지기판 공장은 무슨 일을 하나요? AI 수요와 기판 생산 직무 총정리",
     "summary": "반도체 패키지기판 공장이 무슨 일을 하는지 정리했어요. AI 수요가 기판을 늘리는 이유, 기판 공정, 현장 직무와 안전 포인트를 담았어요.",
     "date": "2026-11-19",
-    "image": "https://images.unsplash.com/photo-1592659762303-90081d34b277?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c2VtaWNvbmR1Y3RvciUyMHBhY2thZ2UlMjBzdWJzdHJhdGUlMjBwcm9kdWN0aW9ufGVufDF8MHx8fDE3OTUwMjQ4NDV8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy"
+    "image": "https://images.unsplash.com/photo-1592659762303-90081d34b277?ixid=M3wxMDg2OTIzfDB8MXxzZWFyY2h8MXx8c2VtaWNvbmR1Y3RvciUyMHBhY2thZ2UlMjBzdWJzdHJhdGUlMjBwcm9kdWN0aW9ufGVufDF8MHx8fDE3OTUwMjQ4NDV8MA&ixlib=rb-4.1.0&w=600&h=300&q=70&auto=format&fit=crop&crop=entropy",
+    "noindex": true
   },
   {
     "file": "2026-11-19-winter-padded-work-jacket-washing-drying-guide.html",

@@ -123,7 +123,7 @@
 - "함께 보면 좋은 글"은 `posts.json`의 기존 글 중 관련 있는 것으로만 링크한다. 없는 글을 링크하지 않는다.
 
 ## 검색 제외(noindex) 글
-- `posts.json`에 `"noindex": true`가 있는 글은 구글이 읽고 색인하지 않았고 노출·조회도 없는 글이다. 배포 봇이 meta robots noindex를 넣고 사이트맵·피드에서 뺀다. 보강 대상에서 우선순위가 가장 낮다. 보강해서 깊은 글 기준을 채우면 `noindex`를 지운다.
+- `posts.json`에 `"noindex": true`가 있는 글은 구글 평가에서 뺀 글이다(2026-11-24: 산업 트렌드·사고사례 섹션 전체 + 거부된 글). 방문자에게는 보인다. 되돌리려면 `noindex`를 지우면 된다. 배포 봇이 meta robots noindex를 넣고 사이트맵·피드에서 뺀다. 보강 대상에서 우선순위가 가장 낮다. 보강해서 깊은 글 기준을 채우면 `noindex`를 지운다.
 
 ## 수정하지 말 것
 `index.html`, `about.html`, `contact.html`, `privacy.html`, `assets/`, `apps/`, `scripts/`, `templates/post.html`, `.github/`, `stats.json`, `search.json`, `sitemap.xml`, `feed.xml`, `robots.txt`, 섹션 페이지(`license.html` 등 6개), `indexnow-key.txt`, `products.json`, `experiment.json`은 운영자가 요청할 때만 수정한다.

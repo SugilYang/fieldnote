@@ -34,14 +34,19 @@ async function fetchResults(query) {
 // 없으면 섹션 기본 검색어의 사진을 쓴다. (전에는 "foam earplugs"가 "foam"으로 줄어 거품 사진이 걸렸다)
 const STOP = new Set(['worker', 'workers', 'factory', 'industrial', 'site', 'hand', 'hands', 'close', 'up', 'closeup', 'work', 'working', 'man', 'woman', 'person', 'people', 'korean', 'korea', 'the', 'a', 'an', 'of', 'in', 'on', 'with', 'and', 'at']);
 const stem = w => w.toLowerCase().replace(/(ies|es|s|ing|ed)$/, '');
+// 글자·간판·일러스트 사진은 제외 ("Noise text over black background" 같은 것)
+const BAD = /\b(text|typography|letter|word|sign|signage|logo|illustration|drawing|poster|screenshot|quote)\b/i;
 function relevance(photo, keys) {
   const text = [photo.alt_description, photo.description, ...(photo.tags || []).map(t => t.title)].filter(Boolean).join(' ').toLowerCase();
-  return keys.filter(k => text.includes(k)).length;
+  if (BAD.test(photo.alt_description || '') || BAD.test(photo.description || '')) return -1;
+  // 첫 번째 핵심 단어(주 피사체)가 반드시 들어 있어야 한다. 나머지는 가점.
+  if (keys.length && !text.includes(keys[0])) return 0;
+  return 1 + keys.slice(1).filter(k => text.includes(k)).length;
 }
 async function pick(query, keys, used, requireMatch) {
   const results = (await fetchResults(query)).filter(x => !used.has(x.id));
   const scored = results.map(x => [relevance(x, keys), x]).sort((a, b) => b[0] - a[0]);
-  const best = scored.find(([sc]) => !requireMatch || sc > 0);
+  const best = scored.find(([sc]) => requireMatch ? sc > 0 : sc >= 0);
   return best ? best[1] : null;
 }
 async function search(query, section, used) {

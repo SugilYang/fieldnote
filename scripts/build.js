@@ -168,7 +168,10 @@ if (fs.existsSync(nvDir)) for (const f of fs.readdirSync(nvDir).filter(f => /^\d
     if (/^■\s*/.test(s)) { headCount++; const h = `<p><b>■ ${esc(s.replace(/^■\s*/, ''))}</b></p>`; return headCount === 2 && midImg ? `<p>📷 [사진 2 자리 — 이 줄 지우고 사진 넣기]</p>\n<p>&nbsp;</p>\n${h}` : h; }
     return '<p>' + esc(s).replace(/\n/g, ' ').replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1">$1</a>') + '</p>';
   }).join('\n<p>&nbsp;</p>\n');
-  const paras2 = (img ? '<p>📷 [사진 1 자리 — 이 줄 지우고 사진 넣기]</p>\n<p>&nbsp;</p>\n' : '') + paras;
+  // 소제목이 없는 날(경험담형)은 세 번째 문단 뒤에 사진 2 자리를 둔다
+  let paras1 = paras;
+  if (midImg && !paras.includes('사진 2 자리')) { const parts = paras.split('\n<p>&nbsp;</p>\n'); if (parts.length > 4) { parts.splice(3, 0, '<p>📷 [사진 2 자리 — 이 줄 지우고 사진 넣기]</p>'); paras1 = parts.join('\n<p>&nbsp;</p>\n'); } }
+  const paras2 = (img ? '<p>📷 [사진 1 자리 — 이 줄 지우고 사진 넣기]</p>\n<p>&nbsp;</p>\n' : '') + paras1;
   write(`naver/${f.replace('.txt', '.html')}`, `<!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="robots" content="noindex,nofollow">
 <title>네이버 붙여넣기용 ${esc(title)}</title>

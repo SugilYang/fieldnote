@@ -4,7 +4,7 @@
   "total": 277,
   "pages": {
     "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 66,
-    "apps/shift.html": 28,
+    "apps/shift.html": 29,
     "posts/2026-10-12-msds-reading-ghs-pictograms.html": 8,
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
     "posts/2026-09-30-risk-assessment-procedure-guide.html": 4,
@@ -78,7 +78,7 @@
   "helpful": {},
   "tools": {
     "apps/shift.html": {
-      "(direct) / (none)": 13,
+      "(direct) / (none)": 14,
       "naver / organic": 10,
       "m.search.naver.com / referral": 5
     },
@@ -2555,7 +2555,7 @@
     "checked": 259,
     "unchecked": 0,
     "indexedAmongChecked": 3,
-    "lastRun": "2026-11-24T09:10:48.783Z",
+    "lastRun": "2026-11-24T09:25:46.348Z",
     "cohort": {
       "new": {
         "total": 87,

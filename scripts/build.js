@@ -152,7 +152,8 @@ if (fs.existsSync(nvDir)) for (const f of fs.readdirSync(nvDir).filter(f => /^\d
   const tags = (t.match(/\[태그\]\s*(.+)/) || [, ''])[1].trim();
   const postFile = (body.match(/posts\/([\w-]+\.html)/) || [])[1];
   const post = postFile && posts.find(p => p.file === postFile);
-  const img = post && post.image ? post.image.replace('w=600&q=70', 'w=1200&q=80') : '';
+  const jpg = u => u ? u.replace(/&auto=format/, '') + '&fm=jpg' : '';
+  const img = post && post.image ? jpg(post.image.replace('w=600&q=70', 'w=1200&q=80')) : '';
   const NCAT = { license: '자격증', safety: '산업안전', case: '산업안전', tools: '장비·공구', trend: '현장 생활', life: '현장 생활', guide: '산업안전지도사' };
   const cat = post ? NCAT[post.section] || '현장 생활' : '현장 생활';
   const tagList = tags.replace(/#/g, ' ').trim().split(/[\s,]+/).filter(Boolean).slice(0, 6);
@@ -161,12 +162,13 @@ if (fs.existsSync(nvDir)) for (const f of fs.readdirSync(nvDir).filter(f => /^\d
     .flatMap(s => /https?:\/\//.test(s) || /^■/m.test(s) ? s.split('\n').map(x => x.trim()).filter(Boolean) : [s]);
   // 본문 사진: 현장노트 글의 본문 사진 1장을 중간(두 번째 소제목 앞)에 넣는다
   const postHtml = post && fs.existsSync(path.join(ROOT, 'posts', post.file)) ? fs.readFileSync(path.join(ROOT, 'posts', post.file), 'utf8') : '';
-  const midImg = (postHtml.match(/<figure><img src="([^"]+)"/) || [])[1] || '';
+  const midImg = jpg((postHtml.match(/<figure><img src="([^"]+)"/) || [])[1] || '');
   let headCount = 0;
   const paras = lines.map(s => {
-    if (/^■\s*/.test(s)) { headCount++; return `<p><b>■ ${esc(s.replace(/^■\s*/, ''))}</b></p>`; }
+    if (/^■\s*/.test(s)) { headCount++; const h = `<p><b>■ ${esc(s.replace(/^■\s*/, ''))}</b></p>`; return headCount === 2 && midImg ? `<p>📷 [사진 2 자리 — 이 줄 지우고 사진 넣기]</p>\n<p>&nbsp;</p>\n${h}` : h; }
     return '<p>' + esc(s).replace(/\n/g, ' ').replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1">$1</a>') + '</p>';
   }).join('\n<p>&nbsp;</p>\n');
+  const paras2 = (img ? '<p>📷 [사진 1 자리 — 이 줄 지우고 사진 넣기]</p>\n<p>&nbsp;</p>\n' : '') + paras;
   write(`naver/${f.replace('.txt', '.html')}`, `<!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="robots" content="noindex,nofollow">
 <title>네이버 붙여넣기용 ${esc(title)}</title>
@@ -175,11 +177,11 @@ if (fs.existsSync(nvDir)) for (const f of fs.readdirSync(nvDir).filter(f => /^\d
 <div class="how"><b>휴대폰 앱 기준 순서</b><br>① 아래 <b>사진을 길게 눌러 저장</b> (네이버에 직접 올려야 "사진 있는 글"로 인정돼요)<br>② 점선 상자 안 글 전체 선택 → 복사<br>③ 네이버 앱 글쓰기 → 붙여넣기 → 본문 맨 앞 누르고 <b>📷 아이콘 → 저장한 사진 첨부</b><br>④ 제목 입력 → 등록 → 카테고리·태그(한 줄씩 입력 후 Enter) → 발행</div>
 <p><b>제목:</b> ${esc(title)}</p>
 <p><b>카테고리:</b> ${cat}</p>
-${img ? `<p><b>① 저장할 사진</b> (길게 눌러 저장)</p><p><img src="${img}" alt="${esc(title)}" style="max-width:100%;border-radius:8px"></p>` : ''}
-${midImg ? `<p><img src="${midImg}" alt="" style="max-width:100%;border-radius:8px"></p>` : ''}
-<p><b>② 복사할 글</b></p>
+${img ? `<p><b>① 저장할 사진</b> (각각 길게 눌러 저장 — JPG로 저장돼요)</p><p><b>사진 1</b> (글 맨 위)</p><p><img src="${img}" alt="${esc(title)}" style="max-width:100%;border-radius:8px"></p>` : ''}
+${midImg ? `<p><b>사진 2</b> (두 번째 소제목 앞)</p><p><img src="${midImg}" alt="" style="max-width:100%;border-radius:8px"></p>` : ''}
+<p><b>② 복사할 글</b> — 붙여넣은 뒤 📷 표시 줄을 지우고 그 자리에 사진을 넣으세요. 사진 1은 첫 번째 사진, 사진 2는 두 번째 사진이에요.</p>
 <div class="copy">
-${paras}
+${paras2}
 </div>
 <div class="tags"><b>태그</b> (한 줄씩 복사 → 붙여넣기 → Enter)<br>${tagList.map(t => `<div style="padding:4px 0;font-size:16px">${esc(t)}</div>`).join('')}</div>
 </body></html>

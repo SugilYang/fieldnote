@@ -41,7 +41,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "사진·통계·색인 갱신 [skip ci]"
             # 같은 시각에 다른 커밋이 들어와 충돌하면 푸시는 건너뛰고 배포는 계속한다 (다음 배포 때 다시 생성됨)
-            git pull --rebase origin main || git rebase --abort
+            git pull --rebase --autostash origin main || (git rebase --abort || true)
             git push || echo "푸시 건너뜀 (다음 배포 때 반영)"
           fi
       - name: IndexNow 통보

@@ -7,7 +7,10 @@
   // 공유 버튼
   const share = document.createElement('div');
   share.className = 'share';
-  const canShare = !!navigator.share;
+  // 공유창은 휴대폰에서만 (PC 윈도우 공유창은 앱이 없으면 '다시 시도하세요'만 뜬다)
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || matchMedia('(pointer:coarse)').matches;
+  const canShare = !!navigator.share && isMobile;
+  const shareOrCopy = (btn, done = '✅ 링크를 복사했어요') => canShare ? navigator.share({ title, url }).catch(() => {}) : navigator.clipboard.writeText(url).then(() => { const t = btn.textContent; btn.textContent = done; setTimeout(() => btn.textContent = t, 2500); });
   share.innerHTML = `<span>공유</span>
     ${canShare ? '<button type="button" id="nativeShare" class="kakao">💬 카카오톡·문자로 공유</button>' : ''}
     <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}" target="_blank" rel="noopener" title="페이스북">f 페이스북</a>
@@ -37,7 +40,7 @@
   const bb = document.createElement('nav'); bb.className = 'bottombar';
   bb.innerHTML = `<a href="../index.html">🏠<small>홈</small></a><a href="../index.html#q">🔍<small>검색</small></a><a href="../index.html#tools">🧰<small>도구</small></a><button type="button" id="bbShare">📤<small>공유</small></button>`;
   document.body.appendChild(bb);
-  document.getElementById('bbShare').onclick = () => navigator.share ? navigator.share({ title, url }).catch(() => {}) : navigator.clipboard.writeText(url).then(() => alert('링크를 복사했어요'));
+  document.getElementById('bbShare').onclick = e => shareOrCopy(e.currentTarget);
   if (canShare) document.getElementById('nativeShare').onclick = () => navigator.share({ title, url }).catch(() => {});
   document.getElementById('copyLink').onclick = async e => {
     try { await navigator.clipboard.writeText(url); e.target.textContent = '✔ 복사됨 — 카카오톡에 붙여넣기'; setTimeout(() => e.target.textContent = '🔗 링크 복사', 2500); } catch {}
@@ -61,10 +64,10 @@
   const helpful = stats?.helpful?.['posts/' + file] || 0, voted = (LS('helpful') || []).includes(file);
   const box = document.createElement('div'); box.className = 'helpful';
   box.innerHTML = `<div class="hq"><b>이 글이 도움이 됐나요?</b><button type="button" id="up" ${voted ? 'disabled' : ''}>👍 도움됐어요${helpful ? ` · ${helpful}명` : ''}</button><a href="../contact.html">✏️ 틀린 내용 알려주기</a></div>
-    <div class="follow"><span>새 글 받아보기</span><a href="https://blog.naver.com/fedor0725" target="_blank" rel="noopener">N 네이버 블로그 이웃추가</a><a href="../feed.xml">RSS</a><button type="button" id="followShare">💬 카톡으로 보내기</button></div>`;
+    <div class="follow"><span>새 글 받아보기</span><a href="https://blog.naver.com/fedor0725" target="_blank" rel="noopener">N 네이버 블로그 이웃추가</a><a href="../feed.xml">RSS</a><button type="button" id="followShare">${canShare ? '💬 카톡으로 보내기' : '🔗 링크 복사해서 보내기'}</button></div>`;
   const author0 = document.querySelector('.author'); author0 ? author0.before(box) : document.querySelector('.wrap')?.append(box);
   document.getElementById('up').onclick = e => { try { gtag('event', 'helpful', { page_path: location.pathname }); } catch {} LS('helpful', [...(LS('helpful') || []), file]); e.target.disabled = true; e.target.textContent = '👍 고마워요!'; };
-  document.getElementById('followShare').onclick = () => navigator.share ? navigator.share({ title, url }).catch(() => {}) : navigator.clipboard.writeText(url).then(() => alert('링크를 복사했어요'));
+  document.getElementById('followShare').onclick = e => shareOrCopy(e.currentTarget);
 
   posts.sort((a, b) => b.date.localeCompare(a.date));
   const i = posts.findIndex(p => p.file === file);

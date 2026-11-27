@@ -109,7 +109,9 @@ render();
 
 // 공유: 휴대폰은 공유창(카톡·문자), 공유창이 없는 PC는 주소 복사
 const _sb = document.getElementById('share');
-if (_sb) _sb.onclick = () => navigator.share ? navigator.share({ title: document.title, url: location.href }).catch(() => {}) : navigator.clipboard.writeText(location.href).then(() => _sb.textContent = '✅ 주소를 복사했어요');
+const _mob = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || matchMedia('(pointer:coarse)').matches;
+if (_sb && !(_mob && navigator.share)) _sb.textContent = '🔗 링크 복사해서 보내기';
+if (_sb) _sb.onclick = () => (_mob && navigator.share) ? navigator.share({ title: document.title, url: location.href }).catch(() => {}) : navigator.clipboard.writeText(location.href).then(() => _sb.textContent = '✅ 주소를 복사했어요');
 </script>
 </body>
 </html>

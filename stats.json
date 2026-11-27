@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "yesterday": 11,
-  "total": 301,
+  "total": 305,
   "pages": {
     "posts/2026-10-22-safety-harness-wearing-anchor-guide.html": 75,
-    "apps/shift.html": 46,
-    "posts/2026-10-12-msds-reading-ghs-pictograms.html": 9,
+    "apps/shift.html": 48,
+    "posts/2026-10-12-msds-reading-ghs-pictograms.html": 11,
     "posts/2026-10-14-forklift-work-plan-writing-guide.html": 5,
     "posts/2026-09-30-portable-ladder-fall-accident-analysis.html": 4,
     "posts/2026-09-30-risk-assessment-procedure-guide.html": 4,
@@ -22,6 +22,7 @@
     "posts/2026-09-29-torque-wrench-types-and-usage.html": 2,
     "posts/2026-10-05-toolbox-meeting-tbm-guide.html": 2,
     "posts/2026-10-16-permit-to-work-system-guide.html": 2,
+    "posts/2026-10-16-rotating-shaft-entanglement-accident-analysis.html": 1,
     "posts/2026-10-19-clamp-meter-usage-guide.html": 2,
     "posts/2026-10-19-emergency-evacuation-drill-guide.html": 2,
     "posts/2026-10-22-inverter-welder-current-setting-guide.html": 2,
@@ -48,7 +49,6 @@
     "posts/2026-10-13-supervisor-legal-duties-checklist.html": 1,
     "posts/2026-10-15-stacked-load-collapse-crush-accident-analysis.html": 1,
     "posts/2026-10-16-cnc-lathe-milling-craftsman-exam-guide.html": 1,
-    "posts/2026-10-16-rotating-shaft-entanglement-accident-analysis.html": 1,
     "posts/2026-09-29-forklift-collision-crush-accident-analysis.html": 1,
     "posts/2026-10-01-digital-multimeter-usage-guide.html": 1,
     "posts/2026-10-05-welding-spark-fire-accident-analysis.html": 1,
@@ -80,8 +80,8 @@
   "helpful": {},
   "tools": {
     "apps/shift.html": {
-      "(direct) / (none)": 21,
-      "naver / organic": 16,
+      "(direct) / (none)": 22,
+      "naver / organic": 17,
       "m.search.naver.com / referral": 9
     },
     "apps/convert.html": {
@@ -213,7 +213,7 @@
     ]
   },
   "search": {
-    "period": "2026-10-27~2026-11-24",
+    "period": "2026-10-28~2026-11-25",
     "clicks": 17,
     "impressions": 449,
     "queries": [
@@ -1440,147 +1440,147 @@
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": false
     },
     "posts/2026-10-15-fire-safety-manager-grade2-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-15-workplace-environment-measurement-reading.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-15-stacked-load-collapse-crush-accident-analysis.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-15-thermal-imaging-camera-usage-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-11-07",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-15-battery-recycling-reuse-industry-jobs.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": false
     },
     "posts/2026-10-15-new-worker-first-3-months-safety.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": false
     },
     "posts/2026-10-14-crane-operator-license-vs-overhead-crane-training.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-11-03",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-14-forklift-work-plan-writing-guide.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": false
     },
     "posts/2026-10-14-dust-explosion-accident-analysis.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-14-multi-gas-detector-usage-bump-test.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-14-factory-energy-management-fems-carbon.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-11-15",
       "indexedOn": "",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": false
     },
     "posts/2026-10-14-night-shift-drowsy-driving-prevention.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-13-equipment-maintenance-craftsman-exam-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-13-supervisor-legal-duties-checklist.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-13-chemical-burn-leak-accident-analysis.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-13-wrench-socket-ratchet-basics.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-13-predictive-maintenance-vibration-sensors.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-13-standing-work-leg-foot-knee-care.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-12-production-automation-craftsman-plc-exam-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-12-msds-reading-ghs-pictograms.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-11-05-electrician-craftsman-practical-exam-tips.html": {
@@ -1636,126 +1636,126 @@
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-12-hand-pallet-truck-usage-inspection.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-11-05",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-12-smart-safety-technology-ai-cctv-wearables.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": false
     },
     "posts/2026-10-12-shoulder-neck-pain-prevention-field-workers.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": false
     },
     "posts/2026-10-09-energy-management-craftsman-boiler-exam-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-09-lockout-tagout-loto-procedure.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-09-truck-loading-unloading-accident-analysis.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": false
     },
     "posts/2026-10-09-insulation-resistance-earth-tester-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-09-hydrogen-industry-overview-jobs.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": false
     },
     "posts/2026-10-09-eye-health-field-workers.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-08-gas-craftsman-exam-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-08-fire-extinguisher-types-use-inspection.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": false
     },
     "posts/2026-10-08-slip-trip-fall-accident-analysis.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-08-chain-block-lever-hoist-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-08-ess-energy-storage-industry-overview.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-08-noise-hearing-protection-tinnitus.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-07-electrical-industrial-engineer-exam-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-07-safety-signs-colors-and-placement.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-07-press-machine-crush-accident-analysis.html": {
@@ -1769,147 +1769,147 @@
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-07-ai-machine-vision-inspection-jobs.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-07-work-clothes-washing-and-care.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-06-hvac-refrigeration-craftsman-exam-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-06-aerial-work-platform-safety-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-06-crane-rigging-load-drop-accident-analysis.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-06-laser-distance-meter-and-level-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-06-ev-manufacturing-high-voltage-safety.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-06-shift-work-meal-timing-diet.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-05-excavator-operator-license-guide.html": {
       "status": "URL is unknown to Google",
       "crawled": "",
       "indexedOn": "",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": false
     },
     "posts/2026-10-05-toolbox-meeting-tbm-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-05-welding-spark-fire-accident-analysis.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-05-angle-grinder-safe-use-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-05-collaborative-robot-overview.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-05-hand-skin-care-work-gloves.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-02-welding-craftsman-exam-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-11-05",
       "indexedOn": "2026-11-06",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": false
     },
     "posts/2026-10-02-ppe-selection-and-wearing-guide.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-02-electric-shock-accident-analysis.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-02-drill-driver-impact-hammer-comparison.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-02-logistics-center-automation-overview.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-27",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-02-winter-work-clothing-layering-cold-stress.html": {
       "status": "Crawled - currently not indexed",
       "crawled": "2026-10-28",
       "indexedOn": "2026-11-04",
-      "checked": "2026-11-24",
+      "checked": "2026-11-27",
       "baseline": true
     },
     "posts/2026-10-01-hazardous-materials-craftsman-exam-guide.html": {
@@ -2583,7 +2583,7 @@
     "checked": 262,
     "unchecked": 0,
     "indexedAmongChecked": 3,
-    "lastRun": "2026-11-26T18:01:21.667Z",
+    "lastRun": "2026-11-27T04:34:16.628Z",
     "cohort": {
       "new": {
         "total": 90,
